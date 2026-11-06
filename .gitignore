@@ -1,0 +1,51 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+#ValidatorSettings
+CK2Plus/ValidatorSettings.txt
+CK2Plus_India/ValidatorSettings.txt
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+*.exe
+*.zip
+
+# Misc Windows Things
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+*.bak
+*.WinMerge
+
+CK2Plus/\.vscode/
+
+.vscode/
