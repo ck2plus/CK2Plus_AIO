@@ -18,7 +18,7 @@ tributary_cb = {
 	defender_unoccupied_warscore = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 	}
 
 	can_use = {
@@ -37,7 +37,6 @@ tributary_cb = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -396,7 +395,7 @@ free_tributary_cb = {
 	is_independence = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 	#	# Attacker
 	#	ROOT = { # Cannot use CB if can take decision to stop paying tribute
@@ -430,6 +429,8 @@ free_tributary_cb = {
 					}
 				}
 
+			# 	CleanSlate: No DLC restrictions on breaking free, only on adding new tributaries
+			#	Decisions to break free were already free of DLC checks
 			#	trigger_if = {
 			#		limit = {
 			#			OR = {
@@ -455,6 +456,8 @@ free_tributary_cb = {
 				any_vassal = {
 					is_tributary = yes
 
+				# 	CleanSlate: No DLC restrictions on breaking free, only on adding new tributaries
+				#	Decisions to break free were already free of DLC checks
 				#	trigger_if = {
 				#		limit = {
 				#			OR = {
@@ -516,7 +519,6 @@ free_tributary_cb = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -857,7 +859,7 @@ tributary_permanent_cb = {
 	defender_unoccupied_warscore = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		# Attacker
 		ROOT = {
@@ -1036,7 +1038,6 @@ tributary_permanent_cb = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -1186,7 +1187,7 @@ tributary_nomad_cb = {
 	defender_unoccupied_warscore = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		# Attacker
 		ROOT = {
@@ -1332,7 +1333,6 @@ tributary_nomad_cb = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 

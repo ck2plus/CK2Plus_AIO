@@ -216,6 +216,7 @@
 
 1231.4.6 = {
 	holder = 7357 # Richard Marshal
+	liege = d_meath
 }
 
 1234.4.16 = {

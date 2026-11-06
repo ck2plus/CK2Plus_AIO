@@ -14,8 +14,7 @@
 	}
 }
 
-890.1.1 = {
-	liege = k_moravia
+907.7.4 = {
 	clear_tribute_suzerain = k_moravia
 }
 
@@ -36,7 +35,6 @@
 }
 
 936.1.1 = {
-	liege = 0
 	set_tribute_suzerain = {
 		who = d_bohemia
 		type = permanent

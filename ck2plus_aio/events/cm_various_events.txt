@@ -456,7 +456,6 @@ character_event = {
 
 				if = {
 					limit = { trait = wounded }
-
 					add_trait = wounded
 				}
 				else = {

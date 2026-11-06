@@ -1,12 +1,15 @@
 # Character scope
 on_startup = {
 	effect = {
+		set_global_flag = cleanslate_active # Lets other mods detect that CleanSlate is running
 		setup_province_pulse = yes
+		setup_reformed_religion_scope = yes
 		setup_holy_order_religion_scopes = yes
 	}
 
 	events = {
-		CK2.689 # Scripted default elective token setup - disbled in event trigger
+		CK2.689 # Scripted default elective token setup
+		CK2.690 # Reformed religion head title setup
 		easteregg.1337 # Emperor Ticket character spawning event (CleanSlate: Really, guys?) # Disabled in event trigger
 		LT.32000 # Adding the historical flag to wonders and setting Hagia Sophia cult flag
 		LT.40001 # Turning Yngvar of Kievan Rus Russian/Slavic
@@ -49,9 +52,9 @@ on_yearly_pulse = {
 		39102 # Formation of the Teutonic Order
 
 		# Unlock Crusades
-		39661 # Start of Christian Crusades ? Byzantium Falls
-		39662 # Start of Christian Crusades ? Romes Falls
-		39663 # Start of Christian Crusades ? Europe Falls
+		39661 # Start of Christian Crusades – Byzantium Falls
+		39662 # Start of Christian Crusades – Romes Falls
+		39663 # Start of Christian Crusades – Europe Falls
 		39671 # Start of Muslim Jihads - Jerusalem Falls
 		39672 # Start of Muslim Jihads - Mecca Falls
 		39673 # Start of Muslim Jihads - Other Cities Fall
@@ -304,9 +307,9 @@ on_yearly_pulse = {
 			220 = 0
 
 			# Martial
-			10 = ambition.001 # Toy Army - disabled in event trigger
-			50 = ambition.002 # Other Toy Army Enthusiasts - disabled in event trigger
-			10 = ambition.005 # Street Ruffians - disabled in event trigger
+			10 = 94000 # Toy Army
+			50 = 94001 # Other Toy Army Enthusiasts
+			10 = 94005 # Street Ruffians
 			10 = 94010 # Drunken Warrior
 			50 = 94011 # The Warrior is found
 			10 = 94016 # Training with the Guard
@@ -1644,8 +1647,6 @@ on_crusade_creation = {
 on_marriage = {
 	events = {
  		500 # Royal Marriage Aid Duty
- 		501 # Zoroastrian "Xwedodah" marriage
- 		502 # Messalian close kin marriage
 		GBC.199 # Game book event, falling in love with someone else at marriage feast
  	}
 
@@ -1959,7 +1960,6 @@ NOMINATE_BISHOP_TO_POPE_INTERACTION_DECLINE_EVENT = {
 	events = {
 	}
 }
-
 
 OFFER_VASSALIZATION_INTERACTION_ACCEPT_EVENT = {
 	events = {
@@ -2885,6 +2885,7 @@ on_character_convert_religion = {
 		# RTT
 		39701 # Remove Catholic antipope claim on Papacy
 		39702 # Remove Fraticeli antipope claim on Papacy
+		CK2.691 # Switch succession laws for viceroyalties
 	}
 
 	effect = {

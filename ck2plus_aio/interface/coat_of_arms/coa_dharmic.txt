@@ -1,9 +1,10 @@
 culture = {
-
 	religion = {
 		"buddhist"
 		"hindu"
 		"jain"
+		"bon_pagan"
+		"bon_pagan_reformed"
 	}
 
 	templates = {
@@ -14,7 +15,7 @@ culture = {
 		{ 255 231 93 }		# 0		Gold
 		{ 245 245 245 }		# 1		White
 		{ 35 101 29 }		# 2		Dark Green
-		{ 176 0 0 }			# 3		Red
+		{ 176 0 0 } 		# 3		Red
 		{ 83 141 39 }		# 4		Green
 		{ 20 20 20 }		# 5		Black
 		{ 80 40 0 }			# 6		Brown
@@ -29,7 +30,7 @@ culture = {
 
 	rebel_colors = { 3 5 7 }
 
-	banned_colors =	{
+	banned_colors = {
 		{ 0 1 4 9 13 }				# Gold
 		{ 1 0 9 13 }				# White
 		{ 2 4 6 8 9 10 11 12 }		# Dark Green
@@ -52,9 +53,7 @@ culture = {
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
-
 	textures = {
-
 		texture = {
 			file = "gfx\\coats_of_arms\\pattern_indian.tga"
 			size = { x = 10 y = 4 }
@@ -62,7 +61,6 @@ culture = {
 			color = 2
 			emblem = no
 		}
-
 		texture = {
 			file = "gfx\\coats_of_arms\\pattern2_indian.tga"
 			size = { x = 10 y = 4 }
@@ -70,7 +68,6 @@ culture = {
 			color = 3
 			emblem = no
 		}
-
 		texture = {
 			file = "gfx\\coats_of_arms\\dynasties4_indian.tga"
 			size = { x = 2 y = 1 }

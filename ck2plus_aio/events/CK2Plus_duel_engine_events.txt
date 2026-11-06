@@ -2505,7 +2505,7 @@ character_event = {
 					add_trait = martyr
 
 					if = {
-						limit = { has_nickname = no }
+						limit = { can_apply_average_nickname_trigger = yes }
 						give_nickname = nick_the_martyr
 					}
 
@@ -3401,7 +3401,7 @@ character_event = {
 					add_trait = martyr
 
 					if = {
-						limit = { has_nickname = no }
+						limit = { can_apply_average_nickname_trigger = yes }
 						give_nickname = nick_the_martyr
 					}
 
@@ -3841,7 +3841,7 @@ character_event = {
 			}
 		}
 
-		# hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = DuelEngine.1 } } } }
+		# hidden_effect = { e_rebels = { holder_scope = { character_event = { id = DuelEngine.1 } } } }
 	}
 }
 
@@ -4125,7 +4125,7 @@ character_event = {
 							limit = { has_character_modifier = merciless }
 
 							if = {
-								limit = { has_nickname = no }
+								limit = { can_apply_average_nickname_trigger = yes }
 								give_nickname = nick_the_ruthless
 							}
 						}
@@ -4564,7 +4564,6 @@ character_event = {
 		# will have access to the loser in the FROMFROM scope like duel_output's children.
 
 		FROM = { character_event = { id = CombatTraits.11 } }
-
 
 		#############################
 		# Special Context Flag Cleanup

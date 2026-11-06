@@ -134,7 +134,6 @@
 
 1185.1.1 = {
 	holder = 215004 # Dobromir
-	liege = d_moesia
 }
 
 1200.1.1 = {

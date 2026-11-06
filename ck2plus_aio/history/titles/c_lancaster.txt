@@ -67,7 +67,7 @@
 	holder = 82080 # Robert de Vieuxpont
 }
 
-1241.2.1 = {
+1228.2.28 = {
 	holder = 454522 # Henry III
 }
 

@@ -1,4 +1,5 @@
-# Nahua*
+# Mesoamerican
+
 mesoamerican = {
 	alternate_start = {
 		has_dlc = "Sunset Invasion"
@@ -14,10 +15,10 @@ mesoamerican = {
 		}
 	}
 
-	graphical_cultures = { mesoamericangfx muslimgfx }
+	graphical_cultures = { mesoamericangfx muslimgfx } # mesoamericangfx muslimgfx
 
 	nahua = {
-		graphical_cultures = { mesoamericangfx }
+		graphical_cultures = { nahuagfx } # mesoamericangfx
 		color = { 1.0 0.5 0.0 }
 
 		male_names = {
@@ -54,7 +55,7 @@ mesoamerican = {
 			Zeltzin Zyanya
 		}
 
-		from_dynasty_prefix = "of "
+		# from_dynasty_prefix = "of "
 
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 50

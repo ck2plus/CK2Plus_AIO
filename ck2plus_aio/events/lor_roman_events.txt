@@ -266,7 +266,7 @@ narrative_event = {
 		if = {
 			limit = {
 				ai = no
-				is_ironman = yes
+			#	is_ironman = yes # Also used in death_text
 			}
 
 			set_character_flag = achievement_legacy_of_rome
@@ -376,7 +376,11 @@ narrative_event = {
 		}
 
 		add_trait = augustus
-		give_nickname = nick_the_glorious
+
+		if = {
+			limit = { can_apply_cool_nickname_trigger = yes }
+			give_nickname = nick_the_glorious
+		}
 
 		if = { # New Imperial Bloodline
 			limit = {
@@ -400,17 +404,14 @@ narrative_event = {
 				limit = { is_female = no }
 
 				create_bloodline = {
-					type = roman_emperor_male
+					type = roman_emperor_bloodline
 				}
 			}
 			else = {
 				create_bloodline = {
-					type = roman_emperor_female
+					type = roman_emperor_bloodline
+					inheritance = matrilineal
 				}
-			}
-
-			new_bloodline = {
-				set_description = bloodline_desc_roman
 			}
 
 			sound_effect = bloodline_added
@@ -465,6 +466,131 @@ narrative_event = {
 
 ### Victory Triumphs
 
+character_event = {
+	id = LoR.27
+
+	is_triggered_only = yes # on_war_ended_victory
+	hide_window = yes
+
+	has_dlc = "Legacy of Rome"
+
+	trigger = {
+		FROM = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+
+			OR = {
+				religion_group = christian
+
+				trigger_if = {
+					limit = { is_alternate_start = no }
+					religion_openly_hellenic_or_reformed_trigger = yes
+				}
+			}
+
+			OR = {
+				using_cb = claim_all
+				using_cb = invasion
+				using_cb = invasion_nc
+			}
+		}
+	}
+
+	immediate = {
+		FROM = {
+			character_event = { id = LoR.30 } # Victory Triumph
+		}
+	}
+}
+
+character_event = {
+	id = LoR.28
+
+	is_triggered_only = yes # on_war_ended_whitepeace
+	hide_window = yes
+
+	has_dlc = "Legacy of Rome"
+
+	trigger = {
+		OR = {
+			has_landed_title = e_byzantium
+			has_landed_title = e_roman_empire
+		}
+
+		OR = {
+			religion_group = christian
+
+			trigger_if = {
+				limit = { is_alternate_start = no }
+				religion_openly_hellenic_or_reformed_trigger = yes
+			}
+		}
+
+		OR = {
+			using_cb = manifest_destiny_invasion
+			using_cb = muslim_invasion
+			using_cb = crusade
+			using_cb = new_crusade
+			using_cb = shattered_invasion
+		}
+	}
+
+	immediate = {
+		character_event = { id = LoR.30 } # Victory Triumph
+	}
+}
+
+character_event = {
+	id = LoR.29
+
+	is_triggered_only = yes # on_war_ended_defeat
+	hide_window = yes
+
+	has_dlc = "Legacy of Rome"
+
+	trigger = {
+		OR = {
+			has_landed_title = e_byzantium
+			has_landed_title = e_roman_empire
+		}
+
+		OR = {
+			religion_group = christian
+
+			trigger_if = {
+				limit = { is_alternate_start = no }
+				religion_openly_hellenic_or_reformed_trigger = yes
+			}
+		}
+
+		OR = {
+			using_cb = manifest_destiny_invasion
+			using_cb = offmap_submission
+			using_cb = childrens_crusade
+			using_cb = claim_all
+			using_cb = muslim_invasion
+			using_cb = caliphal_subjugation
+			using_cb = nomad_subjugation
+			using_cb = nomad_invasion
+			using_cb = pagan_subjugation
+			using_cb = viking_invasion
+			using_cb = tribal_invasion
+			using_cb = flower_war_cb
+			using_cb = crusade
+			using_cb = new_crusade
+			using_cb = shattered_invasion
+			using_cb = invasion
+			using_cb = invasion_nc
+		}
+	}
+
+	immediate = {
+		character_event = { id = LoR.30 } # Victory Triumph
+	}
+}
+
 # Triumph Expected
 character_event = {
 	id = LoR.30
@@ -473,29 +599,6 @@ character_event = {
 
 	hide_from = yes
 	is_triggered_only = yes
-
-	trigger = {
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-
-			trigger_if = {
-				limit = { independent = yes }
-
-				higher_real_tier_than = COUNT
-
-				OR = {
-					culture = roman
-					religion_openly_hellenic_or_reformed_trigger = yes
-				}
-			}
-		}
-
-		OR = {
-			religion_group = christian
-			religion_openly_hellenic_or_reformed_trigger = yes
-		}
-	}
 
 	option = {
 		name = EVTOPTALoR.30
@@ -613,8 +716,7 @@ narrative_event = {
 		}
 
 		# Provincia Britannia
-		completely_controls_region = custom_england
-		completely_controls_region = custom_wales
+		completely_controls_region = custom_roman_brittania
 
 		# Provincia Italia
 		completely_controls_region = world_europe_south_italy
@@ -623,21 +725,19 @@ narrative_event = {
 		completely_controls_region = world_middle_east_levant
 
 		# Provincia Aegyptus
-		completely_controls_region = custom_egypt
+		completely_controls_region = custom_roman_aegyptus
 
 		# Provincia Africa
-		completely_controls_region = custom_africa
+		completely_controls_region = custom_roman_africa
 
-		# Provincia Illyricum
-		completely_controls_region = custom_bulgaria
-		completely_controls_region = custom_serbia
-		completely_controls_region = custom_croatia
+		# Provincia Illyricum and Provincia Macedonia
+		completely_controls_region = world_europe_south_east
 
 		# Provincia Viennensis
-		completely_controls_region = custom_aquitaine
+		completely_controls_region = custom_roman_viennensis
 
 		# Provincia Gallia
-		completely_controls_region = custom_france
+		completely_controls_region = custom_roman_gallia
 
 		# Provincia Hispania
 		completely_controls_region = world_europe_west_iberia
@@ -645,21 +745,15 @@ narrative_event = {
 		# Provincia Mauretania
 		completely_controls_region = custom_morocco
 
-		# Provincia Macedonia
-		completely_controls_region = custom_byzantium
-
 		# Provincia Asia
-		completely_controls_region = custom_nikaea
+		completely_controls_region = custom_roman_phrygia
 
 		# Provincia Pontus
-		completely_controls_region = custom_trebizond
-		completely_controls = d_coloneia
-		completely_controls = d_mesopotamia
+		completely_controls_region = custom_roman_pontus
 		completely_controls = d_cilicia
 
 		# Provincia Pannonia-Dacia
-		completely_controls_region = custom_carpathia
-		completely_controls_region = custom_wallachia
+		completely_controls_region = world_europe_east_pannonia
 
 		# Provincia Armenia
 		completely_controls = d_armenia

@@ -659,7 +659,7 @@ character_event = {
 		}
 		else_if = {
 			limit = {
-				persistent_event_target:antagonize_target = {
+				persistent_event_target:sway_target = {
 					is_inaccessible_or_incapable_trigger = no
 				}
 			}
@@ -2553,13 +2553,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -2620,13 +2618,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -2938,13 +2934,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -2990,13 +2984,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -3320,13 +3312,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -3890,13 +3880,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -4327,13 +4315,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -5089,7 +5075,7 @@ character_event = {
 
 				FROM = {
 					has_character_flag = flag_sway_lustful_present
-					higher_tier_than = ROOT # Intimidated
+					higher_real_tier_than = ROOT # Intimidated
 				}
 			}
 
@@ -5608,7 +5594,7 @@ character_event = {
 
 				FROM = {
 					has_character_flag = flag_sway_glutton_dinner
-					higher_tier_than = ROOT # Intimidated
+					higher_real_tier_than = ROOT # Intimidated
 				}
 			}
 
@@ -6947,13 +6933,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -7089,13 +7073,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -7371,13 +7353,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -7489,13 +7469,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -9121,13 +9099,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	trigger = {
@@ -11108,7 +11084,6 @@ character_event = {
 						trait = cruel
 					}
 				}
-
 
 				opinion = {
 					name = opinion_antagonized_1
@@ -14203,7 +14178,6 @@ character_event = {
 								ROOT = { trait = grey_eminence }
 							}
 
-
 							set_character_flag = flag_sway_turning_zealous
 
 							character_event = {
@@ -14294,13 +14268,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -14896,13 +14868,11 @@ character_event = {
 
 	picture = {
 		picture = GFX_evt_daughter_asking_mother
-		trigger = { has_religion_feature = religion_matriarchal }
+		trigger = { religion_is_matriarchal_trigger = yes }
 	}
 	picture = {
 		picture = GFX_evt_son_asking_father
-		trigger = {
-			NOT = { has_religion_feature = religion_matriarchal }
-		}
+		trigger = { religion_is_matriarchal_trigger = no }
 	}
 
 	is_triggered_only = yes
@@ -16222,7 +16192,6 @@ character_event = {
 		}
 	}
 	picture = GFX_evt_pleasing_letter
-
 
 	trigger = {
 		FROM = { is_alive = yes }
@@ -18016,13 +17985,13 @@ character_event = {
 						AND = {
 							attacker = { character = ROOT }
 							defender = { character = FROM }
-							war_score >= -25
+							war_score <= -25
 						}
 
 						AND = {
 							attacker = { character = FROM }
 							defender = { character = ROOT }
-							war_score <= 25
+							war_score >= 25
 						}
 					}
 				}

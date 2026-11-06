@@ -47,16 +47,12 @@ character_event = {
 		trigger_if = {
 			limit = { is_female = yes }
 
-			NOR = {
-				has_religion_feature = religion_patriarchal
-				has_law = agnatic_succession
-			}
+			religion_is_patriarchal_trigger = no
+			NOT = { has_law = agnatic_succession }
 		}
 		trigger_else = {
-			NOR = {
-				has_religion_feature = religion_matriarchal
-				has_law = enatic_succession
-			}
+			religion_is_matriarchal_trigger = no
+			NOT = { has_law = enatic_succession }
 		}
 
 		NOR = {
@@ -203,16 +199,12 @@ character_event = {
 		trigger_if = {
 			limit = { is_female = yes }
 
-			NOR = {
-				has_religion_feature = religion_patriarchal
-				has_law = agnatic_succession
-			}
+			religion_is_patriarchal_trigger = no
+			NOT = { has_law = agnatic_succession }
 		}
 		trigger_else = {
-			NOR = {
-				has_religion_feature = religion_matriarchal
-				has_law = enatic_succession
-			}
+			religion_is_matriarchal_trigger = no
+			NOT = { has_law = enatic_succession }
 		}
 
 		NOR = {
@@ -694,7 +686,7 @@ character_event = { # Child of Destiny journey randomization tombola
 							is_landed = yes
 							ai = yes
 							is_tributary = no
-							NOT = { is_vassal_or_below = event_target:child_of_destiny }
+							NOT = { is_liege_or_above_of = event_target:child_of_destiny }
 
 							event_target:child_of_destiny = {
 								top_liege = {
@@ -948,7 +940,6 @@ character_event = { # Notification - Snake in Crib, Baby dies
 		}
 	}
 }
-
 
 # Drink Poison
 character_event = {
@@ -1396,13 +1387,13 @@ character_event = {
 					remove_trait = scholar
 					add_trait = mutazilite
 				}
-				else_if = {
-					limit = { has_dharmic_religion_trigger = yes }
 
+				if = {
+					limit = { has_dharmic_religion_trigger = yes }
 					add_trait = brahmin
-					character_event = { id = RoI.30121 }
 				}
 
+				add_religious_traits = yes
 				save_event_target_as = wise_man_target
 			}
 		}
@@ -2243,7 +2234,14 @@ character_event = { # Player - Choose Destiny, inwards or outwards
 				any_demesne_title = {
 					show_scope_change = no
 
-					limit = { higher_real_tier_than = COUNT }
+					limit = {
+						higher_real_tier_than = COUNT
+						is_primary_type_title = no
+						controls_religion = no
+						holy_order = no
+						mercenary = no
+						clan = no
+					}
 
 					add_claim = event_target:child_of_destiny
 				}
@@ -2252,7 +2250,14 @@ character_event = { # Player - Choose Destiny, inwards or outwards
 				any_demesne_title = {
 					show_scope_change = no
 
-					limit = { higher_tier_than = DUKE }
+					limit = {
+						higher_real_tier_than = DUKE
+						is_primary_type_title = no
+						controls_religion = no
+						holy_order = no
+						mercenary = no
+						clan = no
+					}
 
 					add_claim = event_target:child_of_destiny
 				}
@@ -3077,7 +3082,7 @@ character_event = {
 				is_landed = yes
 				realm_size >= 25
 				is_tributary = no
-				NOT = { is_vassal_or_below = event_target:child_of_destiny }
+				NOT = { is_liege_or_above_of = event_target:child_of_destiny }
 				ai = yes
 
 				event_target:child_of_destiny = {
@@ -3636,11 +3641,7 @@ character_event = {
 		}
 
 		if = {
-			limit = {
-				this_has_cool_nickname_trigger = no
-				this_has_super_cool_nickname_trigger = no
-			}
-
+			limit = { can_apply_cool_nickname_trigger = yes }
 			give_nickname = nick_the_great
 		}
 

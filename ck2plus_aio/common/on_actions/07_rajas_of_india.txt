@@ -61,7 +61,7 @@ on_yearly_pulse = {
 		50 = RoI.3509 # Temple corruption removed - Indian
 		50 = RoI.3515 # Local death cult
 		50 = RoI.3519 # Local death cult removed - Indian
-		# 10 = RoI.3525 # Province converts to other religion!
+		10 = RoI.3525 # Province converts to other religion!
 		50 = RoI.3535 # Religious tensions
 		# 50 = RoI.3539 # Religious unrest removed
 
@@ -95,17 +95,6 @@ on_birth = {
 on_death = {
 	events = {
 		RoI.248 # Clearing inventory of cursed diamond
-	}
-}
-
-# Character converts religion, for whatever reason
-# ROOT is the character after conversion
-# FROM scope has the old religion
-on_character_convert_religion = {
-	events = {
-		RoI.110 # Converted to Hinduism - choose branch
-		RoI.111 # Converted to Buddhism - choose branch
-		RoI.112 # Converted to Jainism - choose branch
 	}
 }
 

@@ -68,6 +68,7 @@
 
 1228.2.1 = {
 	holder = 82081 # John de Vieuxpont
+	liege = k_england
 }
 
 1241.2.1 = {

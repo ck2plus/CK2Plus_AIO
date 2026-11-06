@@ -30,7 +30,6 @@
 }
 
 865.1.1 = {
-	liege = k_england
 	holder = 33358
 }
 
@@ -52,6 +51,7 @@
 
 1093.1.1 = {
 	holder = 32143 # Walter I Giffard, earl of Buckinghamshire
+	liege = k_england
 }
 
 1102.7.15 = {

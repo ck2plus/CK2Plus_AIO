@@ -4,7 +4,7 @@ terrain = plains
 
 # Initial setup
 culture = persian
-religion = miaphysite
+religion = apostolic
 
 max_settlements = 3
 b_ahemakha = castle

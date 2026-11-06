@@ -16,7 +16,7 @@ spriteTypes = {
 
 	coatOfArmsType = {
 		name = "coa_plain"
-		frame = "gfx\\coats_of_arms\\frame.tga"
+		frame = "gfx\\new_coats_of_arms\\frame_solo.tga"
 		mask = "gfx\\interface\\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\\seal_overlay_CoA.dds"
 		effect = "gfx/FX/coa_shield.lua"
@@ -44,7 +44,7 @@ spriteTypes = {
 
 	coatOfArmsType = {
 		name = "coa_party_per_fess"
-		frame = "gfx\\coats_of_arms\\frame.tga"
+		frame = "gfx\\new_coats_of_arms\\frame_solo.tga"
 		mask = "gfx\\interface\\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\\seal_overlay_CoA.dds"
 		effect = "gfx/FX/coa_shield.lua"
@@ -84,7 +84,7 @@ spriteTypes = {
 
 	coatOfArmsType = {
 		name = "coa_party_per_pale"
-		frame = "gfx\\coats_of_arms\\frame.tga"
+		frame = "gfx\\new_coats_of_arms\\frame_solo.tga"
 		mask = "gfx\\interface\\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\\seal_overlay_CoA.dds"
 		effect = "gfx/FX/coa_shield.lua"
@@ -124,7 +124,7 @@ spriteTypes = {
 
 	coatOfArmsType = {
 		name = "coa_party_per_cross"
-		frame = "gfx\\coats_of_arms\\frame.tga"
+		frame = "gfx\\new_coats_of_arms\\frame_solo.tga"
 		mask = "gfx\\interface\\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\\seal_overlay_CoA.dds"
 		effect = "gfx/FX/coa_shield.lua"
@@ -188,7 +188,7 @@ spriteTypes = {
 
 	coatOfArmsType = {
 		name = "coa_party_triangle"
-		frame = "gfx\\coats_of_arms\\frame.tga"
+		frame = "gfx\\new_coats_of_arms\\frame_solo.tga"
 		mask = "gfx\\interface\\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\\seal_overlay_CoA.dds"
 		effect = "gfx/FX/coa_shield.lua"

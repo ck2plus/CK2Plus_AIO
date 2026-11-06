@@ -1259,10 +1259,7 @@ character_event = {
 
 	trigger = {
 		event_target:pf_new_title = {
-			OR = {
-				is_primary_holder_title = yes
-				higher_real_tier_than = DUKE
-			}
+			title = succ_law_title
 		}
 	}
 
@@ -1426,7 +1423,7 @@ character_event = {
 						limit = {
 							OR = {
 								title = e_hre
-								has_title_flag = alternate_hre
+								title = event_target:alternate_hre
 							}
 
 							event_target:pf_old_holder = { primary_title = { has_law = succ_hre_elective } }
@@ -1508,10 +1505,7 @@ character_event = {
 								OR = {
 									religion = baltic_pagan
 									religion = west_african_pagan
-									has_religion_feature = religion_beatification
-									has_religion_feature = religion_feature_baltic
-									has_religion_feature = religion_feature_west_african
-									has_religion_feature = religion_feature_egyptian
+									religion_has_eldership_trigger = yes
 								}
 							}
 
@@ -1600,10 +1594,10 @@ character_event = {
 						is_law_potential = succ_feudal_elective
 
 						OR = {
-							higher_tier_than = DUKE
+							higher_real_tier_than = DUKE
 							AND = {
 								is_primary_holder_title = yes
-								tier = DUKE
+								real_tier = DUKE
 							}
 						}
 					}
@@ -1612,7 +1606,7 @@ character_event = {
 						limit = {
 							OR = {
 								title = e_hre
-								has_title_flag = alternate_hre
+								title = event_target:alternate_hre
 							}
 						}
 
@@ -1660,10 +1654,7 @@ character_event = {
 								OR = {
 									religion = baltic_pagan
 									religion = west_african_pagan
-									has_religion_feature = religion_beatification
-									has_religion_feature = religion_feature_baltic
-									has_religion_feature = religion_feature_west_african
-									has_religion_feature = religion_feature_egyptian
+									religion_has_eldership_trigger = yes
 								}
 							}
 						}
@@ -1785,10 +1776,7 @@ character_event = {
 
 	trigger = {
 		event_target:pf_new_title = {
-			OR = {
-				is_primary_holder_title = yes
-				higher_real_tier_than = DUKE
-			}
+			title = succ_law_title
 		}
 	}
 
@@ -1914,7 +1902,7 @@ character_event = {
 						limit = {
 							OR = {
 								title = e_hre
-								has_title_flag = alternate_hre
+								title = event_target:alternate_hre
 							}
 						}
 
@@ -1969,10 +1957,7 @@ character_event = {
 								OR = {
 									religion = baltic_pagan
 									religion = west_african_pagan
-									has_religion_feature = religion_beatification
-									has_religion_feature = religion_feature_baltic
-									has_religion_feature = religion_feature_west_african
-									has_religion_feature = religion_feature_egyptian
+									religion_has_eldership_trigger = yes
 								}
 							}
 						}
@@ -2083,10 +2068,10 @@ character_event = {
 						is_law_potential = succ_feudal_elective
 
 						OR = {
-							higher_tier_than = DUKE
+							higher_real_tier_than = DUKE
 							AND = {
 								is_primary_holder_title = yes
-								tier = DUKE
+								real_tier = DUKE
 							}
 						}
 					}
@@ -2095,7 +2080,7 @@ character_event = {
 						limit = {
 							OR = {
 								title = e_hre
-								has_title_flag = alternate_hre
+								title = event_target:alternate_hre
 							}
 						}
 
@@ -2143,10 +2128,7 @@ character_event = {
 								OR = {
 									religion = baltic_pagan
 									religion = west_african_pagan
-									has_religion_feature = religion_beatification
-									has_religion_feature = religion_feature_baltic
-									has_religion_feature = religion_feature_west_african
-									has_religion_feature = religion_feature_egyptian
+									religion_has_eldership_trigger = yes
 								}
 							}
 						}
@@ -3687,7 +3669,7 @@ character_event = {
 
 					faction_court = {
 						divide_variable = { which = local_faction_member_approval which = local_faction_votes_court }
-						change_variable = { which = local_local_faction_mood_court which = local_faction_member_approval }
+						change_variable = { which = local_faction_mood_court which = local_faction_member_approval }
 					}
 
 					faction_prosperity = {
@@ -4529,7 +4511,6 @@ character_event = {
 		}
 	}
 }
-
 
 # Main Annual faction maintenance event
 character_event = {

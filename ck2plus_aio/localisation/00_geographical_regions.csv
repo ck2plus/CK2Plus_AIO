@@ -18,6 +18,7 @@ custom_granada;Southern Iberia;Ibérie du sud;Südiberien;;Sur de la Península 
 custom_historical_plague_free_zone;Historical Plague Exclusion Zone;Zone d'exclusion historique de la peste;Historische Pestausnahmezone;;Zona histórica de exclusión de la Peste;;;;;;;;;x
 custom_leon;León;;;;;;;;;;;;;x
 custom_navarra;Navarra;Navarre;;;;;;;;;;;;x
+custom_novgorod;Novgorod;;Nowgorod;;Nóvgorod;;;;;;;;;x
 custom_norwegian;Norway;Norvège;Norwegen;;Noruega;;;;;;;;;x
 custom_portuguese;North-West Iberia;Ibérie du Nord-Ouest;Nordwestliche iberische Halbinsel;;Iberia noroccidental;;;;;;;;;x
 custom_scotland;Scotland;Écosse;Schottland;;Escocia ;;;;;;;;;x
@@ -75,11 +76,3 @@ world_europe_east_baltic;Baltic Rim;La Baltique;Das Baltikum;;Báltica;;;;;;;;;x
 world_asia;Asia;Asie;Asien;;;;;;;;;;;x
 world_africa_north_west;Northwest Africa;Afrique du Nord-Ouest;Nordwestafrika;;África del noroeste;;;;;;;;;x
 world_africa_north_nile;Lower Nile Valley;Vallée du Nil-inférieure;Niederniltal;;Valle del bajo Nilo;;;;;;;;;x
-
-# Obsolete
-custom_russia;Rus Region;Région de la Rus';Russische Region;;Región de la Rus;;;;;;;;;x
-world_asia_minor;Asia Minor;Asie Mineure;Kleinasien;;Asia Menor;;;;;;;;;x
-world_europe_west_britannia;Britannia;Bretagne;Britannien;;Britania;;;;;;;;;x
-world_europe_west_francia;Francia;France;Franzien;;;;;;;;;;;x
-world_middle_east_jerusalem;Jerusalem;Jérusalem;;;Jerusalén;;;;;;;;;x
-world_persia;Persia;Perse;Persien;;;;;;;;;;;x

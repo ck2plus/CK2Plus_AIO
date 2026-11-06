@@ -89,7 +89,6 @@
 1161.6.6 = {
 	holder = 167352
 	liege = d_gotland
-	de_jure_liege = d_gotland
 }
 
 1173.1.1 = {

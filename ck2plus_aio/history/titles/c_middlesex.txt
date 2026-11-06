@@ -4,7 +4,6 @@
 
 802.1.1 = {
 	holder = 33354 # Ecgberht
-	liege = k_england
 }
 
 839.2.5 = {

@@ -112,7 +112,6 @@
 }
 
 875.1.1 = {
-	liege = k_england
 	holder = 159459 # Eluid
 }
 
@@ -121,7 +120,6 @@
 }
 
 910.1.1 = {
-	liege = d_cornwall
 	holder = 159461 # Hoel
 }
 

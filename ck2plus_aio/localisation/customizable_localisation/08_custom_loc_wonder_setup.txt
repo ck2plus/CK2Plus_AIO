@@ -133,7 +133,6 @@ defined_text = {
 	}
 }
 
-
 # An adjective for the Wonder, eg. "Great", "Bloody"
 # Great, Grand, Holy, Magnificent, Glorious, Bloody, Fortified, Royal, Grand Royal, Silent
 #Golden, Iron, Towering, Looming, Divine, Verdant, Soaring, Hallowed, Ancient, Old
@@ -214,7 +213,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			owner = { higher_tier_than = DUKE }
+			owner = { higher_real_tier_than = DUKE }
 			wonder_stage >= 2
 			has_wonder = wonder_palace
 		}
@@ -222,7 +221,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			owner = { higher_tier_than = DUKE }
+			owner = { higher_real_tier_than = DUKE }
 			wonder_stage >= 4
 			has_wonder = wonder_palace
 		}
@@ -428,7 +427,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			owner = { higher_tier_than = DUKE }
+			owner = { higher_real_tier_than = DUKE }
 			wonder_stage >= 2
 			has_wonder = wonder_palace
 		}
@@ -436,7 +435,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			owner = { higher_tier_than = DUKE }
+			owner = { higher_real_tier_than = DUKE }
 			wonder_stage >= 4
 			has_wonder = wonder_palace
 		}
@@ -565,7 +564,6 @@ defined_text = {
 		localisation_key = String_Cool # Placeholder, to find errors
 	}
 }
-
 
 defined_text = {
 	name = GetWonderTypeShortCap # Basically, what kind of building this is: "Cathedral", or "Pyramid", or "Harbor"

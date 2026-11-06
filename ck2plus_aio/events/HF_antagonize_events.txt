@@ -1617,7 +1617,6 @@ character_event = {
 	}
 }
 
-
 # Antagonizer: you or your target has gone into Seclusion, Antagonizing is canceled
 character_event = {
 	id = HF.22006
@@ -1797,7 +1796,6 @@ character_event = {
 	}
 }
 
-
 ###############################
 # Tier I Events - Generic events that only required the two characters to be living and within writing distance.
 ###############################
@@ -1962,7 +1960,7 @@ character_event = {
 			}
 
 			if = {
-				limit = { higher_tier_than = FROM }
+				limit = { higher_real_tier_than = FROM }
 				prestige = -50
 			}
 			else = {
@@ -2186,7 +2184,7 @@ character_event = {
 					intrigue < 12
 
 					NOR = {
-						higher_tier_than = persistent_event_target:antagonize_target
+						higher_real_tier_than = persistent_event_target:antagonize_target
 						trait = deceitful
 						trait = master_schemer
 					}
@@ -3501,7 +3499,7 @@ character_event = {
 		ai_chance = { factor = 60 }
 	}
 
-	option = { # Special option. - Lunatic liege gives title. Avoid Antagonizer from getting special boons and stop his Antagonizing for a set amount of time.
+	option = { # Special option. - Lunatic liege gives nickname. Avoid Antagonizer from getting special boons and stop his Antagonizing for a set amount of time.
 		name = EVTOPTLUCHF22022
 		tooltip_info = lunatic
 
@@ -3511,7 +3509,7 @@ character_event = {
 
 			FROM = {
 				is_vassal_or_below_of = ROOT
-				NOT = { has_nickname = nick_the_knight_of_turnips }
+				NOT = { has_character_flag = knight_of_turnips }
 			}
 		}
 
@@ -3525,7 +3523,7 @@ character_event = {
 				tooltip = tooltip_22022_LUC
 			}
 
-			tooltip = {
+			tooltip = { # Liege doesn't care about nicknames you already have, won't overwrite better nicknames down the line
 				give_nickname = nick_the_knight_of_turnips
 			}
 
@@ -3562,7 +3560,6 @@ character_event = {
 		}
 
 		custom_tooltip = { text = tooltip_22022_Y }
-
 
 		opinion = {
 			name = opinion_antagonized_3
@@ -3773,7 +3770,6 @@ character_event = {
 
 			NOT = { trait = lunatic }
 		}
-
 
 		FROM = {
 			show_scope_change = no
@@ -4021,7 +4017,6 @@ character_event = {
 		clr_character_flag = flag_antagonized_option_relative
 		clr_character_flag = flag_antagonized_option_infidel
 		clr_character_flag = flag_antagonized_option_heretic
-
 
 		FROM = {
 			clr_character_flag = flag_antagonize_slander_zealous
@@ -4499,7 +4494,7 @@ character_event = {
 #			random_demesne_title = {
 #				show_scope_change = no
 #
-#				limit = { lower_tier_than = DUKE }
+#				limit = { lower_real_tier_than = DUKE }
 #
 #				add_claim = ROOT
 #				save_event_target_as = scoped_claim # For localization use only.
@@ -5803,7 +5798,6 @@ character_event = {
 		}
 	}
 }
-
 
 # Antagonizer: courtesan was refused.
 character_event = {
@@ -8247,6 +8241,11 @@ character_event = {
 	}
 
 	after = {
-		give_nickname = nick_the_knight_of_turnips
+		set_character_flag = knight_of_turnips
+
+		if = {
+			limit = { can_apply_lame_nickname_trigger = yes }
+			give_nickname = nick_the_knight_of_turnips
+		}
 	}
 }

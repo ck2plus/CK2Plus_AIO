@@ -27,10 +27,7 @@ A_POPE_OF_MY_OWN = {
 		NOT = {
 			any_vassal = {
 				any_claim = {
-				#	OR = {
-						title = k_papacy
-				#		title = d_fraticelli
-				#	}
+					is_papacy = yes
 				}
 			}
 		}
@@ -39,10 +36,7 @@ A_POPE_OF_MY_OWN = {
 	happened = {
 		any_vassal = {
 			any_claim = {
-			#	OR = {
-					title = k_papacy
-			#		title = d_fraticelli
-			#	}
+				is_papacy = yes
 			}
 		}
 	}
@@ -56,9 +50,16 @@ ALL_THREE_POPES = {
 	}
 
 	happened = {
-		k_papacy = {
-			any_claimant = {
-				count >= 2
+		OR = {
+			k_papacy = {
+				any_claimant = {
+					count >= 2
+				}
+			}
+			d_fraticelli = {
+				any_claimant = {
+					count >= 2
+				}
 			}
 		}
 	}
@@ -796,9 +797,7 @@ EMPRESSIVE = {
 
 		mother_even_if_dead = {
 			real_tier = EMPEROR
-		}
 
-		mother_even_if_dead = {
 			mother_even_if_dead = {
 				real_tier = EMPEROR
 			}
@@ -1219,7 +1218,6 @@ FAMILY_BLISS = {
 		has_character_flag = achievement_family_bliss
 	}
 }
-
 
 # "We're In Business" - Successfully establish a trade route
 WERE_IN_BUSINESS = {
@@ -1903,7 +1901,7 @@ SMASH_PATRIARCHY = {
 			holder_scope = {
 				is_female = yes
 				OR = {
-					is_liege_or_above = ROOT
+					is_vassal_or_below_of = ROOT
 					character = ROOT
 				}
 			}
@@ -1912,7 +1910,7 @@ SMASH_PATRIARCHY = {
 			holder_scope = {
 				is_female = yes
 				OR = {
-					is_liege_or_above = ROOT
+					is_vassal_or_below_of = ROOT
 					character = ROOT
 				}
 			}
@@ -1921,7 +1919,7 @@ SMASH_PATRIARCHY = {
 			holder_scope = {
 				is_female = yes
 				OR = {
-					is_liege_or_above = ROOT
+					is_vassal_or_below_of = ROOT
 					character = ROOT
 				}
 			}
@@ -1930,7 +1928,7 @@ SMASH_PATRIARCHY = {
 			holder_scope = {
 				is_female = yes
 				OR = {
-					is_liege_or_above = ROOT
+					is_vassal_or_below_of = ROOT
 					character = ROOT
 				}
 			}
@@ -1939,7 +1937,7 @@ SMASH_PATRIARCHY = {
 			holder_scope = {
 				is_female = yes
 				OR = {
-					is_liege_or_above = ROOT
+					is_vassal_or_below_of = ROOT
 					character = ROOT
 				}
 			}
@@ -1992,7 +1990,7 @@ LEGACY_INDO_NORSE = {
 		culture = norse
 
 		primary_title = {
-			tier = KING
+			real_tier = KING
 			region = world_india
 		}
 		capital_scope = {
@@ -2031,7 +2029,7 @@ ALADDIN = {
 	happened = {
 		culture = han
 		completely_controls_region = world_africa_north
-		higher_tier_than = DUKE
+		higher_real_tier_than = DUKE
 		independent = yes
 	}
 }
@@ -2044,14 +2042,14 @@ TEN_THRONES = {
 	}
 
 	happened = {
-		higher_tier_than = DUKE
+		higher_real_tier_than = DUKE
 		independent = yes
 		realm_size >= 25
 		is_feudal = yes
 
 		any_dynasty_member = {
 			count >= 9
-			higher_tier_than = DUKE
+			higher_real_tier_than = DUKE
 			independent = yes
 			realm_size >= 25
 			is_feudal = yes
@@ -2086,7 +2084,7 @@ WHITE_HUN = {
 	}
 
 	happened = {
-		higher_tier_than = DUKE
+		higher_real_tier_than = DUKE
 		independent = yes
 		completely_controls = k_rajputana
 		completely_controls = k_delhi
@@ -2124,7 +2122,7 @@ SAKYA_TRIZIN = {
 	}
 
 	happened = {
-		higher_tier_than = DUKE
+		higher_real_tier_than = DUKE
 		independent = yes
 		religion = buddhist
 		num_of_holy_sites >= 5
@@ -2551,7 +2549,7 @@ LORD_OF_THE_FLIES = {
 		is_ironman = yes
 		is_random_world = yes
 		age < 1
-		lower_tier_than = DUKE
+		lower_real_tier_than = DUKE
 		has_alternate_start_setting = {
 			setting = age_span
 			max == 0

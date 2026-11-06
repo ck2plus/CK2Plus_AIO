@@ -459,9 +459,9 @@ stable_attribute_improvement_effect = {
 
 						# Education Improvement only unlocked by synergy
 						OR = {
-							has_religion_feature = religion_meritocratic
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
+							religion_is_meritocratic_trigger = yes
+							religion_is_matriarchal_trigger = yes
+							religion_is_patriarchal_trigger = yes
 						}
 
 						OR = {
@@ -524,9 +524,9 @@ stable_attribute_improvement_effect = {
 
 						# Education Improvement only unlocked by synergy
 						OR = {
-							has_religion_feature = religion_meritocratic
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
+							religion_is_meritocratic_trigger = yes
+							religion_is_matriarchal_trigger = yes
+							religion_is_patriarchal_trigger = yes
 						}
 
 						OR = {
@@ -580,9 +580,9 @@ stable_attribute_improvement_effect = {
 
 						# Education Improvement only unlocked by synergy
 						OR = {
-							has_religion_feature = religion_meritocratic
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
+							religion_is_meritocratic_trigger = yes
+							religion_is_matriarchal_trigger = yes
+							religion_is_patriarchal_trigger = yes
 						}
 
 						OR = {
@@ -636,9 +636,9 @@ stable_attribute_improvement_effect = {
 
 						# Education Improvement only unlocked by synergy
 						OR = {
-							has_religion_feature = religion_meritocratic
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
+							religion_is_meritocratic_trigger = yes
+							religion_is_matriarchal_trigger = yes
+							religion_is_patriarchal_trigger = yes
 						}
 
 						OR = {
@@ -692,9 +692,9 @@ stable_attribute_improvement_effect = {
 
 						# Education Improvement only unlocked by synergy
 						OR = {
-							has_religion_feature = religion_meritocratic
-							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_patriarchal
+							religion_is_meritocratic_trigger = yes
+							religion_is_matriarchal_trigger = yes
+							religion_is_patriarchal_trigger = yes
 						}
 
 						OR = {
@@ -713,7 +713,7 @@ stable_attribute_improvement_effect = {
 					mult_modifier = {
 						factor = 1.5
 						event_target:scoped_improvement_ruler = {
-							has_religion_feature = religion_meritocratic # More pressure
+							religion_is_meritocratic_trigger = yes # More pressure
 						}
 					}
 
@@ -1371,10 +1371,10 @@ assign_random_nickname_effect = {
 		10 = { give_nickname = nick_the_lucky }
 		10 = { give_nickname = nick_the_careless }
 		10 = { give_nickname = nick_the_jittery }
-		10 = { give_nickname = nick_the_dry_throat }
+		10 = { give_nickname = nick_dry_throat }
 		10 = { give_nickname = nick_the_messy }
 		10 = { give_nickname = nick_the_feeble }
-		10 = { give_nickname = nick_the_red_cheeks }
+		10 = { give_nickname = nick_red_cheeks }
 		10 = { give_nickname = nick_the_blushing }
 		10 = { give_nickname = nick_the_twitchy }
 
@@ -1660,7 +1660,7 @@ assign_random_nickname_effect = {
 		10 = {
 			trigger = { combat_rating >= 10 }
 
-			give_nickname = nick_the_oakskin
+			give_nickname = nick_oakskin
 		}
 
 		10 = {
@@ -1673,7 +1673,7 @@ assign_random_nickname_effect = {
 			trigger = { base_health < 3 }
 
 			random_list = {
-				10 = { give_nickname = nick_butter_teeth }
+				10 = { give_nickname = nick_butterteeth }
 				10 = { give_nickname = nick_the_toothless }
 			}
 		}

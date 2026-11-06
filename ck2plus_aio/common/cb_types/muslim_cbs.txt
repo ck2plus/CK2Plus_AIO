@@ -106,7 +106,6 @@ muslim_county_conquest = {
 			piety = -50
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -259,22 +258,12 @@ muslim_county_conquest = {
 	ai_will_do = {
 		factor = 0.9 # Prefer using CB's without on_add costs
 
-			ROOT = {
-				ai_willing_to_attack = yes
-			}
-			trigger_if = {
-				limit = {
-					ROOT = {
-						has_character_flag = is_temujin
-						has_landed_title = e_mongol_empire
-						is_landed = yes
-					}
-				}
+		trigger = {
+			suitable_holdings_trigger = yes
+			temujin_avoid_china_trigger = yes
 
-				FROM = {
-					NOT = { has_landed_title = e_china_west_governor }
-				}
-			}
+			# CK2Plus
+			ai_willing_to_attack = yes
 		}
 	}
 }
@@ -333,12 +322,10 @@ muslim_invasion = {
 	}
 
 	can_use_title = {
-		# Muslims require the target to have at least 6 counties within the target kingdom
-		FROM = {
-			num_of_realm_counties = {
-				value >= 6
-				title = PREV
-			}
+		# Defender must have at least 6 counties within the target kingdom
+		num_title_realm_provs = {
+			value >= 6
+			who = FROM
 		}
 
 		# The attacker needs at least one county in the target kingdom, or a border
@@ -376,12 +363,10 @@ muslim_invasion = {
 	}
 
 	is_valid_title = {
-		# Defender
-		FROM = {
-			num_of_realm_counties = {
-				value >= 1
-				title = PREV
-			}
+		# Defender must have at least 1 county within the target kingdom
+		num_title_realm_provs = {
+			value >= 1
+			who = FROM
 		}
 	}
 
@@ -392,7 +377,6 @@ muslim_invasion = {
 			piety = -1000
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -470,12 +454,7 @@ muslim_invasion = {
 				}
 
 				if = {
-					limit = {
-						trigger_if = {
-							limit = { has_nickname = yes }
-							this_has_lame_nickname_trigger = yes
-						}
-					}
+					limit = { can_apply_cool_nickname_trigger = yes }
 
 					random_list = {
 						10 = { give_nickname = nick_the_holy }
@@ -504,15 +483,8 @@ muslim_invasion = {
 			participation_scaled_prestige = 100
 
 			hidden_effect = {
-				roman_victory_triumph_effect = yes
-
 				if = {
-					limit = {
-						trigger_if = {
-							limit = { has_nickname = yes }
-							this_has_lame_nickname_trigger = yes
-						}
-					}
+					limit = { can_apply_cool_nickname_trigger = yes }
 
 					random_list = {
 						10 = { give_nickname = nick_the_holy }
@@ -571,8 +543,6 @@ muslim_invasion = {
 			participation_scaled_prestige = 200
 
 			hidden_effect = {
-				roman_victory_triumph_effect = yes
-
 				if = {
 					limit = { has_ambition = obj_strengthen_religion }
 
@@ -583,12 +553,7 @@ muslim_invasion = {
 				}
 
 				if = {
-					limit = {
-						trigger_if = {
-							limit = { has_nickname = yes }
-							this_has_lame_nickname_trigger = yes
-						}
-					}
+					limit = { can_apply_cool_nickname_trigger = yes }
 
 					random_list = {
 						10 = { give_nickname = nick_the_holy }
@@ -641,48 +606,7 @@ muslim_invasion = {
 		factor = 0.9 # Prefer using CB's without on_add costs
 
 		trigger = {
-			trigger_if = {
-				limit = {
-					ROOT = {
-						is_tribal = yes
-					}
-
-					FROM = {
-						is_nomadic = yes
-					}
-				}
-
-				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
-						OR = {
-							holding_type = castle
-							holding_type = city
-							holding_type = tribal
-						}
-					}
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					ROOT = {
-						is_nomadic = no
-						is_tribal = no
-					}
-
-					FROM = {
-						is_nomadic = yes
-					}
-				}
-
-				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
-						OR = {
-							holding_type = castle
-							holding_type = city
-						}
-					}
-				}
-			}
+			suitable_holdings_trigger = yes
 		}
 	}
 }
@@ -709,29 +633,27 @@ cb_decadence_usurption = {
 		ROOT = {
 			religion_group = muslim
 			religion = FROM
+			dynasty = FROM
 			mercenary = no
 			holy_order = no
+			NOT = { trait = decadent }
 		}
 
 		# Defender
 		FROM = {
 			trait = decadent
-			dynasty = ROOT
-
-			liege_before_war = {
-				character = ROOT
-			}
 		}
 	}
 
 	is_valid = {
+		# Attacker
+		ROOT = {
+			NOT = { trait = decadent }
+		}
+
 		# Defender
 		FROM = {
 			trait = decadent
-
-			liege_before_war = {
-				character = ROOT
-			}
 		}
 	}
 
@@ -740,7 +662,6 @@ cb_decadence_usurption = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -892,22 +813,18 @@ caliphal_subjugation = {
 	}
 
 	can_use_title = {
-		# Defender
-		FROM = {
-			num_of_realm_counties = {
-				value >= 1
-				title = PREV
-			}
+		# Defender must have at least 1 county within the target kingdom
+		num_title_realm_provs = {
+			value >= 1
+			who = FROM
 		}
 	}
 
 	is_valid_title = {
-		# Defender
-		FROM = {
-			num_of_realm_counties = {
-				value >= 1
-				title = PREV
-			}
+		# Defender must have at least 1 county within the target kingdom
+		num_title_realm_provs = {
+			value >= 1
+			who = FROM
 		}
 	}
 
@@ -924,7 +841,6 @@ caliphal_subjugation = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -999,7 +915,6 @@ caliphal_subjugation = {
 
 			prestige = 100
 			participation_scaled_prestige = 100
-			roman_victory_triumph_effect = yes
 		}
 
 		any_defender = {
@@ -1039,7 +954,7 @@ decadence_invasion = {
 	is_permanent = no # Disabled in CK2Plus
 	hostile_against_others = yes
 	can_ask_to_join_war = no
-	
+
 	can_use_gui = {
 		always = no # Disabled in CK2Plus
 	}
@@ -1052,7 +967,6 @@ decadence_invasion = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -1148,7 +1062,7 @@ decadence_invasion = {
 
 			hidden_effect = {
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_average_nickname_trigger = yes }
 
 					random_list = {
 						10 = { give_nickname = nick_the_decadent }
@@ -1156,7 +1070,6 @@ decadence_invasion = {
 						10 = { give_nickname = nick_the_ill_ruler }
 					}
 				}
-
 			}
 		}
 
@@ -1192,12 +1105,6 @@ decadence_invasion = {
 				narrative_event = {
 					id = 91241 # The ruling dynasty has been overthrown by ...
 				}
-			}
-
-			check_if_reconquista_finished_effect = yes
-
-			defender = {
-				landless_pope_effect = yes
 			}
 		}
 	}
@@ -1306,12 +1213,10 @@ shia_caliphate_rising = {
 	}
 
 	is_valid_title = {
-		# Defender
-		FROM = {
-			num_of_realm_counties = {
-				value >= 1
-				title = PREV
-			}
+		# Defender must have at least 1 county within the target kingdom
+		num_title_realm_provs = {
+			value >= 1
+			who = FROM
 		}
 
 		d_shiite = {
@@ -1320,7 +1225,6 @@ shia_caliphate_rising = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -1413,8 +1317,6 @@ shia_caliphate_rising = {
 
 					create_title = {
 						tier = KING
-						landless = no
-						temporary = no
 						custom_created = yes
 						culture = attacker
 						holder = attacker
@@ -1427,7 +1329,6 @@ shia_caliphate_rising = {
 				vassalize_or_take_under_title = {
 					title = PREV
 					enemy = defender
-					is_religious = yes
 					type = revolt
 				}
 

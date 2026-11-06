@@ -17,14 +17,15 @@ indian_group = {
 		graphical_culture = buddhistgfx
 		secondary_event_pictures = sunni
 
-		icon = 40
-		heresy_icon = 41
+		icon = 19
+		heresy_icon = 20
 
 		color = { 0.8 0.4 0.0 }
 
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 
+		crusade_name = GREAT_HOLY_WAR
 		piety_name = KARMA
 		priest_title = BHIKKHU
 		scripture_name = THE_BUDDHACAVANA
@@ -74,14 +75,15 @@ indian_group = {
 		graphical_culture = hindugfx
 		secondary_event_pictures = sunni
 
-		icon = 44
-		heresy_icon = 45
+		icon = 23
+		heresy_icon = 24
 
 		color = { 1.0 0.0 0.0 }
 
 		religious_clothing_head = 8
 		religious_clothing_priest = 8
 
+		crusade_name = GREAT_HOLY_WAR
 		piety_name = KARMA
 		priest_title = PUJARI
 		scripture_name = THE_MAHABHARATA
@@ -109,7 +111,7 @@ indian_group = {
 		unit_modifier = {
 			land_morale = 0.3
 
-			key = "OFF_RELIGION"
+			key = OFF_RELIGION
 		}
 
 		max_consorts = 3
@@ -131,14 +133,15 @@ indian_group = {
 		graphical_culture = jaingfx
 		secondary_event_pictures = sunni
 
-		icon = 42
-		heresy_icon = 43
+		icon = 21
+		heresy_icon = 22
 
 		color = { 1.0 1.0 0.4 }
 
 		religious_clothing_head = 9
 		religious_clothing_priest = 9
 
+		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_ANGAS_SUTRAS
 		priest_title = NIRGRANTHA
 		piety_name = PURITY
@@ -182,8 +185,8 @@ indian_group = {
 		secondary_event_pictures = sunni
 		has_coa_on_barony_only = yes
 
-		icon = 53
-		heresy_icon = 54
+		icon = 25
+		heresy_icon = 26
 
 		color = { 226 241 182 }
 
@@ -196,7 +199,8 @@ indian_group = {
 			muslim_interface
 		}
 
-		piety_name = PIETY_TE
+		crusade_name = GREAT_HOLY_WAR
+		piety_name = TE
 		priest_title = DAOSHI
 		scripture_name = TAO_TE_CHING
 

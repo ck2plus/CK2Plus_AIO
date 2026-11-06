@@ -26,13 +26,12 @@ on_yearly_pulse = {
 		# Former MTTH Events
 		100 = TOG.3109 # Child wants to join the Varangians (Son) - Formerly 200 month MTTH
 
-		# Replaced wholesale in Plus
-	#	oldgods_adventurers = {
-	#		970 = 0
-	#
-	#		20 = TOG.1200
-	#		10 = TOG.1210
-	#	}
+		oldgods_adventurers = {
+			970 = 0
+
+			20 = TOG.1200
+			10 = TOG.1210
+		}
 
 		holmgang_events = {
 			delay = 46

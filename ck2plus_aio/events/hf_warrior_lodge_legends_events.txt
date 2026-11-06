@@ -88,7 +88,7 @@ character_event = {
 		}
 		random_province = { # Because societies cannot process events...! D:
 			limit = {
-				is_land = yes
+				has_owner = yes
 				NOT = { has_province_flag = initiating_legendary_journey } # In case another lodge is simultaneously starting a legendary journey
 			}
 
@@ -166,7 +166,6 @@ province_event = {
 		}
 	}
 }
-
 
 # LEGEND START: Our warrior lodge is *legendary*. My brothers and sisters are saying we have a name to live up to! Or to make for ourselves!
 character_event = {
@@ -919,7 +918,6 @@ character_event = {
 	}
 }
 
-
 ### start_bracket events ###
 
 ## Prep phase: an artifact is given to you
@@ -1454,7 +1452,6 @@ character_event = {
 	}
 }
 
-
 ### mid_bracket events ###
 
 ### TRAVEL TO THE DISTANT LAND ###
@@ -1516,7 +1513,6 @@ character_event = {
 		}
 	}
 }
-
 
 ### top_bracket events ###
 
@@ -1900,7 +1896,6 @@ character_event = {
 		}
 	}
 
-
 	desc = {
 		text = EVTDESC_HF_12010_A # Someone is hunting! Aha!
 		picture = GFX_evt_bandits
@@ -2111,7 +2106,6 @@ character_event = {
 	}
 }
 
-
 ### AI ONLY: AI picks some targets to fight...
 character_event = {
 	id = HF.12100
@@ -2258,7 +2252,6 @@ character_event = {
 		clean_up_after_legendary_showdown_effect = yes
 	}
 }
-
 
 # PLAYER: Original hero (and other players involved in the chain) finds out their friend was imprisoned...
 character_event = {
@@ -2683,20 +2676,18 @@ character_event = {
 
 		add_blood_splatter_effect = yes
 
-		tooltip = {
-			event_target:other_combatant = {
-				show_scope_change = no
+		event_target:other_combatant = {
+			show_scope_change = no
 
+			tooltip = {
 				death = {
 					death_reason = death_duel
 					killer = ROOT
 				}
 			}
 
-			clean_up_after_duel_effect = yes
+			character_event = { id = HF.12201 } # "I was decapitated" event
 		}
-
-		event_target:other_combatant = { character_event = { id = HF.12201 } } #"I was decapitated" event
 	}
 }
 
@@ -2757,23 +2748,21 @@ character_event = {
 	#	}
 
 		if = {
-			limit = { multiplayer = yes }
+			limit = { character = event_target:combatant_1 } # if you instigated this...
 
-			if = {
-				limit = { character = event_target:combatant_1 } # if you instigated this...
-
-				death = {
-					death_reason = death_legendary_fail_duel # you died trying...
-					killer = event_target:other_combatant
-				}
-			}
-			else = {
-				death = {
-					death_reason = death_legendary_win_duel # you successfully killed someone on your hunt for glory!
-					killer = event_target:other_combatant
-				}
+			death = {
+				death_reason = death_legendary_fail_duel # you died trying...
+				killer = event_target:other_combatant
 			}
 		}
+		else = {
+			death = {
+				death_reason = death_legendary_win_duel # you successfully killed someone on your hunt for glory!
+				killer = event_target:other_combatant
+			}
+		}
+
+		clean_up_after_duel_effect = yes
 	}
 
 	option = {
@@ -2785,9 +2774,7 @@ character_event = {
 			show_portrait = event_target:target_ruler
 		}
 
-		if = {
-			limit = { multiplayer = no }
-
+		tooltip = {
 			if = {
 				limit = { character = event_target:combatant_1 } # if you instigated this...
 				death = {
@@ -2854,20 +2841,17 @@ character_event = {
 		}
 
 		if = {
-			limit = { multiplayer = yes }
-			if = {
-				limit = { character = event_target:combatant_1 } # if you instigated this...
+			limit = { character = event_target:combatant_1 } # if you instigated this...
 
-				death = {
-					death_reason = death_legendary_fail_duel # you died trying...
-					killer = event_target:combatant_2
-				}
+			death = {
+				death_reason = death_legendary_fail_duel # you died trying...
+				killer = event_target:combatant_2
 			}
-			else = {
-				death = {
-					death_reason = death_legendary_win_duel # you successfully killed someone on your hunt for glory!
-					killer = event_target:combatant_1
-				}
+		}
+		else = {
+			death = {
+				death_reason = death_legendary_win_duel # you successfully killed someone on your hunt for glory!
+				killer = event_target:combatant_1
 			}
 		}
 	}
@@ -2899,9 +2883,7 @@ character_event = {
 			}
 		}
 
-		if = {
-			limit = { multiplayer = no }
-
+		tooltip = {
 			if = {
 				limit = { character = event_target:combatant_1 } # if you instigated this...
 
@@ -2966,23 +2948,21 @@ character_event = {
 		}
 
 		if = {
-			limit = { multiplayer = yes }
+			limit = { character = event_target:combatant_1 } # if you instigated this...
 
-			if = {
-				limit = { character = event_target:combatant_1 } # if you instigated this...
-
-				death = {
-					death_reason = death_legendary_fail_duel # you died trying...
-					killer = event_target:combatant_2
-				}
-			}
-			else = {
-				death = {
-					death_reason = death_legendary_win_duel # you successfully killed someone on your hunt for glory!
-					killer = event_target:combatant_1
-				}
+			death = {
+				death_reason = death_legendary_fail_duel # you died trying...
+				killer = event_target:combatant_2
 			}
 		}
+		else = {
+			death = {
+				death_reason = death_legendary_win_duel # you successfully killed someone on your hunt for glory!
+				killer = event_target:combatant_1
+			}
+		}
+
+		clean_up_after_duel_effect = yes
 	}
 
 	option = {
@@ -3010,10 +2990,6 @@ character_event = {
 					killer = ROOT
 				}
 			}
-		}
-
-		if = {
-			limit = { multiplayer = no }
 
 			if = {
 				limit = { character = event_target:combatant_1 } # if you instigated this...
@@ -3030,11 +3006,8 @@ character_event = {
 				}
 			}
 		}
-
-		hidden_effect = { clean_up_after_duel_effect = yes }
 	}
 }
-
 
 # Cowardly display? Humiliation? - I won!
 character_event = {

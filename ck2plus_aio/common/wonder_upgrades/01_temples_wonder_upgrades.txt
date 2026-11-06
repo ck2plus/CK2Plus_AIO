@@ -490,11 +490,15 @@ upgrade_temple_guards = {
 upgrade_sacrificial_altar = {
 	picture = GFX_upgrade_icon_skulls
 
-	potential = { has_religion_feature = religion_ritual_sacrifice }
+	potential = {
+		religion_has_ritual_sacrifice_trigger = yes
+	}
 
 	allow = { }
 
-	active = { has_religion_feature = religion_ritual_sacrifice }
+	active = {
+		religion_has_ritual_sacrifice_trigger = yes
+	}
 
 	flags = {
 		is_singular
@@ -1125,10 +1129,10 @@ upgrade_school_synagogue = {
 		custom_modifier_text = culture_convertion_custom_modifier_tt
 	}
 }
+
 ##########################################
 ########### Buddhist Temple ##############
 ##########################################
-
 
 upgrade_chaitya-grihas = {
 	picture = GFX_upgrade_icon_crates
@@ -1459,7 +1463,6 @@ upgrade_votive_stupa = {
 ##########################################
 ############# Hindu Temple ###############
 ##########################################
-
 
 upgrade_high_gopura = {
 	picture = GFX_upgrade_icon_crates

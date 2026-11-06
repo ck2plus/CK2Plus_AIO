@@ -73,7 +73,6 @@
 
 # is_indomitable_trigger
 
-
 ######## To check for weapon types used...
 is_dueling_weapon_artifact_and_equipped = { # Meaning ranged weapons (except the handgun) and lances are excluded
 	has_artifact_flag = combat_weapon
@@ -189,7 +188,6 @@ is_using_gun_trigger = { # A gun!
 		}
 	}
 }
-
 
 ######## To check whether a character has dueled before...
 has_duel_exp_modifier_trigger = {
@@ -503,7 +501,7 @@ this_can_duel_with_from_trigger = {
 				OR = {
 					trait = brave
 					gender_equality_trigger = yes
-					has_religion_feature = religion_matriarchal
+					religion_is_matriarchal_trigger = yes
 					religion_group = pagan_group
 					is_nomadic = yes
 					religion = buddhist
@@ -513,7 +511,7 @@ this_can_duel_with_from_trigger = {
 				FROM = {
 					OR = {
 						gender_equality_trigger = yes
-						has_religion_feature = religion_matriarchal
+						religion_is_matriarchal_trigger = yes
 						religion_group = pagan_group
 						is_nomadic = yes
 						religion = buddhist
@@ -538,7 +536,7 @@ this_can_duel_with_from_trigger = {
 					OR = {
 						trait = brave
 						gender_equality_trigger = yes
-						has_religion_feature = religion_matriarchal
+						religion_is_matriarchal_trigger = yes
 						religion_group = pagan_group
 						is_nomadic = yes
 						religion = buddhist
@@ -548,7 +546,7 @@ this_can_duel_with_from_trigger = {
 					ROOT = {
 						OR = {
 							gender_equality_trigger = yes
-							has_religion_feature = religion_matriarchal
+							religion_is_matriarchal_trigger = yes
 							religion_group = pagan_group
 							is_nomadic = yes
 							religion = buddhist

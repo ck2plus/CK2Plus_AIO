@@ -4,7 +4,6 @@
 
 namespace = HF
 
-
 #############################################
 
 ## Alone ##
@@ -1170,24 +1169,22 @@ character_event = {
 
 			hidden_effect = { # If defeated a strong guy, gain nickname.
 				if = {
-					limit = {
-						this_has_average_nickname_trigger = no
-						this_has_cool_nickname_trigger = no
-						this_has_super_cool_nickname_trigger = no
-					}
+					limit = { can_apply_average_nickname_trigger = yes }
+
 					random_list = {
-						25 = { give_nickname = nick_the_strongarm }
-						25 = { give_nickname = nick_the_iron_grip }
-						25 = { give_nickname = nick_the_knuckle_slammer }
+						25 = { give_nickname = nick_strongarm }
+						25 = { give_nickname = nick_irongrip }
+						25 = { give_nickname = nick_knuckle_slammer }
 						25 = { give_nickname = nick_the_gods_arm }
 						25 = { give_nickname = nick_the_bone_squeezer }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_bull
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_butch
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_bull
+							}
+							else = {
+								give_nickname = nick_the_butch
+							}
 						}
 						15 = { }
 					}
@@ -1242,24 +1239,22 @@ character_event = {
 
 			hidden_effect = { # If defeated a strong guy, gain nickname.
 				if = {
-					limit = {
-						this_has_average_nickname_trigger = no
-						this_has_cool_nickname_trigger = no
-						this_has_super_cool_nickname_trigger = no
-					}
+					limit = { can_apply_average_nickname_trigger = yes }
+
 					random_list = {
-						25 = { give_nickname = nick_the_strongarm }
-						25 = { give_nickname = nick_the_iron_grip }
-						25 = { give_nickname = nick_the_knuckle_slammer }
+						25 = { give_nickname = nick_strongarm }
+						25 = { give_nickname = nick_irongrip }
+						25 = { give_nickname = nick_knuckle_slammer }
 						25 = { give_nickname = nick_the_gods_arm }
 						25 = { give_nickname = nick_the_bone_squeezer }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_bull
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_butch
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_bull
+							}
+							else = {
+								give_nickname = nick_the_butch
+							}
 						}
 						15 = { }
 					}
@@ -1411,17 +1406,19 @@ character_event = {
 
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_lame_nickname_trigger = yes }
+
 					random_list = {
 						25 = { give_nickname = nick_the_feeble }
 						25 = { give_nickname = nick_the_milkdrinker }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_girls_arm
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_flower
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_girl_arm
+							}
+							else = {
+								give_nickname = nick_the_flower
+							}
 						}
 						25 = { }
 					}
@@ -1503,19 +1500,19 @@ character_event = {
 
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = {
-						has_nickname = no
-					}
+					limit = { can_apply_lame_nickname_trigger = yes }
+
 					random_list = {
 						25 = { give_nickname = nick_the_feeble }
 						25 = { give_nickname = nick_the_milkdrinker }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_girls_arm
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_flower
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_girl_arm
+							}
+							else = {
+								give_nickname = nick_the_flower
+							}
 						}
 						25 = { }
 					}
@@ -4021,7 +4018,6 @@ character_event = {
 			character_event = { id = HF.25253 }
 		}
 
-
 		ai_chance = { factor = 10 }
 	}
 
@@ -4039,7 +4035,6 @@ character_event = {
 			character_event = { id = HF.25253 }
 		}
 
-
 		ai_chance = { factor = 20 }
 	}
 
@@ -4056,7 +4051,6 @@ character_event = {
 			set_flyting_patience_effect = yes
 			character_event = { id = HF.25253 }
 		}
-
 
 		ai_chance = {
 			factor = 30
@@ -5725,27 +5719,24 @@ character_event = {
 
 			hidden_effect = { # If defeated a strong guy, gain nickname.
 				if = {
-					limit = {
-						this_has_average_nickname_trigger = no
-						this_has_cool_nickname_trigger = no
-						this_has_super_cool_nickname_trigger = no
-					}
+					limit = { can_apply_average_nickname_trigger = yes }
 
 					random_list = {
-						25 = { give_nickname = nick_the_sharp_tongue }
+						25 = { give_nickname = nick_sharp_tongue }
 						25 = { give_nickname = nick_the_trickster }
 						25 = { give_nickname = nick_the_merciless }
 						25 = { give_nickname = nick_the_word_slayer }
 						25 = { give_nickname = nick_the_grinner }
-						25 = { give_nickname = nick_the_poison_tooth }
+						25 = { give_nickname = nick_poison_tooth }
 						25 = { give_nickname = nick_the_bellower }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_fox
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_vixen
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_fox
+							}
+							else = {
+								give_nickname = nick_the_vixen
+							}
 						}
 						25 = {
 							trigger = { society_member_of = warrior_lodge_west_african }
@@ -5800,26 +5791,24 @@ character_event = {
 
 			hidden_effect = { # If defeated a strong guy, gain nickname.
 				if = {
-					limit = {
-						this_has_average_nickname_trigger = no
-						this_has_cool_nickname_trigger = no
-						this_has_super_cool_nickname_trigger = no
-					}
+					limit = { can_apply_average_nickname_trigger = yes }
+
 					random_list = {
-						25 = { give_nickname = nick_the_sharp_tongue }
+						25 = { give_nickname = nick_sharp_tongue }
 						25 = { give_nickname = nick_the_trickster }
 						25 = { give_nickname = nick_the_merciless }
 						25 = { give_nickname = nick_the_word_slayer }
 						25 = { give_nickname = nick_the_grinner }
-						25 = { give_nickname = nick_the_poison_tooth }
+						25 = { give_nickname = nick_poison_tooth }
 						25 = { give_nickname = nick_the_bellower }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_fox
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_vixen
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_fox
+							}
+							else = {
+								give_nickname = nick_the_vixen
+							}
 						}
 						25 = {
 							trigger = { society_member_of = warrior_lodge_west_african }
@@ -5912,20 +5901,21 @@ character_event = {
 
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_lame_nickname_trigger = yes }
 
 					random_list = {
 						25 = { give_nickname = nick_the_short_tempered }
-						25 = { give_nickname = nick_the_red_cheeks }
+						25 = { give_nickname = nick_red_cheeks }
 						25 = { give_nickname = nick_the_whiner }
 						25 = { give_nickname = nick_the_moaner }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_blushing
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_shrinking_violet
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_blushing
+							}
+							else = {
+								give_nickname = nick_the_shrinking_violet
+							}
 						}
 						25 = { }
 					}
@@ -5951,7 +5941,6 @@ character_event = {
 			years = 1
 			hidden = yes
 		}
-
 
 		FROM = { character_event = { id = HFP.10095 days = 1 } } # Duel evaluation (hidden) + result event as follow-up.
 
@@ -6021,20 +6010,21 @@ character_event = {
 		else = {
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_lame_nickname_trigger = yes }
 
 					random_list = {
 						25 = { give_nickname = nick_the_short_tempered }
-						25 = { give_nickname = nick_the_red_cheeks }
+						25 = { give_nickname = nick_red_cheeks }
 						25 = { give_nickname = nick_the_whiner }
 						25 = { give_nickname = nick_the_moaner }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_blushing
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_shrinking_violet
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_blushing
+							}
+							else = {
+								give_nickname = nick_the_shrinking_violet
+							}
 						}
 						25 = { }
 					}
@@ -6098,20 +6088,21 @@ character_event = {
 
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_lame_nickname_trigger = yes }
 
 					random_list = {
 						25 = { give_nickname = nick_the_short_tempered }
-						25 = { give_nickname = nick_the_red_cheeks }
+						25 = { give_nickname = nick_red_cheeks }
 						25 = { give_nickname = nick_the_whiner }
 						25 = { give_nickname = nick_the_moaner }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_blushing
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_shrinking_violet
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_blushing
+							}
+							else = {
+								give_nickname = nick_the_shrinking_violet
+							}
 						}
 						25 = { }
 					}
@@ -6124,7 +6115,6 @@ character_event = {
 			who = FROM
 			years = 5
 		}
-
 
 		hidden_effect = {
 			society = {
@@ -6206,20 +6196,21 @@ character_event = {
 
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_lame_nickname_trigger = yes }
 
 					random_list = {
 						25 = { give_nickname = nick_the_short_tempered }
-						25 = { give_nickname = nick_the_red_cheeks }
+						25 = { give_nickname = nick_red_cheeks }
 						25 = { give_nickname = nick_the_whiner }
 						25 = { give_nickname = nick_the_moaner }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_blushing
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_shrinking_violet
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_blushing
+							}
+							else = {
+								give_nickname = nick_the_shrinking_violet
+							}
 						}
 						25 = { }
 					}
@@ -6279,20 +6270,21 @@ character_event = {
 
 			hidden_effect = { # If defeated by a weak guy, gain nickname.
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_lame_nickname_trigger = yes }
 
 					random_list = {
 						25 = { give_nickname = nick_the_short_tempered }
-						25 = { give_nickname = nick_the_red_cheeks }
+						25 = { give_nickname = nick_red_cheeks }
 						25 = { give_nickname = nick_the_whiner }
 						25 = { give_nickname = nick_the_moaner }
 						25 = {
-							trigger = { is_female = no }
-							give_nickname = nick_the_blushing
-						}
-						25 = {
-							trigger = { is_female = yes }
-							give_nickname = nick_the_shrinking_violet
+							if = {
+								limit = { is_female = no }
+								give_nickname = nick_the_blushing
+							}
+							else = {
+								give_nickname = nick_the_shrinking_violet
+							}
 						}
 						25 = { }
 					}
@@ -6787,12 +6779,12 @@ character_event = {
 			}
 
 			if = {
-				limit = { has_nickname = no }
+				limit = { can_apply_lame_nickname_trigger = yes }
 
 				random_list = {
 					15 = { give_nickname = nick_the_cheater }
 					15 = { give_nickname = nick_the_liar }
-					15 = { give_nickname = nick_the_dry_throat }
+					15 = { give_nickname = nick_dry_throat }
 					70 = { }
 				}
 			}
@@ -6843,13 +6835,10 @@ character_event = {
 
 		hidden_effect = {
 			if = {
-				limit = {
-					this_has_average_nickname_trigger = no
-					this_has_cool_nickname_trigger = no
-					this_has_super_cool_nickname_trigger = no
-				}
+				limit = { can_apply_average_nickname_trigger = yes }
+
 				random_list = {
-					10 = { give_nickname = nick_the_hundred_flagons }
+					10 = { give_nickname = nick_hundred_flagons }
 					10 = { give_nickname = nick_the_bottomless }
 					80 = { }
 				}
@@ -6884,13 +6873,10 @@ character_event = {
 
 		hidden_effect = {
 			if = {
-				limit = {
-					this_has_average_nickname_trigger = no
-					this_has_cool_nickname_trigger = no
-					this_has_super_cool_nickname_trigger = no
-				}
+				limit = { can_apply_average_nickname_trigger = yes }
+
 				random_list = {
-					10 = { give_nickname = nick_the_hundred_flagons }
+					10 = { give_nickname = nick_hundred_flagons }
 					10 = { give_nickname = nick_the_bottomless }
 					80 = { }
 				}

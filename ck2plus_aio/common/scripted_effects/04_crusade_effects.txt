@@ -15,8 +15,6 @@
 # alternate_crusade_artifact_distribution_effect
 # reconquista_win_effect
 # reconquista_lose_effect
-# check_if_reconquista_finished_effect
-# check_war_effect
 # move_childrens_crusade_region_effect
 
 # Referenced by the "Join Crusade" button in the Crusade view for Crusades using the new Crusade system
@@ -66,7 +64,7 @@ unpledge_crusade_effect = {
 	}
 
 	trigger_switch = {
-		on_trigger = tier
+		on_trigger = real_tier
 
 		EMPEROR = { add_to_crusade_prestige_pot = -2000 add_to_crusade_piety_pot = -800 }
 		KING    = { add_to_crusade_prestige_pot = -1000 add_to_crusade_piety_pot = -400 }
@@ -103,7 +101,7 @@ contribute_to_crusade_pot_effect = {
 	character_event = { id = HFP.41088 }
 }
 
-# Referenced by getting artifacts from a Crusade
+# Referenced in code by distribute_crusade_pot
 crusade_give_artifact_effect = {
 	crusade_target_title = {
 		save_event_target_as = crusade_title
@@ -458,7 +456,7 @@ select_crusade_receiver_stance_effect = {
 # Crusader King/Queen set up
 setting_up_the_crusader_kingdom_effect = {
 	if = {
-		limit = { can_apply_average_nickname_trigger = yes }
+		limit = { can_apply_cool_nickname_trigger = yes }
 
 		random_list = {
 			10 = { give_nickname = nick_the_crusader }
@@ -536,12 +534,7 @@ setting_up_the_crusader_kingdom_effect = {
 	}
 
 	any_realm_lord = {
-		limit = {
-			NOR = {
-				government = theocracy_government
-				government = republic_government
-			}
-		}
+		limit = { is_feudal = yes }
 
 		primary_title = {
 			add_law = {
@@ -1185,14 +1178,12 @@ reconquista_win_effect = {
 		if = {
 			limit = {
 				event_target:first_duchy_title = {
+					is_primary_holder_title = no
+
 					holder_scope = {
 						OR = {
 							character = defender
-							is_liege_or_above = defender
-						}
-
-						primary_title = {
-							NOT = { title = PREVPREV }
+							is_vassal_or_below_of = defender
 						}
 					}
 				}
@@ -1204,14 +1195,12 @@ reconquista_win_effect = {
 		if = {
 			limit = {
 				event_target:second_duchy_title = {
+					is_primary_holder_title = no
+
 					holder_scope = {
 						OR = {
 							character = defender
-							is_liege_or_above = defender
-						}
-
-						primary_title = {
-							NOT = { title = PREVPREV }
+							is_vassal_or_below_of = defender
 						}
 					}
 				}
@@ -1223,14 +1212,12 @@ reconquista_win_effect = {
 		if = {
 			limit = {
 				event_target:third_duchy_title = {
+					is_primary_holder_title = no
+
 					holder_scope = {
 						OR = {
 							character = defender
-							is_liege_or_above = defender
-						}
-
-						primary_title = {
-							NOT = { title = PREVPREV }
+							is_vassal_or_below_of = defender
 						}
 					}
 				}
@@ -1266,7 +1253,6 @@ reconquista_win_effect = {
 		#						title = event_target:first_duchy_title
 		#						enemy = defender
 		#						same_religion = yes # Only vassalize rulers of my religion
-		#						is_religious = yes
 		#						type = holy_war
 		#					}
 		#				}
@@ -1284,7 +1270,6 @@ reconquista_win_effect = {
 		#						title = event_target:second_duchy_title
 		#						enemy = defender
 		#						same_religion = yes # Only vassalize rulers of my religion
-		#						is_religious = yes
 		#						type = holy_war
 		#					}
 		#				}
@@ -1302,7 +1287,6 @@ reconquista_win_effect = {
 		#						title = event_target:third_duchy_title
 		#						enemy = defender
 		#						same_religion = yes # Only vassalize rulers of my religion
-		#						is_religious = yes
 		#						type = holy_war
 		#					}
 		#				}
@@ -1319,7 +1303,7 @@ reconquista_win_effect = {
 		#							holder_scope = {
 		#								OR = {
 		#									character = defender
-		#									is_liege_or_above = defender
+		#									is_vassal_or_below_of = defender
 		#								}
 		#							}
 		#						}
@@ -1343,7 +1327,7 @@ reconquista_win_effect = {
 		#							holder_scope = {
 		#								OR = {
 		#									character = defender
-		#									is_liege_or_above = defender
+		#									is_vassal_or_below_of = defender
 		#								}
 		#							}
 		#						}
@@ -1366,7 +1350,7 @@ reconquista_win_effect = {
 		#							holder_scope = {
 		#								OR = {
 		#									character = defender
-		#									is_liege_or_above = defender
+		#									is_vassal_or_below_of = defender
 		#								}
 		#							}
 		#						}
@@ -1389,7 +1373,7 @@ reconquista_win_effect = {
 		#							holder_scope = {
 		#								OR = {
 		#									character = defender
-		#									is_liege_or_above = defender
+		#									is_vassal_or_below_of = defender
 		#								}
 		#							}
 		#						}
@@ -1467,8 +1451,18 @@ reconquista_win_effect = {
 		#		attacker = {
 		#			show_scope_change = no
 		#
-		#			make_tributary = {
-		#				who = PREV
+		#			if = {
+		#				limit = {
+		#					OR = {
+		#						has_dlc = "Horse Lords"
+		#						has_dlc = "Jade Dragon"
+		#					}
+		#				}
+		#
+		#					make_tributary = {
+		#						who = PREV
+		#					}
+		#				}
 		#			}
 		#		}
 		#	}
@@ -1486,7 +1480,6 @@ reconquista_win_effect = {
 							title = event_target:first_duchy_title
 							enemy = defender
 							same_religion = yes # Only vassalize rulers of my religion
-							is_religious = yes
 							type = holy_war
 						}
 					}
@@ -1504,7 +1497,6 @@ reconquista_win_effect = {
 							title = event_target:second_duchy_title
 							enemy = defender
 							same_religion = yes # Only vassalize rulers of my religion
-							is_religious = yes
 							type = holy_war
 						}
 					}
@@ -1522,7 +1514,6 @@ reconquista_win_effect = {
 							title = event_target:third_duchy_title
 							enemy = defender
 							same_religion = yes # Only vassalize rulers of my religion
-							is_religious = yes
 							type = holy_war
 						}
 					}
@@ -1539,7 +1530,7 @@ reconquista_win_effect = {
 								holder_scope = {
 									OR = {
 										character = defender
-										is_liege_or_above = defender
+										is_vassal_or_below_of = defender
 									}
 								}
 							}
@@ -1563,7 +1554,7 @@ reconquista_win_effect = {
 								holder_scope = {
 									OR = {
 										character = defender
-										is_liege_or_above = defender
+										is_vassal_or_below_of = defender
 									}
 								}
 							}
@@ -1586,7 +1577,7 @@ reconquista_win_effect = {
 								holder_scope = {
 									OR = {
 										character = defender
-										is_liege_or_above = defender
+										is_vassal_or_below_of = defender
 									}
 								}
 							}
@@ -1609,7 +1600,7 @@ reconquista_win_effect = {
 								holder_scope = {
 									OR = {
 										character = defender
-										is_liege_or_above = defender
+										is_vassal_or_below_of = defender
 									}
 								}
 							}
@@ -1758,8 +1749,6 @@ reconquista_win_effect = {
 			}
 		}
 
-		check_if_reconquista_finished_effect = yes
-
 		character_event = { id = HF.49200 }
 	}
 }
@@ -1861,60 +1850,6 @@ reconquista_lose_effect = {
 			}
 		}
 	}
-}
-
-check_if_reconquista_finished_effect = {
-	if = {
-		limit = {
-			NOR = {
-				has_global_flag = reconquista_finished
-
-				any_province = {
-					county = {
-						OR = {
-							region = custom_leon
-							region = custom_galicia
-							region = custom_beja
-							region = custom_granada
-							region = custom_castille
-							region = custom_cordoba
-							region = custom_valencia
-							region = custom_navarra
-							region = custom_balearic
-						}
-					}
-
-					owner = {
-						trigger_if = {
-							limit = { independent = yes }
-							NOT = { religion_group = christian }
-						}
-						trigger_else = {
-							top_liege = {
-								NOT = { religion_group = christian }
-							}
-						}
-					}
-				}
-			}
-		}
-
-		set_global_flag = reconquista_finished
-
-		ROOT = {
-			narrative_event = { id = HF.49452 }
-		}
-
-		any_playable_ruler = {
-			narrative_event = { id = HF.49452 }
-		}
-	}
-}
-
-# TODO: rename poorly named effect?
-check_war_effect = {
-	check_if_reconquista_finished_effect = yes
-	check_holy_order_donation_effect = yes
 }
 
 move_childrens_crusade_region_effect = {

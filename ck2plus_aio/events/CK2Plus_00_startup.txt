@@ -1,0 +1,826 @@
+#####################################
+#
+#	001 - 100: Start-up events
+#
+#####################################
+#
+#	INDEX
+#
+#	001: New-game set-up
+#	002: Apply Plus game rules
+#	003: Apply Ruler Designer fixes
+#	004: Ruler Designer fixes that require a delay
+#	005: Ironman and Checksum warning
+#
+#####################################
+
+namespace = plus.start
+
+character_event = {
+	id = plus.start.001
+
+	hide_window = yes
+	is_triggered_only = yes # on_startup
+
+	only_playable = yes
+
+	trigger = {
+		owns = event_target:pulse_province
+		is_save_game = no
+	}
+
+	immediate = {
+		log = "plus.start.001"
+
+		# Make sure the HRE and Carolingian Empire aren't active at the same time
+		if = {
+			limit = { NOT = { has_global_flag = hre_formed } }
+			log = "HRE Correction Initiating"
+
+			if = {
+				limit = { e_hre = { is_titular = no } }
+
+				any_title = {
+					limit = { de_jure_liege = e_hre }
+
+					if = {
+						limit = { has_global_flag = carolingian_empire_fallen }
+						de_jure_liege = e_placeholder
+					}
+					else = {
+						de_jure_liege = e_karling
+					}
+				}
+			}
+			activate_title = {
+				title = e_hre
+				status = no
+			}
+		}
+		else_if = {
+			limit = { is_title_active = e_karling }
+
+			activate_title = {
+				title = e_karling
+				status = no
+			}
+		}
+
+		# Mark exceptions to Crown Authority destruction rule
+		log = "Marking Crown Law Exceptions"
+		any_landed_title = {
+			limit = {
+				has_law = crown_authority_0
+				NOT = { has_title_flag = do_not_destroy }
+			}
+
+			set_title_flag = do_not_destroy
+		}
+
+		# Hand out coronation traits to independent feudal kings and emperors
+		log = "Distributing crown traits"
+		crown_distribution = yes
+
+		# Imperial Decadence setup
+		log = "Imperial Decadence setup"
+		imperial_decadence_setup = yes
+
+		# Adjust necessary CoAs for some titles
+		log = "CoA Adjustment"
+		set_byzantium_name = yes
+		set_english_coas = yes
+		set_carpathia_coas = yes
+		set_finland_coas = yes
+
+		# Remove irrelevant claims
+		log = "Claim Cleanup"
+		remove_irrelevant_claims = yes
+	}
+
+	after = {
+		log = "Initial Setup Complete"
+		character_event = { id = plus.start.002 } # Apply Plus game rules
+		character_event = { id = CombatTraits.600 } # Hand out combat traits (TODO: Move to on_actions?)
+		any_player = {
+			character_event = { id = plus.start.003 } # Ruler designer cleanup
+			narrative_event = { id = plus.start.005 } # Ironman/Checksum warning
+		}
+
+		# State of the empire
+		e_byzantium = {
+			holder_scope = {
+				narrative_event = { id = Plus.1300 }
+			}
+		}
+	}
+}
+
+character_event = { # Apply Plus game rules
+	id = plus.start.002
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		NOT = { has_global_flag = plus_rules_applied }
+	}
+
+	immediate = {
+		set_global_flag = plus_rules_applied
+		log = "Applying Plus game rules"
+
+		### DE JURE EMPIRES ###
+		if = {
+			limit = {
+				has_game_rule = {
+					name = vanilla_empires
+					value = no
+				}
+			}
+
+			any_landed_title = {
+				limit = {
+					real_tier = EMPEROR
+					is_titular = no
+					has_holder = no
+
+					NOR = {
+						any_claimant = { always = yes }
+						title = e_byzantium
+						title = e_karling
+						title = e_hre
+					}
+				}
+
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_placeholder
+				}
+			}
+
+			# Manual adjustments
+			k_brittany = { de_jure_liege = e_placeholder }
+			k_armenia = { de_jure_liege = e_placeholder }
+			k_georgia = { de_jure_liege = e_placeholder }
+			k_serbia = { de_jure_liege = e_placeholder }
+
+			if = {
+				limit = { start_date < 843.8.10 } # Treaty of Verdun
+				k_germany = { de_jure_liege = e_francia }
+			}
+
+			if = {
+				limit = { start_date >= 962.2.2 } # HRE formed
+				k_burgundy = { de_jure_liege = e_placeholder }
+			}
+
+			if = {
+				limit = { e_bulgaria = { is_titular = yes } }
+				k_bulgaria = { de_jure_liege = e_placeholder }
+			}
+
+			if = {
+				limit = { start_date >= 1204.1.1 }
+				k_anatolia = { de_jure_liege = e_placeholder }
+			}
+
+			if = {
+				limit = { start_date >= 1326.1.1 }
+				k_trebizond = { de_jure_liege = e_placeholder }
+			}
+		}
+
+		### CRUSADE DELAY ###
+		if = {
+			limit = {
+				has_game_rule = {
+					name = crusade_timing
+					value = activate_immediately
+				}
+			}
+
+			set_global_flag = muslim_jihads_unlocked
+			set_global_flag = christian_crusades_unlocked
+			set_global_flag = pagan_ghws_unlocked
+		}
+
+		### GOVERNMENT CONVERSION
+		if = {
+			limit = {
+				has_game_rule = {
+					name = government_conversion
+					value = gofeudal
+				}
+			}
+
+			any_province = {
+				limit = { has_tribal = yes }
+
+				any_province_holding = {
+					limit = { holding_type = tribal }
+					convert_to = castle
+					refill_holding_levy = yes
+				}
+
+				add_province_modifier = {
+					name = new_buildings_timer
+					years = 100
+					hidden = yes
+				}
+
+				owner = {
+					if = {
+						limit = { is_tribal = yes }
+						set_correct_feudal_government_type_effect = yes
+					}
+
+					any_demesne_title = {
+						if = {
+							limit = { is_crown_law_title = yes }
+							set_title_flag = do_not_destroy
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = government_conversion
+					value = gotribal
+				}
+			}
+
+			any_province = {
+				limit = { has_tribal = no }
+
+				capital_holding = {
+					convert_to = tribal
+					refill_holding_levy = yes
+				}
+
+				any_province_holding = {
+					limit = {
+						OR = {
+							holding_type = castle
+							holding_type = city
+						}
+					}
+
+					destroy_settlement = THIS
+				}
+
+				owner = {
+					if = {
+						limit = { is_theocracy = no }
+						set_government_type = tribal_government
+					}
+				}
+			}
+		}
+
+		### NEW WORLD ORDER
+		# TODO: Remove in favor of vanilla Shattered World and tweaks to it
+		#if = {
+		#	limit = {
+		#		has_game_rule = {
+		#			name = new_world_order
+		#			value = yes
+		#		}
+		#	}
+		#
+		#	character_event = { id = emf_nwo.0 }
+		#}
+
+		### ANCIENT RELIGIONS - Handled through NWO if NWO is enabled
+		# TODO: convert to Alternate Start setting
+		if = {
+			limit = {
+				NOT = {
+					has_game_rule = {
+						name = ancient_religions
+						value = no
+					}
+				}
+			}
+
+			character_event = { id = plus.start.007 }
+		}
+
+		### BABY PORTRAITS ###
+		if = {
+			limit = {
+				has_game_rule = {
+					name = baby_portraits
+					value = yes
+				}
+			}
+
+			any_character = {
+				limit = {
+					age < 3
+
+					NOR = {
+						trait = baby_boy_fair
+						trait = baby_boy_tanned
+						trait = baby_boy_dark
+						trait = baby_boy_darker
+						trait = baby_girl_fair
+						trait = baby_girl_tanned
+						trait = baby_girl_dark
+						trait = baby_girl_darker
+					}
+				}
+
+				assign_baby_portrait_effect = yes # Automatically choses the proper trait based on gender & ethnicity
+			}
+		}
+	}
+}
+
+character_event = { # Apply Ruler Designer fixes
+	id = plus.start.003
+
+	is_triggered_only = yes # plus.start.001
+	hide_window = yes
+
+	immediate = {
+		# Fix RD Immortal
+		if = {
+			limit = { trait = immortal }
+
+			remove_trait = immortal
+			add_trait = immortal
+		}
+
+		# Fix fired councilor opinions on game start due to new ruler
+		if = {
+			limit = { ruled_years <= 1 } # Check for RD character. May not be needed as Ruler Designer no longer empties council
+
+			any_courtier_or_vassal = {
+				limit = {
+					has_opinion_modifier = {
+						name = opinion_recently_fired
+						who = PREV
+					}
+				}
+
+				remove_opinion = {
+					name = opinion_recently_fired
+					who = PREV
+				}
+			}
+		}
+	}
+
+	after = {
+		character_event = { id = plus.start.004 days = 7 } # RD fixes that require a delay
+	}
+}
+
+character_event = { # Ruler Designer fixes that require a delay
+	id = plus.start.004
+
+	is_triggered_only = yes # plus.start.003
+	hide_window = yes
+
+	immediate = {
+		# Remove RD Traits
+		if = {
+			limit = {
+				trait = customize_ruler
+				NOT = { has_character_flag = customizing_ruler }
+			}
+
+			remove_trait = customize_ruler
+		}
+
+		if = {
+			limit = { trait = minority_culture }
+
+			save_event_target_as = minority_culture
+			remove_trait = minority_culture
+
+			if = {
+				limit = {
+					top_liege = {
+						NOT = {
+							any_realm_province = {
+								culture = event_target:minority_culture
+								held_under_PREV = yes
+							}
+						}
+					}
+				}
+
+				capital_scope = {
+					culture = event_target:minority_culture
+
+					any_neighbor_province = {
+						if = {
+							limit = { owned_by = event_target:minority_culture }
+
+							random = {
+								chance = 50
+								culture = event_target:minority_culture
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+narrative_event = { # Ironman and checksum warning
+	id = plus.start.005
+
+	is_triggered_only = yes # plus.start.001
+
+	trigger = {
+		# OR = {
+			is_ironman = yes
+			# supported_checksum = no # disabled during beta
+		# }
+	}
+
+	title = EVTNAME_Plus_1752 # WARNING!
+
+	desc = {
+		trigger = {
+			always = no # disabled during beta
+			is_ironman = yes
+			supported_checksum = no
+		}
+
+		text = EVTDESC_Plus_1752 #EVTDESC_A_startPlus_005 # TODO: Write something for this
+	}
+
+	desc = {
+		trigger = {
+			is_ironman = yes
+			supported_checksum = yes
+		}
+
+		text = EVTDESC_Plus_1752
+	}
+
+	desc = {
+		trigger = {
+			always = no # disabled during beta
+			is_ironman = no
+			supported_checksum = no
+		}
+
+		text = EVTDESC_Plus_372
+	}
+
+	desc = {
+		trigger = {
+			is_ironman = no
+			supported_checksum = yes
+		}
+
+		text = "I shouldn't be here. Please tell the mod devs."
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+# Notify Player of normal end date
+character_event = {
+	id = plus.start.006
+	desc = EVTDESC_Plus_2706
+	picture = GFX_evt_game_over
+
+	is_triggered_only = yes # on_yearly_pulse
+	hide_from = yes
+
+	ai = no
+
+	trigger = {
+		year >= 1453
+		NOT = { has_global_flag = players_informed_of_end }
+	}
+
+	immediate = {
+		set_global_flag = players_informed_of_end
+	}
+
+	option = {
+		name = EVTOPTA_Plus_2706 # Just a bit longer!
+	}
+}
+
+character_event = { # This event sets up Ancient Religions before conversion (TODO: Move to Alternate Start option)
+	id = plus.start.007
+
+	is_triggered_only = yes # plus.start.002
+	hide_window = yes
+
+	trigger = {
+		NOT = { has_global_flag = ancient_religions_start }
+	}
+
+	immediate = {
+		set_global_flag = ancient_religions_start
+
+		# First deal with the religious heads
+		destroy_landed_title = d_sunni
+		destroy_landed_title = d_shiite
+
+		if = {
+			limit = {
+				NOT = {
+					has_game_rule = {
+						name = ancient_religions
+						value = specific_provinces
+					}
+				}
+			}
+
+			# Distribute the pope's titles
+			k_papacy = {
+				holder_scope = {
+					any_vassal = {
+						limit = { higher_real_tier_than = BARON }
+						set_defacto_liege = THIS
+						save_event_target_as = holder_of_papal_lands
+					}
+
+					any_demesne_title = {
+						limit = {
+							OR = {
+								real_tier = COUNT
+								real_tier = DUKE
+							}
+						}
+
+						grant_title_no_opinion = event_target:holder_of_papal_lands
+					}
+
+					any_demesne_title = {
+						limit = { real_tier = BARON }
+
+						create_character = {
+							random_traits = yes
+							age = 21
+							female = no
+							culture = PREVPREV
+							religion = PREVPREV
+							dynasty = random
+						}
+
+						new_character = {
+							grant_title_no_opinion = PREV
+							set_defacto_liege = THIS
+						}
+					}
+				}
+			}
+		}
+
+		# Does the HRE exist? If so we have some cleaning up to do. First switch it to the German empire
+		if = {
+			limit = {
+				e_hre = {
+					has_holder = yes
+
+					OR = {
+						NOT = {
+							has_game_rule = {
+								name = ancient_religions
+								value = specific_provinces
+							}
+						}
+
+						capital_scope = {
+							OR = {
+								region = custom_germany
+								region = custom_frisia
+							}
+						}
+					}
+				}
+			}
+
+			e_hre = {
+				holder_scope = {
+					save_event_target_as = hre_kaiser
+
+					if = {
+						limit = { trait = crowned_by_pope }
+						remove_trait = crowned_by_pope
+						add_trait = crowned # Lets keep ordinary trait here, papal coronation shouldn't matter to pagans.
+					}
+				}
+			}
+
+			e_germania = {
+				if = { # Activate e_germania if needed
+					limit = { NOT = { is_title_active = THIS } }
+
+					activate_title = {
+						title = THIS
+						status = yes
+					}
+				}
+
+				# Copy the HRE's laws to Germany
+				set_title_flag = non_manual_law_change # No prestige loss
+				copy_title_laws = e_hre
+				gain_title = event_target:hre_kaiser
+				make_primary_title = yes
+				clr_title_flag = non_manual_law_change # No prestige loss
+			}
+
+			e_hre = {
+				# Replace e_hre claims with e_germania claims
+				any_claimant = {
+					if = {
+						limit = { has_strong_pressed_claim = e_hre }
+						add_pressed_claim = e_germania
+						remove_claim = e_hre
+					}
+					else_if = {
+						limit = { has_strong_claim = e_hre }
+						add_claim = e_germania
+						remove_claim = e_hre
+					}
+					else_if = {
+						limit = { has_weak_pressed_claim = e_hre }
+						add_weak_pressed_claim = e_germania
+						remove_claim = e_hre
+					}
+					else_if = {
+						limit = { has_weak_claim = e_hre }
+						add_weak_claim = e_germania
+						remove_claim = e_hre
+					}
+				}
+
+				# Migrate over the HRE's de Jure vassals
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_germania
+				}
+
+				destroy_landed_title = yes
+			}
+		}
+
+		# Now that the world is set up, convert them all to Ancient Relgions
+		any_independent_ruler = {
+			any_realm_province = {
+				limit = {
+					OR = {
+						has_castle = yes
+						has_temple = yes
+						has_city = yes
+						has_tribal = yes
+					}
+
+					held_under_PREV = yes
+				}
+
+				if = {
+					limit = {
+						has_game_rule = {
+							name = ancient_religions
+							value = regions
+						}
+					}
+
+					emf_nwo_generate_ancient_religion_provinces_region = yes
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_game_rule = {
+								name = ancient_religions
+								value = cultures
+							}
+
+							has_game_rule = {
+								name = ancient_religions
+								value = cultures_characters
+							}
+						}
+					}
+
+					emf_nwo_generate_ancient_religion_provinces_culture = yes
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							name = ancient_religions
+							value = specific_provinces
+						}
+					}
+
+					emf_nwo_generate_ancient_religion_provinces_specific = yes
+				}
+			}
+
+			# This will convert all the characters of the world to appropriate religions
+			if = {
+				limit = {
+					capital_scope = {
+						has_province_flag = ar_setup
+					}
+				}
+
+				# Change religion based on culture
+				if = {
+					limit = {
+						has_game_rule = {
+							name = ancient_religions
+							value = cultures_characters
+						}
+					}
+
+					capital_scope = {
+						emf_nwo_generate_ancient_religion_province_character_culture = yes # save target_religion
+						religion = event_target:target_religion
+					}
+
+					if = {
+						limit = { event_target:target_religion = { always = yes } }
+						convert_religion_failsafe_effect = yes # use_target_religion
+					}
+
+					any_courtier = {
+						limit = { is_ruler = no }
+
+						emf_nwo_generate_ancient_religion_province_character_culture = yes # save target_religion
+
+						if = {
+							limit = { event_target:target_religion = { always = yes } }
+							convert_religion_failsafe_effect = yes # use_target_religion
+						}
+					}
+
+					any_realm_lord = {
+						emf_nwo_generate_ancient_religion_province_character_culture = yes # save target_religion
+
+						if = {
+							limit = { event_target:target_religion = { always = yes } }
+							convert_religion_failsafe_effect = yes # use_target_religion
+						}
+
+						any_courtier = {
+							limit = { is_ruler = no }
+
+							emf_nwo_generate_ancient_religion_province_character_culture = yes # save target_religion
+
+							if = {
+								limit = { event_target:target_religion = { always = yes } }
+								convert_religion_failsafe_effect = yes # use_target_religion
+							}
+						}
+					}
+				}
+				else = {
+					# change religion of independent ruler based on their capital
+					capital_scope = {
+						religion_scope = { save_event_target_as = target_religion }
+					}
+
+					convert_religion_failsafe_effect = yes
+
+					# Match courtier religion to liege religion
+					any_courtier = {
+						limit = { is_ruler = no }
+						religion = liege
+					}
+
+					# Match vassal religion to top liege religion
+					any_realm_lord = {
+						capital_scope = { religion_scope = { save_event_target_as = target_religion } }
+						convert_religion_failsafe_effect = yes
+
+						# Match courtier religion to liege religion
+						any_courtier = {
+							limit = { is_ruler = no }
+							religion = liege
+						}
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_game_rule = {
+					name = ancient_religions
+					value = cultures_characters
+				}
+			}
+
+			set_mercenaries_to_ar_culture_effect = yes # Set mercenaries to ancient religions based on their culture
+		}
+		else = {
+			set_mercenaries_to_ar_effect = yes # Set mercenaries to ancient religions based on their capital
+		}
+	}
+}

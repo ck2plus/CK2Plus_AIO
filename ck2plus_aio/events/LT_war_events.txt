@@ -2,7 +2,6 @@
 
 namespace = LT
 
-
 #############################################################
 # Time of Anarchy - Stephen usurps the throne of England    #
 #############################################################
@@ -109,7 +108,6 @@ narrative_event = {
 			title = k_england
 			enemy = event_target:matilda
 			# same_religion = yes # Only vassalize rulers of my religion
-			# is_religious = yes
 			type = host
 		}
 
@@ -153,7 +151,6 @@ narrative_event = {
 	}
 }
 
-
 # Matilda receives the news that Stephen and the other nobles support her
 narrative_event = {
 	id = LT.21120
@@ -184,7 +181,7 @@ narrative_event = {
 	}
 }
 
-# News of Matilde ascension to the throne are broadcast
+# News of Matilda's ascension to the throne is broadcast
 narrative_event = {
 	id = LT.21121
 	title = EVTTITLE_LT_21110
@@ -215,7 +212,6 @@ narrative_event = {
 		name = EVTOPTA_LT_21130 # I will fight
 	}
 }
-
 
 # Matilda's spouse receives news that Stephen usurped her throne
 narrative_event = {

@@ -74,7 +74,7 @@
 }
 
 651.1.1 = {
-	holder = 252174 # Îthelwald
+	holder = 252174 # Æthelwald
 }
 
 655.1.1 = {
@@ -201,6 +201,7 @@
 
 1070.1.1 = {
 	holder = 356 # Alain 'Rufus' de Penthièvre
+	liege = k_england
 }
 
 1089.1.1 = {

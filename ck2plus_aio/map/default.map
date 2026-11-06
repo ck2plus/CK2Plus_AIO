@@ -131,8 +131,6 @@ major_rivers = {
 
 	# Africa
 	1877 # Lake Chad
-
-	1878 1879 1880 1881 1882 1883 1884 1885 1886 # Caspian Sea (if turned into sea_zone and ocean_region, trade posts can be built there from Atlantic ocean and vice versa)
 }
 
 externals = {

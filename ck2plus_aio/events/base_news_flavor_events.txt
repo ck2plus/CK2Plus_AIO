@@ -22,13 +22,14 @@ narrative_event = {
 	only_playable = yes
 
 	trigger = {
+		is_alternate_start = no
 		has_landed_title = c_jerusalem
 		year >= 1300
 
 		capital_scope = {
 			NOR = {
 				region = world_steppe
-				region = world_persia
+				region = world_middle_east_persia
 				region = world_india
 			}
 		}

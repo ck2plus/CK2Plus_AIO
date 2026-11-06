@@ -190,7 +190,7 @@ character_event = {
 				trigger = {
 					is_member_of_any_warrior_lodge_trigger = yes
 					has_dlc = "Holy Fury"
-					has_nickname = no
+					can_apply_average_nickname_trigger = yes
 				}
 
 				good_soldier_outcome_score = yes
@@ -293,7 +293,7 @@ character_event = {
 					has_dlc = "Holy Fury"
 
 					OR = {
-						has_nickname = no
+						can_apply_average_nickname_trigger = yes
 						trait = depressed
 						trait = stressed
 					}
@@ -1032,28 +1032,25 @@ character_event = {
 			clr_character_flag = temp_battle_kill_242 # For handling old TOG-events...
 		}
 
+		# Actual death
+		set_character_flag = is_battlefield_duel
+		debug_battle_death_counter_effect = yes # For debug purposes
+
 		if = {
-			limit = { multiplayer = yes }
-
-			set_character_flag = is_battlefield_duel
-			debug_battle_death_counter_effect = yes # For debug purposes
-
-			if = {
-				limit = { # If it does *not* make sense that the enemy_commander killed home_commander...
-					OR = {
-						is_vassal_or_below_of = event_target:enemy_commander
-						character = event_target:enemy_commander
-						NOT = { event_target:enemy_commander = { always = yes } }
-					}
+			limit = { # If it does *not* make sense that the enemy_commander killed home_commander...
+				OR = {
+					is_vassal_or_below_of = event_target:enemy_commander
+					character = event_target:enemy_commander
+					NOT = { event_target:enemy_commander = { always = yes } }
 				}
-
-				death = { death_reason = death_battle }
 			}
-			else = {
-				death = {
-					death_reason = death_battle
-					killer = event_target:enemy_commander
-				}
+
+			death = { death_reason = death_battle }
+		}
+		else = {
+			death = {
+				death_reason = death_battle
+				killer = event_target:enemy_commander
 			}
 		}
 	}
@@ -1226,13 +1223,7 @@ character_event = {
 			}
 		}
 
-		### Actual death (if not MP)
-		if = {
-			limit = { multiplayer = no }
-
-			set_character_flag = is_battlefield_duel
-			debug_battle_death_counter_effect = yes # For debug purposes
-
+		tooltip = {
 			if = {
 				limit = { # If it does *not* make sense that the enemy_commander killed home_commander...
 					OR = {
@@ -1335,7 +1326,6 @@ character_event = {
 			name = grieving_over_warrior_lover
 			days = 1000
 		}
-
 
 		if = {
 			limit = {
@@ -3069,7 +3059,6 @@ character_event = {
 		trigger = { NOT = { character = event_target:home_liege } }
 	}
 
-
 	option = { # Act out (Scenario A: I can't be near my children)
 		name = EVTOPTA_HFP_11019_1 # I need a drink
 
@@ -4174,7 +4163,7 @@ character_event = {
 
 		trigger = { has_character_flag = iron_fist }
 
-		give_nickname = nick_iron_fist
+		give_nickname = nick_ironfist
 	}
 
 	option = {
@@ -4183,7 +4172,7 @@ character_event = {
 
 		trigger = { has_character_flag = stone_fist }
 
-		give_nickname = nick_stone_fist
+		give_nickname = nick_stonefist
 	}
 
 	option = {
@@ -4326,13 +4315,9 @@ character_event = {
 			#####
 			character_event = { id = HFP.11031 } # Send event to the killed enemy
 
-			if = {
-				limit = { multiplayer = yes }
-
-				death = {
-					death_reason = death_battle
-					killer = ROOT # aka event_target:home_commander
-				}
+			death = {
+				death_reason = death_battle
+				killer = ROOT # aka event_target:home_commander
 			}
 		}
 	}
@@ -4387,7 +4372,6 @@ character_event = {
 			}
 		}
 
-
 		trigger_switch = { # For prestige rewards.
 			on_trigger = has_character_flag
 
@@ -4395,7 +4379,6 @@ character_event = {
 			fought_even_warrior@event_target:enemy_commander = { prestige = 20 }
 			fought_great_warrior@event_target:enemy_commander = { prestige = 30 }
 		}
-
 
 		if = { # If you have a liege, slap on some opinion bonus...
 			limit = { home_commander_and_liege_are_different_characters = yes }
@@ -4421,10 +4404,7 @@ character_event = {
 			clr_character_flag = fought_great_warrior@event_target:enemy_commander
 		}
 
-		### Actual death (if not MP)
-		if = {
-			limit = { multiplayer = no }
-
+		tooltip = {
 			event_target:enemy_commander = {
 				show_scope_change = no
 
@@ -5277,7 +5257,6 @@ character_event = {
 		trigger = { has_character_flag = remember_fearsome_commander }
 	}
 
-
 	is_triggered_only = yes
 
 	immediate = {
@@ -5531,8 +5510,8 @@ character_event = {
 		}
 
 		if = {
-			limit = { has_nickname = no }
-			give_nickname = nick_warrior_lodge_spirit
+			limit = { can_apply_average_nickname_trigger = yes }
+			give_nickname = nick_the_warrior_lodge_spirit
 		}
 
 		allow_new_battle_events_effect = yes
@@ -5810,7 +5789,7 @@ character_event = {
 		prestige = -50
 
 		if = {
-			limit = { has_nickname = no }
+			limit = { can_apply_average_nickname_trigger = yes }
 
 			random = {
 				chance = 50
@@ -6089,10 +6068,8 @@ character_event = {
 
 		if = {
 			limit = {
-				NOR = {
-					religion_group = pagan_group
-					has_religion_feature = religion_ritual_sacrifice
-				}
+				NOT = { religion_group = pagan_group }
+				religion_has_ritual_sacrifice_trigger = no
 			}
 
 			tiered_high_piety_negative_effect = yes
@@ -6142,12 +6119,7 @@ character_event = {
 
 		hidden_effect = {
 			if = {
-				limit = {
-					OR = {
-						has_religion_feature = religion_ritual_sacrifice
-						religion_openly_aztec_or_reformed_trigger = yes
-					}
-				}
+				limit = { religion_has_ritual_sacrifice_trigger = yes }
 
 				if = { # A foreign religious head/emperor is quite good.
 					limit = {
@@ -6528,7 +6500,6 @@ character_event = {
 		set_character_flag = skip_wounded_trait
 	}
 
-
 	option = { # Special option: Duel enemy commander instead (if you have great combat rating)
 		tooltip_info_custom = available_because_duels
 		name = EVTOPTA_HFP_11050
@@ -6648,24 +6619,24 @@ character_event = {
 				borders_lake = yes
 
 				# Provinces on the Nile
-				province_id = 789 # c_pelusia
-				province_id = 791 # c_quena
-				province_id = 793 # c_makuria
-				province_id = 794 # c_aswan
-				province_id = 795 # c_asyut
-				province_id = 796 # c_cairo
-				province_id = 797 # c_manupura
-				province_id = 798 # c_delta
-				province_id = 799 # c_gabiyaha
-				province_id = 800 # c_gizeh
-				province_id = 802 # c_alexandria
-				province_id = 879 # c_atbara
-				province_id = 880 # c_sennar
-				province_id = 1282 # c_dotawo
-				province_id = 1322 # c_nobatia
-				province_id = 1326 # c_napata
-				province_id = 1334 # c_alodia
-				province_id = 1335 # c_kosti
+				province = c_tinnis
+				province = c_quena
+				province = c_makuria
+				province = c_aswan
+				province = c_asyut
+				province = c_cairo
+				province = c_el-malhalla
+				province = c_damietta
+				province = c_rasheed
+				province = c_giza
+				province = c_alexandria
+				province = c_atbara
+				province = c_sennar
+				province = c_dotawo
+				province = c_nobatia
+				province = c_napata
+				province = c_alodia
+				province = c_kosti
 			}
 		}
 	}

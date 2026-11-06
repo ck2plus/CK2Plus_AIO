@@ -1,7 +1,3 @@
-711.1.1 = {
-	liege = 0 # not fully conquered by Abbasids
-}
-
 762.1.1 = {
 	holder = 188573 # Kaikanites
 }

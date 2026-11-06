@@ -4,7 +4,7 @@ terrain = mountain
 
 # Initial setup
 culture = armenian
-religion = miaphysite
+religion = apostolic
 
 max_settlements = 4
 b_urmiah = castle

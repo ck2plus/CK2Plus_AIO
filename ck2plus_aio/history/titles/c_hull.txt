@@ -35,12 +35,9 @@
 
 # Angle vassals of Ebrauc break away and form their own kingdom of Deira
 # Kingdom of Deira
-580.1.1 = {
-	liege = d_york
-}
-
 588.1.1 = {
 	holder = 205197 # Æthelric
+	liege = d_york
 }
 
 604.1.1 = {

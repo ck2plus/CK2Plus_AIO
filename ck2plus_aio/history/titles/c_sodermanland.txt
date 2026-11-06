@@ -64,10 +64,6 @@
 	holder = 200600 # Sverker the Older
 }
 
-1150.1.1 = {
-	set_global_flag = norse_culture_flipping
-}
-
 1156.12.25 = {
 	holder = 200490 # Erik "the Holy"
 }

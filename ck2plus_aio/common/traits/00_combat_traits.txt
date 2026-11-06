@@ -128,14 +128,15 @@ pirate = {
 
 	potential = {
 		OR = {
-			religion_openly_norse_or_reformed_trigger = yes
-			has_character_flag = acquired_pirate_trait_by_bloodline
+			religion_is_adventuring_and_seafaring_trigger = yes
 
-			AND = {
-				has_religion_feature = religion_adventuring
-				has_religion_feature = religion_seafaring
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+				bloodline_is_active_for = PREV
 			}
 		}
+
+		religion_openly_norse_or_reformed_trigger = no
 	}
 
 	monthly_character_prestige = 0.3
@@ -163,16 +164,11 @@ ravager = {
 
 	potential = {
 		OR = {
-			religion_openly_norse_or_reformed_trigger = yes
+			religion_is_adventuring_and_seafaring_trigger = yes
 
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
 				bloodline_is_active_for = PREV
-			}
-
-			AND = {
-				has_religion_feature = religion_adventuring
-				has_religion_feature = religion_seafaring
 			}
 		}
 	}
@@ -206,16 +202,11 @@ sea_king = {
 
 	potential = {
 		OR = {
-			religion_openly_norse_or_reformed_trigger = yes
+			religion_is_adventuring_and_seafaring_trigger = yes
 
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
 				bloodline_is_active_for = PREV
-			}
-
-			AND = {
-				has_religion_feature = religion_adventuring
-				has_religion_feature = religion_seafaring
 			}
 		}
 	}
@@ -249,16 +240,11 @@ sea_queen = {
 
 	potential = {
 		OR = {
-			religion_openly_norse_or_reformed_trigger = yes
+			religion_is_adventuring_and_seafaring_trigger = yes
 
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_viking
 				bloodline_is_active_for = PREV
-			}
-
-			AND = {
-				has_religion_feature = religion_adventuring
-				has_religion_feature = religion_seafaring
 			}
 		}
 	}
@@ -290,14 +276,8 @@ viking = {
 	}
 
 	potential = {
-		OR = {
-			religion_openly_norse_or_reformed_trigger = yes
-
-			any_owned_bloodline = {
-				has_bloodline_flag = bloodline_viking
-				bloodline_is_active_for = PREV
-			}
-		}
+		religion_is_adventuring_and_seafaring_trigger = yes
+		religion_openly_norse_or_reformed_trigger = yes
 	}
 
 	monthly_character_prestige = 0.3

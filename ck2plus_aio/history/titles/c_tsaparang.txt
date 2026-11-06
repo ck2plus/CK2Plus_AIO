@@ -1,7 +1,3 @@
-400.1.1 = {
-	liege = k_guge
-}
-
 # Zhangzhung Kingdom
 625.1.1 = {
 	holder = 247083

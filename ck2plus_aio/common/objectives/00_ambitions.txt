@@ -1545,7 +1545,7 @@ obj_become_paragon_of_virtue = {
 		piety = 100
 
 		if = {
-			limit = { has_nickname = no }
+			limit = { can_apply_cool_nickname_trigger = yes }
 			give_nickname = nick_the_holy
 		}
 
@@ -2053,14 +2053,14 @@ obj_get_married = {
 			factor = 0.2
 
 			is_female = yes
-			has_religion_feature = religion_matriarchal
+			religion_is_matriarchal_trigger = yes
 		}
 
 		mult_modifier = {
 			factor = 0.2
 
 			is_female = no
-			has_religion_feature = religion_patriarchal
+			religion_is_patriarchal_trigger = yes
 		}
 
 		mult_modifier = {
@@ -2112,10 +2112,10 @@ obj_marry_ruler = {
 	potential = {
 		trigger_if = {
 			limit = { is_female = yes }
-			NOT = { has_religion_feature = religion_matriarchal }
+			religion_is_matriarchal_trigger = no
 		}
 		trigger_else = {
-			has_religion_feature = religion_matriarchal
+			religion_is_matriarchal_trigger = yes
 		}
 
 		practical_age < 45
@@ -2127,7 +2127,7 @@ obj_marry_ruler = {
 		NOT = { trait = celibate }
 
 		trigger_if = {
-			limit = { has_religion_feature = religion_matriarchal }
+			limit = { religion_is_matriarchal_trigger = yes }
 			mother = { higher_real_tier_than = COUNT }
 		}
 		trigger_else = {
@@ -2183,10 +2183,10 @@ obj_marry_ruler = {
 
 			trigger_if = {
 				limit = { is_female = yes }
-				has_religion_feature = religion_matriarchal
+				religion_is_matriarchal_trigger = yes
 			}
 			trigger_else = {
-				NOT = { has_religion_feature = religion_matriarchal }
+				religion_is_matriarchal_trigger = no
 			}
 
 			can_marry = no
@@ -2266,7 +2266,7 @@ obj_have_a_daughter = {
 			OR = {
 				is_female = yes
 				num_of_children >= 2
-				has_religion_feature = religion_matriarchal
+				religion_is_matriarchal_trigger = yes
 			}
 
 			NOT = { has_character_flag = obj_have_child_1 }
@@ -2362,12 +2362,12 @@ obj_have_a_daughter = {
 
 		mult_modifier = {
 			factor = 0.1
-			has_religion_feature = religion_patriarchal
+			religion_is_patriarchal_trigger = yes
 		}
 
 		mult_modifier = {
 			factor = 10.0
-			has_religion_feature = religion_matriarchal
+			religion_is_matriarchal_trigger = yes
 		}
 
 		mult_modifier = {
@@ -2464,7 +2464,7 @@ obj_have_a_son = {
 
 			OR = {
 				is_female = no
-				has_religion_feature = religion_patriarchal
+				religion_is_patriarchal_trigger = yes
 			}
 
 			NOT = { has_character_flag = obj_have_child_2 }
@@ -2560,12 +2560,12 @@ obj_have_a_son = {
 
 		mult_modifier = {
 			factor = 0.1
-			has_religion_feature = religion_matriarchal
+			religion_is_matriarchal_trigger = yes
 		}
 
 		mult_modifier = {
 			factor = 10.0
-			has_religion_feature = religion_patriarchal
+			religion_is_patriarchal_trigger = yes
 		}
 
 		mult_modifier = {
@@ -2773,10 +2773,10 @@ obj_wants_landed_title = {
 					limit = { is_female = yes }
 
 					practical_age < 45
-					has_religion_feature = religion_matriarchal
+					religion_is_matriarchal_trigger = yes
 				}
 				trigger_else = {
-					NOT = { has_religion_feature = religion_matriarchal }
+					religion_is_matriarchal_trigger = no
 				}
 
 				# TODO: What's the reasoning behind this?
@@ -3674,8 +3674,12 @@ obj_become_king = {
 		trigger_if = {
 			limit = { ai = yes }
 
-			primary_title = {
-				is_primary_type_title = no
+			mercenary = no
+			holy_order = no
+
+			trigger_if = {
+				limit = { controls_religion = yes }
+				is_theocracy = no
 			}
 		}
 	}
@@ -3742,7 +3746,15 @@ obj_become_king = {
 
 				OR = {
 					primary_title = {
-						is_primary_type_title = yes
+						OR = {
+							mercenary = yes
+							holy_order = yes
+
+							trigger_if = {
+								limit = { controls_religion = yes }
+								is_theocracy = yes
+							}
+						}
 					}
 
 					NOT = { has_character_modifier = ai_objective_timer }
@@ -4748,7 +4760,7 @@ obj_become_paragon_of_enlightenment = {
 		piety = 100
 
 		if = {
-			limit = { has_nickname = no }
+			limit = { can_apply_average_nickname_trigger = yes }
 			give_nickname = nick_the_wise
 		}
 
@@ -4827,302 +4839,6 @@ obj_become_paragon_of_enlightenment = {
 		mult_modifier = {
 			factor = 0.01
 			trait = cynical
-		}
-	}
-}
-
-# Gain any title from liege
-obj_gain_any_title = {
-	type = character
-
-	potential = {
-		always = no # Disabled in CK2Plus
-		is_playable = yes
-		has_dlc = "Conclave"
-		is_landed = yes
-		independent = no
-		is_adult = yes
-		is_incapable = no
-		is_nomadic = no
-		liege = { is_nomadic = no }
-		NOR = { has_character_flag = gain_any_title_ambition_success }
-	}
-
-	success = {
-		custom_tooltip = {
-			text = tooltip_obj_gain_any_title_success
-
-			has_character_flag = gain_any_title_ambition_success
-		}
-	}
-
-	effect = {
-		prestige = 200
-	}
-
-	abort = {
-		OR = {
-			is_playable = no
-			is_landed = no
-			independent = yes
-			is_incapable = yes
-		}
-	}
-
-	abort_effect = {
-	}
-
-	chance = {
-		factor = 100
-
-		trigger = {
-			NOT = { trait = content }
-		}
-
-		mult_modifier = {
-			factor = 1.5
-			trait = ambitious
-		}
-
-		mult_modifier = {
-			factor = 3.0
-			trait = greedy
-		}
-
-		mult_modifier = {
-			factor = 0.1
-			trait = craven
-		}
-
-		mult_modifier = {
-			factor = 0.1
-			trait = slothful
-		}
-
-		mult_modifier = {
-			factor = 0.1
-			is_theocracy = yes
-		}
-	}
-}
-
-# See the realm prosper
-obj_see_the_realm_prosper = {
-	type = character
-
-	aggression = 0.25
-
-	global_revolt_risk = -0.01
-
-	potential = {
-		has_dlc = "Reapers"
-		is_playable = yes
-		is_landed = yes
-		independent = yes
-		is_adult = yes
-		higher_real_tier_than = BARON
-		is_nomadic = no
-		war = no
-		is_incapable = no
-		is_inaccessible_trigger = no
-		NOT = { has_character_modifier = prosper_ambition_timer }
-
-		liege = { is_nomadic = no }
-
-		any_realm_province = {
-			OR = {
-				has_castle = yes
-				has_tribal = yes
-				has_city = yes
-			}
-
-			NOR = {
-				has_province_modifier = depopulated_1
-				has_province_modifier = depopulated_2
-				has_province_modifier = depopulated_3
-			}
-
-			held_under_PREV = yes
-		}
-	}
-
-	creation_effect = {
-		add_character_modifier = {
-			name = prosperity_5_year
-			years = 5
-		}
-	}
-
-	success = {
-		custom_tooltip = {
-			text = tooltip_obj_see_the_realm_prosper
-
-			NOT = { has_character_modifier = prosperity_5_year }
-		}
-	}
-
-	effect = {
-		change_stewardship = 1
-
-		custom_tooltip = {
-			text = realm_prospers_custom_tooltip
-
-			any_realm_province = {
-				limit = {
-					OR = {
-						has_castle = yes
-						has_tribal = yes
-						has_city = yes
-					}
-
-					NOR = {
-						has_province_modifier = depopulated_1
-						has_province_modifier = depopulated_2
-						has_province_modifier = depopulated_3
-					}
-
-					held_under_PREV = yes
-				}
-
-				change_variable = {
-					which = prosperity_value
-					value = 35
-				}
-			}
-
-			if = {
-				limit = {
-					has_nickname = no
-					is_adult = yes
-					is_incapable = no
-				}
-
-				random_list = {
-					5 = { give_nickname = nick_the_gentle }
-					5 = { give_nickname = nick_the_affable }
-					5 = { give_nickname = nick_the_shrewd }
-					5 = { give_nickname = nick_the_gracious }
-					100 = { }
-				}
-			}
-		}
-
-		add_character_modifier = {
-			name = prosper_ambition_timer
-			years = 25
-			hidden = yes
-		}
-
-		if = {
-			limit = {
-				has_game_rule = {
-					name = defensive_pacts
-					value = on
-				}
-			}
-
-			if = {
-				limit = { infamy >= 50 }
-
-				random_list = {
-					1 = { change_infamy = { value = -20 localisation = PEACEFULL_RULERSHIP } }
-					5 = { change_infamy = { value = -15 localisation = PEACEFULL_RULERSHIP } }
-					9 = { change_infamy = { value = -10 localisation = PEACEFULL_RULERSHIP } }
-				}
-			}
-			else_if = {
-				limit = { infamy >= 10 }
-
-				random_list = {
-					1 = { change_infamy = { value = -10 localisation = PEACEFULL_RULERSHIP } }
-					5 = { change_infamy = { value = -5 localisation = PEACEFULL_RULERSHIP } }
-				}
-			}
-			else_if = {
-				limit = { infamy > 2 }
-
-				change_infamy = {
-					value = -2
-					localisation = PEACEFULL_RULERSHIP
-				}
-			}
-			else = {
-				prestige = 250
-			}
-		}
-	}
-
-	abort = {
-		OR = {
-			is_incapable = yes
-			is_playable = no
-			is_landed = no
-
-			any_war = {
-				NOR = {
-					using_cb = peasant_revolt
-					using_cb = heretic_revolt
-					using_cb = religious_revolt
-					using_cb = liberation_revolt
-				}
-			}
-		}
-	}
-
-	abort_effect = {
-		remove_character_modifier = prosperity_5_year
-
-		add_character_modifier = {
-			name = prosper_ambition_timer
-			years = 5
-			hidden = yes
-		}
-	}
-
-	chance = {
-		factor = 100
-
-		mult_modifier = {
-			factor = 0.1
-
-			OR = {
-				trait = wroth
-				trait = cruel
-				trait = impaler
-				trait = arbitrary
-				trait = slothful
-			}
-		}
-
-		mult_modifier = {
-			factor = 0.2
-
-			NOR = {
-				trait = architect
-				trait = administrator
-				trait = gardener
-				trait = charitable
-				trait = diligent
-				trait = patient
-				trait = content
-				trait = just
-				has_focus = focus_rulership
-			}
-		}
-
-		mult_modifier = {
-			factor = 1.5
-			trait = charitable
-		}
-
-		mult_modifier = {
-			factor = 1.5
-			has_focus = focus_rulership
-		}
-
-		mult_modifier = {
-			factor = 3.0
-			has_education_stewardship_trigger = yes
 		}
 	}
 }

@@ -260,7 +260,6 @@ character_event = {
 								region = world_india
 								region = world_himalayas
 								region = world_steppe
-								region = world_persia
 								region = world_middle_east
 							}
 						}
@@ -370,7 +369,6 @@ character_event = {
 								region = world_india
 								region = world_himalayas
 								region = world_steppe
-								region = world_persia
 								region = world_middle_east
 							}
 						}
@@ -416,8 +414,6 @@ character_event = {
 				gain_title = d_bulls_rishabha
 				set_government_type = order_government
 				save_event_target_as = leader_of_rishabha
-
-
 
 				while = {
 					count = 7
@@ -482,7 +478,6 @@ character_event = {
 								region = world_india
 								region = world_himalayas
 								region = world_steppe
-								region = world_persia
 								region = world_middle_east
 							}
 						}

@@ -93,7 +93,6 @@ holy_war = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -225,7 +224,7 @@ holy_war = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_nickname = no
+						can_apply_cool_nickname_trigger = yes
 						religion_group = pagan_group
 					}
 
@@ -301,7 +300,6 @@ holy_war = {
 				title = PREV
 				enemy = FROM
 				same_religion = yes # Only vassalize rulers of my religion
-				is_religious = yes
 				type = holy_war
 			}
 		}
@@ -341,9 +339,6 @@ holy_war = {
 					clr_character_flag = pledged_temple
 				}
 			}
-
-			check_war_effect = yes
-			defender = { landless_pope_effect = yes }
 		}
 	}
 
@@ -560,10 +555,6 @@ holy_war = {
 								limit = { capital_scope = { region = world_africa_east } }
 								ROOT = { capital_scope = { region = world_africa_east } }
 							}
-						#	trigger_else_if = {
-						#		limit = { capital_scope = { region = custom_sahara } }
-						#		ROOT = { capital_scope = { region = custom_sahara } }
-						#	}
 						}
 
 						# Anti-blob
@@ -826,7 +817,7 @@ holy_war = {
 						region = custom_norway
 						region = custom_sweden
 						region = custom_syria
-						region = custom_arabia
+						region = world_middle_east_arabia
 						region = custom_jerusalem
 						region = custom_egypt
 						region = custom_africa
@@ -1101,14 +1092,13 @@ resist_viceroy_revocation_cb = {
 
 		FROM = {
 			any_demesne_title = {
-				NOT = { lower_tier_than = ROOT }
+				NOT = { lower_real_tier_than = ROOT }
 				temporary = no
 			}
 		}
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 
 		attacker = {
@@ -1160,11 +1150,6 @@ resist_viceroy_revocation_cb = {
 			hidden_effect = {
 				participation_scaled_prestige = 250
 			}
-		}
-
-		hidden_effect = {
-			check_if_reconquista_finished_effect = yes
-			defender = { landless_pope_effect = yes }
 		}
 	}
 
@@ -1236,7 +1221,7 @@ unjust_conquest_exclave = {
 	press_claim = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			show_scope_change = no
@@ -1377,7 +1362,6 @@ unjust_conquest_exclave = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -1432,11 +1416,6 @@ unjust_conquest_exclave = {
 		any_attacker = {
 			limit = { NOT = { character = attacker } }
 			hidden_effect = { participation_scaled_prestige = 100 }
-		}
-
-		hidden_effect = {
-			check_war_effect = yes
-			defender = { landless_pope_effect = yes }
 		}
 	}
 
@@ -1713,7 +1692,6 @@ dejure_duchy_claim_plus = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -1747,12 +1725,6 @@ dejure_duchy_claim_plus = {
 			target = attacker
 			type = claim
 		}
-
-		hidden_effect = {
-			check_war_effect = yes
-			defender = { landless_pope_effect = yes }
-		}
-
 	}
 
 	on_fail = {
@@ -1960,7 +1932,6 @@ vassalize = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -2009,11 +1980,6 @@ vassalize = {
 
 				imprison = attacker
 			}
-		}
-
-		hidden_effect = {
-			check_if_reconquista_finished_effect = yes
-			defender = { landless_pope_effect = yes }
 		}
 	}
 
@@ -2388,7 +2354,6 @@ restore_byzantium = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -2519,7 +2484,7 @@ coastal_city_republic = {
 	is_permanent = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -2555,13 +2520,9 @@ coastal_city_republic = {
 
 			OR = {
 				# Within Free CB range
-				ROOT = {
-					capital_scope = {
-						distance = {
-							where = PREVPREV # Comparing the distance between ROOT's capital and the title in question
-							value < 650	#  From aprox. Venice to East Cyprus and from Venice to Gibraltar
-						}
-					}
+				distance = {
+					who = ROOT # Comparing the distance between ROOT's capital and the title in question
+					value < 650	#  From aprox. Venice to East Cyprus and from Venice to Gibraltar
 				}
 
 				PREV = {
@@ -2605,7 +2566,6 @@ coastal_city_republic = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -2618,13 +2578,9 @@ coastal_city_republic = {
 				location = {
 					is_coastal = yes
 
-					attacker = {
-						capital_scope = {
-							distance = {
-								where = PREVPREV # Comparing the distance between ROOT's capital and the title in question
-								value < 650	#  From  aprox.Venice to East Cyprus and from Venice to Gibraltar
-							}
-						}
+					distance = {
+						who = attacker # Comparing the distance between ROOT's capital and the title in question
+						value < 650	#  From  aprox.Venice to East Cyprus and from Venice to Gibraltar
 					}
 				}
 			}
@@ -2738,11 +2694,9 @@ coastal_city_republic = {
 				}
 
 				# Prevent the AI from overextending itself, it won't understand the mechanic anyways
-				capital_scope = {
-					distance = {
-						where = PREVPREV # Comparing the distance between ROOT's capital and the title in question
-						value < 650	#  From aprox. Venice to East Cyprus and from Venice to Gibraltar
-					}
+				distance = {
+					where = PREV # Comparing the distance between ROOT's capital and the title in question
+					value < 650	#  From aprox. Venice to East Cyprus and from Venice to Gibraltar
 				}
 			}
 		}
@@ -2796,7 +2750,6 @@ other_claim_on_liege_plot = {
 
 	on_add = {
 		log = "CB(other_claim_on_liege_plot): START: [This.GetTitledFirstName] of [This.PrimaryTitle.GetBaseName] (ID: [This.GetID]) vs. [From.GetTitledFirstName] of [From.PrimaryTitle.GetBaseName] (ID: [From.GetID]), supporting claimant [Root.GetBestName] (ID: [Root.GetID])"
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 
 		FROM = { pf_log_state_effect = yes }
@@ -3418,7 +3371,7 @@ religious_overthrow_ruler = {
 
 		FROM = {
 			any_demesne_title = {
-				NOT = { lower_tier_than = ROOT }
+				NOT = { lower_real_tier_than = ROOT }
 				temporary = no
 			}
 
@@ -3439,7 +3392,6 @@ religious_overthrow_ruler = {
 		defender = { pf_log_state_effect = yes }
 		attacker = { pf_log_state_effect = yes }
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -3915,7 +3867,7 @@ italian_reconquest = {
 	allowed_to_target_tributaries = no
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -3974,7 +3926,6 @@ italian_reconquest = {
 			character_event = { id = Plus.507 }
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -4211,7 +4162,7 @@ carolingian_reconquest = {
 	is_permanent = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -4284,7 +4235,6 @@ carolingian_reconquest = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -4431,7 +4381,7 @@ byzantine_vassalize = {
 	press_claim = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 		e_roman_empire = { has_holder = no }
 
 		ROOT = {
@@ -4499,12 +4449,9 @@ byzantine_vassalize = {
 			AND = {
 				capital_scope = {
 					OR = {
-						region = custom_byzantium
+						region = world_europe_south_east
 						region = custom_nikaea
 						region = custom_armenia
-						region = custom_bulgaria
-						region = custom_serbia
-						region = custom_croatia
 						region = custom_trebizond
 						region = custom_sicily
 						region = custom_syria
@@ -4632,7 +4579,6 @@ byzantine_vassalize = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -4667,12 +4613,9 @@ byzantine_vassalize = {
 
 								location = {
 									NOR = {
-										region = custom_byzantium
+										region = world_europe_south_east
 										region = custom_nikaea
 										region = custom_armenia
-										region = custom_bulgaria
-										region = custom_serbia
-										region = custom_croatia
 										region = custom_trebizond
 										region = custom_sicily
 										region = custom_syria
@@ -4735,12 +4678,9 @@ byzantine_vassalize = {
 
 										location = {
 											NOR = {
-												region = custom_byzantium
+												region = world_europe_south_east
 												region = custom_nikaea
 												region = custom_armenia
-												region = custom_bulgaria
-												region = custom_serbia
-												region = custom_croatia
 												region = custom_trebizond
 												region = custom_sicily
 												region = custom_syria
@@ -4866,7 +4806,7 @@ carolingian_manifest_destiny = {
 	is_permanent = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -4977,7 +4917,6 @@ carolingian_manifest_destiny = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -5093,7 +5032,7 @@ dejure_duchy_claim_holy = {
 	press_claim = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -5212,7 +5151,6 @@ dejure_duchy_claim_holy = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -5254,7 +5192,6 @@ dejure_duchy_claim_holy = {
 				title = PREV
 				enemy = defender
 				same_religion = yes # Only vassalize rulers of my religion
-				is_religious = yes
 				type = holy_war
 			}
 		}
@@ -5370,7 +5307,7 @@ dejure_county_claim_holy = {
 	press_claim = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 		can_use_cb_preamble = yes
 
 		ROOT = {
@@ -5505,7 +5442,6 @@ dejure_county_claim_holy = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -5547,7 +5483,6 @@ dejure_county_claim_holy = {
 				title = PREV
 				enemy = defender
 				same_religion = yes # Only vassalize rulers of my religion
-				is_religious = yes
 				type = holy_war
 			}
 		}
@@ -5666,7 +5601,7 @@ dejure_barony_claim_holy = {
 	is_permanent = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -5740,7 +5675,6 @@ dejure_barony_claim_holy = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -5879,7 +5813,7 @@ other_dejure_county_claim_holy = {
 	press_claim = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 		can_use_cb_preamble = yes
 		religion_group = top_liege
 
@@ -5989,7 +5923,6 @@ other_dejure_county_claim_holy = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 		ROOT = { set_character_flag = claim_being_pressed }
 	}
@@ -6033,7 +5966,6 @@ other_dejure_county_claim_holy = {
 				title = PREV
 				enemy = defender
 				same_religion = yes # Only vassalize rulers of my religion
-				is_religious = yes
 				type = holy_war
 			}
 		}
@@ -6197,7 +6129,6 @@ decadence_revolt = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -6383,7 +6314,6 @@ druze_invasion = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -6458,7 +6388,7 @@ druze_invasion = {
 				disband_event_forces = prepared_invasion
 
 				any_demesne_title = {
-					limit = { tier = BARON }
+					limit = { real_tier = BARON }
 					remove_holding_modifier = recently_conquered
 					refill_holding_levy = yes
 				}
@@ -6556,7 +6486,7 @@ reconquista_cb = {
 	is_permanent = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		ROOT = {
 			can_use_cb_preamble = yes
@@ -6611,8 +6541,17 @@ reconquista_cb = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
+
+		attacker = {
+			if = {
+				limit = {
+					has_character_flag = currently_reconquering_iberia
+				}
+
+				remove_character_modifier = reconquista_preparation_left
+			}
+		}
 	}
 
 	on_add_title = {
@@ -6654,6 +6593,14 @@ reconquista_cb = {
 					limit = { uses_decadence = yes }
 					participation_scaled_decadence = -10
 				}
+			}
+
+			if = {
+				limit = {
+					has_character_flag = currently_reconquering_iberia
+				}
+
+				character_event = { id = HF.49200 }
 			}
 		}
 
@@ -6716,7 +6663,6 @@ reconquista_cb = {
 				title = PREV
 				enemy = defender
 				same_religion = yes # Only vassalize rulers of my religion
-				is_religious = yes
 				type = holy_war
 			}
 		}
@@ -6745,6 +6691,15 @@ reconquista_cb = {
 
 			piety = -100
 			prestige = -100
+
+			if = {
+				limit = {
+					has_character_flag = currently_reconquering_iberia
+				}
+
+				disband_event_forces = reconquista_event_troops
+				character_event = { id = HF.49200 }
+			}
 		}
 	}
 
@@ -6769,6 +6724,15 @@ reconquista_cb = {
 			religion_authority = {
 				name = lost_holy_war
 				years = 20
+			}
+
+			if = {
+				limit = {
+					has_character_flag = currently_reconquering_iberia
+				}
+
+				disband_event_forces = reconquista_event_troops
+				character_event = { id = HF.49200 }
 			}
 		}
 
@@ -6809,6 +6773,19 @@ reconquista_cb = {
 						participation_scaled_decadence = -10
 					}
 				}
+			}
+		}
+	}
+
+	on_invalidation = {
+		attacker = {
+			if = {
+				limit = {
+					has_character_flag = currently_reconquering_iberia
+				}
+
+				disband_event_forces = reconquista_event_troops
+				character_event = { id = HF.49200 }
 			}
 		}
 	}
@@ -6942,7 +6919,6 @@ aghlabid_867 = {
 			}
 		}
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -7189,7 +7165,6 @@ invasion_nc = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -7241,8 +7216,6 @@ invasion_nc = {
 			}
 
 			attacker = {
-				roman_victory_triumph_effect = yes
-
 				if = {
 					limit = {
 						character = c_140
@@ -7318,7 +7291,6 @@ invasion_nc = {
 			show_scope_change = no
 
 			participation_scaled_prestige = 200
-			roman_victory_triumph_effect = yes
 		}
 
 		any_defender = {
@@ -7390,7 +7362,6 @@ magyar_invasion = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -7433,7 +7404,7 @@ magyar_invasion = {
 				}
 
 				if = {
-					limit = { has_nickname = no }
+					limit = { can_apply_cool_nickname_trigger = yes }
 					give_nickname = nick_the_great
 				}
 
@@ -7690,7 +7661,6 @@ almoravid_1066 = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -7882,7 +7852,6 @@ two_eriks_cb = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -8071,7 +8040,6 @@ the_anarchy_cb = {
 
 	on_add = {
 		ROOT = { set_character_flag = claim_being_pressed }
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -8139,7 +8107,7 @@ the_anarchy_cb = {
 			ROOT = {
 				if = {
 					limit = {
-						has_nickname = no
+						can_apply_average_nickname_trigger = yes
 						lower_real_tier_than = PREV
 					}
 
@@ -8461,7 +8429,6 @@ cb_faction_overthrow_ruler = {
 		defender = { pf_log_state_effect = yes }
 		attacker = { pf_log_state_effect = yes }
 
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -8642,7 +8609,7 @@ cb_faction_overthrow_ruler = {
 						limit = {
 							OR = {
 								title = e_hre
-								has_title_flag = alternate_hre
+								title = event_target:alternate_hre
 							}
 						}
 						add_law_w_cooldown = succ_hre_elective
@@ -9217,7 +9184,13 @@ subjugation = {
 		ROOT = {
 			independent = yes
 			higher_real_tier_than = COUNT
-			primary_title = { is_primary_type_title = no } # EMF: e.g., k_orthodox can't use this
+			mercenary = no
+			holy_order = no
+
+			trigger_if = {
+				limit = { controls_religion = yes }
+				is_theocracy = no
+			}
 		}
 
 		FROM = {
@@ -9229,15 +9202,20 @@ subjugation = {
 			}
 
 			# EMF: Can't subjugate higher-tier landless characters (k_orthodox, etc.) or revolters
-			primary_title = { is_primary_type_title = no }
 			in_revolt = no
 			is_nomadic = no
+			mercenary = no
+			holy_order = no
+
+			trigger_if = {
+				limit = { controls_religion = yes }
+				is_theocracy = no
+			}
 		}
 	}
 
 	on_add = {
 		log = "CB(subjugation): START: [Root.GetTitledFirstName] of [Root.PrimaryTitle.GetBaseName] (ID: [Root.GetID]) vs. [From.GetTitledFirstName] of [From.PrimaryTitle.GetBaseName] (ID: [From.GetID])"
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -9356,13 +9334,18 @@ subjugation_duke = {
 			shares_realm_border_with = ROOT
 			realm_size < 20
 			in_revolt = no
-			primary_title = { is_primary_type_title = no }
+			mercenary = no
+			holy_order = no
+
+			trigger_if = {
+				limit = { controls_religion = yes }
+				is_theocracy = no
+			}
 		}
 	}
 
 	on_add = {
 		log = "CB(subjugation_duke): START: [Root.GetTitledFirstName] of [Root.PrimaryTitle.GetBaseName] (ID: [Root.GetID]) vs. [From.GetTitledFirstName] of [From.PrimaryTitle.GetBaseName] (ID: [From.GetID])"
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -9469,7 +9452,6 @@ overpower_imperial_suzerain_cb = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 

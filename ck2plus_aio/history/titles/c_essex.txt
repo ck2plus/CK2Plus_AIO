@@ -3,16 +3,11 @@
 }
 
 865.1.1 = {
-	liege = k_england
 	holder = 33358
 }
 
 936.1.1 = {
 	holder = 260527
-	liege = d_east_anglia
-}
-
-1066.1.1 = {
 	liege = d_east_anglia
 }
 

@@ -9,7 +9,7 @@
 
 namespace = HL
 
-# Informed about nomad settling as feudal
+# Informed about nomad settling
 narrative_event = {
 	id = HL.1
 	title = EVTNAMEHL1
@@ -243,7 +243,6 @@ character_event = {
 		name = EXCELLENT
 	}
 }
-
 
 # End blood oath on death
 character_event = {

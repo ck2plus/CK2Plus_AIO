@@ -109,7 +109,7 @@ character_event = {
 
 	option = {
 		name = "Bjorn"
-		set_name = "BjÃ¶rn"
+		set_name = "Björn"
 	}
 
 	option = {
@@ -2608,7 +2608,6 @@ character_event = {
 
 		character_event = { id = Plus.3890 }
 	}
-
 
 	option = {
 		name = NEVERMIND

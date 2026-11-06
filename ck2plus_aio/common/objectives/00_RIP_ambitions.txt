@@ -29,8 +29,6 @@ obj_see_the_realm_prosper = {
 		liege = { is_nomadic = no }
 
 		any_realm_province = {
-			held_under_PREV = yes
-
 			OR = {
 				has_castle = yes
 				has_tribal = yes
@@ -42,6 +40,8 @@ obj_see_the_realm_prosper = {
 				has_province_modifier = depopulated_2
 				has_province_modifier = depopulated_3
 			}
+
+			held_under_PREV = yes
 		}
 	}
 
@@ -68,8 +68,6 @@ obj_see_the_realm_prosper = {
 
 			any_realm_province = {
 				limit = {
-					held_under_PREV = yes
-
 					OR = {
 						has_castle = yes
 						has_tribal = yes
@@ -81,6 +79,8 @@ obj_see_the_realm_prosper = {
 						has_province_modifier = depopulated_2
 						has_province_modifier = depopulated_3
 					}
+
+					held_under_PREV = yes
 				}
 
 				change_variable = {
@@ -91,7 +91,7 @@ obj_see_the_realm_prosper = {
 
 			if = {
 				limit = {
-					has_nickname = no
+					can_apply_average_nickname_trigger = yes
 					is_adult = yes
 					is_incapable = no
 				}
@@ -110,6 +110,44 @@ obj_see_the_realm_prosper = {
 			name = prosper_ambition_timer
 			years = 25
 			hidden = yes
+		}
+
+		if = {
+			limit = {
+				has_game_rule = {
+					name = defensive_pacts
+					value = on
+				}
+			}
+
+			if = {
+				limit = { infamy >= 50 }
+
+				random_list = {
+					1 = { change_infamy = { value = -20 localisation = PEACEFULL_RULERSHIP } }
+					5 = { change_infamy = { value = -15 localisation = PEACEFULL_RULERSHIP } }
+					9 = { change_infamy = { value = -10 localisation = PEACEFULL_RULERSHIP } }
+				}
+			}
+			else_if = {
+				limit = { infamy >= 10 }
+
+				random_list = {
+					1 = { change_infamy = { value = -10 localisation = PEACEFULL_RULERSHIP } }
+					5 = { change_infamy = { value = -5 localisation = PEACEFULL_RULERSHIP } }
+				}
+			}
+			else_if = {
+				limit = { infamy > 2 }
+
+				change_infamy = {
+					value = -2
+					localisation = PEACEFULL_RULERSHIP
+				}
+			}
+			else = {
+				prestige = 250
+			}
 		}
 	}
 

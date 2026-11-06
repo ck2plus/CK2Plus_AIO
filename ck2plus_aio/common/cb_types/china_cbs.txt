@@ -23,11 +23,7 @@ offmap_submission = {
 		ROOT = {
 			independent = yes
 			mercenary = no
-
-			NOR = {
-				same_realm = FROM
-				is_vassal_or_below_of = FROM
-			}
+			NOT = { same_realm = FROM }
 		}
 
 		# Defender
@@ -486,15 +482,12 @@ offmap_submission = {
 						imprison = defender
 					}
 
-					primary_title = {
-						activate_title = {
-							title = THIS
-							status = no
-						}
-
-						destroy_landed_title = THIS
+					activate_title = {
+						title = primary_title
+						status = no
 					}
 
+					destroy_landed_title = primary_title
 					move_character = defender
 
 					attacker = {
@@ -539,15 +532,12 @@ offmap_submission = {
 						imprison = defender
 					}
 
-					primary_title = {
-						activate_title = {
-							title = THIS
-							status = no
-						}
-
-						destroy_landed_title = THIS
+					activate_title = {
+						title = primary_title
+						status = no
 					}
 
+					destroy_landed_title = primary_title
 					move_character = defender
 
 					attacker = {
@@ -603,7 +593,6 @@ offmap_submission = {
 			set_character_flag = defeated_china
 			piety = 500
 			participation_scaled_prestige = 2500
-			roman_victory_triumph_effect = yes
 		}
 
 		any_defender = {
@@ -623,15 +612,12 @@ offmap_submission = {
 					death = { death_reason = death_went_back_to_china }
 				}
 
-				primary_title = {
-					activate_title = {
-						title = THIS
-						status = no
-					}
-
-					destroy_landed_title = THIS
+				activate_title = {
+					title = primary_title
+					status = no
 				}
 
+				destroy_landed_title = primary_title
 				death = { death_reason = death_went_back_to_china }
 			}
 		}
@@ -678,7 +664,6 @@ tributary_offmap_cb = {
 
 			NOR = {
 				same_realm = FROM
-				is_vassal_or_below_of = FROM
 				rightful_religious_head = FROM
 			}
 		}
@@ -861,11 +846,7 @@ dismantle_pretender_china_cb = {
 		ROOT = {
 			independent = yes
 			mercenary = no
-
-			NOR = {
-				same_realm = FROM
-				is_vassal_or_below_of = FROM
-			}
+			NOT = { same_realm = FROM }
 		}
 
 		# Defender
@@ -1038,11 +1019,7 @@ force_open_china_cb = {
 		ROOT = {
 			independent = yes
 			mercenary = no
-
-			NOR = {
-				same_realm = FROM
-				is_vassal_or_below_of = FROM
-			}
+			NOT = { same_realm = FROM }
 		}
 
 		# Defender
@@ -1233,11 +1210,7 @@ destabilization_china_cb = {
 		ROOT = {
 			independent = yes
 			mercenary = no
-
-			NOR = {
-				same_realm = FROM
-				is_vassal_or_below_of = FROM
-			}
+			NOT = { same_realm = FROM }
 		}
 	}
 
@@ -1379,11 +1352,7 @@ invasion_of_china_cb = {
 		ROOT = {
 			independent = yes
 			mercenary = no
-
-			NOR = {
-				same_realm = FROM
-				is_vassal_or_below_of = FROM
-			}
+			NOT = { same_realm = FROM }
 		}
 
 		# Defender

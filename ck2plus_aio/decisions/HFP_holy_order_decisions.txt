@@ -21,7 +21,7 @@ decisions = {
 			}
 
 			any_demesne_title = {
-				higher_tier_than = DUKE
+				higher_real_tier_than = DUKE
 
 				capital_scope = {
 					region = world_europe_west_iberia
@@ -36,7 +36,7 @@ decisions = {
 			}
 
 			any_demesne_title = {
-				tier = COUNT
+				real_tier = COUNT
 				NOT = { title = c_calatrava }
 			}
 
@@ -218,7 +218,7 @@ decisions = {
 			}
 
 			any_demesne_title = {
-				higher_tier_than = DUKE
+				higher_real_tier_than = DUKE
 
 				capital_scope = {
 					region = world_europe_west_iberia
@@ -226,7 +226,7 @@ decisions = {
 			}
 
 			any_demesne_title = {
-				tier = COUNT
+				real_tier = COUNT
 				NOT = { title = c_calatrava }
 			}
 
@@ -369,12 +369,12 @@ decisions = {
 			is_catholic_branch = yes
 
 			any_demesne_title = {
-				tier = COUNT
+				real_tier = COUNT
 				NOT = { title = c_santiago }
 			}
 
 			any_demesne_title = {
-				higher_tier_than = DUKE
+				higher_real_tier_than = DUKE
 
 				capital_scope = {
 					region = world_europe_west_iberia
@@ -575,7 +575,7 @@ decisions = {
 			}
 
 			any_demesne_title = {
-				higher_tier_than = DUKE
+				higher_real_tier_than = DUKE
 
 				capital_scope = {
 					region = world_europe_west_iberia
@@ -583,7 +583,7 @@ decisions = {
 			}
 
 			any_demesne_title = {
-				tier = COUNT
+				real_tier = COUNT
 				NOT = { title = c_santiago }
 			}
 
@@ -1028,7 +1028,6 @@ decisions = {
 				}
 			}
 
-
 			trigger_if = {
 				limit = {
 					k_teutonic_state = {
@@ -1201,7 +1200,7 @@ decisions = {
 
 			if = {
 				limit = {
-					higher_tier_than = DUKE
+					higher_real_tier_than = DUKE
 
 					NOT = {
 						any_realm_lord = {
@@ -1234,7 +1233,7 @@ decisions = {
 		only_playable = yes
 
 		potential = {
-			higher_tier_than = DUKE
+			higher_real_tier_than = DUKE
 
 			c_jerusalem = {
 				holder_scope = {
@@ -1686,7 +1685,7 @@ targeted_decisions = {
 					OR = {
 						region = world_europe_north
 						region = custom_eastern_baltic
-						region = custom_russia
+						region = world_europe_east_russia
 					}
 				}
 			}
@@ -1730,7 +1729,7 @@ targeted_decisions = {
 					OR = {
 						region = world_europe_north
 						region = custom_eastern_baltic
-						region = custom_russia
+						region = world_europe_east_russia
 					}
 				}
 
@@ -1790,7 +1789,7 @@ targeted_decisions = {
 							OR = {
 								region = world_europe_north
 								region = custom_eastern_baltic
-								region = custom_russia
+								region = world_europe_east_russia
 							}
 						}
 					}
@@ -1880,13 +1879,13 @@ targeted_decisions = {
 			}
 
 			any_demesne_title = {
-				higher_tier_than = DUKE
+				higher_real_tier_than = DUKE
 
 				capital_scope = {
 					OR = {
 						region = world_europe_north
 						region = custom_eastern_baltic
-						region = custom_russia
+						region = world_europe_east_russia
 					}
 				}
 			}
@@ -1922,7 +1921,7 @@ targeted_decisions = {
 				OR = {
 					region = world_europe_north
 					region = custom_eastern_baltic
-					region = custom_russia
+					region = world_europe_east_russia
 				}
 			}
 
@@ -2013,7 +2012,7 @@ targeted_decisions = {
 						OR = {
 							region = world_europe_north
 							region = custom_eastern_baltic
-							region = custom_russia
+							region = world_europe_east_russia
 						}
 
 						kingdom = {

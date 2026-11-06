@@ -194,7 +194,7 @@ settlement_decisions = {
 				FROM = { is_tribal = no }
 			}
 
-			tier = BARON # Here because the next line causes the game to spew all over error.log for some reason
+			real_tier = BARON # Here because the next line causes the game to spew all over error.log for some reason
 			num_of_buildings == 0
 
 			NOR = {
@@ -338,7 +338,7 @@ settlement_decisions = {
 				FROM = {
 					if = {
 						limit = {
-							has_nickname = no
+							can_apply_cool_nickname_trigger = yes
 							is_adult = yes
 							is_incapable = no
 						}

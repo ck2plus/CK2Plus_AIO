@@ -37,7 +37,7 @@ narrative_event = {
 
 		any_player = {
 			if = {
-				limit = { is_vassal_or_below = ROOT }
+				limit = { is_liege_or_above_of = ROOT }
 				narrative_event = { id = RIP.10004 days = 2 random = 2 }
 			}
 			else_if = {
@@ -672,7 +672,7 @@ character_event = {
 				NOT = { has_global_flag = bp_world_persia_broadcasted }
 
 				regional_percentage = {
-					region = world_persia
+					region = world_middle_east_persia
 					percentage >= 0.5
 
 					OR = {
@@ -774,7 +774,7 @@ character_event = {
 				NOT = { has_global_flag = bp_world_asia_minor_broadcasted }
 
 				regional_percentage = {
-					region = world_asia_minor
+					region = world_middle_east_asia_minor
 					percentage >= 0.5
 
 					OR = {
@@ -818,7 +818,6 @@ character_event = {
 					}
 				}
 			}
-
 
 			set_global_flag = bp_world_europe_east_broadcasted
 
@@ -1486,7 +1485,7 @@ character_event = {
 			}
 
 			regional_percentage = {
-				region = world_persia
+				region = world_middle_east_persia
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1516,7 +1515,7 @@ character_event = {
 			}
 
 			regional_percentage = {
-				region = world_asia_minor
+				region = world_middle_east_asia_minor
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1

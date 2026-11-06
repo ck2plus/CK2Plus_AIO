@@ -1702,7 +1702,6 @@ character_event = { # Lost, but both wounded
 	}
 }
 
-
 ### Warrior Lodge members with high PCS might go out and duel random people to the death, symbolizes the mission
 character_event = {
 	id = HF.550
@@ -1754,7 +1753,7 @@ character_event = {
 							is_consort = ROOT
 							same_society_as = ROOT
 							religion = ROOT
-							higher_tier_than = DUKE
+							higher_real_tier_than = DUKE
 							spouse = { higher_real_tier_than = DUKE }
 							father = { higher_real_tier_than = DUKE }
 							mother = { higher_real_tier_than = DUKE }
@@ -1775,7 +1774,7 @@ character_event = {
 						is_consort = ROOT
 						same_society_as = ROOT
 						religion = ROOT
-						higher_tier_than = DUKE
+						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 						father = { higher_real_tier_than = DUKE }
 						mother = { higher_real_tier_than = DUKE }
@@ -1877,7 +1876,7 @@ character_event = {
 						is_consort = ROOT
 						same_society_as = ROOT
 						religion = ROOT
-						higher_tier_than = DUKE
+						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 						father = { higher_real_tier_than = DUKE }
 						mother = { higher_real_tier_than = DUKE }
@@ -1915,7 +1914,7 @@ character_event = {
 							is_consort = ROOT
 							same_society_as = ROOT
 							religion = ROOT
-							higher_tier_than = DUKE
+							higher_real_tier_than = DUKE
 							spouse = { higher_real_tier_than = DUKE }
 							father = { higher_real_tier_than = DUKE }
 							mother = { higher_real_tier_than = DUKE }
@@ -1938,7 +1937,7 @@ character_event = {
 							is_consort = ROOT
 							same_society_as = ROOT
 							religion = ROOT
-							higher_tier_than = DUKE
+							higher_real_tier_than = DUKE
 							spouse = { higher_real_tier_than = DUKE }
 							father = { higher_real_tier_than = DUKE }
 							mother = { higher_real_tier_than = DUKE }
@@ -1957,7 +1956,6 @@ character_event = {
 		}
 	}
 }
-
 
 ### Notify players when a lodge member is killed in a duel
 character_event = {
@@ -2007,7 +2005,6 @@ character_event = {
 		name = CURSES
 	}
 }
-
 
 ##### Teaching Moment #####
 
@@ -2702,14 +2699,12 @@ character_event = {
 
 	is_triggered_only = yes
 
-
 	option = { # Some people sure are sensitive...
 		name = EVTOPTA_HF_14005
 
 		add_rival = event_target:teacher
 	}
 }
-
 
 ### Teching Outcome events ###
 
@@ -2794,16 +2789,10 @@ character_event = {
 		trigger = {
 			event_target:teacher = {
 				NOT = { is_lover = ROOT }
-
-				trigger_if = {
-					limit = { is_close_relative = ROOT }
-					religion_has_incest = yes
-					ROOT = { religion_has_incest = yes }
-				}
+				is_valid_romance_target = ROOT
 			}
 
 			# for safety
-			is_adult = yes
 			NOT = { trait = celibate }
 		}
 
@@ -3466,7 +3455,6 @@ character_event = {
 	}
 }
 
-
 ### Crucible steel weapon chain ###
 
 # On death, spawn crucible steel weapon chain?
@@ -3968,7 +3956,6 @@ character_event = {
 		}
 	}
 
-
 	option = { # An axe is the most appropriate way to honor [dead_warrior.GetFirstName].
 		name = EVTOPTA_HF_51004
 		show_portrait = event_target:weapon_forger
@@ -4355,7 +4342,6 @@ character_event = {
 		}
 	}
 
-
 	after = {
 		# event_target:unfortunate_child = { add_maimed_trait_effect = yes } # Moved into options, because "after" does not show portraits
 
@@ -4504,7 +4490,6 @@ character_event = {
 		clr_character_flag = crucible_steel_mace
 	}
 }
-
 
 # TODO: This seems out of place
 namespace = HFP

@@ -489,7 +489,7 @@ magnum_opus_astrology_stars_3 = {
 
 	active = {
 		OR = {
-			learning = 20
+			learning >= 20
 			society_member_of = hermetics
 		}
 
@@ -2133,7 +2133,6 @@ equine_sequins = {
 	build_time_modifier = -0.05
 	horse_opinion = 15
 }
-
 
 # E. Books from the Dynasty category...
 to_my_descendants = {

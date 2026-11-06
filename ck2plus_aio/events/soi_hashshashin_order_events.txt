@@ -206,7 +206,6 @@ narrative_event = {
 		}
 	}
 
-
 	option = {
 		name = {
 			text = EVTOPTA88000
@@ -939,23 +938,14 @@ character_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = { multiplayer = yes }
-			death = { death_reason = death_hashshashin }
-		}
+		death = { death_reason = death_hashshashin }
 	}
 
 	option = {
 		name = EVTOPTA88012
 
-		if = {
-			limit = { multiplayer = no }
+		tooltip = {
 			death = { death_reason = death_hashshashin }
-		}
-		else = {
-			tooltip = {
-				death = { death_reason = death_hashshashin }
-			}
 		}
 	}
 }
@@ -1203,23 +1193,14 @@ character_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = { multiplayer = yes }
-			death = { death_reason = death_hashshashin }
-		}
+		death = { death_reason = death_hashshashin }
 	}
 
 	option = {
 		name = EVTOPTA88012
 
-		if = {
-			limit = { multiplayer = no }
+		tooltip = {
 			death = { death_reason = death_hashshashin }
-		}
-		else = {
-			tooltip = {
-				death = { death_reason = death_hashshashin }
-			}
 		}
 	}
 }

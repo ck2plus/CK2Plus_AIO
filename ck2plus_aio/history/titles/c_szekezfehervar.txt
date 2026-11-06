@@ -28,7 +28,6 @@
 }
 
 839.1.1 = {
-	liege = d_pecs
 	holder = 187011
 }
 

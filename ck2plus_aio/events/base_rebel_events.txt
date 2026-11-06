@@ -361,7 +361,7 @@ character_event = {
 		# Rebel occupied
 		location = {
 			# Early out
-			is_land = yes
+			has_owner = yes
 			controlled_by = e_rebels
 
 			NOT = {
@@ -466,7 +466,7 @@ character_event = {
 		# Rebel occupied
 		location = {
 			# Early out
-			is_land = yes
+			has_owner = yes
 			controlled_by = e_rebels
 
 			NOT = {
@@ -582,7 +582,6 @@ letter_event = {
 	}
 }
 
-
 ###########################################
 # Province Defection Events
 ###########################################
@@ -629,7 +628,6 @@ province_event = {
 		# Not a single-province island
 		any_neighbor_province = {
 			has_owner = yes
-			is_land = yes
 		}
 
 		NOR = {
@@ -649,7 +647,6 @@ province_event = {
 					}
 				}
 			}
-
 
 			# Not if part of de jure duchy held by someone in same top realm
 			duchy = {
@@ -742,8 +739,6 @@ province_event = {
 					}
 				}
 			}
-
-			clear_event_target = old_owner
 		}
 	}
 }

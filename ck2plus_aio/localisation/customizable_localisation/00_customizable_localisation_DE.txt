@@ -83,6 +83,9 @@
 # GetemMale
 # GeterFemale
 # GetaFemale
+# GetenMale
+# GetErIn
+# GetEIn
 
 ## Opposite endings
 # GetsMaleOpp
@@ -134,6 +137,7 @@
 # GetSauEber
 # GetSchwächlingKrüke
 # GetLeichnamLeiche
+# GetRabeRabin
 
 ## English custom localisation commands with German gender differentiation
 # GetHouseOfWorshipeineine
@@ -1485,6 +1489,34 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetErIn # Folterer/Folterin
+	use_first_valid = yes
+
+	text = {
+		localisation_key = string_DE_endingER
+		trigger = { is_female = no }
+	}
+	text = {
+		localisation_key = string_DE_endingIN
+		trigger = { is_female = yes }
+	}
+}
+
+defined_text = {
+	name = GetEIn # Riese\Riesin
+	use_first_valid = yes
+
+	text = {
+		localisation_key = string_DE_endingE
+		trigger = { is_female = no }
+	}
+	text = {
+		localisation_key = string_DE_endingIN
+		trigger = { is_female = yes }
+	}
+}
+
 ##Opposite endings
 defined_text = {
 	name = GetsMaleOpp
@@ -2051,7 +2083,7 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Nomad_3_diedasden
 		trigger = {
 			holding_type = nomad
-			county = { holder_scope = { higher_tier_than = KING } }
+			county = { holder_scope = { higher_real_tier_than = KING } }
 		}
 	}
 	text = {
@@ -2288,7 +2320,7 @@ defined_text = {
 		localisation_key = string_DE_GetHolding_Tribal_3_derdiedas
 		trigger = {
 			holding_type = tribal
-			county = { holder_scope = { higher_tier_than = DUKE } }
+			county = { holder_scope = { higher_real_tier_than = DUKE } }
 		}
 	}
 	text = {
@@ -2366,6 +2398,7 @@ defined_text = {
 ##Rare special cases
 defined_text = {
 	name = GetArztÄrztin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Arzt
@@ -2379,6 +2412,7 @@ defined_text = {
 
 defined_text = {
 	name = GetKannibaleKannibalin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Kannibale
@@ -2392,6 +2426,7 @@ defined_text = {
 
 defined_text = {
 	name = GetProphetenProphetin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Propheten
@@ -2405,6 +2440,7 @@ defined_text = {
 
 defined_text = {
 	name = GetMissgestalteterMissgestalt
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Missgestalteter
@@ -2418,6 +2454,7 @@ defined_text = {
 
 defined_text = {
 	name = GetFoltererFolterin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Folterer
@@ -2431,6 +2468,7 @@ defined_text = {
 
 defined_text = {
 	name = GetFeiglingMemme
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Feigling
@@ -2444,6 +2482,7 @@ defined_text = {
 
 defined_text = {
 	name = GetNarrNärrin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Narr
@@ -2457,6 +2496,7 @@ defined_text = {
 
 defined_text = {
 	name = GetKrüppelBehinderte
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Krüppel
@@ -2470,6 +2510,7 @@ defined_text = {
 
 defined_text = {
 	name = GetEselZiege
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Esel
@@ -2483,6 +2524,7 @@ defined_text = {
 
 defined_text = {
 	name = GetStrohmannVogelscheuche
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Strohmann
@@ -2496,6 +2538,7 @@ defined_text = {
 
 defined_text = {
 	name = GetDschungelbewohnerDschungelnatter
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Dschungelbewohner
@@ -2509,6 +2552,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBücherwurmLeseratte
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Bücherwurm
@@ -2522,6 +2566,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBengelGöre
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Bengel
@@ -2535,6 +2580,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBlutsaugerZecke
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Blutsauger
@@ -2548,6 +2594,7 @@ defined_text = {
 
 defined_text = {
 	name = GetWurmMade
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Wurm
@@ -2561,6 +2608,7 @@ defined_text = {
 
 defined_text = {
 	name = GetWüstenkäferWüstenratte
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Wüstenkäfer
@@ -2574,6 +2622,7 @@ defined_text = {
 
 defined_text = {
 	name = GetFieslingVettel
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Fiesling
@@ -2587,6 +2636,7 @@ defined_text = {
 
 defined_text = {
 	name = GetEselZuchtstute
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Esel
@@ -2602,6 +2652,7 @@ defined_text = {
 
 defined_text = {
 	name = GetStrohkopfHohlbirne
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Strohkopf
@@ -2615,6 +2666,7 @@ defined_text = {
 
 defined_text = {
 	name = GetGesichtskrapfenHackfresse
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Gesichtskrapfen
@@ -2628,6 +2680,7 @@ defined_text = {
 
 defined_text = {
 	name = GetÜberfliegerKoriphäe
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Überflieger
@@ -2641,6 +2694,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHohlkopfPflaume
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Hohlkopf
@@ -2654,6 +2708,7 @@ defined_text = {
 
 defined_text = {
 	name = Getbewohnernatter
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_bewohner
@@ -2667,6 +2722,7 @@ defined_text = {
 
 defined_text = {
 	name = GetZimmererZimmerin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Zimmerer
@@ -2680,6 +2736,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBluthundBluthündin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Bluthund
@@ -2693,6 +2750,7 @@ defined_text = {
 
 defined_text = {
 	name = GetErobererEroberin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Eroberer
@@ -2706,6 +2764,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBoteBotin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Bote
@@ -2719,6 +2778,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBardeBardin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Barde
@@ -2732,6 +2792,7 @@ defined_text = {
 
 defined_text = {
 	name = GetBeichtvaterBeichtmutter
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Beichtvater
@@ -2745,6 +2806,7 @@ defined_text = {
 
 defined_text = {
 	name = GetTurmMauer
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Turm
@@ -2758,6 +2820,7 @@ defined_text = {
 
 defined_text = {
 	name = GetSklaveSklavin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Sklave
@@ -2771,6 +2834,7 @@ defined_text = {
 
 defined_text = {
 	name = GetGemahlenGemahlin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Gemahlen
@@ -2784,6 +2848,7 @@ defined_text = {
 
 defined_text = {
 	name = GetEberSau
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Eber
@@ -2797,6 +2862,7 @@ defined_text = {
 
 defined_text = {
 	name = GetPrinzenPrinzessin
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Prinzen
@@ -2810,6 +2876,7 @@ defined_text = {
 
 defined_text = {
 	name = Getvomvonder
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_vom
@@ -2823,6 +2890,7 @@ defined_text = {
 
 defined_text = {
 	name = GetMannesFrau
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Mannes
@@ -2836,6 +2904,7 @@ defined_text = {
 
 defined_text = {
 	name = GetSauEber
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Sau
@@ -2849,6 +2918,7 @@ defined_text = {
 
 defined_text = {
 	name = GetSchwächlingKrüke
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Schwachling
@@ -2862,6 +2932,7 @@ defined_text = {
 
 defined_text = {
 	name = GetLeichnamLeiche
+	use_first_valid = yes
 
 	text = {
 		localisation_key = string_DE_Leichnam
@@ -2869,6 +2940,20 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_DE_Leiche
+		trigger = { is_female = yes }
+	}
+}
+
+defined_text = {
+	name = GetRabeRabin
+	use_first_valid = yes
+
+	text = {
+		localisation_key = string_DE_Rabe
+		trigger = { is_female = no }
+	}
+	text = {
+		localisation_key = string_DE_Räbin
 		trigger = { is_female = yes }
 	}
 }

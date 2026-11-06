@@ -20,7 +20,7 @@ invasion = {
 	}
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		# CK2Plus
 		# Attacker
@@ -48,7 +48,6 @@ invasion = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -83,21 +82,32 @@ invasion = {
 				gain_all_occupied_titles = defender
 
 				if = {
-					limit = { has_nickname = no }
-
-					random_list = {
-						10 = { give_nickname = nick_the_great }
-						10 = { give_nickname = nick_the_victorious }
-						10 = { give_nickname = nick_the_bold }
-						10 = { give_nickname = nick_the_conqueror }
-					}
-				}
-				else_if = {
 					limit = { has_nickname = nick_the_bastard }
 					give_nickname = nick_the_conqueror
 				}
+				else = {
+					random_list = {
+						10 = {
+							trigger = { can_apply_cool_nickname_trigger = yes }
+							give_nickname = nick_the_great
+						}
 
-				roman_victory_triumph_effect = yes
+						10 = {
+							trigger = { can_apply_cool_nickname_trigger = yes }
+							give_nickname = nick_the_victorious
+						}
+
+						10 = {
+							trigger = { can_apply_average_nickname_trigger = yes }
+							give_nickname = nick_the_bold
+						}
+
+						10 = {
+							trigger = { can_apply_cool_nickname_trigger = yes }
+							give_nickname = nick_the_conqueror
+						}
+					}
+				}
 			}
 		}
 	}
@@ -227,14 +237,6 @@ invasion = {
 				}
 			}
 		}
-
-		hidden_effect = {
-			check_if_reconquista_finished_effect = yes
-
-			defender = {
-				landless_pope_effect = yes
-			}
-		}
 	}
 
 	on_fail = {
@@ -273,7 +275,6 @@ invasion = {
 			show_scope_change = no
 
 			participation_scaled_prestige = 300
-			roman_victory_triumph_effect = yes
 		}
 
 		any_defender = {
@@ -318,52 +319,10 @@ invasion = {
 		factor = 1
 
 		trigger = {
-			ROOT = {
-				ai_willing_to_attack = yes
-			}
+			suitable_holdings_trigger = yes
 
-			trigger_if = {
-				limit = {
-					ROOT = {
-						is_tribal = yes
-					}
-
-					FROM = {
-						is_nomadic = yes
-					}
-				}
-
-				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
-						OR = {
-							holding_type = castle
-							holding_type = city
-							holding_type = tribal
-						}
-					}
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					ROOT = {
-						is_nomadic = no
-						is_tribal = no
-					}
-
-					FROM = {
-						is_nomadic = yes
-					}
-				}
-
-				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
-						OR = {
-							holding_type = castle
-							holding_type = city
-						}
-					}
-				}
-			}
+			# CK2Plus
+			ai_willing_to_attack = yes
 		}
 
 		coronation_factor = yes
@@ -383,7 +342,7 @@ imperial_reconquest = {
 	is_holy_war = yes
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		not_fellow_crusader_trigger = yes
 
 		# CK2Plus
 		# Attacker
@@ -420,13 +379,10 @@ imperial_reconquest = {
 	can_use_title = {
 		capital_scope = {
 			OR = {
-				region = custom_byzantium
+				region = world_europe_south_east
 				region = custom_nikaea
 				region = custom_trebizond
 				region = custom_armenia
-				region = custom_bulgaria
-				region = custom_serbia
-				region = custom_croatia
 				region = custom_italy
 				region = custom_sicily
 				region = custom_germany
@@ -500,7 +456,6 @@ imperial_reconquest = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -544,14 +499,6 @@ imperial_reconquest = {
 			usurp_title_only = {
 				target = attacker
 				type = invasion
-			}
-		}
-
-		hidden_effect = {
-			check_if_reconquista_finished_effect = yes
-
-			defender = {
-				landless_pope_effect = yes
 			}
 		}
 	}
@@ -650,7 +597,6 @@ roman_christian_revolt = {
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 
@@ -661,7 +607,7 @@ roman_christian_revolt = {
 			prestige = 200
 			piety = 100
 			occupy_minors_of_occupied_settlements = defender
-			clr_character_flag = religious_revolter
+			clr_character_flag = roman_christian_revolter
 
 			gain_all_occupied_titles = {
 				who = defender
@@ -688,7 +634,6 @@ roman_christian_revolt = {
 				title = PREV
 				enemy = defender
 				same_religion = yes # Only vassalize rulers of my religion
-				is_religious = yes
 				type = holy_war
 			}
 		}
@@ -722,7 +667,7 @@ roman_christian_revolt = {
 
 			clear_wealth = yes
 			imprison = defender
-			clr_character_flag = religious_revolter
+			clr_character_flag = roman_christian_revolter
 
 			hidden_effect = {
 				add_character_modifier = {
@@ -824,25 +769,11 @@ abrahamic_antihellenic_revolt = {
 		# Defender
 		FROM = {
 			independent = yes
-			in_revolt = no
-
-			any_demesne_title = {
-				NOT = { lower_real_tier_than = ROOT }
-				temporary = no
-			}
-
-			liege_before_war = {
-				in_revolt = no
-
-				liege_before_war = {
-					in_revolt = no
-				}
-			}
+			higher_real_tier_than = ROOT
 		}
 	}
 
 	on_add = {
-		fire_haruspicy_event_effect = yes
 		anger_china_effect = yes
 	}
 

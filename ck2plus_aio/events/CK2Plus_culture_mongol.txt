@@ -1,0 +1,1059 @@
+# Prompt AI to use the manifest destiny CB
+character_event = {
+	id = 60209
+
+	is_triggered_only = yes # on_yearly_pulse, mongol
+	hide_window = yes
+
+	only_independent = yes
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	ai = yes
+	war = no
+
+	trigger = {
+		OR = {
+			dynasty = 613 # Seljuks
+			dynasty = 800 # Timurids
+		}
+
+		wealth >= 0
+		mercenary = no
+		is_tributary = no
+		is_ill = no
+		has_regent = no
+		realm_size <= 150
+		is_maimed_trigger = no
+		is_inaccessible_trigger = no
+
+		NOR = {
+			trait = content
+			trait = humble
+			trait = craven
+			trait = depressed
+			trait = infirm
+		}
+
+		any_neighbor_independent_ruler = {
+			reverse_realm_levy_diff = {
+				who = ROOT
+				value >= 10000
+			}
+
+			any_realm_title = {
+				count = 3
+
+				real_tier = COUNT
+
+				kingdom = {
+					capital_scope = {
+						OR = {
+							region = custom_persia
+							region = custom_baluchistan
+							region = custom_afghanistan
+							region = custom_khwarizm
+							region = custom_mesopotamia
+							region = custom_azerbaijan
+							region = custom_georgia
+							region = custom_alania
+							region = custom_armenia
+							region = custom_trebizond
+							region = custom_nikaea
+							region = custom_syria
+							region = world_middle_east_arabia
+							region = custom_jerusalem
+							region = custom_egypt
+							region = custom_africa
+						}
+					}
+
+					any_de_jure_vassal_title = {
+						OR = {
+							holder = ROOT
+
+							location = {
+								any_neighbor_province = {
+									owned_by = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+
+			NOR = {
+				reverse_has_truce = ROOT
+				is_married = ROOT
+				is_allied_with = ROOT
+				has_non_aggression_pact_with = ROOT
+				pays_tribute_to = ROOT
+				ROOT = { rightful_religious_head = PREV }
+			}
+
+			reverse_opinion = {
+				who = ROOT
+				value < 0
+			}
+		}
+	}
+
+	immediate = {
+		# First priority
+		random_neighbor_independent_ruler = {
+			limit = {
+				reverse_realm_levy_diff = {
+					who = ROOT
+					value >= 10000
+				}
+
+				NOR = {
+					reverse_has_truce = ROOT
+					is_married = ROOT
+					is_allied_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					pays_tribute_to = ROOT
+					ROOT = { rightful_religious_head = PREV }
+				}
+
+				reverse_opinion = {
+					who = ROOT
+					value < 0
+				}
+			}
+
+			preferred_limit = {
+				any_realm_title = {
+					count = 3
+
+					real_tier = COUNT
+
+					kingdom = {
+						capital_scope = {
+							OR = {
+								region = custom_persia
+								region = custom_baluchistan
+								region = custom_afghanistan
+								region = custom_mesopotamia
+							}
+						}
+
+						any_de_jure_vassal_title = {
+							OR = {
+								holder = ROOT
+
+								location = {
+									any_neighbor_province= {
+										owned_by = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			preferred_limit = {
+				any_realm_title = {
+					count = 3
+
+					real_tier = COUNT
+
+					kingdom = {
+						capital_scope = {
+							OR = {
+								region = custom_armenia
+								region = custom_nikaea
+								region = custom_syria
+							}
+						}
+
+						any_de_jure_vassal_title = {
+							OR = {
+								holder = ROOT
+
+								location = {
+									any_neighbor_province = {
+										owned_by = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			preferred_limit = {
+				any_realm_title = {
+					count = 3
+
+					real_tier = COUNT
+
+					kingdom = {
+						capital_scope = {
+							OR = {
+								region = custom_azerbaijan
+								region = custom_trebizond
+								region = world_middle_east_arabia
+								region = custom_jerusalem
+								region = custom_egypt
+							}
+						}
+
+						any_de_jure_vassal_title = {
+							OR = {
+								holder = ROOT
+
+								location = {
+									any_neighbor_province = {
+										owned_by = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			save_event_target_as = target_ruler
+
+			random_realm_title = {
+				limit = { real_tier = COUNT }
+
+				preferred_limit = {
+					kingdom = {
+						event_target:target_ruler = {
+							num_of_realm_counties = {
+								value = 3
+								title = PREV
+							}
+						}
+
+						capital_scope = {
+							OR = {
+								region = custom_persia
+								region = custom_baluchistan
+								region = custom_afghanistan
+								region = custom_mesopotamia
+							}
+						}
+
+						any_de_jure_vassal_title = {
+							OR = {
+								holder = ROOT
+
+								location = {
+									any_neighbor_province= {
+										owned_by = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+
+				preferred_limit = {
+					kingdom = {
+						event_target:target_ruler = {
+							num_of_realm_counties = {
+								value = 3
+								title = PREV
+							}
+						}
+
+						capital_scope = {
+							OR = {
+								region = custom_armenia
+								region = custom_nikaea
+								region = custom_syria
+							}
+						}
+
+						any_de_jure_vassal_title = {
+							OR = {
+								holder = ROOT
+
+								location = {
+									any_neighbor_province= {
+										owned_by = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+
+				preferred_limit = {
+					kingdom = {
+						event_target:target_ruler = {
+							num_of_realm_counties = {
+								value = 3
+								title = PREV
+							}
+						}
+
+						capital_scope = {
+							OR = {
+								region = custom_azerbaijan
+								region = custom_trebizond
+								region = world_middle_east_arabia
+								region = custom_jerusalem
+								region = custom_egypt
+							}
+						}
+
+						any_de_jure_vassal_title = {
+							OR = {
+								holder = ROOT
+
+								location = {
+									any_neighbor_province= {
+										owned_by = ROOT
+									}
+								}
+							}
+						}
+					}
+				}
+
+				kingdom = {
+					ROOT = {
+						war = {
+							casus_belli = manifest_destiny_invasion
+							target = event_target:target_ruler
+							thirdparty_title = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### MONGOL WAR EVENTS
+
+# Use nomad invasion
+character_event = {
+	id = 60535
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	only_independent = yes
+	culture = mongol
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	ai = yes
+	war = no
+
+	trigger = {
+		OR = {
+			has_landed_title = e_mongol_empire
+			has_landed_title = e_golden_horde
+			has_landed_title = e_ilkhanate
+		}
+
+		is_nomadic = yes
+		is_tributary = no
+		prestige >= 500
+		population_factor >= 0.9
+		is_inaccessible_trigger = no
+
+		trigger_if = {
+			limit = { num_of_count_titles_in_realm >= 50 }
+			has_landed_title = e_mongol_empire
+		}
+
+		any_neighbor_independent_ruler = {
+			num_of_count_titles_in_realm >= 10
+
+			reverse_realm_levy_diff = {
+				who = ROOT
+				value >= 10000
+			}
+
+			relative_power = {
+				who = ROOT
+				power < 3.0
+			}
+
+			any_realm_province = {
+				held_under_PREV = yes
+
+				any_neighbor_province = {
+					owner = { same_realm = ROOT }
+				}
+
+				trigger_if = {
+					limit = {
+						ROOT = {
+							NOT = { has_landed_title = e_mongol_empire }
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = { has_landed_title = e_ilkhanate }
+						}
+
+						OR = {
+							region = world_europe_south_east
+							region = world_middle_east_asia_minor
+							region = world_middle_east
+							region = world_middle_east_persia
+						}
+					}
+					trigger_else = {
+						ROOT = { has_landed_title = e_golden_horde }
+
+						NOR = {
+							region = world_europe_south_east
+							region = world_middle_east_asia_minor
+							region = world_middle_east
+							region = world_middle_east_persia
+						}
+					}
+				}
+
+				NOT = { region = world_india }
+			}
+
+			NOR = {
+				reverse_has_truce = ROOT
+				dynasty = ROOT
+				is_allied_with = ROOT
+				has_non_aggression_pact_with = ROOT
+				is_married = ROOT
+				pays_tribute_to = ROOT
+			}
+
+			reverse_opinion = {
+				who = ROOT
+				value < 25
+			}
+		}
+	}
+
+	weight_multiplier = {
+		factor = 1
+
+		mult_modifier = {
+			factor = 2
+			num_of_count_titles_in_realm < 20
+		}
+
+		mult_modifier = {
+			factor = 0.5
+			num_of_count_titles_in_realm >= 35
+		}
+	}
+
+	immediate = {
+		random_neighbor_independent_ruler = {
+			limit = {
+				num_of_count_titles_in_realm >= 10
+
+				reverse_realm_levy_diff = {
+					who = ROOT
+					value >= 10000
+				}
+
+				relative_power = {
+					who = ROOT
+					power < 3.0
+				}
+
+				any_realm_province = {
+					held_under_PREV = yes
+
+					any_neighbor_province = {
+						owner = { same_realm = ROOT }
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = {
+								NOT = { has_landed_title = e_mongol_empire }
+							}
+						}
+
+						trigger_if = {
+							limit = {
+								ROOT = { has_landed_title = e_ilkhanate }
+							}
+
+							OR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+						trigger_else = {
+							ROOT = { has_landed_title = e_golden_horde }
+
+							NOR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+					}
+
+					NOT = { region = world_india }
+				}
+
+				NOR = {
+					same_realm = ROOT
+					reverse_has_truce = ROOT
+					dynasty = ROOT
+					is_allied_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					is_married = ROOT
+					pays_tribute_to = ROOT
+				}
+
+				reverse_opinion = {
+					who = ROOT
+					value < 25
+				}
+			}
+
+			random_realm_province = {
+				limit = {
+					held_under_PREV = yes
+
+					any_neighbor_province = {
+						owner = { same_realm = ROOT }
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = {
+								NOT = { has_landed_title = e_mongol_empire }
+							}
+						}
+
+						trigger_if = {
+							limit = {
+								ROOT = { has_landed_title = e_ilkhanate }
+							}
+
+							OR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+						trigger_else = {
+							ROOT = { has_landed_title = e_golden_horde }
+
+							NOR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+					}
+
+					NOT = { region = world_india }
+				}
+
+				kingdom = {
+					ROOT = {
+						war = {
+							casus_belli = nomad_invasion
+							target = PREVPREVPREV # The top liege of the owner
+							thirdparty_title = PREV # The de jure kingdom
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Use nomad expansion
+character_event = {
+	id = 60536
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	only_independent = yes
+	culture = mongol
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	ai = yes
+	war = no
+
+	trigger = {
+		OR = {
+			has_landed_title = e_mongol_empire
+			has_landed_title = e_golden_horde
+			has_landed_title = e_ilkhanate
+		}
+
+		is_nomadic = yes
+		is_tributary = no
+		prestige >= 200
+		population_factor = 0.9
+		is_inaccessible_trigger = no
+
+		trigger_if = {
+			limit = { num_of_count_titles_in_realm >= 50 }
+			has_landed_title = e_mongol_empire
+		}
+
+		any_neighbor_independent_ruler = {
+			reverse_realm_levy_diff = {
+				who = ROOT
+				value >= 10000
+			}
+
+			relative_power = {
+				who = ROOT
+				power < 3.0
+			}
+
+			any_realm_province = {
+				held_under_PREV = yes
+
+				any_neighbor_province = {
+					owner = { same_realm = ROOT }
+				}
+
+				trigger_if = {
+					limit = {
+						ROOT = {
+							NOT = { has_landed_title = e_mongol_empire }
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = { has_landed_title = e_ilkhanate }
+						}
+
+						OR = {
+							region = world_europe_south_east
+							region = world_middle_east_asia_minor
+							region = world_middle_east
+							region = world_middle_east_persia
+						}
+					}
+					trigger_else = {
+						ROOT = { has_landed_title = e_golden_horde }
+
+						NOR = {
+							region = world_europe_south_east
+							region = world_middle_east_asia_minor
+							region = world_middle_east
+							region = world_middle_east_persia
+						}
+					}
+				}
+
+				NOT = { region = world_india }
+			}
+
+			NOR = {
+				reverse_has_truce = ROOT
+				dynasty = ROOT
+				is_allied_with = ROOT
+				has_non_aggression_pact_with = ROOT
+				is_married = ROOT
+				pays_tribute_to = ROOT
+			}
+
+			reverse_opinion = {
+				who = ROOT
+				value < 25
+			}
+		}
+	}
+
+	weight_multiplier = {
+		factor = 1
+
+		mult_modifier = {
+			factor = 2
+			num_of_count_titles_in_realm < 20
+		}
+
+		mult_modifier = {
+			factor = 0.5
+			num_of_count_titles_in_realm >= 35
+		}
+	}
+
+	immediate = {
+		random_neighbor_independent_ruler = {
+			limit = {
+				reverse_realm_levy_diff = {
+					who = ROOT
+					value >= 10000
+				}
+
+				relative_power = {
+					who = ROOT
+					power <= 3.0
+				}
+
+				any_realm_province = {
+					held_under_PREV = yes
+
+					any_neighbor_province = {
+						owner = { same_realm = ROOT }
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = {
+								NOT = { has_landed_title = e_mongol_empire }
+							}
+						}
+
+						trigger_if = {
+							limit = {
+								ROOT = { has_landed_title = e_ilkhanate }
+							}
+
+							OR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+						trigger_else = {
+							ROOT = { has_landed_title = e_golden_horde }
+
+							NOR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+					}
+
+					NOT = { region = world_india }
+				}
+
+				NOR = {
+					reverse_has_truce = ROOT
+					dynasty = ROOT
+					is_allied_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					is_married = ROOT
+					pays_tribute_to = ROOT
+				}
+
+				reverse_opinion = {
+					who = ROOT
+					value < 25
+				}
+			}
+
+			random_realm_province = {
+				limit = {
+					held_under_PREV = yes
+
+					any_neighbor_province = {
+						owner = { same_realm = ROOT }
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = {
+								NOT = { has_landed_title = e_mongol_empire }
+							}
+						}
+
+						trigger_if = {
+							limit = {
+								ROOT = { has_landed_title = e_ilkhanate }
+							}
+
+							OR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+						trigger_else = {
+							ROOT = { has_landed_title = e_golden_horde }
+
+							NOR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+					}
+
+					NOT = { region = world_india }
+				}
+
+				duchy = {
+					ROOT = {
+						war = {
+							casus_belli = nomad_expansion
+							target = PREVPREVPREV # The top liege of the owner
+							thirdparty_title = PREV # The de jure duchy
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Use tribal invasion
+character_event = {
+	id = 60537
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	only_independent = yes
+	culture = mongol
+	lacks_dlc = "Horse Lords"
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	ai = yes
+	war = no
+
+	trigger = {
+		OR = {
+			has_landed_title = e_mongol_empire
+			has_landed_title = e_golden_horde
+			has_landed_title = e_ilkhanate
+		}
+
+		is_nomadic = no
+		is_tributary = no
+		prestige >= 500
+		is_inaccessible_trigger = no
+		NOT = { religion_group = christian }
+
+		trigger_if = {
+			limit = { num_of_count_titles_in_realm >= 50 }
+			has_landed_title = e_mongol_empire
+		}
+
+		any_neighbor_independent_ruler = {
+			reverse_realm_levy_diff = {
+				who = ROOT
+				value >= 10000
+			}
+
+			relative_power = {
+				who = ROOT
+				power < 3.0
+			}
+
+			any_realm_province = {
+				held_under_PREV = yes
+
+				any_neighbor_province = {
+					owner = { same_realm = ROOT }
+				}
+
+				trigger_if = {
+					limit = {
+						ROOT = {
+							NOT = { has_landed_title = e_mongol_empire }
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = { has_landed_title = e_ilkhanate }
+						}
+
+						OR = {
+							region = world_europe_south_east
+							region = world_middle_east_asia_minor
+							region = world_middle_east
+							region = world_middle_east_persia
+						}
+					}
+					trigger_else = {
+						ROOT = { has_landed_title = e_golden_horde }
+
+						NOR = {
+							region = world_europe_south_east
+							region = world_middle_east_asia_minor
+							region = world_middle_east
+							region = world_middle_east_persia
+						}
+					}
+				}
+
+				NOT = { region = world_india }
+			}
+
+			NOR = {
+				reverse_has_truce = ROOT
+				dynasty = ROOT
+				is_allied_with = ROOT
+				has_non_aggression_pact_with = ROOT
+				is_married = ROOT
+				pays_tribute_to = ROOT
+			}
+
+			reverse_opinion = {
+				who = ROOT
+				value < 25
+			}
+		}
+	}
+
+	weight_multiplier = {
+		factor = 1
+
+		mult_modifier = {
+			factor = 2
+			num_of_count_titles_in_realm < 20
+		}
+
+		mult_modifier = {
+			factor = 0.5
+			num_of_count_titles_in_realm >= 35
+		}
+	}
+
+	immediate = {
+		random_neighbor_independent_ruler = {
+			limit = {
+				reverse_realm_levy_diff = {
+					who = ROOT
+					value = 10000
+				}
+
+				relative_power = {
+					who = ROOT
+					power < 3.0
+				}
+
+				any_realm_province = {
+					held_under_PREV = yes
+
+					any_neighbor_province = {
+						owner = { same_realm = ROOT }
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = {
+								NOT = { has_landed_title = e_mongol_empire }
+							}
+						}
+
+						trigger_if = {
+							limit = {
+								ROOT = { has_landed_title = e_ilkhanate }
+							}
+
+							OR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+						trigger_else = {
+							ROOT = { has_landed_title = e_golden_horde }
+
+							NOR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+					}
+
+					NOT = { region = world_india }
+				}
+
+				NOR = {
+					reverse_has_truce = ROOT
+					dynasty = ROOT
+					is_allied_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					is_married = ROOT
+					pays_tribute_to = ROOT
+				}
+
+				reverse_opinion = {
+					who = ROOT
+					value < 25
+				}
+			}
+
+			random_realm_province = {
+				limit = {
+					held_under_PREV = yes
+
+					any_neighbor_province = {
+						owner = { same_realm = ROOT }
+					}
+
+					trigger_if = {
+						limit = {
+							ROOT = {
+								NOT = { has_landed_title = e_mongol_empire }
+							}
+						}
+
+						trigger_if = {
+							limit = {
+								ROOT = { has_landed_title = e_ilkhanate }
+							}
+
+							OR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+						trigger_else = {
+							ROOT = { has_landed_title = e_golden_horde }
+
+							NOR = {
+								region = world_europe_south_east
+								region = world_middle_east_asia_minor
+								region = world_middle_east
+								region = world_middle_east_persia
+							}
+						}
+					}
+
+					NOT = { region = world_india }
+				}
+
+				kingdom = {
+					ROOT = {
+						war = {
+							casus_belli = tribal_invasion
+							target = PREVPREVPREV # The top liege of the owner
+							thirdparty_title = PREV # The de jure kingdom
+						}
+					}
+				}
+			}
+		}
+	}
+}

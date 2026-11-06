@@ -612,7 +612,7 @@ GetShortChineseEmperorName_string;[This.GetTitle] of the [This.PrimaryTitle.GetF
 GetCouncillorLetterGreeting_string;The [From.GetJobTitle] of the [From.Liege.GetChineseComplimentAdjective] [From.Liege.GetTitle] addresses a letter to the [Root.GetChineseComplimentAdjective] [Root.GetTitle] of the [Root.PrimaryTitle.GetFullName];Le [From.GetJobTitle] [From.Liege.Get_only_du_Title][From.Liege.GetTitle] adresse une lettre [Root.Get_only_au_Title][Root.GetTitle] [Root.PrimaryTitle.Get_du_RealmFull];Der [From.GetJobTitle] [From.Liege.Getdesder] [From.Liege.GetChineseComplimentAdjective]e[From.Liege.GetnMale] [From.Liege.GetTitle] adressiert einen Brief an [Root.Getdendie] [Root.GetChineseComplimentAdjective]e[Root.GetnMale] [Root.GetTitle] von [Root.PrimaryTitle.GetFullName];;El [From.GetJobTitle] del [From.Liege.GetChineseComplimentAdjective] [From.Liege.GetTitle] dirige una carta al [Root.GetChineseComplimentAdjective] [Root.GetTitle] del [Root.PrimaryTitle.GetFullName];;;;;;;;;x
 
 # GetRulerLetterGreeting
-GetRulerLetterGreeting_string;The [From.GetTitle] of [Root.PrimaryTitle.GetName] sends [From.GetHerHis] greetings to the [Root.GetChineseComplimentAdjective] [Root.GetTitle] of the [Root.PrimaryTitle.GetName];[From.Get_only_Le_Title][From.GetTitle] [Root.PrimaryTitle.Get_du_Realm] envoie ses salutations [Root.Get_only_au_Title][Root.GetTitle] [Root.PrimaryTitle.Get_du_Realm];[From.GetDerDie] [From.GetTitle] von [Root.PrimaryTitle.GetName] entsendet [From.GetHerHis]e Grüße an [Root.Getdendie] [Root.GetChineseComplimentAdjective]e[Root.GetnMale] [Root.GetTitle] von [Root.PrimaryTitle.GetName];;El [From.GetTitle] de [Root.PrimaryTitle.GetName] envía saludos al [Root.GetChineseComplimentAdjective] [Root.GetTitle] del [Root.PrimaryTitle.GetName];;;;;;;;;x
+GetRulerLetterGreeting_string;The [From.GetTitle] of [Root.PrimaryTitle.GetName] sends [From.GetHerHis] greetings to the [Root.GetChineseComplimentAdjective] [Root.GetTitle] of [Root.PrimaryTitle.GetName];[From.Get_only_Le_Title][From.GetTitle] [Root.PrimaryTitle.Get_du_Realm] envoie ses salutations [Root.Get_only_au_Title][Root.GetTitle] [Root.PrimaryTitle.Get_du_Realm];[From.GetDerDie] [From.GetTitle] von [Root.PrimaryTitle.GetName] entsendet [From.GetHerHis]e Grüße an [Root.Getdendie] [Root.GetChineseComplimentAdjective]e[Root.GetnMale] [Root.GetTitle] von [Root.PrimaryTitle.GetName];;El [From.GetTitle] de [Root.PrimaryTitle.GetName] envía saludos al [Root.GetChineseComplimentAdjective] [Root.GetTitle] del [Root.PrimaryTitle.GetName];;;;;;;;;x
 
 # GetGovernorLetterGreeting
 GetGovernorLetterGreeting_string;The [From.GetTitle] of the [From.Offmap.Ruler.GetChineseComplimentAdjective] [From.Offmap.Ruler.GetTitle] addresses a letter to the [Root.GetChineseComplimentAdjective] [Root.GetTitle] of the [Root.PrimaryTitle.GetFullName];[From.Get_only_Le_Title][From.GetTitle] de l'[From.Offmap.Ruler.GetTitle] [From.Offmap.Ruler.GetChineseComplimentAdjective] adresse une lettre [Root.Get_only_au_Title][Root.GetTitle] [Root.PrimaryTitle.Get_du_RealmFull];[From.GetDerDie] [From.GetTitle] des [From.Offmap.Ruler.GetChineseComplimentAdjective]e[From.Offmap.Ruler.GetnMale] [From.Offmap.Ruler.GetTitle][From.Offmap.Ruler.GetsMale] adressiert einen Brief an [Root.Getdendie] [Root.GetChineseComplimentAdjective]e[Root.GetnMale] [Root.GetTitle] von [Root.PrimaryTitle.GetFullName];;El [From.GetTitle] del [From.Offmap.Ruler.GetChineseComplimentAdjective] [From.Offmap.Ruler.GetTitle] dirige una carta al [Root.GetChineseComplimentAdjective] [Root.GetTitle] del [Root.PrimaryTitle.GetFullName];;;;;;;;;x
@@ -898,11 +898,11 @@ String_Pluto_hellenic;Pluton;;;;Plutón;;;;;;;;;x
 String_Pluto_nahua;Mictlanteuccitlalli;;;;;;;;;;;;;x
 
 # GetHermeticsDestinedRole
-String_steward;steward;intendant[This.Get_E];Verwalter;;mayordomo;;;;;;;;;x
-String_figther;fighter;combattant[This.Get_E];Kämpfer;;luchador;;;;;;;;;x
-String_diplomat;diplomat;diplomate;Diplomat;;diplomático;;;;;;;;;x
-String_schemer;schemer;conspirat[This.GetEurRice];Intrigant;;confabulador;;;;;;;;;x
-String_scholar;scholar;érudit[This.Get_E];Gelehrter;;erudito;;;;;;;;;x
+String_steward;steward;intendant[This.Get_E];Verwalter;;mayordom[This.GetOA];;;;;;;;;x
+String_figther;fighter;combattant[This.Get_E];Kämpfer;;luchador[This.GetXA];;;;;;;;;x
+String_diplomat;diplomat;diplomate;Diplomat;;diplomátic[This.GetOA];;;;;;;;;x
+String_schemer;schemer;conspirat[This.GetEurRice];Intrigant;;confabulador[This.GetXA];;;;;;;;;x
+String_scholar;scholar;érudit[This.Get_E];Gelehrter;;erudit[This.GetOA];;;;;;;;;x
 
 # GetHermeticsDestinedExpertise
 String_administration;administration;la gestion;Verwaltung;;la administración;;;;;;;;;x
@@ -998,8 +998,7 @@ String_bad_relationship_omen_bad_event;You feel heart-broken, yet strengthened b
 String_bad_relationship_omen_good_event;You are pleased, but also confused by the inaccuracy of your vision;Vous êtes content[Root.Get_E], mais aussi déconcerté[Root.Get_E] par l'inexactitude de votre vision;Ihr seid zufrieden, aber auch durch die Unrichtigkeit Eurer Vision verwirrt;;La inexactitud de tu visión te complace, pero también te desconcierta.;;;;;;;;;x
 String_our_signs_are_very_compatible;"Our signs are very compatible...";« Nos signes sont très compatibles... »;Unsere Sternzeichen passen sehr gut zueinander ...;;Nuestros signos son muy compatibles...;;;;;;;;;x
 
-# GetSelectedIngredient_1
-# GetSelectedIngredient_2
+# GetIngredientShortName
 String_Hibiscus;Hibiscus;hibiscus;Hibiskus;;hibisco;;;;;;;;;x
 String_Ginger_Root;Ginger Root;racine de gingembre;Ingwerwurzel;;rizoma de jengibre;;;;;;;;;x
 String_Mandrake;Mandrake;mandragore;Alraune;;mandrágora;;;;;;;;;x
@@ -1028,8 +1027,7 @@ String_Copper;Copper;cuivre;Kupfer;;cobre;;;;;;;;;x
 String_Iron;Iron;fer;eiserne;;Férreo;;;;;;;;;x
 String_Tin;Tin;étain;Zinn;;estaño;;;;;;;;;x
 
-
-# GetSelectedIngredient_1_property
+# GetIngredientProperty
 String_is_surprisingly_fragrant;is surprisingly fragrant;a un étonnant parfum;ist überraschend wohlriechend;;es sorprendentemente fragante;;;;;;;;;x
 String_are_surprisingly_fragrant;are surprisingly fragrant;ont un étonnant parfum;sind überraschend wohlriechend;;son sorprendentemente fragantes;;;;;;;;;x
 String_is_faintly_fragrant;is faintly fragrant;a un léger parfum;ist schwach wohlriechend;;es ligeramente fragante;;;;;;;;;x
@@ -1713,7 +1711,7 @@ string_antagonized_reaction_wroth;[From.GetTitledFirstName] has sent [From.GetHe
 string_antagonized_reaction_zealous;[From.GetTitledFirstName] has sent [From.GetHerHis] sycophants to torment me once more, spreading vile rumors about me. Everybody at court is whispering about how much of zealot I am, claiming that I am too unstable to rule over anything.;[From.Get_Le_TitledFirstName] a envoyé ses flagorneurs me tourmenter une fois de plus, répandant de terribles rumeurs sur mon compte. Tout le monde à la cour chuchote maintenant que je suis un[Root.Get_E] fanatique, incapable de régner sur quoi que ce soit.;[From.GetTitledFirstName] hat [From.GetHerHis]e Speichellecker geschickt, um mich erneut zu quälen und bösartige Gerüchte über mich zu verbreiten. Jeder am Hof flüstert jetzt darüber, was für ein religiöser Eiferer ich sei, und behauptet, dass ich zu instabil bin, um über irgendetwas zu herrschen.;;[From.GetTitledFirstName] envía a sus aduladores para atormentarme de nuevo difundiendo rumores viles sobre mí. En la corte todos murmuran sobre mi fanatismo, sosteniendo que soy demasiado inestable para gobernar nada.;;;;;;;;;x
 
 # GetHaruspexName
-string_named_diviner;[FromFrom.GetTitledFirstName];[FromFrom.Get_Le_TitledFirstName];;;;;;;;;;;;x
+string_named_diviner;[diviner.GetTitledFirstName];[diviner.Get_Le_TitledFirstName];;;;;;;;;;;;x
 string_cheap_diviner;The diviner;Le devin;Der Wahrsager;;El adivino;;;;;;;;;x
 
 # GetReformationNature
@@ -1758,22 +1756,22 @@ string_friendly_jewish_interest;Because of our friendship, the Jews will take no
 string_unfriendly_jewish_interest;With the interest agreed upon, I will owe them 350¤ to be paid back at my convenience.;Au taux d'intérêt convenu, je devrai leur rembourser 350¤, payable quand je le voudrai.;Mit dem vereinbarten Zinssatz schulde ich ihnen 350¤, die ich nach meinem Belieben zurückzahlen kann.;;Les deberé 350¤ que pagaré cuando me convenga, con el interés que hemos acordado.;;;;;;;;;x
 
 # GetMiracleShort
-ShortMiracle01;having the stigmata;avoir les stigmates;[saint_person.GetHerHis] Stigma;;tener estigmas;;;;;;;;;x
-ShortMiracle02;[saint_person.GetHerHis] incorruptible body;son corps incorruptible;[saint_person.GetHerHis]e Charakterstärke;;un cuerpo incorrupto;;;;;;;;;x
-ShortMiracle03;miraculous healing;sa guérison miraculeuse;[saint_person.GetHerHis]e wundersamen Heilkräfte;;curación milagrosa;;;;;;;;;x
-ShortMiracle04;prophetic foresight;ses prévisions prophétiques;[saint_person.GetHerHis]e prophetische Voraussicht;;premonición profética;;;;;;;;;x
-ShortMiracle05;reading the minds of others;lire l'esprit des gens;[saint_person.GetHerHis]e Fähigkeit, die Gedanken anderer zu lesen,;;leer la mente de los demás;;;;;;;;;x
-ShortMiracle06;exorcising the creatures of [saint_person.Religion.GetRandomEvilGodNameCap];exorciser les créatures [saint_person.GetEvilGodDuDelaDes];[saint_person.GetHerHis]e Exorzierung der Kreaturen von [saint_person.Religion.GetRandomEvilGodNameCap];;exorcizar las criaturas de [saint_person.Religion.GetRandomEvilGodNameCap];;;;;;;;;x
-ShortMiracle07;conversations with the creatures of [saint_person.Religion.GetHighGodName];ses conversations avec les créatures [saint_person.Get_du_HighGod];[saint_person.GetHerHis]e Unterhaltungen mit den Kreaturen von [saint_person.Religion.GetHighGodName];;conversar con las criaturas de [saint_person.Religion.GetHighGodName];;;;;;;;;x
+ShortMiracle01;having the stigmata;avoir les stigmates;[This.GetHerHis] Stigma;;tener estigmas;;;;;;;;;x
+ShortMiracle02;[This.GetHerHis] incorruptible body;son corps incorruptible;[This.GetHerHis]e Charakterstärke;;un cuerpo incorrupto;;;;;;;;;x
+ShortMiracle03;miraculous healing;sa guérison miraculeuse;[This.GetHerHis]e wundersamen Heilkräfte;;curación milagrosa;;;;;;;;;x
+ShortMiracle04;prophetic foresight;ses prévisions prophétiques;[This.GetHerHis]e prophetische Voraussicht;;premonición profética;;;;;;;;;x
+ShortMiracle05;reading the minds of others;lire l'esprit des gens;[This.GetHerHis]e Fähigkeit, die Gedanken anderer zu lesen,;;leer la mente de los demás;;;;;;;;;x
+ShortMiracle06;exorcising the creatures of [This.Religion.GetRandomEvilGodNameCap];exorciser les créatures [This.GetEvilGodDuDelaDes];[This.GetHerHis]e Exorzierung der Kreaturen von [This.Religion.GetRandomEvilGodNameCap];;exorcizar las criaturas de [This.Religion.GetRandomEvilGodNameCap];;;;;;;;;x
+ShortMiracle07;conversations with the creatures of [This.Religion.GetHighGodName];ses conversations avec les créatures [This.Get_du_HighGod];[This.GetHerHis]e Unterhaltungen mit den Kreaturen von [This.Religion.GetHighGodName];;conversar con las criaturas de [This.Religion.GetHighGodName];;;;;;;;;x
 ShortMiracle08;walking across water to save a man;avoir sauvé un homme de la noyade;dafür, übers Wasser zu laufen, um einen Mann zu retten,;;caminar sobre el agua para salvar a un hombre;;;;;;;;;x
-ShortMiracle09;being heard after [saint_person.GetHerHis] death;être apparu[saint_person.Get_E] après sa mort;dafür, nach [saint_person.GetHerHis]em Tod von anderen gehört zu werden;;oír[saint_person.GetRleRla] después de morir;;;;;;;;;x
-ShortMiracle10;having warm hands;ses mains chaudes;[saint_person.GetHerHis]e warmen Hände;;tener manos cálidas;;;;;;;;;x
+ShortMiracle09;being heard after [This.GetHerHis] death;être apparu[This.Get_E] après sa mort;dafür, nach [This.GetHerHis]em Tod von anderen gehört zu werden;;oír[This.GetRleRla] después de morir;;;;;;;;;x
+ShortMiracle10;having warm hands;ses mains chaudes;[This.GetHerHis]e warmen Hände;;tener manos cálidas;;;;;;;;;x
 ShortMiracle11;praying a heavy object away;avoir déplacé des objets lourds par la prière;dafür, ein schweres Objekt durch Gebete zu bewegen,;;rezar para apartar un objeto pensado;;;;;;;;;x
-ShortMiracle12;being seen carrying own head around after death;avoir été vu tenir sa propre tête après sa mort;dafür, [saint_person.GetHerHis]en eigenen Kopf nach dem Tod rumzutragen,;;cargar con su cabeza después de morir;;;;;;;;;x
+ShortMiracle12;being seen carrying [This.GetHerHis] own head around after death;avoir été vu tenir sa propre tête après sa mort;dafür, [This.GetHerHis]en eigenen Kopf nach dem Tod rumzutragen,;;cargar con su cabeza después de morir;;;;;;;;;x
 ShortMiracle13;blessing local water with the power of love;avoir béni l'eau locale avec le pouvoir de l'amour;dafür, Wasser durch die Kraft der Liebe zu segnen,;;bendecir el agua local con el poder del amor;;;;;;;;;x
-ShortMiracle14;brokering peace with rats;avoir négocié la paix avec des rats;[saint_person.GetHerHis]e Fähigkeit, mit den Ratten Frieden zu schließen,;;negociar la paz con las ratas;;;;;;;;;x
-ShortMiracle15;having a wise dog [saint_person.GetSheHe] conversed with;avoir conversé avec un chien;[saint_person.GetHerHis]en weisen Hund, mit dem [saint_person.GetSheHe] redete,;;tener un perro sabio con el que conversaba;;;;;;;;;x
-ShortMiracle16;being able to float above ground while praying;être capable de flotter au-dessus du sol pendant la prière;[saint_person.GetHerHis]e Fähigkeit, während des Betens über dem Boden zu schweben;;flotar sobre el suelo mientras rezaba;;;;;;;;;x
+ShortMiracle14;brokering peace with rats;avoir négocié la paix avec des rats;[This.GetHerHis]e Fähigkeit, mit den Ratten Frieden zu schließen,;;negociar la paz con las ratas;;;;;;;;;x
+ShortMiracle15;having a wise dog [This.GetSheHe] conversed with;avoir conversé avec un chien;[This.GetHerHis]en weisen Hund, mit dem [This.GetSheHe] redete,;;tener un perro sabio con el que conversaba;;;;;;;;;x
+ShortMiracle16;being able to float above ground while praying;être capable de flotter au-dessus du sol pendant la prière;[This.GetHerHis]e Fähigkeit, während des Betens über dem Boden zu schweben;;flotar sobre el suelo mientras rezaba;;;;;;;;;x
 
 # RandomSaintMiracle
 random_miracle_01;It is said Saint [saint_person.GetFirstName] woke up to [saint_person.GetHerHis] hands and feet bleeding profusely, only for it to miraculously heal a couple of minutes later. Such was [saint_person.GetHerHis] life, so closely following in the footsteps of [saint_person.Religion.GetHighGodName].;Il est dit que saint[saint_person.Get_E] [saint_person.GetFirstName] s'est réveillé[saint_person.Get_E] les mains et les pieds saignant abondamment et qu'[saint_person.GetIlElle] a guéri miraculeusement quelques minutes plus tard. Telle était sa vie, suivant de très près les traces [saint_person.Get_du_HighGod].;Es wird gesagt, dass [saint_person.Getderdie] Heilige [saint_person.GetFirstName] mit blutigen Händen und Füßen erwachte, nur um ein paar Minuten später auf wundersame Weise zu heilen. So verlief [saint_person.GetHerHis] Leben. Immer in den Fußstapfen von [saint_person.Religion.GetHighGodName].;;Se dice que san[saint_person.GetXTa] [saint_person.GetFirstName] despertaba con manos y pies sangrando profusamente para curársele un par de minutos después. Así era su vida, siguiendo estrechamente los pasos de [saint_person.Religion.GetHighGodName].;;;;;;;;;x
@@ -1843,16 +1841,16 @@ string_rock;rock;le rocher;Felsen;;pedrusco;;;;;;;;;x
 
 # GetNature
 GetGenericNature;;;;;;;;;;;;;;x
-GetNatureCharitable;[saint_person.GetHerHis] charitable nature, and ;sa charité et ;[saint_person.GetHerHis]e wohltätige Art und ;;su naturaleza caritativa y ;;;;;;;;;x
-GetNatureChaste;[saint_person.GetHerHis] chaste nature, and ;sa chasteté et ;[saint_person.GetHerHis]e keusche Art und ;;su naturaleza casta y ;;;;;;;;;x
-GetNatureDiligent;[saint_person.GetHerHis] diligent nature, and ;sa diligence et ;[saint_person.GetHerHis]e fleißige Art und ;;su naturaleza diligente y ;;;;;;;;;x
-GetNatureHonest;[saint_person.GetHerHis] honest nature, and ;son honnêteté et ;[saint_person.GetHerHis]e ehrliche Art und ;;su naturaleza honesta y ;;;;;;;;;x
-GetNatureHumble;[saint_person.GetHerHis] humble nature, and ;son caractère humble et ;[saint_person.GetHerHis]e bescheidende Art und ;;su naturaleza humilde y ;;;;;;;;;x
-GetNatureKind;[saint_person.GetHerHis] kind nature, and ;sa nature bienveillante et ;[saint_person.GetHerHis]e nette Art und ;;su naturaleza amable y ;;;;;;;;;x
-GetNatureLunatic;[saint_person.GetHerHis] erratic nature, and ;sa nature erratique et ;[saint_person.GetHerHis]e launische Art und ;;su naturaleza errática y ;;;;;;;;;x
-GetNaturePatient;[saint_person.GetHerHis] patient nature, and ;sa patience et ;[saint_person.GetHerHis]e geduldige Art und ;;su naturaleza paciente y ;;;;;;;;;x
-GetNatureTemperate;[saint_person.GetHerHis] temperate nature, and ;sa tempérance et ;[saint_person.GetHerHis]e gemäßigte Art und ;;su naturaleza frugal y ;;;;;;;;;x
-GetNatureZealous;[saint_person.GetHerHis] righteous nature, and ;son zèle et ;[saint_person.GetHerHis]e gerechte Art und ;;su naturaleza justa y ;;;;;;;;;x
+GetNatureCharitable;[This.GetHerHis] charitable nature, and ;sa charité et ;[This.GetHerHis]e wohltätige Art und ;;su naturaleza caritativa y ;;;;;;;;;x
+GetNatureChaste;[This.GetHerHis] chaste nature, and ;sa chasteté et ;[This.GetHerHis]e keusche Art und ;;su naturaleza casta y ;;;;;;;;;x
+GetNatureDiligent;[This.GetHerHis] diligent nature, and ;sa diligence et ;[This.GetHerHis]e fleißige Art und ;;su naturaleza diligente y ;;;;;;;;;x
+GetNatureHonest;[This.GetHerHis] honest nature, and ;son honnêteté et ;[This.GetHerHis]e ehrliche Art und ;;su naturaleza honesta y ;;;;;;;;;x
+GetNatureHumble;[This.GetHerHis] humble nature, and ;son caractère humble et ;[This.GetHerHis]e bescheidende Art und ;;su naturaleza humilde y ;;;;;;;;;x
+GetNatureKind;[This.GetHerHis] kind nature, and ;sa nature bienveillante et ;[This.GetHerHis]e nette Art und ;;su naturaleza amable y ;;;;;;;;;x
+GetNatureLunatic;[This.GetHerHis] erratic nature, and ;sa nature erratique et ;[This.GetHerHis]e launische Art und ;;su naturaleza errática y ;;;;;;;;;x
+GetNaturePatient;[This.GetHerHis] patient nature, and ;sa patience et ;[This.GetHerHis]e geduldige Art und ;;su naturaleza paciente y ;;;;;;;;;x
+GetNatureTemperate;[This.GetHerHis] temperate nature, and ;sa tempérance et ;[This.GetHerHis]e gemäßigte Art und ;;su naturaleza frugal y ;;;;;;;;;x
+GetNatureZealous;[This.GetHerHis] righteous nature, and ;son zèle et ;[This.GetHerHis]e gerechte Art und ;;su naturaleza justa y ;;;;;;;;;x
 
 # GetConsortSex
 # GetOppositeConsortSex
@@ -1924,9 +1922,9 @@ string_getmonk_orthodox;monk from the Community of Saint Basil;moine de la Commu
 
 # GetCrusaderWeaponName
 string_crusader_culture_weapon_cross;[Root.Culture.GetName] [Root.GetWeaponType] of the Cross;[Root.GetWeaponType] [Root.Culture.GetName] de la Croix;[Root.Culture.GetName][Root.GetWeaponAdjEndingDE] [Root.GetWeaponType] des Kreuzes;;[Root.GetWeaponType] [Root.Culture.GetName] de la Cruz;;;;;;;;;x
-string_crusader_culture_weapon_cross_pope;[k_papacy.Holder.Culture.GetName] [Root.GetWeaponType] of the Cross;[Root.GetWeaponType] [k_papacy.Holder.Culture.GetName] de la Croix;[k_papacy.Holder.Culture.GetName][Root.GetWeaponAdjEndingDE] [Root.GetWeaponType] des Kreuzes;;[Root.GetWeaponType] [k_papacy.Holder.Culture.GetName] de la Cruz;;;;;;;;;x
+string_crusader_culture_weapon_cross_pope;[Root.RelHead.Culture.GetName] [Root.GetWeaponType] of the Cross;[Root.GetWeaponType] [Root.RelHead.Culture.GetName] de la Croix;[Root.RelHead.Culture.GetName][Root.GetWeaponAdjEndingDE] [Root.GetWeaponType] des Kreuzes;;[Root.GetWeaponType] [Root.RelHead.Culture.GetName] de la Cruz;;;;;;;;;x
 string_crusader_culture_weapon_crusader;[Root.Culture.GetName] Crusader [Root.GetWeaponType];[Root.GetWeaponType] [Root.Culture.GetName] de Croisé;[Root.Culture.GetName][Root.GetWeaponAdjEndingDE] Kreuzritter-[Root.GetWeaponType];;[Root.GetWeaponType] cruzada [Root.Culture.GetName];;;;;;;;;x
-string_crusader_culture_weapon_crusader_pope;[k_papacy.Holder.Culture.GetName] Crusader [Root.GetWeaponType];[Root.GetWeaponType] [k_papacy.Holder.Culture.GetName] de Croisé;[k_papacy.Holder.Culture.GetName][Root.GetWeaponAdjEndingDE] Kreuzritter-[Root.GetWeaponType];;[Root.GetWeaponType] cruzada [k_papacy.Holder.Culture.GetName];;;;;;;;;x
+string_crusader_culture_weapon_crusader_pope;[Root.RelHead.Culture.GetName] Crusader [Root.GetWeaponType];[Root.GetWeaponType] [Root.RelHead.Culture.GetName] de Croisé;[Root.RelHead.Culture.GetName][Root.GetWeaponAdjEndingDE] Kreuzritter-[Root.GetWeaponType];;[Root.GetWeaponType] cruzada [Root.RelHead.Culture.GetName];;;;;;;;;x
 string_crusader_positive_weapon_cross;[Root.GetPositiveWeaponAttribute][Root.GetWeaponType] of the Cross;[Root.GetWeaponType] de la Croix;[Root.GetPositiveWeaponAttribute][Root.GetWeaponAdjEndingDE] [Root.GetWeaponType] des Kreuzes;;[Root.GetWeaponType] [Root.GetPositiveWeaponAttribute] de la Cruz;;;;;;;;;x
 string_crusader_positive_weapon_crusader;[Root.GetPositiveWeaponAttribute]Crusader [Root.GetWeaponType];[Root.GetWeaponType] de Croisé;[Root.GetPositiveWeaponAttribute][Root.GetWeaponAdjEndingDE] Kreuzritter-[Root.GetWeaponType];;[Root.GetWeaponType] cruzada [Root.GetPositiveWeaponAttribute];;;;;;;;;x
 

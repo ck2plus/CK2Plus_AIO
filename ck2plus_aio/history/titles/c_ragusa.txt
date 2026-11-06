@@ -1,10 +1,6 @@
-640.1.1 = {
-	liege = e_byzantium
-	de_jure_liege = d_ragusa
-}
-
 769.1.1 = {
 	holder = 260394
+	liege = d_ragusa
 }
 
 867.1.1 = {
@@ -17,6 +13,7 @@
 
 1066.1.1 = {
 	holder = 260396
+	liege = e_byzantium
 }
 
 1101.1.1 = {

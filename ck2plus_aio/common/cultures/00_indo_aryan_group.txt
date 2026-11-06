@@ -1,6 +1,5 @@
-# Bengali* - Oriya* - Assamese* - Hindustani* - Gujurati*
-# Panjabi* - Rajput* - Sindhi* - Marathi* - Sinhala*
-# Nepali*
+# Indo-Aryan
+
 indo_aryan_group = {
 	alternate_start = {
 		NOT = {
@@ -11,10 +10,10 @@ indo_aryan_group = {
 		}
 	}
 
-	graphical_cultures = { indiangfx muslimgfx }
+	graphical_cultures = { indoaryangfx indiangfx muslimgfx } # indiangfx muslimgfx
 
 	assamese = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { assamesegfx }
 		secondary_event_pictures = bedouin
 		color = { 0.6 0.3 0.0 }
 
@@ -56,7 +55,7 @@ indo_aryan_group = {
 	}
 
 	bengali = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { bengaligfx }
 		secondary_event_pictures = bedouin
 		color = { 0.45 0.0 0.0 }
 
@@ -102,8 +101,8 @@ indo_aryan_group = {
 		founder_named_dynasties = yes
 	}
 
-	gujurati = {
-		graphical_cultures = { indiangfx muslimgfx }
+	gujarati = {
+		graphical_cultures = { gujaratigfx }
 		secondary_event_pictures = bedouin
 		color = { 0.4 0.2 0.2 }
 
@@ -145,10 +144,6 @@ indo_aryan_group = {
 			Udayamati
 		}
 
-		castes = yes
-		dynasty_title_names = yes
-		founder_named_dynasties = yes
-
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 25
@@ -159,12 +154,15 @@ indo_aryan_group = {
 		mat_grm_name_chance = 25
 		mother_name_chance = 0
 
+		castes = yes
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
 	}
 
 	hindustani = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { hindustanigfx }
 		secondary_event_pictures = bedouin
-		color = { 1.0 0.0 0.0 }
+		color = { 0.9 0.1 0.0 }
 
 		male_names = {
 			Achalraj_Achalraja Achalraja_Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal_Anangpala Anangpala_Anangpala Anupapala_Anupapala Anuppal_Anupapala "Apara Gangeya" Arjunpal_Arjunpala Arjunpala_Arjunpala Arjunavarman
@@ -175,7 +173,7 @@ indo_aryan_group = {
 			Hamir Hammiravarman Harpal Harsa_Harsa Harshapala_Harsa Hirapal_Hirapala Hirapala_Hirapala
 			Indrapal_Indrapala Indrapala_Indrapala Ishtpala
 			Jaganpal_Jaganpala Jaganpala_Jaganpala Jagatpal_Jagatpala Jagatpala_Jagatpala Jagdev_Jagdeva Jagdeva_Jagdeva Jaidas Jaipal Jaitugideva Jasapala_Jasapala Jaspal_Jasapala Jatanpal_Jatanpala Jatanpala_Jatanpala Jayapala Jayasakti Jayasimha Jayavarman Jhetpal_Jhetpala Jhetpala_Jhetpala Junpala
-			Kailaspal_Kailaspala Kailaspala_Kailaspala Kalkurna Kalyanachandra Kakhopal_Kakhopala Kakhopala_Kakhopala Kamal_Kamal Kanhad Kanvarpal_Kanvarpala Kanvarpala_Kanvarpala Karnpal Keeratdeva Khadag Khetrapal_Khetrapala Khetrapala_Khetrapala Kiratpal_Kiratpala Kiratpala_Kiratpala Krishnray Krsnapa Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar
+			Kailaspal_Kailaspala Kailaspala_Kailaspala Kalkurna Kalyanachandra Kakhopal_Kakhopala Kakhopala_Kakhopala Kamal Kanhad Kanvarpal_Kanvarpala Kanvarpala_Kanvarpala Karnpal Keeratdeva Khadag Khetrapal_Khetrapala Khetrapala_Khetrapala Kiratpal_Kiratpala Kiratpala_Kiratpala Krishnray Krsnapa Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar
 			Ladahachandra Lakshmandeva Lokpala
 			Madanapala Madanavarman Maharana Mahendrapal_Mahendrapala Mahendrapala_Mahendrapala Mahipal_Mahipala Mahipala_Mahipala Mahipata Mahlakadeva Mandandeva Mangaldeva Margdeva Mihira
 			Nagapala Nagdeo Nannuka Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray
@@ -217,7 +215,7 @@ indo_aryan_group = {
 	}
 
 	marathi = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { marathigfx }
 		secondary_event_pictures = bedouin
 		color = { 0.8 0.2 0.0 }
 
@@ -275,9 +273,9 @@ indo_aryan_group = {
 	}
 
 	nepali = {
-		graphical_cultures = { bodpagfx indiangfx southindiangfx muslimgfx }
+		graphical_cultures = { nepaligfx bodpagfx indiangfx southindiangfx } # bodpagfx indiangfx southindiangfx
 		secondary_event_pictures = bedouin
-		color = { 0.65 0.25 0.1  }
+		color = { 0.65 0.25 0.1 }
 
 		male_names = {
 			Aashish Ananta Ankit Akash Aramudi
@@ -286,7 +284,7 @@ indo_aryan_group = {
 			Finjo
 			Gagan
 			Hem
-			Kamal_Kamal Kiran Kush
+			Kamal Kiran Kush
 			Malkit Manish Manu Milan
 			Nabin Ngodup Nikkon
 			Prajun
@@ -318,7 +316,7 @@ indo_aryan_group = {
 		mat_grf_name_chance = 25
 		father_name_chance = 25
 
-		# Chance of male children being named after their paternal or maternal grandmother, or their father. Sum must not exceed 100.
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 25
 		mat_grm_name_chance = 25
 		mother_name_chance = 0
@@ -330,7 +328,7 @@ indo_aryan_group = {
 	}
 
 	oriya = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { oriyagfx }
 		secondary_event_pictures = bedouin
 		color = { 0.8 0.4 0.0 }
 
@@ -377,7 +375,7 @@ indo_aryan_group = {
 	}
 
 	panjabi = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { panjabigfx }
 		secondary_event_pictures = bedouin
 		color = { 0.8 0.3 0.2 }
 
@@ -421,7 +419,7 @@ indo_aryan_group = {
 	}
 
 	rajput = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { rajputgfx }
 		secondary_event_pictures = bedouin
 		color = { 0.6 0.0 0.0 }
 
@@ -434,7 +432,7 @@ indo_aryan_group = {
 			Hamir Hammir-Singh Hammira Hammiravarman Hanspal Hariraja Harischandra Harpal Harsa_Harsa Harshapala_Harsa Hemachandra Hirapal_Hirapala Hirapala_Hirapala
 			Indrapal_Indrapala Indrapala_Indrapala Ishtpala
 			Jagadeva Jaganpal_Jaganpala Jaganpala_Jaganpala Jagatpal_Jagatpala Jagatpala_Jagatpala Jagdev_Jagdeva Jagdeva_Jagdeva Jaidas Jaipal Jaitra-Singh_Jaitrasimha Jaitrasimha_Jaitrasimha Jaitugideva Jasapala Jasapala_Jasapala Jaskarn Jaspal_Jasapala Jatanpal_Jatanpala Jatanpala_Jatanpala Jay-Singh-Deo Jay-Singh_Jayasimha Jayapala Jayaraja_Jayaraja Jayasakti Jayasimha Jayasimha_Jayasimha Jayat-Singh_Jayasimha Jayshikari Jendraraja Jhetpal_Jhetpala Jhetpala_Jhetpala Jojalla Junpala
-			Kailaspal_Kailaspala Kailaspala_Kailaspala Kakhopal_Kakhopala Kakhopala_Kakhopala Kalbhoj Kalkurna Kalyanachandra Kamal_Kamal Kanhad Kanhadadeva Kanvarpal_Kanvarpala Kanvarpala_Kanvarpala Karan-Singh Karandeva_Karnadeva Karnadeva_Karnadeva Karnpal Katudeva Katukaraja Keeratdeva Keerti-Verma_Kirtivarman Kelhana Khadag Kharagraha Khetrapal_Khetrapala Khetrapala_Khetrapala Khuman Kiratpal_Kiratpala Kiratpala_Kiratpala Kirtipala Kirtivarman_Kirtivarman Krishnray Krsnapa Kshem-Singh Kshemraja_Xemraja Kshetra-Singh Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar
+			Kailaspal_Kailaspala Kailaspala_Kailaspala Kakhopal_Kakhopala Kakhopala_Kakhopala Kalbhoj Kalkurna Kalyanachandra Kamal Kanhad Kanhadadeva Kanvarpal_Kanvarpala Kanvarpala_Kanvarpala Karan-Singh Karandeva_Karnadeva Karnadeva_Karnadeva Karnpal Katudeva Katukaraja Keeratdeva Keerti-Verma_Kirtivarman Kelhana Khadag Kharagraha Khetrapal_Khetrapala Khetrapala_Khetrapala Khuman Kiratpal_Kiratpala Kiratpala_Kiratpala Kirtipala Kirtivarman_Kirtivarman Krishnray Krsnapa Kshem-Singh Kshemraja_Xemraja Kshetra-Singh Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar
 			Ladahachandra Lakhanapala Lakhshaman-Singh Lakshmana_Lakshmanadeva Lakshmanadeva_Lakshmanadeva Lakshmandeva Lakshmivarman Lavanyakarna Lokpala Lunavarman Luntiga
 			Madanapala Madanavarman Mahap Maharana Mahayak Mahendra_Mahendrapala Mahendrapal_Mahendrapala Mahendrapala_Mahendra Mahendrapala_Mahendrapala Mahipal_Mahipala Mahipala Mahipala_Mahipala Mahipata Mahlakadeva Maladeva Manavasimha Mandandeva Mangaldeva Margdeva Mathan-Singh Mattat Mihira Mulraja
 			Nagabhata Nagapala Nagarjuna Nagdeo Nagraja Nannuka Nar-Verma_Naravarman Naradeva Narapati Naravarman Naravarman_Naravarman Naravarmandeva_Naravarman Narayanapala Narpal Narwahan Nayapala Nihaal Nihalray
@@ -481,7 +479,7 @@ indo_aryan_group = {
 	}
 
 	sindhi = {
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { sindhigfx }
 		secondary_event_pictures = bedouin
 		color = { 1.0 0.2 0.0 }
 
@@ -526,9 +524,8 @@ indo_aryan_group = {
 	}
 
 	sinhala = { # Indo-Aryans who arrived in Sri Lanka ca 600BC
-		graphical_cultures = { indiangfx muslimgfx }
+		graphical_cultures = { sinhalagfx }
 		secondary_event_pictures = bedouin
-
 		color = { 1.0 0.3 0.3 }
 
 		male_names = {
@@ -571,7 +568,7 @@ indo_aryan_group = {
 		mat_grf_name_chance = 20
 		father_name_chance = 25
 
-		# Chance of male children being named after their paternal or maternal grandmother, or their father. Sum must not exceed 100.
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 25
 		mat_grm_name_chance = 25
 		mother_name_chance = 5

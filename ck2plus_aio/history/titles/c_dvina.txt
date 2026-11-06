@@ -18,14 +18,14 @@
 1094.1.1 = {
 	liege = 0
 	set_tribute_suzerain = {
-		who = k_novgorod
+		who = d_novgorod
 		type = permanent
 	}
 }
 
 1104.1.1 = {
 	holder = 260305
-	clear_tribute_suzerain = k_novgorod
+	clear_tribute_suzerain = d_novgorod
 	liege = d_novgorod
 }
 

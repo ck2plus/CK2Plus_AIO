@@ -1,4 +1,5 @@
-# Bodpa* - Tangut* - Zhangzhung* - Sumpa*
+# Tibetan
+
 tibetan_group = {
 	alternate_start = {
 		NOT = {
@@ -9,17 +10,16 @@ tibetan_group = {
 		}
 	}
 
-	graphical_cultures = { bodpagfx mongolgfx indiangfx muslimgfx }
+	graphical_cultures = { tibetangfx bodpagfx mongolgfx indiangfx muslimgfx } # bodpagfx mongolgfx indiangfx muslimgfx
 
 	bodpa = { # Tibetan
-		graphical_cultures = { bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { bodpagfx } # bodpagfx mongolgfx indiangfx muslimgfx
 		secondary_event_pictures = bedouin
-		color = { 1.0 0.2 0.0  }
+		color = { 1.0 0.2 0.0 }
 
 		male_names = {
 			Aglen
-			Balpo
-			Chakna Changchub Chatri Chokey Chögyal Chukpo
+			Balpo Chakna Changchub Chatri Chokey Chögyal Chukpo
 			Daktri Degyal Denöl Desho Detrin Detsen Detrul Deu Dharmapala Dickey Dingtri Dompu Dondup Donyö Dorje Drag Dragpa Dranga Drigum Drogön Drongnyen Dusong Dzamling
 			Esho
 			Gampo Gangkarwa Gesar_Caesar Getong Gön Gongpa Gongru Gunggyal Gungsong Gungtsen Gyagar Gyal Gyalpo Gyaltore Gyaltsen Gyeltsen
@@ -67,7 +67,7 @@ tibetan_group = {
 		mat_grf_name_chance = 25
 		father_name_chance = 25
 
-		# Chance of male children being named after their paternal or maternal grandmother, or their father. Sum must not exceed 100.
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 25
 		mat_grm_name_chance = 25
 		mother_name_chance = 0
@@ -79,7 +79,7 @@ tibetan_group = {
 		dynasty_name_first = yes
 	}
 
-	sumpa = { # Sumpa
+	sumpa = {
 		alternate_start = {
 			OR = {
 				year < 1000
@@ -90,9 +90,9 @@ tibetan_group = {
 			}
 		}
 
-		graphical_cultures = { bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { sumpagfx } # bodpagfx mongolgfx indiangfx muslimgfx
 		secondary_event_pictures = bedouin
-		color = { 0.8 0.2 0.1  }
+		color = { 0.8 0.2 0.1 }
 
 		male_names = {
 			Dangraskya Datserhim Dirotiga Dudlutsen
@@ -127,26 +127,26 @@ tibetan_group = {
 		mat_grf_name_chance = 30
 		father_name_chance = 20
 
-		# Chance of male children being named after their paternal or maternal grandmother, or their father. Sum must not exceed 100.
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 20
 		mat_grm_name_chance = 25
 		mother_name_chance = 30
 
 		allow_looting = yes
-		count_titles_hidden = yes
 		baron_titles_hidden = yes
+		count_titles_hidden = yes
 		dukes_called_kings = yes
 		dynasty_name_first = yes
 	}
 
 	tangut = {
-		graphical_cultures = { bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { tangutgfx } # bodpagfx mongolgfx indiangfx muslimgfx
 		secondary_event_pictures = bedouin
-		color = { 0.8 0.3 0.0  }
+		color = { 0.8 0.3 0.0 }
 
 		male_names = {
 			Abaoji Abo Abugu Aguo Aguzhi Ala
-			Changyun Changyuan Cheng Chengjun Chixin Chonggui Chongrong Chodak Chucai Chun Chunyou Chuzhi Ci Cite Ciwang
+			Changyuan Changyun Cheng Chengjun Chixin Chodak Chonggui Chongrong Chucai Chun Chunyou Chuzhi Ci Cite Ciwang
 			Dali Dao Daoyin Dashi Deguang Deming Dewang Deyuan Di Diela Dilie Dilu Dorjee Dorlipun Du Duolubu Duoluo Duomi
 			Fangde Fuguzhi Fuliu Fuyi
 			Gan Gang Gaoligu Gongmao Gongzao Guan Guang Guangbi Gui Guochang Guozhe
@@ -165,7 +165,6 @@ tibetan_group = {
 			Xi Xian Xiangwen Xiaozheng Xiaozhong Xiazhen Xidi Xinie Xiu Xiuge Xjwa Xunning Xwej
 			Yali Yan Yangxi Yanxi Yanzhang Yaogu Yaoshinu Yi Yilie Yiliu Yixinning Yongning Yougui Youqing Youyu Yu Yuanhao Yunching Yundeshi Yuyu
 			Zanhua Zao Zeduan Zengbo Zhangyuan Zhaosan Zhen Zhengchang Zhengyan Zhibuwu Zhigu Zhilugu Zhixian Zhiyuan Zhong Zhonggong Zhongji Zhongxuan Zhongyan Zhongyuan Zhulie Zongjiao Zongzhen Zuli Zunxu Zuqian
-
 		}
 
 		female_names = {
@@ -197,35 +196,33 @@ tibetan_group = {
 		mat_grf_name_chance = 25
 		father_name_chance = 25
 
-		# Chance of male children being named after their paternal or maternal grandmother, or their father. Sum must not exceed 100.
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 25
 		mat_grm_name_chance = 25
 		mother_name_chance = 0
 
 		allow_looting = yes
-		count_titles_hidden = yes
 		baron_titles_hidden = yes
+		count_titles_hidden = yes
 		dukes_called_kings = yes
 		dynasty_name_first = yes
 	}
 
-	zhangzhung = { # Zhangzhung
+	zhangzhung = {
 		alternate_start = {
 			OR = {
 				year < 1000
-				has_alternate_start_parameter = {
-					key = culture
-						value = full_random
-					}
+				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
 
-		graphical_cultures = { bodpagfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { zhangzhunggfx } # bodpagfx mongolgfx indiangfx muslimgfx
 		secondary_event_pictures = bedouin
-		color = { 1.0 0.4 0.1  }
+		color = { 1.0 0.4 0.0 }
 
 		male_names = {
-			Atimuwer Berkya Bonchung
+			Atimuwer
+			Berkya Bonchung
 			Chimetsukphü Chirum Chunmardang
 			Dakhor Damitheke Damshe Dangwa Demdruk Denpar Dokchen Donla Draktsen Draktsubkye Drenpa Dud Duddul Durshen Dzomar
 			Gawagye Gekhö Gön Göwar Gurser Guwer Gyalwa Gyer Gyerme Gyerpung Gyung Gyungyar
@@ -246,13 +243,13 @@ tibetan_group = {
 		}
 
 		female_names = {
-			Atak Ataklumo_Ataklumo Atakmo
-			Ba Batsame Bumtsho
+			Atak Ataklumo_Ataklumo Atakmo Ba
+			Batsame Bumtsho
 			Cha Changmo Chatsame Chukmo
 			Dangra Dongkar_Dongkar Drangma Drablai Dronglek Duk Duktsuk Dzomo
 			Gyi Gyichangmo Gyilumo Gyitsame
-			Kering Khyungza Kyinam Kyidagi Kyukma
-			Lekyi Lhogyal Liwer Lumo
+			Kering Khyungza Kyinam Kyidagi Kyukma Lekyi
+			Lhogyal Liwer Lumo
 			Magyal_Magyal Menchung Mewar Molha Mracham
 			Nangze Neuchung Nyakchikma
 			Ongma
@@ -269,7 +266,7 @@ tibetan_group = {
 		mat_grf_name_chance = 25
 		father_name_chance = 25
 
-		# Chance of male children being named after their paternal or maternal grandmother, or their father. Sum must not exceed 100.
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 		pat_grm_name_chance = 25
 		mat_grm_name_chance = 25
 		mother_name_chance = 25
