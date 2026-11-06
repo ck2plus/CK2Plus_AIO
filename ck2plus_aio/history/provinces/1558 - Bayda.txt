@@ -1,0 +1,19 @@
+# 1558 - Bayda
+title = c_bayda
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 3
+b_bayda = castle
+# b_habban
+# b_ashshubaykah
+# b_timna
+# b_ataq
+# b_zinjibar
+# b_alkhabr
+# b_yashbum
+
+# History

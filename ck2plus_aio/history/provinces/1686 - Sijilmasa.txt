@@ -1,0 +1,20 @@
+# 1686 - Sijilmasa
+title = c_sijilmasa
+terrain = desert
+
+# Initial setup
+culture = berber
+religion = kharijite
+
+max_settlements = 3
+b_sijilmasa = castle
+b_tanamouste = temple
+# b_merzouga
+# b_ertoud
+# b_merzane
+# b_hannabou
+# b_tadaout
+# b_tisserdmine
+
+# History
+947.1.1 = { religion = sunni }

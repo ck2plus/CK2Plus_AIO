@@ -1,0 +1,19 @@
+# 1037 - Kumtag
+title = c_kumtag
+terrain = desert
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 3
+b_kumtag = castle
+b_chiting = city
+# b_luohu
+# b_xiaoguoyu			# Fictional
+# b_xiaojian			# Fictional
+# b_dajin				# Fictional
+# b_guojia				# Fictional
+
+# History
+900.1.1 = { culture = uyghur } # Qocho Kingdom

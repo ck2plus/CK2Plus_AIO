@@ -1,0 +1,18 @@
+# 1574 - Lakomelza
+title = c_lakomelza
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 4
+b_ziya = castle
+b_kembolcha = city
+b_dessye = temple
+# b_habru
+# b_tigaja
+# b_cherkwa
+# b_metene
+
+# History

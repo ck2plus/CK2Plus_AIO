@@ -1,0 +1,18 @@
+# 1205 - Sasaram
+title = c_sasaram
+terrain = forest
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 4
+b_jaund = castle
+b_sasaram = city
+# b_mundeshwari
+# b_arrah
+# b_horilnagar
+# b_kapadvanj			# Fictional
+# b_arhu				# Fictional
+
+# History

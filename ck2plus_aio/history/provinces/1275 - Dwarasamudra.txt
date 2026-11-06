@@ -1,0 +1,18 @@
+# 1275 - Dwarasamudra
+title = c_dwarasamudra
+terrain = mountain
+
+# Initial setup
+culture = kannada
+religion = jain
+
+max_settlements = 5
+b_dwarasamudra = castle
+b_belur = temple
+b_sosavur = city
+# b_hassan
+# b_koravangala
+# b_arasikere
+# b_javagallu
+
+# History

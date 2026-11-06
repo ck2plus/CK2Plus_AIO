@@ -1,0 +1,23 @@
+# 196 - Weinsberg
+title = c_weinsberg
+terrain = plains
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 4
+b_weinsberg = castle
+b_rottenburg = city
+b_uffenheim = city
+# b_weikersheim
+# b_hohlach
+# b_ochsenfurt
+# b_weilerburg
+
+# History
+790.1.1 = { culture = franconian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

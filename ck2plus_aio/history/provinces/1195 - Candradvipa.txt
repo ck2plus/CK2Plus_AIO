@@ -1,0 +1,18 @@
+# 1195 - Candradvipa
+title = c_candradvipa
+terrain = jungle
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 3
+b_candradvipa = castle
+b_khulna = city
+# b_sathkira
+# b_bagerhat
+# b_bakarganj
+# b_bilkhet				# Fictional
+# b_dattapulia			# Fictional
+
+# History

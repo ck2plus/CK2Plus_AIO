@@ -1,0 +1,18 @@
+# 1582 - Trinkitat
+title = c_trinkitat
+terrain = mountain
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 4
+b_trinkitat = castle
+b_tokar = city
+b_teb = temple
+# b_derri
+# b_farata
+# b_kwababa
+# b_mukden
+
+# History

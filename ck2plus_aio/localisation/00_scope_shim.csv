@@ -1,0 +1,9 @@
+ROOT_NAME;[Root.GetName];[Root.GetName];[Root.GetName];;[Root.GetName];;;;;;;;;x
+PREV_NAME;[Prev.GetName];;;;;;;;;;;;;x
+FROM_NAME;[From.GetName];;;;;;;;;;;;;x
+ROOT_ADJ;[Root.GetAdjective];;;;;;;;;;;;;x
+PREV_ADJ;[Prev.GetAdjective];;;;;;;;;;;;;x
+FROM_ADJ;[From.GetAdjective];;;;;;;;;;;;;x
+ROOT_FNAME;[Root.GetFirstName];;;;;;;;;;;;;x
+PREV_FNAME;[Prev.GetFirstName];;;;;;;;;;;;;x
+FROM_FNAME;[From.GetFirstName];;;;;;;;;;;;;x

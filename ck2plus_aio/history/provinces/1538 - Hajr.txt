@@ -1,0 +1,21 @@
+# 1538 - Hajr
+title = c_hajr
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 2
+b_assalif = tribal
+# b_alhudaydah
+# b_almaqah
+# b_abha
+# b_khamismushait
+# b_bisha
+# b_baljurashi
+# b_jizan
+
+# History
+894.1.1 = { religion = qarmatian }
+1077.1.1 = { religion = shiite }

@@ -1,0 +1,18 @@
+# 1221 - Sripuri
+title = c_sripuri
+terrain = jungle
+
+# Initial setup
+culture = oriya
+religion = hindu
+
+max_settlements = 4
+b_sripuri = castle
+b_rajiva_lochana = temple
+b_nuapada = temple
+b_bagbahara = temple
+# b_basna
+# b_rajauli					# Fictional
+# b_sanjeli					# Fictional
+
+# History

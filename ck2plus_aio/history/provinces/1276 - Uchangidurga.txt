@@ -1,0 +1,18 @@
+# 1276 - Uchangidurga
+title = c_uchangidurga
+terrain = plains
+
+# Initial setup
+culture = kannada
+religion = hindu
+
+max_settlements = 5
+b_uchangidurga = castle
+b_parivi = city
+b_hemavati = temple
+# b_sira
+# b_harihar
+# b_chitradurga
+# b_nidugallu
+
+# History

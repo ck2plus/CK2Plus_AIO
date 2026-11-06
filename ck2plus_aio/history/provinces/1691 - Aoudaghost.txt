@@ -1,0 +1,26 @@
+# 1691 - Aoudaghost
+title = c_aoudaghost
+terrain = desert
+
+# Initial setup
+culture = soninke
+religion = west_african_pagan
+
+max_settlements = 3
+b_hodh = tribal
+b_moudjeria = temple
+# b_aoudaghost
+# b_ksarelbarka			# Ksar-el-Barka
+# b_kedama
+# b_sarel				# Fictional
+# b_ichga				# Fictional
+
+# History
+890.1.1 = {
+	b_hodh = castle
+	b_aoudaghost = city
+}
+
+1054.1.1 = {
+	religion = sunni
+}

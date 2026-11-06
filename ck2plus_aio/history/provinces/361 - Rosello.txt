@@ -1,0 +1,22 @@
+# 361 - Rosello
+title = c_rosello
+terrain = mountain
+
+# Initial setup
+culture = visigothic
+religion = chalcedonian
+
+max_settlements = 4
+b_perpinya = castle
+b_cuixa = temple
+b_cotlliure = city
+# b_elna
+# b_prada
+# b_oltrera
+# b_canigo
+# b_ceret
+
+# History
+952.1.1 = { culture = catalan }
+1054.7.16 = { religion = catholic } # Great Schism
+1109.1.1 = { trade_post = b_grimaldi }

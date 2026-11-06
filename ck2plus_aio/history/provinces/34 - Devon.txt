@@ -1,0 +1,21 @@
+# 34 - Devon
+title = c_devon
+terrain = hills
+
+# Initial setup
+culture = cornish
+religion = chalcedonian
+
+max_settlements = 5
+b_lydford = castle
+b_exeter = temple
+b_axminster = city
+# b_crediton
+# b_totnes
+# b_tavistock
+# b_dartmouth
+# b_buckfast
+
+# History
+1054.7.16 = { religion = catholic } # Great Schism
+1200.1.1 = { culture = english }

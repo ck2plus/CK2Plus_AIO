@@ -1,0 +1,18 @@
+# 1347 - Kota
+title = c_kota
+terrain = jungle
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 4
+b_kota = castle
+b_koshvardhan = city
+# b_ramgarh
+# b_bundi
+# b_ului				# Fictional
+# b_vairampatti			# Fictional
+# b_vana				# Fictional
+
+# History

@@ -1,0 +1,21 @@
+# 1470 - Basra
+title = c_basra
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = nestorian
+
+max_settlements = 6
+b_ummqasr = castle
+b_basra = city
+b_azzubayr = temple
+b_arah = castle
+b_mohammera = castle
+# b_sukelsheyuhk
+# b_kalaatderat
+# b_qurna
+
+# History
+850.1.1 = { religion = shiite }
+1187.1.1 = { b_arah = castle }

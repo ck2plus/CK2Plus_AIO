@@ -1,0 +1,24 @@
+# 1603 - Esna
+title = c_esna
+terrain = desert
+
+# Initial setup
+culture = coptic
+religion = miaphysite
+
+max_settlements = 3
+b_esna = castle
+b_armant = city
+b_edfu = temple
+# b_hiw
+# b_egypthebes
+# b_egypabydos
+# b_khnum
+
+# History
+1.1.1 = {
+	build_wonder = wonder_luxor_temple
+	set_wonder_stage = 1
+	set_wonder_damaged = yes
+}
+# 1171.1.1 = { religion = sunni }

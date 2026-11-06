@@ -1,0 +1,19 @@
+# No portraits, just for 3D models from "Cultural Cities Remix" - doesn't work correctly without
+steppegfx = {
+	skin_tone = 1
+	christian_portraits = yes
+}
+
+siberiangfx = {
+	skin_tone = 1
+}
+
+siciliangfx = {
+	skin_tone = 1
+}
+
+semitegfx = {
+	skin_tone = 2
+}
+
+# /end of CDCR "fake" gfx

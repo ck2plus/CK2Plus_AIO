@@ -1,0 +1,23 @@
+# 1571 - Gojjam
+title = c_gojjam
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 4
+b_gojjam = tribal
+# b_mankorar
+# b_eliyas
+# b_yejube
+# b_godana_mikael
+# b_yegeleka
+# b_baremma
+
+# History
+1050.1.1 = {
+	b_gojjam = castle
+	b_eliyas = city
+	b_godana_mikael = temple
+}

@@ -1,0 +1,23 @@
+# 22 - Ceredigion
+title = c_ceredigion
+terrain = hills
+
+# Initial setup
+culture = welsh
+religion = chalcedonian
+
+max_settlements = 4
+b_cardigan = castle
+b_llanbadarn = temple
+# b_aberystwyth
+# b_aberaeron
+# b_llanddewi_brefi
+# b_tregaron
+# b_lampeter
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1109.1.1 = { b_aberystwyth = castle }

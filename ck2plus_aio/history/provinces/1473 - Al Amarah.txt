@@ -1,0 +1,19 @@
+# 1473 - Al Amarah
+title = c_al_amarah
+terrain = plains
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 5
+b_amarah = castle
+b_kutelamara = city
+b_wasit = temple
+b_badra = castle
+b_zurbatiyah = castle
+# b_suwaira
+# b_hai
+# b_azeeziaya
+
+# History

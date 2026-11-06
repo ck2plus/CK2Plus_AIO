@@ -1,0 +1,18 @@
+# 1234 - Cakrakuta
+title = c_cakrakuta
+terrain = plains
+
+# Initial setup
+culture = oriya
+religion = hindu
+
+max_settlements = 3
+b_cakrakuta = castle
+# b_jagdalpur
+# b_kanker
+# b_pudunagram			# Fictional
+# b_purbbadulki			# Fictional
+# b_raigarh				# Fictional
+# b_sankarpur			# Fictional
+
+# History

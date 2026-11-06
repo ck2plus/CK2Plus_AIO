@@ -1,0 +1,18 @@
+# 1331 - Katehar
+title = c_katehar
+terrain = hills
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 3
+b_mandawar = castle
+# b_bijnor
+# b_gangadvara
+# b_rishikesh
+# b_nehtaur
+# b_jageshwar
+# b_dusajabad		# Fictional
+
+# History

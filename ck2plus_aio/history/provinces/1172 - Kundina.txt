@@ -1,0 +1,18 @@
+# 1172 - Kundina
+title = c_kundina
+terrain = hills
+
+# Initial setup
+culture = assamese
+religion = buddhist
+
+max_settlements = 3
+b_kundina = castle
+b_prithiminagar = temple
+# b_sadiya
+# b_tinsukia
+# b_nauli				# Fictional
+# b_nijhar				# Fictional
+# b_paravar				# Fictional
+
+# History

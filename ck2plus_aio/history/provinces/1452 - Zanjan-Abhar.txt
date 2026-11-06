@@ -1,0 +1,19 @@
+# 1452 - Zanjan-Abhar
+title = c_zanjan-abhar
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 4
+b_zahanj = castle
+b_wasamkuh = temple
+b_abhar = city
+# b_aba
+# b_suhraward
+# b_mozaffari			# Fictional
+# b_quzlucheh			# Fictional
+
+# History
+1025.1.1 = { religion = sunni }

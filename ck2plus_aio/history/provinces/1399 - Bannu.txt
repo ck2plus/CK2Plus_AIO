@@ -1,0 +1,18 @@
+# 1399 - Bannu
+title = c_bannu
+terrain = desert
+
+# Initial setup
+culture = panjabi
+religion = buddhist
+
+max_settlements = 4
+b_bannu = castle
+b_hangu = city
+# b_karrak
+# b_kohat
+# b_dinkot
+# b_kalabagh
+# b_hindolia		# Fictional
+
+# History

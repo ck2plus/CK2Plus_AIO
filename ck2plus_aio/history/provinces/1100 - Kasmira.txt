@@ -1,0 +1,18 @@
+# 1100 - Kasmira
+title = c_kasmira
+terrain = hills
+
+# Initial setup
+culture = panjabi
+religion = buddhist
+
+max_settlements = 6
+b_srinagara = castle
+b_shankaracharya = temple
+b_parihasapura = temple
+# b_padmapura
+# b_loharakota
+# b_amaresvara
+# b_baghsar
+
+# History

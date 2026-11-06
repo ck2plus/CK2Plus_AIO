@@ -1,0 +1,18 @@
+# 1654 - Ghardaia
+title = c_ghardaia
+terrain = desert
+
+# Initial setup
+culture = berber
+religion = ibadi
+
+max_settlements = 2
+b_ghardaia = castle
+# b_noumerat
+# b_sebseb
+# b_zelfana
+# b_bermane
+# b_mzab
+# b_ouargla
+
+# History

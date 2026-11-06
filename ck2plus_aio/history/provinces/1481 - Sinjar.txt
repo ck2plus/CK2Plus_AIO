@@ -1,0 +1,27 @@
+# 1481 - Sinjar
+title = c_sinjar
+terrain = desert
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 4
+b_sinjar = castle
+b_telassar = city
+b_hatra = temple
+# b_nineveh
+# b_talkayf
+# b_baaj
+# b_kouyunik
+# b_nabiyunus
+
+# History
+867.1.1 = {
+	religion = sunni
+	culture = kurdish
+}
+
+1235.1.1 = {
+	religion = yazidi # Sometime between 1230 - 1245 area was converted according to Yezidi tradition
+}

@@ -1,0 +1,19 @@
+# 1395 - Gurjaratra
+title = c_gurjaratra
+terrain = plains
+
+# Initial setup
+culture = panjabi
+religion = buddhist
+
+max_settlements = 5
+b_gurjaratra = castle
+b_jhelum = city
+b_kharian = temple
+# b_kunjah
+# b_hakla
+# b_tibbi
+# b_karianwala
+# b_bhaddar
+
+# History

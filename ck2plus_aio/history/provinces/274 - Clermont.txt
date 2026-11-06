@@ -1,0 +1,23 @@
+# 274 - Clermont
+title = c_clermont
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 4
+b_clermont_PIC = castle
+b_gisors = city
+b_beauvais = temple
+# b_tille
+# b_nogent_sur_oise
+# b_chelles
+# b_noailles
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

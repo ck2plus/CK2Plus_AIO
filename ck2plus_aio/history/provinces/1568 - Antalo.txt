@@ -1,0 +1,27 @@
+# 1568 - Antalo
+title = c_antalo
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 3
+b_entoto = tribal
+# b_hayq
+# b_shewa
+# b_antsokia
+# b_debreberhan
+# b_bale
+# b_debrelibanos
+# b_oromos
+
+# History
+1050.1.1 = {
+	b_entoto = castle
+	b_shewa = city
+}
+
+1187.1.1 = {
+	b_hayq = temple
+}

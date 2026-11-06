@@ -1,0 +1,102 @@
+330.1.1 = {
+	liege = d_samos
+}
+
+764.1.1 = {
+	holder = 145833
+}
+
+865.1.1 = {
+	holder = 145112
+	liege = d_aegean_islands
+}
+
+936.1.1 = {
+	holder = 260816
+}
+
+1060.1.1 = {
+	holder = 20518
+}
+
+1081.1.1 = {
+	liege = e_byzantium
+}
+
+1090.1.1 = {
+	holder = 34262
+	liege = d_samos
+}
+
+1092.1.1 = {
+	holder = 34264
+}
+
+1093.1.1 = {
+	holder = 20518
+	liege = e_byzantium
+}
+
+1095.1.1 = {
+	liege = d_samos
+}
+
+1108.1.1 = {
+	holder = 215509
+}
+
+1166.1.16 = {
+	holder = 215526
+}
+
+1180.1.2 = {
+	holder = 34276
+}
+
+1199.1.1 = {
+	holder = 34277
+}
+
+1202.1.1 = {
+	holder = 215000
+}
+
+1204.5.16 = {
+	holder = 205523
+	liege = e_latin_empire
+}
+
+1205.6.21 = {
+	holder = 32120
+}
+
+1225.1.1 = {
+	holder = 215000
+	liege = d_samos
+}
+
+1261.1.1 = {
+	holder = 34283
+}
+
+1279.1.1 = {
+	holder = 34286
+}
+
+1304.1.1 = {
+	holder = 31453
+	liege = d_genoa
+}
+
+1307.1.1 = {
+	holder = 31460
+}
+
+1314.1.1 = {
+	holder = 31463
+}
+
+1329.1.1 = {
+	holder = 465500
+	liege = e_byzantium
+}

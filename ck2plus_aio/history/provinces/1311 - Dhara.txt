@@ -1,0 +1,18 @@
+# 1311 - Dhara
+title = c_dhara
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = jain
+
+max_settlements = 5
+b_dhara = castle
+b_betma = city
+b_dharampuri = temple
+# b_indore
+# b_depalpur
+# b_jobat
+# b_sailana
+
+# History

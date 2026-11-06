@@ -1,0 +1,18 @@
+# 1208 - Mithila
+title = c_mithila
+terrain = plains
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 5
+b_mithila = castle
+b_yavamajjhaka = city
+b_saligrama = temple
+# b_sugauna
+# b_darbhanga
+# b_hajipur
+# b_siwan
+
+# History

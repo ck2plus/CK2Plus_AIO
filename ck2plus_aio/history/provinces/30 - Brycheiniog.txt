@@ -1,0 +1,22 @@
+# 30 - Brycheiniog
+title = c_brycheiniog
+terrain = hills
+
+# Initial setup
+culture = welsh
+religion = chalcedonian
+
+max_settlements = 3
+b_brecon = castle
+b_talgarth = city
+b_merthyr_tydfil = temple
+# b_cradoc
+# b_llanddew
+# b_tretower
+# b_crickhowell
+
+# History
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

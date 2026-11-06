@@ -1,0 +1,19 @@
+# 1053 - Kubera
+title = c_kubera
+terrain = plains
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 3
+b_kubera = castle
+# b_axiyan
+# b_toqsu
+# b_gexianmiao				# Fictional
+# b_yangtaoshan				# Fictional
+# b_shitun					# Fictional
+# b_dazhou_fenchang			# Fictional
+
+# History
+900.1.1 = { culture = uyghur } # Qocho Kingdom

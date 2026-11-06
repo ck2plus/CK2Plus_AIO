@@ -1,0 +1,18 @@
+# 1336 - Sthanisvara
+title = c_sthanisvara
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 5
+b_saharanpur = castle
+b_sthanisvara = city
+b_shakumbhri_devi = temple
+# b_sirhind
+# b_karnal
+# b_samana
+# b_panipat
+
+# History

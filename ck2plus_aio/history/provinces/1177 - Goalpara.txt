@@ -1,0 +1,18 @@
+# 1177 - Goalpara
+title = c_goalpara
+terrain = hills
+
+# Initial setup
+culture = assamese
+religion = buddhist
+
+max_settlements = 3
+b_goalpara = castle
+# b_sri_surya_pahar
+# b_kamakhya
+# b_dhubri
+# b_amauli			# Fictional
+# b_amla			# Fictional
+# b_digha			# Fictional
+
+# History

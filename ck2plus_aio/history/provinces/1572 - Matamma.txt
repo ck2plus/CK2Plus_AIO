@@ -1,0 +1,28 @@
+# 1572 - Matamma
+title = c_matamma
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 4
+b_ginbo = tribal
+# b_bonga
+# b_gishabay
+# b_wacha
+# b_chiri
+# b_kaffa
+# b_yadeta
+# b_garo
+
+# History
+1050.1.1 = {
+	b_ginbo = castle
+	b_bonga = city
+	b_gishabay = temple
+}
+
+1187.1.1 = {
+	b_wacha = castle
+}

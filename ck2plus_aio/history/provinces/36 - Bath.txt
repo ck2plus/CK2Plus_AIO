@@ -1,0 +1,21 @@
+# 36 - Bath
+title = c_bath
+terrain = plains
+
+# Initial setup
+culture = anglo_saxon
+religion = chalcedonian
+
+max_settlements = 5
+b_bath = castle
+b_burnham = city
+b_wells = temple
+# b_bristol
+# b_cleeve
+# b_castle_batch
+# b_cadbury
+
+# History
+1000.1.1 = { b_bristol = city } # Bristol founded
+1054.7.16 = { religion = catholic } # Great Schism
+1100.11.11 = { culture = english }

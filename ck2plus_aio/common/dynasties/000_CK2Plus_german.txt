@@ -1,0 +1,32 @@
+1000083005 = {
+	name = "Hunfriding" #aka Burcharding or Bouchardid
+	culture = alemannic
+}
+1000124143 = {
+	name = "von Dettingen"
+	culture = alemannic
+}
+1000124144 = {
+	name = "von Rothenburg"
+	culture = alemannic
+}
+1000124145 = {
+	name = "Bodrich"
+	culture = alemannic
+}
+1000124149 = {
+	name = "von Walbeck"
+	culture = alemannic
+}
+1000124150 = {
+	name = "von Erbach"
+	culture = alemannic
+}
+1000124196 = {
+	name = "von Rikdag"
+	culture = alemannic
+}
+1000124208 = {
+	name = "Ardennes"
+	culture = alemannic
+}

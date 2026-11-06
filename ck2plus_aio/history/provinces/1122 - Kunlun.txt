@@ -1,0 +1,19 @@
+# 1122 - Kunlun
+title = c_kunlun
+terrain = mountain
+
+# Initial setup
+culture = zhangzhung
+religion = bon_pagan
+
+max_settlements = 2
+b_seldang = tribal
+# b_bangdag
+# b_ashi
+# b_ulug
+# b_pur
+# b_yulya
+# b_dulihri
+
+# History
+1050.1.1 = { culture = bodpa } # Zhangzhung culture becomes mostly absorbed by Tibetan

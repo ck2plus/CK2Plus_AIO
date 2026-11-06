@@ -1,0 +1,19 @@
+# 1594 - Makuria
+title = c_makuria
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 6
+b_kawa = castle
+b_dongola = city
+b_kerma = temple
+b_kerat = city
+# b_affat
+# b_qubban
+# b_gabriya
+
+# History
+1337.1.1 = { b_kawa = castle }

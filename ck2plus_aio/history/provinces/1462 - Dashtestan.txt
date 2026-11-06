@@ -1,0 +1,31 @@
+# 1462 - Dashtestan
+title = c_dashtestan
+terrain = desert
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 5
+b_perozabad = castle
+b_darab = city
+b_kakhesasan = temple
+# b_jahrom
+# b_estahbanat
+# b_lamerd
+# b_gerash
+# b_khafr
+
+# History
+867.1.1 = {
+	b_perozabad = ca_keep_1
+	# b_perozabad = ca_desert_stable_1
+	b_perozabad = ca_militia_barracks_1
+	b_perozabad = ca_wall_1
+	b_perozabad = ca_wall_2
+}
+
+1337.1.1 = {
+	religion = sunni
+	b_jahrom = castle
+}

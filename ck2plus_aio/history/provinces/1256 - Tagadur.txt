@@ -1,0 +1,19 @@
+# 1256 - Tagadur
+title = c_tagadur
+terrain = hills
+
+# Initial setup
+culture = tamil
+religion = jain
+
+max_settlements = 5
+b_tagadur = castle
+b_tiruvannamalai = temple
+b_satyamangalam = city
+# b_jinji
+# b_tirukkovalur
+# b_padaividu
+# b_siyyamangalam
+
+# History
+1066.1.1 = { religion = hindu }

@@ -1,0 +1,27 @@
+# 266 - Hainaut
+title = c_hainaut
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_ath = castle
+b_cambrai = temple
+b_valenciennes = city
+# b_mons
+# b_chievres
+# b_enghien
+# b_charleroi
+# b_avesnes
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1187.1.1 = { b_avesnes = castle }
+1280.10.2 = { capital = b_avesnes }

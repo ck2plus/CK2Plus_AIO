@@ -1,0 +1,18 @@
+# 1398 - Purushapura
+title = c_purushapura
+terrain = plains
+
+# Initial setup
+culture = panjabi
+religion = buddhist
+
+max_settlements = 4
+b_purushapura = castle
+b_shah_ji_dheri = temple
+b_nowshera = city
+# b_ali_masjid
+# b_bajaur
+# b_mardan
+# b_shergarh
+
+# History

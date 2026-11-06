@@ -1,0 +1,10 @@
+742.1.1 = {
+	holding_dynasty = 1022327 # Gaulo
+	holder = 145915
+	liege = d_venice
+}
+
+763.1.1 = {
+	holder = 0
+	liege = 0
+}

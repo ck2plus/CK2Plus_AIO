@@ -1,0 +1,18 @@
+# 1400 - Kabul
+title = c_kabul
+terrain = mountain
+
+# Initial setup
+culture = afghan
+religion = buddhist
+
+max_settlements = 5
+b_kabul = castle
+b_adinapur = city
+b_nagarahara = temple
+# b_kapisa
+# b_lampara
+# b_kunar
+# b_kharabat
+
+# History

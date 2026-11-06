@@ -1,0 +1,27 @@
+# 1549 - Dhofar
+title = c_dhofar
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = ibadi
+
+max_settlements = 4
+b_salalah = tribal
+# b_thamarit
+# b_raysut
+# b_amal
+# b_shisr
+# b_dawkah
+# b_durrah
+# b_harzan
+
+# History
+850.1.1 = {
+	religion = sunni
+}
+
+1066.1.1 = {
+	b_salalah = castle
+	b_thamarit = city
+}

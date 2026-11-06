@@ -1,0 +1,18 @@
+# 1585 - Kassala
+title = c_kassala
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 3
+b_kassala = tribal
+# b_doka
+# b_dinder
+# b_aroma
+# b_kagnarti
+# b_tebteb
+# b_gherset
+
+# History

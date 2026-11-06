@@ -1,0 +1,21 @@
+# 360 - Nice
+title = c_nice
+terrain = mountain
+
+# Initial setup
+culture = lombard
+religion = chalcedonian
+
+max_settlements = 4
+b_nizza = temple
+b_mentone = city
+b_monaco = castle
+# b_antibes
+# b_campogrosso
+# b_lantosque
+# b_contes
+
+# History
+829.1.1 = { culture = ligurian }
+1054.7.16 = { religion = catholic } # Great Schism
+1066.1.1 = { trade_post = b_spinola }

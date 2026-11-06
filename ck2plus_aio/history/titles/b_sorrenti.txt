@@ -1,0 +1,17 @@
+751.1.1 = {
+	holding_dynasty = 1022322 # Sorrenti
+	holder = 145901
+	liege = d_amalfi
+}
+
+781.1.1 = {
+	holder = 145903
+}
+
+802.1.1 = {
+	holder = 145904
+}
+
+830.1.1 = {
+	holder = 0
+}

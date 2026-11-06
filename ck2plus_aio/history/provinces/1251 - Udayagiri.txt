@@ -1,0 +1,20 @@
+# 1251 - Udayagiri
+title = c_udayagiri
+terrain = jungle
+
+# Initial setup
+culture = telugu
+religion = jain
+
+max_settlements = 4
+b_udayagiri = castle
+b_srisailam = temple
+b_vallurapura = city
+# b_nandyal
+# b_sriparvata
+# b_gandikota
+# b_mahanandi
+# b_kanipakam
+
+# History
+1066.1.1 = { religion = hindu }

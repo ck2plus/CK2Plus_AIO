@@ -1,0 +1,28 @@
+# 244 - Metz
+title = c_metz
+terrain = plains
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 4
+b_thionville = castle
+b_metz = temple
+b_briey = city
+# b_saintjulien
+# b_marslatour
+# b_bouzonville
+# b_joudreville
+# b_audunleroman
+
+# History
+790.1.1 = { culture = franconian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1171.1.2 = { capital = b_metz }
+
+1187.1.1 = { b_saintjulien = temple }

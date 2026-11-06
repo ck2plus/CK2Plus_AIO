@@ -1,0 +1,19 @@
+# 1023 - Khyargas
+title = c_khyargas
+terrain = desert
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 4
+b_kyzyl = tribal
+# b_turan
+# b_chadaana
+# b_ulala
+# b_ulagan
+# b_saikhan_zam			# Fictional, for prosperity
+# b_azarga				# Fictional, for prosperity
+
+# History
+1227.1.1 = { culture = mongol }

@@ -1,0 +1,27 @@
+# 271 - Boulogne
+title = c_boulogne
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_boulogne = castle
+b_saintpol = castle
+b_montreuil = temple
+b_hesdin = city
+# b_fauquembergues
+# b_ternouis
+# b_therouanne
+# b_ardres
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1187.1.1 = { b_fauquembergues = castle }
+1322.1.1 = { trade_post = b_vorrade }

@@ -1,0 +1,19 @@
+# 1123 - Tsakha
+title = c_tsakha
+terrain = desert
+
+# Initial setup
+culture = zhangzhung
+religion = bon_pagan
+
+max_settlements = 2
+b_tsakha = tribal
+# b_sharma
+# b_nyer
+# b_rungra
+# b_gacha
+# b_ombulung
+# b_perotse
+
+# History
+1050.1.1 = { culture = bodpa } # Zhangzhung culture becomes mostly absorbed by Tibetan

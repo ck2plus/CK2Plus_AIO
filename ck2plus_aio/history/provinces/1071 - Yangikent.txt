@@ -1,0 +1,22 @@
+# 1071 - Yangikent
+title = c_yangikent
+terrain = plains
+
+# Initial setup
+culture = turkish
+religion = tengri_pagan
+
+max_settlements = 4
+b_djend = tribal
+b_yangikent = city
+# b_itchankila
+# b_xazorasp
+# b_bogot
+# b_xonqa
+# b_qorovul
+# b_yangiariq
+# b_shovot
+
+# History
+1100.1.1 = { religion = sunni }
+1221.1.1 = { culture = mongol }

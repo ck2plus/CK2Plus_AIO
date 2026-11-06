@@ -1,0 +1,19 @@
+# 1576 - Gondar
+title = c_gondar
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 5
+b_fasilghebbi = castle
+b_gondar = city
+b_roha = temple
+b_ambassel = castle
+# b_bahirdar
+# b_magdala
+# b_tanaqirqos
+# b_dembiya
+
+# History

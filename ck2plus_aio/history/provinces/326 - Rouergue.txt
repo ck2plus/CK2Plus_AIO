@@ -1,0 +1,22 @@
+# 326 - Rouergue
+title = c_rouergue
+terrain = hills
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 4
+b_najac = castle
+b_rodez = castle
+b_millau = city
+b_vabres = temple
+# b_villefranche
+# b_caylus
+# b_staffrique
+# b_estaing
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

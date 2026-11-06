@@ -1,0 +1,22 @@
+# 190 - Thüringen
+title = c_thuringen
+terrain = plains
+
+# Initial setup
+culture = thuringian
+religion = chalcedonian
+
+max_settlements = 4
+b_erfurt = castle
+b_arnstadt = city
+b_muhlhausen = temple
+b_henneberg = castle
+# b_eichsfeld
+# b_reuss
+# b_salzungen
+# b_schmalkalden
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

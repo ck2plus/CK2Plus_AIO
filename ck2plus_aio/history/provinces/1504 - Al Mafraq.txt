@@ -1,0 +1,23 @@
+# 1504 - Al Mafraq
+title = c_al_mafraq
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 3
+b_mafraq = castle
+b_thughra = city
+b_jarash = temple
+# b_nasib
+# b_buwayda
+# b_ramtah
+# b_taebah
+# b_elemtaih
+
+# History
+1110.1.1 = {
+	max_settlements = 4
+	b_buwayda = castle
+}

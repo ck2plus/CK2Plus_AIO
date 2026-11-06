@@ -1,0 +1,23 @@
+# 24 - Anglesey
+title = c_anglesey
+terrain = hills
+
+# Initial setup
+culture = welsh
+religion = catholic
+
+max_settlements = 4
+b_aberffraw = castle
+b_llanfaes = temple
+b_holyhead = city
+# b_llangefni
+# b_benllech
+# b_amlwch
+# b_beaumaris
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1295.1.1 = { b_beaumaris = castle }

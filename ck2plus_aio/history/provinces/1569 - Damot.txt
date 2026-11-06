@@ -1,0 +1,22 @@
+# 1569 - Damot
+title = c_damot
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 4
+b_awasa = tribal
+# b_malbarde
+# b_muger
+# b_yirga_chefe
+# b_fasha
+# b_zima
+# b_teltele
+
+# History
+1050.1.1 = {
+	b_awasa = castle
+	b_yirga_chefe = city
+}

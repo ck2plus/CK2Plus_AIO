@@ -1,0 +1,24 @@
+# 267 - Gent
+title = c_gent
+terrain = plains
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 5
+b_oudenaarde = castle
+b_gent = city
+b_doornik = temple
+b_kortrijk = city
+# b_dendermonde
+# b_geraarsbergen
+# b_st_niklaas
+# b_aalst
+
+# History
+790.1.1 = { culture = dutch }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

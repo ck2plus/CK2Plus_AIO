@@ -1,0 +1,19 @@
+# 1506 - Az Zarqa
+title = c_az_zarqa
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 4
+b_zarqa = castle
+b_russeifa = city
+b_shabib = temple
+# b_qasramra
+# b_qasralhallabat
+# b_hashemiyya
+# b_khurqah
+# b_amratamad
+
+# History

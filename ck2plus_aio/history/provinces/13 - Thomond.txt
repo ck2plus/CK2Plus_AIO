@@ -1,0 +1,27 @@
+# 13 - Thomond
+title = c_thomond
+terrain = plains
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 4
+b_bunratty = tribal
+b_killaloe = temple
+# b_limerick
+# b_emly
+# b_ennis
+# b_kilfenora
+# b_askeaton
+# b_adare
+
+# History
+1000.1.1 = {
+	b_bunratty = castle
+	b_limerick = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

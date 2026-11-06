@@ -1,0 +1,18 @@
+# 1192 - Bikrampur
+title = c_bikrampur
+terrain = jungle
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 4
+b_bikrampur = castle
+b_sutrapur = city
+# b_dhakeshwari_jatiya_mandir
+# b_loricol
+# b_shakhari_bazar
+# b_hajiganj
+# b_meddappakkam					# Fictional
+
+# History

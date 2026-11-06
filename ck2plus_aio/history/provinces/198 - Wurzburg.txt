@@ -1,0 +1,25 @@
+# 198 - Würzburg
+title = c_wurzburg
+terrain = forest
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 5
+b_schweinfurt = castle
+b_wurzburg = temple
+b_marienberg = city
+# b_hammelburg
+# b_schwarzenberg
+# b_theiheim
+# b_mainderheim
+
+# History
+790.1.1 = { culture = franconian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1168.1.1 = { capital = b_wurzburg }

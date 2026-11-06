@@ -1,0 +1,82 @@
+# realm_wonder_or_upgrade_has_flag_inspires_learning_trigger
+# realm_wonder_or_upgrade_has_flag_burial_ground_trigger
+# realm_wonder_or_upgrade_has_flag_grand_library_trigger
+# realm_wonder_or_upgrade_has_flag_grand_amphitheater_trigger
+
+# is_using_ocean_background_trigger
+
+
+realm_wonder_or_upgrade_has_flag_inspires_learning_trigger = {
+	OR = {
+		any_realm_wonder_upgrade = {
+			is_active = yes
+			has_wonder_upgrade_flag = inspires_learning
+		}
+
+		any_realm_wonder = {
+			is_active = yes
+			has_wonder_flag = inspires_learning
+		}
+	}
+}
+
+realm_wonder_or_upgrade_has_flag_burial_ground_trigger = {
+	OR = {
+		any_realm_wonder_upgrade = {
+			is_active = yes
+			has_wonder_upgrade_flag = burial_ground
+		}
+
+		any_realm_wonder = {
+			is_active = yes
+			has_wonder_flag = burial_ground
+		}
+	}
+}
+
+realm_wonder_or_upgrade_has_flag_grand_library_trigger = {
+	OR = {
+		any_realm_wonder_upgrade = {
+			is_active = yes
+			has_wonder_upgrade_flag = grand_library
+		}
+
+		any_realm_wonder = {
+			is_active = yes
+			has_wonder_flag = grand_library
+		}
+	}
+}
+
+realm_wonder_or_upgrade_has_flag_grand_amphitheater_trigger = {
+	OR = {
+		any_realm_wonder_upgrade = {
+			is_active = yes
+			has_wonder_upgrade_flag = grand_amphitheater
+		}
+
+		any_realm_wonder = {
+			is_active = yes
+			has_wonder_flag = grand_amphitheater
+		}
+	}
+}
+
+
+
+# Province scope
+is_using_ocean_background_trigger = {
+	OR = {
+		trigger_if = {
+			limit = { is_coastal = yes }
+
+			wonder = {
+				has_wonder_flag = ocean_background_coastal
+			}
+		}
+
+		wonder = {
+			has_wonder_flag = ocean_background
+		}
+	}
+}

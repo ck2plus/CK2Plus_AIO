@@ -1,0 +1,18 @@
+# 1592 - Atbara
+title = c_atbara
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 5
+b_shendi = castle
+b_atbara = city
+b_meruwah = temple
+# b_begarawiyah
+# b_hajaralasla
+# b_ummmardi
+# b_abudis
+
+# History

@@ -1,0 +1,27 @@
+# 1631 - Syrte
+title = c_syrte
+terrain = desert
+
+# Initial setup
+culture = berber
+religion = ibadi
+
+max_settlements = 4
+b_syrte = tribal
+b_assidr = temple
+# b_abuhadi
+# b_lanuf
+# b_nawfalliyah
+# b_sinauen				# Fictional
+# b_lathrun				# Fictional
+
+# History
+1051.1.1 = {
+	religion = sunni
+	b_syrte = castle
+	b_abuhadi = city
+}
+
+1168.1.1 = {
+	trade_post = b_ziani
+}

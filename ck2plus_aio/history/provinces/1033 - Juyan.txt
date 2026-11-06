@@ -1,0 +1,31 @@
+# 1033 - Juyan
+title = c_juyan
+terrain = desert
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_juyan = tribal
+# b_chuyen_hai
+# b_sogo_nuur
+# b_gaxun_nur
+# b_subozhuoer
+# b_shivee_khuren
+# b_murengaole
+
+# History
+869.1.1 = {
+	religion = manichaean
+}
+
+1066.1.1 = {
+	culture = tangut
+	religion = buddhist
+}
+
+1227.1.1 = {
+	culture = mongol
+	religion = tengri_pagan
+}

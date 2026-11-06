@@ -1,0 +1,19 @@
+# 1507 - Amman
+title = c_amman
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 3
+b_amman = castle
+b_mahis = temple
+b_salt = city
+# b_dhiban
+# b_fuheis
+# b_deir_alla
+# b_jerash
+# b_al_balqa
+
+# History

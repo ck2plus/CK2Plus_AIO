@@ -1,0 +1,19 @@
+# 1003 - Khövsgöl
+title = c_khovsgol
+terrain = plains
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_khovsgol = tribal
+# b_orlik
+# b_sorok
+# b_botogol
+# b_onot
+# b_arshan
+# b_mondy
+
+# History
+1227.1.1 = { culture = mongol }

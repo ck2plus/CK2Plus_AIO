@@ -1,0 +1,30 @@
+# 1437 - Gilan
+title = c_gilan
+terrain = plains
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 6
+b_gilan = castle
+b_masouleh = castle
+b_talysh = temple
+b_lahijan = city
+# b_astara
+# b_rudkhan
+# b_masal
+
+# History
+651.1.1 = {
+	b_gilan = ca_town_1
+	b_gilan = ca_wall_1
+	b_gilan = ca_wall_q_1
+	b_gilan = ca_keep_1
+	b_gilan = ca_militia_barracks_1
+	b_talysh = tp_town_1
+}
+
+900.1.1 = { religion = shiite }
+1187.1.1 = { b_rudkhan = castle }
+1201.1.1 = { b_astara = city }

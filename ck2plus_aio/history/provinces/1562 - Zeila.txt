@@ -1,0 +1,18 @@
+# 1562 - Zeila
+title = c_zeila
+terrain = mountain
+
+# Initial setup
+culture = somali
+religion = sunni
+
+max_settlements = 5
+b_zeila = castle
+b_hargeysa = city
+b_amud = temple
+b_borama = city
+# b_jijiga
+# b_dilla
+# b_lughaya
+
+# History

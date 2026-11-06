@@ -1,0 +1,19 @@
+# 1536 - Halaban
+title = c_halaban
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 2
+b_afif = tribal
+# b_badaiidyan
+# b_alqaiyah
+# b_aljammaniyah
+# b_albijadiyah
+# b_almaklah
+# b_albaharah
+# b_arradum
+
+# History

@@ -1,0 +1,22 @@
+# 358 - Forcalquier
+title = c_forcalquier
+terrain = mountain
+
+# Initial setup
+culture = visigothic
+religion = chalcedonian
+
+max_settlements = 4
+b_forcalquier = castle
+b_apt = city
+b_embrun = temple
+# b_nyons
+# b_sisteron
+# b_briancon
+# b_vaison
+# b_gap
+
+# History
+867.1.1 = { culture = occitan }
+1054.7.16 = { religion = catholic } # Great Schism
+1187.1.1 = { b_sisteron = castle }

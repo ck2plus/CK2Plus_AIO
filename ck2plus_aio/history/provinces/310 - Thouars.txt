@@ -1,0 +1,24 @@
+# 310 - Thouars
+title = c_thouars
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_thouars = castle
+b_larochelle = city
+b_lucon = temple
+# b_chatelaillon
+# b_bressuire
+# b_olonne
+# b_mauleon
+# b_fontenay
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

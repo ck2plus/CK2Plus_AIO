@@ -1,0 +1,24 @@
+# 229 - Chur
+title = c_chur
+terrain = mountain
+
+# Initial setup
+culture = alemannic
+religion = chalcedonian
+
+max_settlements = 3
+b_chur = temple
+b_davos = city
+b_glurns = castle
+# b_churwalden
+# b_maienfeld
+# b_illanz
+# b_thusis
+# b_zuoz
+
+# History
+1000.1.1 = { culture = swabian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

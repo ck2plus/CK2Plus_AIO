@@ -1,0 +1,23 @@
+# 1557 - Aden
+title = c_aden
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 6
+b_dhala = castle
+b_aden = city
+b_lahej = temple
+# b_alawbhali
+# b_jaar
+# b_alkawd
+# b_almilah
+# b_alarbadi
+
+# History
+1110.1.1 = {
+	b_alawbhali = castle
+	b_jaar = castle
+}

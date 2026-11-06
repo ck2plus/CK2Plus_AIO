@@ -1,0 +1,23 @@
+# 294 - Perche
+title = c_perche
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 3
+b_belleme = castle
+b_mortagne = temple
+b_nogent_le_rotrou = city
+# b_luigny
+# b_senonches
+# b_verneuil
+# b_longny
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

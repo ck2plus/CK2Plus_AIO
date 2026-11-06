@@ -1,0 +1,19 @@
+# 1265 - Dakhina Desa
+title = c_dakhina_desa
+terrain = plains
+
+# Initial setup
+culture = sinhala
+religion = buddhist
+
+max_settlements = 5
+b_vapinagara = castle
+b_samantakuta = temple
+b_kalyani2 = city
+# b_mahiyangana
+# b_jambudoni
+# b_hatthigiripura
+# b_kotte
+# b_rayigama
+
+# History

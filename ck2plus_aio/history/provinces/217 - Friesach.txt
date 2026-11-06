@@ -1,0 +1,29 @@
+# 217 - Friesach
+title = c_friesach
+terrain = marsh
+
+# Initial setup
+culture = carantanian
+religion = slavic_pagan
+
+max_settlements = 4
+b_wolfsberg = tribal
+# b_petersberg
+# b_sankt_veit
+# b_sankt_lambrecht
+# b_micheldorf
+# b_althofen
+# b_st_nicholas_friesach
+
+# History
+846.1.1 = {
+	religion = chalcedonian
+	b_petersberg = castle
+	b_sankt_veit = temple
+	b_wolfsberg = city
+	capital = b_petersberg
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

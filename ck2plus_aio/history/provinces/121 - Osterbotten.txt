@@ -1,0 +1,26 @@
+# 121 - Osterbotten
+title = c_osterbotten
+terrain = forest
+
+# Initial setup
+culture = finnish
+religion = finnish_pagan
+
+max_settlements = 3
+b_vaasa = tribal
+# b_kristinestad
+# b_korsholm
+# b_liminka
+# b_kalajoki
+# b_kaskinen
+# b_veteli
+
+# History
+1250.1.1 = {
+	religion = catholic # Northern Crusades
+	b_vaasa = castle
+}
+
+1337.1.1 = {
+	b_kristinestad = city
+}

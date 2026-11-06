@@ -1,0 +1,19 @@
+# 1272 - Talakad
+title = c_talakad
+terrain = hills
+
+# Initial setup
+culture = kannada
+religion = jain
+
+max_settlements = 4
+b_talakad = castle
+b_veppur = city
+b_somanathapura = city
+# b_ummattur
+# b_sivasamudram
+# b_kotagiri
+# b_narasamangala
+# b_nanjangud
+
+# History

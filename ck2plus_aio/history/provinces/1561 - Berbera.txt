@@ -1,0 +1,19 @@
+# 1561 - Berbera
+title = c_berbera
+terrain = desert
+
+# Initial setup
+culture = somali
+religion = sunni
+
+max_settlements = 4
+b_berbera = castle
+b_maydh = city
+# b_gabiley
+# b_burco
+# b_mandera
+# b_daarbuduq
+# b_shiikh
+
+# History
+1187.1.1 = { b_maydh = city }

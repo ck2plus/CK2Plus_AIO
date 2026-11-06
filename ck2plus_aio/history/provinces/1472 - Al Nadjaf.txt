@@ -1,0 +1,19 @@
+# 1472 - Al Nadjaf
+title = c_al_nadjaf
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = nestorian
+
+max_settlements = 4
+b_kufah = castle
+b_taqtaqanah = city
+b_nadjaf = temple
+# b_jasim
+# b_midhrawi
+# b_rashid
+# b_jaarah
+
+# History
+850.1.1 = { religion = shiite }

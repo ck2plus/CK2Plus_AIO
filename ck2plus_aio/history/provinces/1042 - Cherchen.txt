@@ -1,0 +1,22 @@
+# 1042 - Cherchen
+title = c_cherchen
+terrain = desert
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 4
+b_cherchen = castle
+# b_calmandana
+# b_mocheng
+# b_zuomo
+# b_yuling
+# b_yeyik
+# b_sutang
+
+# History
+1006.1.1 = {
+	culture = uyghur
+	religion = sunni
+}

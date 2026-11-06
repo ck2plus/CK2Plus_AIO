@@ -1,0 +1,18 @@
+# 1229 - Puri
+title = c_puri
+terrain = plains
+
+# Initial setup
+culture = oriya
+religion = buddhist
+
+max_settlements = 4
+b_jaugada = castle
+b_puri = temple
+b_buguda = city
+# b_aska
+# b_ganjam
+# b_taratarini
+# b_gopalpur
+
+# History

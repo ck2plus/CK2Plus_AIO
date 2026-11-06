@@ -1,0 +1,20 @@
+# 1407 - Armail
+title = c_armail
+terrain = desert
+
+# Initial setup
+culture = sindhi
+religion = buddhist
+
+max_settlements = 3
+b_armail = castle
+b_hingula = temple
+# b_kambali
+# b_yusli
+# b_rihana_sahu		# Fictional
+# b_basti_basira	# Fictional
+# b_pejoke			# Fictional
+# b_daryun			# Fictional
+
+# History
+800.1.1 = { religion = sunni }

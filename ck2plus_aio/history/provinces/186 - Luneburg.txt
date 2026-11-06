@@ -1,0 +1,40 @@
+# 186 - Lüneburg
+title = c_luneburg
+terrain = hills
+
+# Initial setup
+culture = saxon
+religion = german_pagan
+
+max_settlements = 4
+b_luneburg = tribal
+# b_bardowick
+# b_gifhorn
+# b_evern
+# b_reppenstedt
+# b_ludersburg
+# b_thomasburg
+# b_uelzen
+
+# History
+777.1.1 = { # start of mass conversion by Anglo-Saxon/Frisian missionaries
+	religion = chalcedonian
+	b_gifhorn = temple
+}
+
+782.1.1 = { # Widukind returns, stirs rebellion
+	religion = german_pagan
+}
+
+785.1.1 = { # rebellion defeated
+	religion = chalcedonian
+}
+
+805.1.1 = {
+	b_luneburg = castle
+	b_bardowick = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

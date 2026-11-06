@@ -1,0 +1,23 @@
+# 1486 - Amida
+title = c_amida
+terrain = mountain
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 4
+b_kiaburc = castle
+b_amida = city
+b_ulucamii = temple
+# b_suraamede
+# b_mayyafarikin
+# b_hazretisuleymancamii
+# b_egil
+# b_idtodyolataloho
+
+# History
+920.1.1 = {
+	religion = sunni
+	culture = kurdish
+}

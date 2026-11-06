@@ -1,0 +1,18 @@
+# 1174 - Haruppeswara
+title = c_haruppeswara
+terrain = plains
+
+# Initial setup
+culture = assamese
+religion = buddhist
+
+max_settlements = 4
+b_haruppeswara = castle
+b_numaligarh = castle
+# b_dibarumukh
+# b_charaideo
+# b_kunnatur			# Fictional
+# b_kuppar				# Fictional
+# b_malabar				# Fictional
+
+# History

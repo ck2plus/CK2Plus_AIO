@@ -1,0 +1,19 @@
+# 1601 - Quena
+title = c_quena
+terrain = desert
+
+# Initial setup
+culture = coptic
+religion = miaphysite
+
+max_settlements = 4
+b_quena = castle
+b_qus = city
+b_qift = temple
+# b_luxor
+# b_shiblanjah			# Fictional
+# b_khalaf				# Fictional
+# b_bilbeis				# Fictional
+
+# History
+# 1171.1.1 = { religion = sunni }

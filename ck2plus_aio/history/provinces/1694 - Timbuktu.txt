@@ -1,0 +1,34 @@
+# 1694 - Timbuktu
+title = c_timbuktu
+terrain = plains
+
+# Initial setup
+culture = soninke
+religion = west_african_pagan
+
+max_settlements = 5
+b_tirakka = tribal
+b_sankore = temple
+# b_timbuktu
+# b_safanqu
+# b_kabara
+# b_tendirma
+# b_dire
+# b_gundam
+
+# History
+1050.1.1 = {
+	culture = berber
+	# culture = butr
+	religion = sunni
+	b_tirakka = castle
+}
+
+1200.1.1 = {
+	b_timbuktu = city
+	b_sankore = temple
+}
+
+1300.1.1 = {
+	b_safanqu = castle
+}

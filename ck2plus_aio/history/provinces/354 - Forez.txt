@@ -1,0 +1,23 @@
+# 354 - Forez
+title = c_forez
+terrain = hills
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_couzan = castle
+b_charlieu = temple
+b_montbrison = city
+# b_thiers
+# b_feurs
+# b_roanne
+# b_chalmazel
+# b_stetienne
+
+# History
+790.1.1 = { culture = french }
+1054.7.16 = { religion = catholic } # Great Schism
+1187.1.1 = { b_roanne = castle }
+1337.1.1 = { b_feurs = city }

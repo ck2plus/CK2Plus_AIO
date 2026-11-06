@@ -1,0 +1,18 @@
+# 1333 - Sambhal
+title = c_sambhal
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 5
+b_sambhal = castle
+b_tattandapura = city
+b_ujhani = temple
+b_amroha = castle
+# b_sirsi
+# b_bachhraon
+# b_gokal				# Fictional
+
+# History

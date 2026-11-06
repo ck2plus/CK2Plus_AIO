@@ -1,0 +1,20 @@
+# 1435 - Qwivir
+title = c_qwivir
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 5
+b_semnan = castle
+b_darvar = city
+b_damqan = temple
+b_dehnamak = castle
+# b_sangsar
+# b_sharequmis
+# b_gerdkuh
+# b_kohandej
+
+# History
+864.1.1 = { religion = shiite }

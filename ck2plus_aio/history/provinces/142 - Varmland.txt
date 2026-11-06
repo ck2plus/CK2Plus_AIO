@@ -1,0 +1,28 @@
+# 142 - Värmland
+title = c_varmland
+terrain = forest
+
+# Initial setup
+culture = norse
+religion = norse_pagan
+
+max_settlements = 3
+b_saxholm = tribal
+# b_arvika
+# b_josse
+# b_nordmark
+# b_fryksdal
+# b_kil
+# b_vase
+# b_gillberg
+
+# History
+1000.1.1 = {
+	b_saxholm = castle
+	b_arvika = city
+}
+
+1066.1.1 = {
+	culture = swedish
+	religion = catholic
+}

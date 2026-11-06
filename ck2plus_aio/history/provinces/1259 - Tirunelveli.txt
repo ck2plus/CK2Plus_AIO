@@ -1,0 +1,18 @@
+# 1259 - Tirunelveli
+title = c_tirunelveli
+terrain = plains
+
+# Initial setup
+culture = tamil
+religion = hindu
+
+max_settlements = 4
+b_tirunelveli = castle
+b_kayattar = temple
+b_korkai = city
+# b_kayal
+# b_kalugumalai
+# b_tiruvalisvaram
+# b_santera				# Fictional
+
+# History

@@ -1,0 +1,21 @@
+# 29 - Builth
+title = c_builth
+terrain = mountain
+
+# Initial setup
+culture = welsh
+religion = chalcedonian
+
+max_settlements = 3
+b_builth = castle
+b_llanafan_fawr = temple
+# b_llandrindod
+# b_abergwesyn
+# b_llanwrtyd
+# b_aberedw
+# b_llangammarch
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

@@ -1,0 +1,23 @@
+# 1616 - Tinnis
+title = c_tinnis
+terrain = plains
+
+# Initial setup
+culture = egyptian
+religion = sunni
+
+max_settlements = 5
+b_pelusia = castle
+b_said = city
+b_alsalihiyah = temple
+b_ismaillia = castle
+# b_sile
+# b_pithom
+# b_serapeum
+
+# History
+767.1.1 = { religion = miaphysite }
+909.1.1 = { religion = shiite }
+1171.1.1 = { religion = sunni }
+1187.1.1 = { b_ismaillia = castle }
+1209.1.1 = { trade_post = b_faliero }

@@ -1,0 +1,19 @@
+# 1040 - Yüni
+title = c_yuni
+terrain = desert
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 2
+b_yuni = castle
+b_ruoqiang = city
+# b_shikeng					# Fictional
+# b_beilanzhuang			# Fictional
+# b_xiafang					# Fictional
+# b_pailouxia				# Fictional
+# b_huachuantsun			# Fictional
+
+# History
+900.1.1 = { culture = uyghur } # Qocho Kingdom

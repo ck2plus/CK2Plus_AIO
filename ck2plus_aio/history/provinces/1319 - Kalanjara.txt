@@ -1,0 +1,18 @@
+# 1319 - Kalanjara
+title = c_kalanjara
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 5
+b_kalinjar = castle
+b_khajuraho = temple
+b_jayapura = city
+b_bhatta = temple
+# b_panna
+# b_devendranagar
+# b_longching			# Fictional
+
+# History

@@ -1,0 +1,21 @@
+# 1668 - Tangier
+title = c_tangier
+terrain = plains
+
+# Initial setup
+culture = berber
+religion = chalcedonian
+
+max_settlements = 6
+b_tangiers = castle
+b_laraiche = city
+b_mulaybuselham = temple
+b_alcazarquivir = city
+b_ainbenamar = castle
+# b_asilah
+# b_barrha
+# b_charkia
+
+# History
+800.1.1 = { religion = sunni }
+1120.1.1 = { trade_post = b_doria }

@@ -1,0 +1,19 @@
+# 1022 - Tsambagarav
+title = c_tsambagarav
+terrain = mountain
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_tsambagarav = tribal
+# b_achit_tsambagarav
+# b_khovd_tsambagarav
+# b_uureg
+# b_tashanta
+# b_kokorya
+# b_kyzyl_khaya
+
+# History
+1227.1.1 = { culture = mongol }

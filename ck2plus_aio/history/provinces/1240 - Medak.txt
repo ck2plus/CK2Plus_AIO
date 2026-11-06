@@ -1,0 +1,18 @@
+# 1240 - Medak
+title = c_medak
+terrain = plains
+
+# Initial setup
+culture = telugu
+religion = hindu
+
+max_settlements = 3
+b_medak = castle
+b_domakonda = temple
+# b_kohir
+# b_mardi
+# b_ananthagiri
+# b_baramgala			# Fictional
+# b_chikalthana			# Fictional
+
+# History

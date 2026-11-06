@@ -1,0 +1,28 @@
+# 140 - Hälsingland
+title = c_halsingland
+terrain = forest
+
+# Initial setup
+culture = norse
+religion = norse_pagan
+
+max_settlements = 3
+b_norrala = tribal
+# b_hog
+# b_jattendal
+# b_forsa
+# b_tasta
+# b_nordanstig
+# b_alir
+# b_sundhed
+
+# History
+800.1.1 = { b_norrala = tb_shipyard_1 }
+1066.1.1 = { culture = swedish }
+1085.1.1 = { religion = catholic }
+1187.1.1 = { b_hog = castle }
+
+1300.1.1 = {
+	b_norrala = castle
+	b_norrala = ca_shipyard_1
+}

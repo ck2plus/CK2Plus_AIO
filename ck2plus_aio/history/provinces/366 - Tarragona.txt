@@ -1,0 +1,22 @@
+# 366 - Tarragona
+title = c_tarragona
+terrain = plains
+
+# Initial setup
+culture = visigothic
+religion = chalcedonian
+
+max_settlements = 4
+b_tarragona = castle
+b_spantortosa = city
+b_sancugat = temple
+# b_cambrils
+# b_reus
+# b_montblanc
+# b_vendrell
+# b_amposta
+
+# History
+952.1.1 = { culture = catalan }
+1054.7.16 = { religion = catholic } # Great Schism
+1081.1.1 = { trade_post = b_fieschi }

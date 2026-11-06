@@ -1,0 +1,18 @@
+# 1350 - Godwad
+title = c_godwad
+terrain = desert
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 5
+b_achalgarh = castle
+b_bhillamala = temple	# Jain Holy Site
+b_jalor = city
+b_candravati = castle
+# b_barodiya
+# b_khudala
+# b_nibnutvadi			# Fictional
+
+# History

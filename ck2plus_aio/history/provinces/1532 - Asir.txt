@@ -1,0 +1,18 @@
+# 1532 - Asir
+title = c_asir
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 3
+b_kamaran = castle
+b_tabala = temple
+# b_kuthba
+# b_bahah
+# b_sadah
+# b_hajjah
+# b_dam
+
+# History

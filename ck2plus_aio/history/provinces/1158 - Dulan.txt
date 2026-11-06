@@ -1,0 +1,18 @@
+# 1158 - Dulan
+title = c_dulan
+terrain = mountain
+
+# Initial setup
+culture = tangut
+religion = buddhist
+
+max_settlements = 3
+b_dulan = castle
+b_reshui = temple
+# b_xiariha
+# b_zongjia
+# b_xiangride
+# b_gouli
+# b_xiangjia
+
+# History

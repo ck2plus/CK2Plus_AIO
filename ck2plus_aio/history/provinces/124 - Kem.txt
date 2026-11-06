@@ -1,0 +1,24 @@
+# 124 - Kem
+title = c_kem
+terrain = forest
+
+# Initial setup
+culture = finnish
+religion = finnish_pagan
+
+max_settlements = 2
+b_kem = tribal
+# b_sordavala
+# b_kalevala
+# b_loukhi
+# b_kostomuksha
+# b_muezersky
+# b_pitkyaranta
+
+# History
+1150.1.1 = {
+	religion = orthodox
+	b_kem = castle
+	b_kem = ca_wall_1
+	b_kem = ca_wall_q_1
+}

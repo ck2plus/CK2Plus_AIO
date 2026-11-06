@@ -1,0 +1,59 @@
+1.1.1 = {
+	active = no
+}
+
+100.1.1 = {
+	pentarch = b_roma
+}
+
+800.12.25 = { # Coronation of Karl as Emperor
+	active = yes
+	holder = 6392 #Charlemagne
+	set_global_flag = carolingian_empire_formed
+}
+
+814.1.28 = {
+	holder = 90095 # Louis I
+}
+
+# 830 - Louis deposed by his children
+
+# 831 - Louis reinstated
+
+# 833.11.13 - Louis deposed by Angibert II, Archbishop of Milan
+
+# 834.3.1 - Louis Reinstated
+
+840.6.20 = {
+	holder = 30227 # Lothaire I
+}
+
+855.9.29 = {
+	holder = 30228 # Louis II
+}
+
+875.8.12 = {
+	holder = 90104 # Charles II 'the Bald'
+}
+
+876.10.6 = {
+	holder = 90105 # Karl III 'the Fat'
+}
+
+887.11.17 = { # Karl III 'the Fat' deposed
+	set_global_flag = carolingian_empire_fallen
+	holder = 0
+	active = no
+}
+
+# 891 - Guy III of Spoleto
+
+# 892 - Lambert I of Italy (co-ruler with Guy III)
+
+# 896 - Arnulf of Carinthia
+
+# 901 - Louis the Blind
+
+# 915 - Berengar I
+
+# 924 - Interregnum until Otto founded proper HRE

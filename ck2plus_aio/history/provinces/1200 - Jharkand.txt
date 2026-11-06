@@ -1,0 +1,18 @@
+# 1200 - Jharkand
+title = c_jharkand
+terrain = forest
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 2
+b_koriya = castle
+b_kandra = city
+# b_ambikapur
+# b_bhagva				# Fictional
+# b_bhambiya			# Fictional
+# b_bhasma				# Fictional
+# b_dhamtari			# Fictional
+
+# History

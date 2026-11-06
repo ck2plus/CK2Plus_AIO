@@ -1,0 +1,18 @@
+# 1268 - Mahoyadapuram
+title = c_mahoyadapuram
+terrain = plains
+
+# Initial setup
+culture = tamil
+religion = nestorian # Not really true but simulates Nestorian presence there
+
+max_settlements = 6
+b_udagai = castle
+b_mahoyadapuram = city
+b_kaladi = temple
+# b_kunjakari
+# b_tripunittura
+# b_kaviyur
+# b_kadungallur
+
+# History

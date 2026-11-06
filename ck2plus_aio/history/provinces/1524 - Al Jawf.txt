@@ -1,0 +1,19 @@
+# 1524 - Al Jawf
+title = c_al_jawf
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 3
+b_al_jawf = castle
+b_sakakah = city
+b_aladan = temple
+# b_dumat_al_jandal
+# b_radifah
+# b_tuwayr
+# b_tyer
+# b_qurayyat
+
+# History

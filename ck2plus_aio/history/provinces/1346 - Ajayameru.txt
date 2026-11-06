@@ -1,0 +1,18 @@
+# 1346 - Ajayameru
+title = c_ajayameru
+terrain = plains
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 5
+b_shakambhari = castle
+b_pushkar = temple
+b_ajayameru = city
+b_taragarh = castle
+# b_dhanop
+# b_nareli
+# b_lawah
+
+# History

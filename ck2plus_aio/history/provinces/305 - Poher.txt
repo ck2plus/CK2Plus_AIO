@@ -1,0 +1,21 @@
+# 305 - Poher
+title = c_poher
+terrain = plains
+
+# Initial setup
+culture = breton
+religion = chalcedonian
+
+max_settlements = 3
+b_corlay = castle
+b_carhaix = city
+# b_langonnet
+# b_huelgoat
+# b_plouguer
+# b_chateauneuf_du_faou
+# b_rostrenen
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

@@ -1,0 +1,23 @@
+# 285 - Dunois
+title = c_dunois
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 4
+b_chateaudun = castle
+b_freteval = city
+b_tiron = temple
+# b_cloyes
+# b_bonneval
+# b_patay
+# b_marchenoir
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

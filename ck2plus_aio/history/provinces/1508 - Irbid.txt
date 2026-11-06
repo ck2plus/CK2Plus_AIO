@@ -1,0 +1,21 @@
+# 1508 - Irbid
+title = c_irbid
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = chalcedonian
+
+max_settlements = 4
+b_aljun = castle
+b_irbid = city
+b_pella = temple
+# b_yarmouk
+# b_habisjaldak
+# b_aydoun
+# b_ummqais
+# b_gadera
+
+# History
+867.1.1 = { religion = sunni }
+1110.1.1 = { b_yarmouk = castle }

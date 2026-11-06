@@ -1,0 +1,19 @@
+# 1225 - Kodalaka Mandala
+title = c_kodalaka_mandala
+terrain = jungle
+
+# Initial setup
+culture = oriya
+religion = buddhist
+
+max_settlements = 5
+b_kodalaka = castle
+b_bajrakot = temple
+b_deogarh = city
+# b_talcher
+# b_dhenkanal
+# b_kapilash
+# b_joranda_gadhi
+# b_karamul
+
+# History

@@ -1,0 +1,22 @@
+# 189 - Weimar
+title = c_weimar
+terrain = farmlands
+
+# Initial setup
+culture = thuringian
+religion = chalcedonian
+
+max_settlements = 4
+b_weimar = castle
+b_jena = city
+b_gera = temple
+# b_walkenried
+# b_nordhausen
+# b_memelsen
+# b_gotha
+# b_apoldoa
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

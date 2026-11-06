@@ -1,0 +1,23 @@
+# 1168 - Nyingchi
+title = c_nyingchi
+terrain = plains
+
+# Initial setup
+culture = tangut # Lisu
+religion = bon_pagan
+
+max_settlements = 5
+b_nyingchi = castle
+b_drakchi = city
+b_lamaling = temple
+# b_buchasergyi_lakang
+# b_beba
+# b_gongbogyamda
+# b_pagsum
+
+# History
+645.1.1 = {
+	culture = bodpa # Tibetan culture begins to take hold
+	religion = buddhist
+	b_buchasergyi_lakang = temple # built during the reign of Songtsen Gampo
+}

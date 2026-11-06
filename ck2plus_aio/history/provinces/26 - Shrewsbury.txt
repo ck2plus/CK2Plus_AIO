@@ -1,0 +1,33 @@
+# 26 - Shrewsbury
+title = c_shrewsbury
+terrain = plains
+
+# Initial setup
+culture = welsh
+religion = chalcedonian
+
+max_settlements = 4
+b_wenlock = castle
+# b_shrewsbury
+# b_clun
+# b_ludlow
+# b_whitchurch
+# b_bridgnorth
+# b_oswestry
+# b_chirk
+
+# History
+808.1.1 = {
+	culture = anglo_saxon
+	b_ludlow = castle
+	remove_settlement = b_wenlock
+}
+
+810.1.1 = { b_wenlock = temple }
+811.1.1 = { b_shrewsbury = city }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1100.11.11 = { culture = english }

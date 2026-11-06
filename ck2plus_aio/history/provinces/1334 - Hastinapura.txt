@@ -1,0 +1,18 @@
+# 1334 - Hastinapura
+title = c_hastinapura
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 6
+b_hastinapura = castle
+b_pandeshwar = temple
+b_indrasthana = city
+b_pankot = castle
+# b_mirath
+# b_baran
+# b_hapur
+
+# History

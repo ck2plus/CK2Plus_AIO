@@ -1,0 +1,21 @@
+# 1495 - Hama
+title = c_hama
+terrain = plains
+
+# Initial setup
+culture = levantine
+religion = chalcedonian
+
+max_settlements = 5
+b_hama = castle
+b_mhardeh = city
+b_hamath = temple
+# b_qarqar
+# b_bara
+# b_salamiyah
+# b_serjilla
+# b_kharsan
+
+# History
+867.1.1 = { religion = sunni }
+1187.1.1 = { b_qarqar = castle }

@@ -1,0 +1,23 @@
+# 1367 - Navasarika
+title = c_navasarika
+terrain = plains
+
+# Initial setup
+culture = gujurati
+religion = jain
+
+max_settlements = 6
+b_akruresvara = castle
+b_navasarika = city
+b_bharuch = temple
+# b_surat
+# b_rander
+# b_dharampur
+# b_variav
+# b_rajpipla
+# b_tadkeshwar
+
+# History
+867.1.1 = { b_surat = city }
+1066.1.1 = { b_rander = city }
+1262.1.1 = { b_dharampur = castle }

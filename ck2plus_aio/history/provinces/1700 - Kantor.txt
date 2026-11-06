@@ -1,0 +1,23 @@
+# 1700 - Kantor
+title = c_kantor
+terrain = plains
+
+# Initial setup
+culture = mande
+religion = west_african_pagan
+
+max_settlements = 2
+b_kantor = tribal
+# b_goudiourou
+# b_ouli
+# b_soliko				# Fictional
+# b_bidangala			# Fictional
+# b_kamindalah			# Fictional
+# b_badogo				# Fictional
+# b_mandio				# Fictional
+
+# History
+1300.1.1 = {
+	b_kantor = castle
+	religion = sunni
+}

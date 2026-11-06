@@ -1,0 +1,18 @@
+# 1534 - Medina
+title = c_medina
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 5
+b_batn_nakhl = castle
+b_al_usayla = city
+b_medina = temple
+b_sidi_hamzah = city
+# b_kuba
+# b_farsh
+# b_milha
+
+# History

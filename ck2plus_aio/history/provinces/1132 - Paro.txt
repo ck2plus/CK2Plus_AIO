@@ -1,0 +1,22 @@
+# 1132 - Paro
+title = c_paro
+terrain = mountain
+
+# Initial setup
+culture = bodpa
+religion = buddhist
+
+max_settlements = 4
+b_paro = castle
+b_kyichu = temple
+b_hungrel = city
+# b_taktshang
+# b_damthang
+# b_tshalunang
+# b_gasa
+
+# History
+# 1006.1.1 = {
+#	culture = uyghur
+#	religion = sunni
+# }

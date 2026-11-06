@@ -1,0 +1,16 @@
+1000124140 = {
+	name = "Tujibid"
+	culture = andalusian
+}
+1000124200 = {
+	name = "Abbadid"
+	culture = andalusian
+}
+1000124204 = {
+	name = "Hazmid"
+	culture = andalusian
+}
+1000124205 = {
+	name = "Majritid"
+	culture = andalusian
+}

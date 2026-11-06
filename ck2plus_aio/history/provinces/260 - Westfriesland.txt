@@ -1,0 +1,24 @@
+# 260 - Westfriesland
+title = c_westfriesland
+terrain = plains
+
+# Initial setup
+culture = frisian
+religion = chalcedonian
+
+max_settlements = 4
+b_alkmaar = castle
+b_egmond = temple
+b_hoorn = city
+# b_medemblik
+# b_enkhuizen
+# b_heerhugowaard
+# b_texel
+# b_schagen
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1300.1.1 = { trade_post = b_warendorp }

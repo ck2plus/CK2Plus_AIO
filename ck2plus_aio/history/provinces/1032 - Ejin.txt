@@ -1,0 +1,35 @@
+# 1032 - Ejin
+title = c_ejin
+terrain = desert
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_khara_khoto = tribal
+# b_mazongshan
+# b_jijiagou			# Fictional
+# b_yuhe				# Fictional
+# b_hwantsaopa			# Fictional
+# b_zhugentan			# Fictional
+# b_tongchongcha		# Fictional
+
+# History
+869.1.1 = {
+	religion = manichaean
+}
+
+1066.1.1 = {
+	culture = tangut
+	religion = buddhist
+}
+
+1148.1.1 = {
+	b_khara_khoto = castle
+}
+
+1227.1.1 = {
+	culture = mongol
+	religion = tengri_pagan
+}

@@ -1,0 +1,19 @@
+# 1115 - Kyunglung
+title = c_kyunglung
+terrain = mountain
+
+# Initial setup
+culture = zhangzhung
+religion = bon_pagan
+
+max_settlements = 5
+b_kyunglung = castle	# Capital fortress of the Zhangzhung Kingdom
+b_gurugem = temple		# Ancient Bon Monastery
+b_monicer = city
+b_tirthapuri = temple	# Ancient hotsprings and Bon Monastery
+# b_dolchu				# Temple
+# b_xalazakung
+# b_gyanyima
+
+# History
+1100.1.1 = { culture = bodpa } # Zhangzhung culture holds out longest in the Guge Kingdom in its ancient capital

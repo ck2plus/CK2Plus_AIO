@@ -1,0 +1,21 @@
+# 227 - Innsbruck
+title = c_innsbruck
+terrain = mountain
+
+# Initial setup
+culture = bavarian
+religion = chalcedonian
+
+max_settlements = 4
+b_innsbruck = castle
+b_kufstein = city
+b_stams = temple
+# b_schwaz
+# b_kitzbuhel
+# b_jenbach
+# b_fugen
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

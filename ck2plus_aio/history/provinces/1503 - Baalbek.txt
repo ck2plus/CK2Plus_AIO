@@ -1,0 +1,40 @@
+# 1503 - Baalbek
+title = c_baalbek
+terrain = mountain
+
+# Initial setup
+culture = levantine
+religion = monothelite
+
+max_settlements = 5
+b_baalbek = castle
+b_akkar = city
+b_halbah = temple
+# b_laboue
+# b_zahle
+# b_buissera
+# b_riyaq
+# b_chlifa
+# b_krakdeschevaliers
+
+# History
+867.1.1 = { religion = sunni }
+1016.1.1 = { religion = druze }
+
+# The Hospitales built the Krak des Chevaliers
+1142.1.1 = {
+	b_krakdeschevaliers = castle
+	capital = b_krakdeschevaliers
+}
+
+1187.1.1 = {
+	b_riyaq = castle
+}
+
+# Mamluks conquer the Krak des Chevaliers
+1271.1.1 = {
+	religion = sunni
+	b_laboue = castle
+	capital = b_baalbek
+	remove_settlement = b_krakdeschevaliers
+}

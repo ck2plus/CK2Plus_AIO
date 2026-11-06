@@ -1,0 +1,26 @@
+# 323 - Carcassonne
+title = c_carcassonne
+terrain = mountain
+
+# Initial setup
+religion = chalcedonian
+culture = visigothic
+
+max_settlements = 5
+b_carcassonne = castle
+b_saissac = city
+b_alet = temple
+# b_termes
+# b_lagrasse
+# b_lastours
+# b_cabaret
+# b_minerve
+
+# History
+867.1.1 = { culture = occitan }
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+1150.1.1 = { religion = cathar }
+1187.1.1 = { b_lastours = castle }
+1244.3.16 = { religion = catholic }

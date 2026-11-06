@@ -1,0 +1,18 @@
+# 1622 - Kharibta
+title = c_kharibta
+terrain = desert
+
+# Initial setup
+culture = coptic
+religion = miaphysite
+
+max_settlements = 4
+b_kharibta = castle
+b_scetis = temple
+b_naucratis_egypt = city
+# b_atfih
+# b_nikiou
+# b_merimda
+# b_shatnuf
+
+# History

@@ -1,0 +1,20 @@
+# 1548 - Nizwa
+title = c_nizwa
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = ibadi
+
+max_settlements = 3
+b_nizwa = castle
+# b_duqm
+# b_aljazir
+# b_bank
+# b_harima
+# b_nimr
+# b_mahut
+# b_hubara
+# b_masirah
+
+# History

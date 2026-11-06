@@ -1,0 +1,22 @@
+# 353 - Lyon
+title = c_lyon
+terrain = forest
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_pusignan = castle
+b_lyon = city
+b_stjeanbaptiste = temple
+b_brindas = castle
+# b_anse
+# b_chessy
+# b_lacenas
+# b_irigny
+
+# History
+790.1.1 = { culture = french }
+1054.7.16 = { religion = catholic } # Great Schism
+1202.11.28 = { capital = b_stjeanbaptiste }

@@ -1,0 +1,19 @@
+# 1713 - Dendi
+title = c_dendi
+terrain = plains
+
+# Initial setup
+culture = songhay
+religion = west_african_pagan
+
+max_settlements = 3
+b_niamey = tribal
+# b_bura
+# b_say
+# b_jidu				# Fictional
+# b_kimtir				# Fictional
+# b_isuachara			# Fictional
+# b_langay				# Fictional
+
+# History
+1300.1.1 = { b_niamey = castle }

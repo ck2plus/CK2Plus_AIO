@@ -1,0 +1,18 @@
+# 1263 - Kotthasara
+title = c_kotthasara
+terrain = plains
+
+# Initial setup
+culture = sinhala
+religion = buddhist
+
+max_settlements = 4
+b_pulatthinagara = castle
+b_gokanna = city
+# b_sigiriya
+# b_vatagiri
+# b_trincomalee
+# b_girikandaka
+# b_madakalapuva
+
+# History

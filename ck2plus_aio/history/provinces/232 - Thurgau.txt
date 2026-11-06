@@ -1,0 +1,24 @@
+# 232 - Thurgau
+title = c_thurgau
+terrain = hills
+
+# Initial setup
+culture = alemannic
+religion = chalcedonian
+
+max_settlements = 4
+b_rheineck = castle
+b_appenzell = city
+b_stgallen = temple
+# b_frauenfeld
+# b_altstatten
+# b_lichtenstein
+# b_vaduz
+# b_herisau
+
+# History
+1000.1.1 = { culture = swabian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

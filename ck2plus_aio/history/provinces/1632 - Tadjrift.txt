@@ -1,0 +1,19 @@
+# 1632 - Tadjrift
+title = c_tadjrift
+terrain = desert
+
+# Initial setup
+culture = berber
+religion = ibadi
+
+max_settlements = 2
+b_tadjrift = tribal
+# b_waddan
+# b_assultan
+# b_zaafran						# Fictional
+# b_gicherra					# Fictional
+# b_ouifat						# Fictional
+# b_qaryat_it_zaydan			# Fictional
+
+# History
+1171.1.1 = { religion = sunni }

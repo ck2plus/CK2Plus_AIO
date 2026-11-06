@@ -1,0 +1,42 @@
+# 181 - Minden
+title = c_minden
+terrain = plains
+
+# Initial setup
+culture = saxon
+religion = german_pagan
+
+max_settlements = 3
+b_minden = tribal
+# b_hockeleve
+# b_petershagen
+# b_diepholz
+# b_auburg
+# b_wagenfeld
+# b_drebber
+
+# History
+777.1.1 = { # start of mass conversion by Anglo-Saxon/Frisian missionaries
+	religion = chalcedonian
+	b_auburg = tribal
+	capital = b_auburg
+	b_minden = temple
+}
+
+782.1.1 = { # Widukind returns, stirs rebellion
+	religion = german_pagan
+}
+
+785.1.1 = { # rebellion defeated
+	religion = chalcedonian
+}
+
+803.1.1 = {
+	b_auburg = castle
+	b_petershagen = city
+	capital = b_minden # diocese of Minden founded by Karl
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

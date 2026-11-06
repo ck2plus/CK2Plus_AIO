@@ -1,0 +1,25 @@
+# 1417 - Tus
+title = c_tus
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 4
+b_bojnurd = castle
+b_shervan = city
+b_mashhad = temple
+# b_hasanabad
+# b_ghaisar
+# b_isfarayen
+# b_fagdatdezh
+# b_solak
+# b_tus
+
+# History
+700.1.1 = {
+	b_shervan = ct_jewish_community_1
+}
+
+1187.1.1 = { religion = sunni }

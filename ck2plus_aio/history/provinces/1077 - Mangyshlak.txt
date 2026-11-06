@@ -1,0 +1,23 @@
+# 1077 - Mangyshlak
+title = c_mangyshlak
+terrain = desert
+
+# Initial setup
+culture = turkish
+religion = zoroastrian
+
+max_settlements = 2
+b_aqtaw = tribal
+# b_kzyluzen
+# b_amankyzylit
+# b_uzen
+# b_araldy
+# b_ashchimuryn
+# b_tigen
+# b_sayutes
+
+# History
+1187.1.1 = {
+	religion = sunni
+	# b_uzen = castle
+}

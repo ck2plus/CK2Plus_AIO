@@ -1,0 +1,28 @@
+# 1698 - Wagadu
+title = c_wagadu
+terrain = desert
+
+# Initial setup
+culture = soninke
+religion = west_african_pagan
+
+max_settlements = 5
+b_el_ghaba = tribal
+b_diara = temple
+# b_koumbi_saleh
+# b_baghena
+# b_goumbou
+# b_kughah			# Kúghah
+# b_nema
+
+# History
+# Golden age of Wagadu
+900.1.1 = {
+	b_el_ghaba = castle
+	b_koumbi_saleh = city
+	b_goumbou = city
+}
+
+1150.1.1 = { # Decline of Wagadu
+	remove_settlement = b_goumbou
+}

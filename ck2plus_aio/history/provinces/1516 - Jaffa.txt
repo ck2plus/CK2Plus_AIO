@@ -1,0 +1,22 @@
+# 1516 - Jaffa
+title = c_jaffa
+terrain = plains
+
+# Initial setup
+culture = levantine
+religion = chalcedonian
+
+max_settlements = 5
+b_jaffa = castle
+b_arsuf = city
+b_lydda = temple
+# b_ibelin
+# b_ramleh
+# b_yazur
+# b_qula
+# b_beitdejan
+
+# History
+867.1.1 = { religion = sunni }
+1110.1.1 = { b_ibelin = castle }
+1231.1.1 = { trade_post = b_faliero }

@@ -1,0 +1,22 @@
+# 226 - Bolzano
+title = c_bolzano
+terrain = mountain
+
+# Initial setup
+culture = bavarian
+religion = chalcedonian
+
+max_settlements = 3
+b_eppan = castle
+b_bozen = city
+b_meran = city
+# b_st_jacob
+# b_dolladitz
+# b_cortina
+# b_st_helena
+# b_florian
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

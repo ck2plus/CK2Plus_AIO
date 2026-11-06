@@ -1,0 +1,18 @@
+# 1559 - Socotra
+title = c_socotra
+terrain = hills
+
+# Initial setup
+culture = bedouin
+religion = nestorian
+
+max_settlements = 3
+b_qualnsiyah = castle
+b_tamrida = city
+b_qadub = temple
+# b_steroh
+# b_asma
+# b_siqirah
+# b_qashiu
+
+# History

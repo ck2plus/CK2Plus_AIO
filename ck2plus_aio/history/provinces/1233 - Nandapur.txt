@@ -1,0 +1,18 @@
+# 1233 - Nandapur
+title = c_nandapur
+terrain = mountain
+
+# Initial setup
+culture = oriya
+religion = hindu
+
+max_settlements = 4
+b_nandapur = castle
+b_dharamgarh = city
+# b_koraput
+# b_junagarh
+# b_jeypore
+# b_kilpadappai			# Fictional
+# b_marhia				# Fictional
+
+# History

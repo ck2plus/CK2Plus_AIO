@@ -1,0 +1,21 @@
+# 109 - Jämtland
+title = c_jamtland
+terrain = forest
+
+# Initial setup
+culture = norse
+religion = norse_pagan
+
+max_settlements = 3
+b_mjalleborgen = tribal
+# b_husan
+# b_vasterhus
+# b_gene
+# b_brunflo
+# b_bogvattnet
+# b_offerdal
+
+# History
+1066.1.1 = { culture = norwegian }
+1090.1.1 = { religion = catholic }
+1300.1.1 = { b_mjalleborgen = castle }

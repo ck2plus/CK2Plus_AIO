@@ -1,0 +1,18 @@
+# 1187 - Radha
+title = c_radha
+terrain = jungle
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 4
+b_lakhnor = castle
+b_kalyaneshwari = temple
+b_katwa = city
+# b_rampur_boalia
+# b_gopbhum
+# b_ichhai_ghoshgarh
+# b_hirapur
+
+# History

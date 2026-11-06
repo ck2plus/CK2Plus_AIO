@@ -1,0 +1,19 @@
+# 1597 - Nubia
+title = c_nubia
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 3
+b_salala = castle
+# b_anag
+# b_eirayab
+# b_nafab
+# b_komotit
+# b_tahtani
+# b_fanoidig
+# b_nubia
+
+# History

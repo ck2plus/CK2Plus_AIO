@@ -1,0 +1,19 @@
+# 1214 - Chauragarh
+title = c_chauragarh
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = jain
+
+max_settlements = 2
+b_chauragarh = castle
+# b_bohani
+# b_barman
+# b_sirsali				# Fictional
+# b_siruvachur			# Fictional
+# b_tingra				# Fictional
+# b_hainsasar			# Fictional
+
+# History
+1066.1.1 = { religion = hindu }

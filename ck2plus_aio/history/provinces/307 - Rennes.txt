@@ -1,0 +1,22 @@
+# 307 - Rennes
+title = c_rennes
+terrain = plains
+
+# Initial setup
+culture = breton
+religion = chalcedonian
+
+max_settlements = 5
+b_rennes = castle
+b_st_malo = city
+b_dol = temple
+# b_fougeres
+# b_st_michel
+# b_dinan
+# b_st_meen
+# b_porhoet
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

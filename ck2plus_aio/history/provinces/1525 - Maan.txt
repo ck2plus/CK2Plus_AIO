@@ -1,0 +1,32 @@
+# 1525 - Ma'an
+title = c_maan
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 4
+b_maan = castle
+b_mutah = city
+b_shubak = temple
+# b_maanaljafr
+# b_buseira
+# b_maanalhasa
+# b_afra
+# b_bubeita
+
+build_wonder = wonder_underground_city_petra
+set_wonder_stage = 4
+
+# History
+
+# The last proofs of the city flourishing are dated 537-593AD. By the 13th century it was a ruin.
+750.1.1 = {
+	set_wonder_damaged = yes
+	set_wonder_stage = 3
+}
+
+950.1.1 = {
+	set_wonder_stage = 2
+}

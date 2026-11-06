@@ -1,0 +1,18 @@
+# 1227 - Viraja
+title = c_viraja
+terrain = plains
+
+# Initial setup
+culture = oriya
+religion = buddhist
+
+max_settlements = 5
+b_raibania = castle
+b_viraja = temple
+b_mahavinayak = temple
+# b_bhadrak
+# b_anandpur
+# b_soro
+# b_baleshvara
+
+# History

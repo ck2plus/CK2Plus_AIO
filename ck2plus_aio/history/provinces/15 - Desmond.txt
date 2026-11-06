@@ -1,0 +1,27 @@
+# 15 - Desmond
+title = c_desmond
+terrain = farmlands
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 4
+b_dunasead = tribal
+b_clone = temple
+# b_cork
+# b_youghal
+# b_kilbrittain
+# b_cloyne
+# b_fermoy
+# b_blarney
+
+# History
+1000.1.1 = {
+	b_dunasead = castle
+	b_cork = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

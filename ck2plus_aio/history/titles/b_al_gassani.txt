@@ -1,0 +1,5 @@
+936.1.1 = {
+	holding_dynasty = 1062602
+	holder = 261364
+	liege = d_pechina
+}

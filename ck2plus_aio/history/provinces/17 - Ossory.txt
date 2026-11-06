@@ -1,0 +1,26 @@
+# 17 - Ossory
+title = c_ossory
+terrain = plains
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 3
+b_gowran = tribal
+b_clonmacnoise = temple
+# b_kilkenny
+# b_aghaboe
+# b_jerpoint
+# b_callan
+# b_grennan
+# b_grannagh
+
+# History
+1000.1.1 = {
+	b_gowran = castle
+	b_kilkenny = city
+}
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

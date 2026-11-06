@@ -1,0 +1,21 @@
+# 1490 - Druz
+title = c_druz
+terrain = desert
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 4
+b_salkhard = castle
+b_dibin = city
+b_awas = temple
+# b_busra
+# b_ghariyah
+# b_shannireh
+# b_samj
+# b_thoula
+
+# History
+1000.1.1 = { religion = sunni }
+1016.1.1 = { religion = druze }

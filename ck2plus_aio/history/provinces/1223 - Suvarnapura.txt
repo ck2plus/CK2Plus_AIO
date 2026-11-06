@@ -1,0 +1,18 @@
+# 1223 - Suvarnapura
+title = c_suvarnapura
+terrain = jungle
+
+# Initial setup
+culture = oriya
+religion = hindu
+
+max_settlements = 5
+b_suvarnapura = castle
+b_kalahandi = castle
+b_yajatinagara = city
+# b_vinitapura
+# b_agalpur
+# b_patna
+# b_bargarh
+
+# History

@@ -1,0 +1,20 @@
+# 1051 - Uchturpan
+title = c_uchturpan
+terrain = hills
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 3
+b_uqturpan = castle
+b_yezheguan = city
+# b_jizhuoguan
+# b_gaochetian				# Fictional
+# b_tunglingching			# Fictional
+# b_yuyu					# Fictional
+# b_zhaojiazui				# Fictional
+
+# History
+900.1.1 = { culture = uyghur }
+1006.1.1 = { religion = sunni }

@@ -1,0 +1,19 @@
+# 1282 - Sagar
+title = c_sagar
+terrain = jungle
+
+# Initial setup
+culture = kannada
+religion = hindu
+
+max_settlements = 3
+b_bagavadi = castle
+b_sagar = city
+# b_pattadakal
+# b_talikota
+# b_sorapur
+# b_bagalkot
+# b_bagpura				# Fictional
+# b_bandaguda			# Fictional
+
+# History

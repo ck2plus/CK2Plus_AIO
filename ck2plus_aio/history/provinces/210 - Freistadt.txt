@@ -1,0 +1,32 @@
+# 210 - Freistadt
+title = c_freistadt
+terrain = hills
+
+# Initial setup
+culture = slovien
+religion = slavic_pagan
+
+max_settlements = 3
+b_steyregg = tribal
+# b_freistadt
+# b_grein
+# b_pergkirchen
+# b_zell
+# b_aschach
+# b_taversheim
+
+# History
+867.1.1 = {
+	religion = chalcedonian
+	b_steyregg = castle
+	b_freistadt = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1066.1.1 = {
+	culture = bavarian
+	capital = b_freistadt
+}

@@ -1,0 +1,19 @@
+# 1057 - Kara Khoja
+title = c_kara_khoja
+terrain = desert
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 6
+b_kara_khoja = castle
+b_turfan = city
+b_jiaohe = castle
+b_bezeklik = temple
+# b_huhu
+# b_shangwangguo
+# b_astana
+
+# History
+856.1.1 = { culture = uyghur } # Qocho Kingdom

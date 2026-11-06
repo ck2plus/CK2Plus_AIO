@@ -1,0 +1,21 @@
+# 1648 - Setif
+title = c_setif
+terrain = mountain
+
+# Initial setup
+culture = berber
+religion = ibadi
+
+max_settlements = 3
+b_setif = castle
+b_ikjan = city
+# b_zaoula
+# b_nacina
+# b_draaelmizan
+# b_tagoughalt
+# b_mechreck
+# b_tadjenanet
+
+# History
+909.1.1 = { religion = sunni }
+1187.1.1 = { b_mechreck = castle }

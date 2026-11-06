@@ -1,0 +1,20 @@
+# 1487 - Hasakah
+title = c_hasakah
+terrain = desert
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 3
+b_hasakah = castle
+b_qamishhlo = city
+b_dayrik = temple
+# b_darbasiyah
+# b_teltamer
+# b_hamoukar
+# b_amuda
+# b_dakhiliyah
+
+# History
+1000.1.1 = { religion = sunni }

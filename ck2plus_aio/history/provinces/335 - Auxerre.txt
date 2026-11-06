@@ -1,0 +1,21 @@
+# 335 - Auxerre
+title = c_auxerre
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_auxerre = castle
+b_druyes = city
+b_pontigny = temple
+# b_tonnerre
+# b_cravant
+# b_crisenon
+# b_stsauveurenpuisaye
+# b_mailly
+
+# History
+790.1.1 = { culture = french }
+1054.7.16 = { religion = catholic } # Great Schism

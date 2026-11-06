@@ -1,0 +1,21 @@
+# 1345 - Vairata
+title = c_vairata
+terrain = plains
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 5
+b_harshnath = castle
+b_vairata = city
+b_sanganer = temple
+b_jhunjhunu = castle	# Kari
+# b_amer
+# b_dhosi
+# b_jeenmata
+# b_khatushyam
+
+# History
+768.1.1 = { capital = b_jhunjhunu } # Kari
+988.1.1 = { capital = b_harshnath }

@@ -1,0 +1,18 @@
+# 1591 - Alodia
+title = c_alodia
+terrain = plains
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 6
+b_soba = tribal
+# b_alwa
+# b_omdurman
+# b_barah
+# b_omjerky
+# b_malaka
+# b_wawissi
+
+# History

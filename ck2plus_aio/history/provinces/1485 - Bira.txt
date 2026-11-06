@@ -1,0 +1,24 @@
+# 1485 - Bira
+title = c_bira
+terrain = mountain
+
+# Initial setup
+culture = assyrian
+religion = chalcedonian
+
+max_settlements = 4
+b_bira = castle
+b_resaina = city
+b_tella = temple
+# b_qalarebete
+# b_derik
+# b_qoser
+# b_samrah
+# b_stewr
+
+# History
+1054.7.16 = { # Great Schism
+	religion = orthodox
+}
+
+1164.1.1 = { religion = sunni }

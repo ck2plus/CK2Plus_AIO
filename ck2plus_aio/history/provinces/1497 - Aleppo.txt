@@ -1,0 +1,26 @@
+# 1497 - Aleppo
+title = c_aleppo
+terrain = mountain
+
+# Initial setup
+culture = levantine
+religion = chalcedonian
+
+max_settlements = 6
+b_aleppo = castle
+b_azaz = city
+b_mashala = temple
+b_sarmin = castle
+# b_lerminet
+# b_harim
+# b_qusayr
+# b_maaratannuman
+
+# History
+900.1.1 = { religion = sunni }
+1110.1.1 = { b_lerminet = castle }
+
+1272.1.1 = {
+	remove_settlement = b_lerminet
+	b_sarmin = castle
+}

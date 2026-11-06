@@ -1,0 +1,24 @@
+# 1509 - Tiberias
+title = c_tiberias
+terrain = hills
+
+# Initial setup
+culture = levantine
+religion = chalcedonian
+
+max_settlements = 4
+b_tiberias = castle
+b_nazareth = city
+b_mnttabor = temple
+# b_bethsan
+# b_caymont
+# b_hattin
+# b_ashtera
+# b_lafeve
+
+# History
+1054.7.16 = { # Great Schism
+	religion = orthodox
+}
+1100.1.1 = { b_bethsan = castle }
+1270.1.1 = { religion = sunni }

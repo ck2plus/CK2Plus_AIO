@@ -1,0 +1,19 @@
+# 1526 - Al 'Aqabah
+title = c_al_aqabah
+terrain = mountain
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 4
+b_aqabah = castle
+b_reeshah = city
+# b_quwairah
+# b_mazraa
+# b_feifa
+# b_samar
+# b_elifaz
+# b_yotvata
+
+# History

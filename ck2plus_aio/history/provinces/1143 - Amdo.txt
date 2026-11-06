@@ -1,0 +1,22 @@
+# 1143 - Amdo
+title = c_amdo
+terrain = desert
+
+# Initial setup
+culture = sumpa
+religion = bon_pagan
+
+max_settlements = 2
+b_amdo = tribal
+b_cona = temple # Sacred lake in the Bön religion
+# b_zaring
+# b_qangma
+# b_sewa
+# b_gangnyi
+# b_nyainrong
+
+# History
+900.1.1 = {
+	culture = bodpa # The Sumpa culture is absorbed by Tibetan culture
+	religion = buddhist # Gongpa Rabsal ushers a renewal of Buddhism in the Amdo (Qinghai) region
+}

@@ -1,0 +1,18 @@
+# 1232 - Vizagipatam
+title = c_vizagipatam
+terrain = jungle
+
+# Initial setup
+culture = telugu
+religion = hindu
+
+max_settlements = 4
+b_vizagipatam = castle
+b_simhachalam = temple
+# b_anakapalle
+# b_kotipalli
+# b_bavikonda
+# b_bheemunipatnam
+# b_khuig				# Fictional
+
+# History

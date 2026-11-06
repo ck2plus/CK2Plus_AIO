@@ -1,0 +1,19 @@
+# 1510 - Safed
+title = c_safed
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = monothelite
+
+max_settlements = 4
+b_safed = castle
+b_chastelet = city
+b_banyas = temple
+# b_toron
+# b_subeiba
+# b_qatsrin
+# b_belvoir
+
+# History
+867.1.1 = { religion = sunni }

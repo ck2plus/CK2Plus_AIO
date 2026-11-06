@@ -1,0 +1,18 @@
+# 1580 - Aksum
+title = c_aksum
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 7
+b_adwa = castle
+b_aksum = temple # Miaphysite Holy Site
+b_mekele = city
+b_adigrat = castle
+b_hawzen = temple
+b_yeha = temple
+# b_rama2
+
+# History

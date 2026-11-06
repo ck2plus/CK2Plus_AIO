@@ -1,0 +1,18 @@
+# 1578 - Tigrinya
+title = c_tigrinya
+terrain = mountain
+
+# Initial setup
+culture = ethiopian # Beta Israel
+religion = jewish
+
+max_settlements = 4
+b_adi_ramets = castle
+b_adenna = city
+b_amba_maderiya = temple
+# b_tigrinya
+# b_bilamba
+# b_golonco
+# b_zagamat
+
+# History

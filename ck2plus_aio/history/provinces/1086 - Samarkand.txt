@@ -1,0 +1,22 @@
+# 1086 - Samarkand
+title = c_samarkand
+terrain = steppe
+
+# Initial setup
+culture = sogdian
+religion = zoroastrian
+
+max_settlements = 6
+b_afrasiyab = castle
+b_samarkand = city
+b_khokand = temple
+b_ishtikhon = city
+b_urgut = castle
+# b_koshrabot
+# b_ziadin
+# b_laish
+
+# History
+950.1.1 = { culture = turkish }
+1100.1.1 = { religion = sunni }
+1230.1.1 = { culture = mongol }

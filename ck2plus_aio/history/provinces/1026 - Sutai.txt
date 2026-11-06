@@ -1,0 +1,19 @@
+# 1026 - Sutai
+title = c_sutai
+terrain = mountain
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_sutai = tribal
+# b_ikhes
+# b_bulgan
+# b_darvi_sutai
+# b_tonkhil
+# b_khulmiin
+# b_myangan
+
+# History
+1227.1.1 = { culture = mongol }

@@ -1,0 +1,12 @@
+740.1.1 = {
+	holder = 91472 # Bishop LEUDONIUS, historical placeholder
+	liege = c_nantes
+}
+
+760.1.1 = {
+	holder = 91473 # Bishop MILO, historical placeholder
+}
+
+770.1.1 = {
+	holder = 0
+}

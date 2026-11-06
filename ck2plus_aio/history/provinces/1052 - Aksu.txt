@@ -1,0 +1,20 @@
+# 1052 - Aksu
+title = c_aksu
+terrain = plains
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 5
+b_aksu_mongolia = castle
+# b_tumshuk
+# b_wensu
+# b_awat
+# b_kelpim
+# b_aral
+# b_laofutian# Fictional
+
+# History
+900.1.1 = { culture = uyghur }
+1006.1.1 = { religion = sunni }

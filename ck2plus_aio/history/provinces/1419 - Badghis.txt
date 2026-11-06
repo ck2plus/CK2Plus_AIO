@@ -1,0 +1,19 @@
+# 1419 - Badghis
+title = c_badghis
+terrain = desert
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 3
+b_buzgan = castle
+b_zurabad = city
+# b_kusuya
+# b_pushang
+# b_malin
+# b_jabal_al_adda
+# b_kuhsim
+
+# History
+1187.1.1 = { religion = sunni }

@@ -1,0 +1,18 @@
+# 1181 - Suvarnagram
+title = c_suvarnagram
+terrain = jungle
+
+# Initial setup
+culture = assamese
+religion = buddhist
+
+max_settlements = 4
+b_narikella = castle
+b_suvarnagram = city
+# b_satkhira
+# b_susanga
+# b_bokainagar
+# b_lakshmipuro			# Fictional
+# b_mahendragarh		# Fictional
+
+# History

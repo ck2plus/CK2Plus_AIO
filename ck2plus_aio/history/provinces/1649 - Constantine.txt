@@ -1,0 +1,18 @@
+# 1649 - Constantine
+title = c_constantine
+terrain = mountain
+
+# Initial setup
+culture = berber
+religion = sunni
+
+max_settlements = 4
+b_constantine = castle
+b_elkhroub = temple
+b_guelma = city
+# b_tijis
+# b_oumelbouaghi
+# b_mechtakebira
+# b_guerrah
+
+# History

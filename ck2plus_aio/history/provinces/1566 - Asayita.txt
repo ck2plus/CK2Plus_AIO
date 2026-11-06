@@ -1,0 +1,19 @@
+# 1566 - Asayita
+title = c_asayita
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 3
+b_asayita = castle
+# b_afambo
+# b_serdo
+# b_dedai
+# b_lofefle
+# b_tendaho
+# b_jewaha
+
+# History
+840.1.1 = { religion = sunni }

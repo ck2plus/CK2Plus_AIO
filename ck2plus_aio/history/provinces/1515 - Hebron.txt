@@ -1,0 +1,19 @@
+# 1515 - Hebron
+title = c_hebron
+terrain = hills
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 3
+b_hebron = castle
+b_deimachar = city
+b_bethlehem = temple
+# b_syrbelmont
+# b_alsamoa
+# b_saintcharlton
+# b_latrun
+# b_bethgibelin
+
+# History

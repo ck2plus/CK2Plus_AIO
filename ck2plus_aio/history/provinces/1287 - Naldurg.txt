@@ -1,0 +1,18 @@
+# 1287 - Naldurg
+title = c_naldurg
+terrain = plains
+
+# Initial setup
+culture = marathi
+religion = jain
+
+max_settlements = 5
+b_naldurg = castle
+b_sonnalagi = city
+# b_tuljapur
+# b_paranda
+# b_karmala
+# b_dharaseo
+# b_baniagaon		# Fictional
+
+# History

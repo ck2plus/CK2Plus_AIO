@@ -1,0 +1,18 @@
+# 1555 - Zabid
+title = c_zabid
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 4
+b_zabid = castle
+b_fasal = city
+b_al_mahjam = temple
+# b_mukha
+# b_mawr
+# b_ghalafiqa
+# b_hays
+
+# History

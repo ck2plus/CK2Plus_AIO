@@ -1,0 +1,19 @@
+# 1218 - Ratanpur
+title = c_ratanpur
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = hindu
+
+max_settlements = 4
+b_ratanpur = castle
+b_pali = city
+b_saravpur = temple
+b_savarinarayana = temple
+# b_shegaon					# Fictional
+# b_shirwal					# Fictional
+# b_yellandu				# Fictional
+
+# History
+1066.1.1 = { religion = hindu }

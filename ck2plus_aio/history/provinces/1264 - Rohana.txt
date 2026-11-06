@@ -1,0 +1,19 @@
+# 1264 - Rohana
+title = c_rohana
+terrain = hills
+
+# Initial setup
+culture = sinhala
+religion = buddhist
+
+max_settlements = 4
+b_mahagama = castle
+b_dighavapi = temple
+# b_rohana
+# b_mahanagakula
+# b_devanagara
+# b_gampala
+# b_kajaragama
+# b_buduruvagala
+
+# History

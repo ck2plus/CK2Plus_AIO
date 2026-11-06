@@ -1,0 +1,19 @@
+# 1005 - Ötüken
+title = c_otuken
+terrain = plains
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 4
+b_otuken = tribal
+# b_sayan
+# b_khori_tumed
+# b_kyren
+# b_kutulik
+# b_tulun
+# b_tenger			# Fictional
+
+# History
+1227.1.1 = { culture = mongol }

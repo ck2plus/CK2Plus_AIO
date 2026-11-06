@@ -1,0 +1,18 @@
+# 1271 - Srirangapatna
+title = c_srirangapatna
+terrain = mountain
+
+# Initial setup
+culture = kannada
+religion = jain
+
+max_settlements = 6
+b_srirangapatna = castle
+b_shravanabelagola = temple # Jain Holy Site
+b_periyapatna = city
+# b_panasoge
+# b_nanjarayapattana
+# b_belapura
+# b_mysore
+
+# History

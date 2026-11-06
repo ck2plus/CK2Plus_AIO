@@ -1,0 +1,28 @@
+# 218 - Villach
+title = c_villach
+terrain = mountain
+
+# Initial setup
+culture = carantanian
+religion = slavic_pagan
+
+max_settlements = 4
+b_villach = tribal
+# b_klagenfurt
+# b_treffen
+# b_lienz
+# b_spittl
+# b_greifenburg
+# b_vorelach
+
+# History
+846.1.1 = {
+	religion = chalcedonian
+	b_villach = castle
+	b_klagenfurt = city
+	b_treffen = temple
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

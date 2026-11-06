@@ -1,0 +1,18 @@
+# 1573 - Wag
+title = c_wag
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 5
+b_sekota = castle
+b_zumbo = city
+b_lashwa = temple
+# b_sacca
+# b_tsaicha
+# b_indeher_giba
+# b_liktaba
+
+# History

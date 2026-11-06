@@ -1,0 +1,26 @@
+# 234 - Augsburg
+title = c_augsburg
+terrain = forest
+
+# Initial setup
+culture = bavarian
+religion = chalcedonian
+
+max_settlements = 3
+b_kempten = castle
+b_augsburg = temple
+b_donauworth = city
+# b_zumarshausen
+# b_kaufbeuren
+# b_friedberg
+# b_hochstadt
+# b_rain
+
+# History
+936.1.1 = { capital = b_augsburg }
+
+973.1.1 = { capital = b_kempten }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

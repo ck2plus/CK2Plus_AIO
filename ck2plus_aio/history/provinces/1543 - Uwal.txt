@@ -1,0 +1,21 @@
+# 1543 - Uwal
+title = c_uwal
+terrain = plains
+
+# Initial setup
+culture = bedouin
+religion = shiite
+
+max_settlements = 4
+b_umm_al_nasan = castle
+b_manama = city
+b_muharraq = temple
+# b_sitra
+# b_jidda
+# b_ummalsabaan
+# b_hamala
+# b_aldur
+
+# History
+894.1.1 = { religion = qarmatian }
+1077.1.1 = { religion = shiite }

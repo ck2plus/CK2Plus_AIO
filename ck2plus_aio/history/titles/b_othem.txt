@@ -1,0 +1,8 @@
+1066.1.1 = {
+	holder = 126002
+	liege = c_gotland
+}
+
+1110.1.1 = {
+	holder = 0
+}

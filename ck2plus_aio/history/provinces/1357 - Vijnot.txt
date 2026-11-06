@@ -1,0 +1,19 @@
+# 1357 - Vijnot
+title = c_vijnot
+terrain = desert
+
+# Initial setup
+culture = sindhi
+religion = hindu
+
+max_settlements = 4
+b_vijnot = castle
+b_bhatiya = city
+# b_kishangarh
+# b_ghotki
+# b_ravel			# Fictional
+# b_saitual			# Fictional
+# b_sakyang			# Fictional
+
+# History
+800.1.1 = { religion = sunni }

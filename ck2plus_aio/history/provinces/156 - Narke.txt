@@ -1,0 +1,28 @@
+# 156 - Närke
+title = c_narke
+terrain = plains
+
+# Initial setup
+culture = norse
+religion = norse_pagan
+
+max_settlements = 3
+b_goksholm = tribal
+# b_orebro
+# b_mosas
+# b_kumla
+# b_riseberga	# Cistertians Herrevadskloster (sub-monastery to Vreta, see Östergotland)
+# b_nora		# 1643
+# b_askersund	# 14th century
+# b_hallsberg
+
+# History
+1000.1.1 = {
+	b_goksholm = castle
+	b_orebro = city
+}
+
+1066.1.1 = {
+	culture = swedish
+	religion = catholic
+}

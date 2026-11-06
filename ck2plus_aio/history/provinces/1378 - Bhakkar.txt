@@ -1,0 +1,19 @@
+# 1378 - Bhakkar
+title = c_bhakkar
+terrain = plains
+
+# Initial setup
+culture = sindhi
+religion = hindu
+
+max_settlements = 5
+b_bhakkar = castle
+b_larkana = city
+b_sarkara = temple
+# b_kalari
+# b_atri
+# b_shikarpur
+# b_mejia			# Fictional
+
+# History
+800.1.1 = { religion = sunni }

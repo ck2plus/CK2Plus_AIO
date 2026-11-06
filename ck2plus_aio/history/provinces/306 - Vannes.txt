@@ -1,0 +1,22 @@
+# 306 - Vannes
+title = c_vannes
+terrain = plains
+
+# Initial setup
+culture = breton
+religion = chalcedonian
+
+max_settlements = 4
+b_vannes = castle
+b_locmine = temple
+b_hennebont = city
+# b_josselin
+# b_st_gildas
+# b_pontivy
+# b_auray
+# b_ploermel
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

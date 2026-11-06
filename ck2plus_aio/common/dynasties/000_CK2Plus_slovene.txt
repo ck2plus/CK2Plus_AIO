@@ -1,0 +1,92 @@
+1000252103 = {
+	name = "Krajnc"
+	culture = slovien
+}
+1000252104 = {
+	name = "Korošec"
+	culture = slovien
+}
+1000252105 = {
+	name = "Zupan"
+	culture = slovien
+}
+1000252106 = {
+	name = "Kaštelic"
+	culture = slovien
+}
+1000252107 = {
+	name = "Hocevar"
+	culture = slovien
+}
+1000252108 = {
+	name = "Koren"
+	culture = slovien
+}
+1000252109 = {
+	name = "Klemencic"
+	culture = slovien
+}
+1000252110 = {
+	name = "Zajc"
+	culture = slovien
+}
+1000252111 = {
+	name = "Vovk"
+	culture = slovien
+}
+1000252112 = {
+	name = "Škof"
+	culture = slovien
+}
+1000252113 = {
+	name = "Furlan"
+	culture = slovien
+}
+1000252114 = {
+	name = "Hribar"
+	culture = slovien
+}
+1000252115 = {
+	name = "Gorenc"
+	culture = slovien
+}
+1000253011 = {
+	name = "Balog"
+	culture = slovien
+}
+1000253012 = {
+	name = "Savinjski"
+	culture = slovien
+}
+1000253013 = {
+	name = "Žovneški"
+	culture = slovien
+}
+1000253014 = {
+	name = "Trnovski"
+	culture = slovien
+}
+1000253015 = {
+	name = "Lenkovic"
+	culture = slovien
+}
+1000253016 = {
+	name = "Mirnski"
+	culture = slovien
+}
+1000253017 = {
+	name = "Puštalski"
+	culture = slovien
+}
+1000253018 = {
+	name = "Vovbržan"
+	culture = slovien
+}
+1000253019 = {
+	name = "Višnjegorski"
+	culture = slovien
+}
+1000253020 = {
+	name = "Posavski"
+	culture = slovien
+}

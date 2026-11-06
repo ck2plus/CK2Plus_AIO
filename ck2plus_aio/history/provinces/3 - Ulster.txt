@@ -1,0 +1,27 @@
+# 3 - Ulster
+title = c_ulster
+terrain = hills
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 4
+b_downpatrick = tribal
+b_connor = temple
+# b_dunseverick
+# b_bangor
+# b_carrickfergus
+# b_dromore
+# b_larne
+# b_dunluce
+
+# History
+1000.1.1 = {
+	b_downpatrick = castle
+	b_carrickfergus = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

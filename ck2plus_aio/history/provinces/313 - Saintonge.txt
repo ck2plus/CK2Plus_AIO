@@ -1,0 +1,24 @@
+# 313 - Saintonge
+title = c_saintonge
+terrain = plains
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 5
+b_saintes = castle
+b_royan = city
+b_stjeandangely = temple
+# b_montguyon
+# b_villeneuve
+# b_tonnay
+# b_aulnay
+# b_taillebourg
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1214.1.1 = { culture = french }

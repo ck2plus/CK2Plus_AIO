@@ -1,0 +1,18 @@
+# 1332 - Vodamayutja
+title = c_vodamayutja
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 5
+b_vodamayutja = castle
+b_ahichatra = city
+b_tilokpur = temple
+# b_anwala
+# b_bareily
+# b_sheikhupur
+# b_gegha				# Fictional
+
+# History

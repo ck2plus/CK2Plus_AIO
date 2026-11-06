@@ -1,0 +1,22 @@
+# 331 - Limousin
+title = c_limousin
+terrain = forest
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 5
+b_turenne = castle
+b_limoges = temple
+b_rochechouart = city
+b_comborn = castle
+# b_thiviers
+# b_stleonard
+# b_ventadour
+# b_chalus
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

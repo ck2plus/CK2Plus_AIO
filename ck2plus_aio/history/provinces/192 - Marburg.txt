@@ -1,0 +1,24 @@
+# 192 - Marburg
+title = c_marburg
+terrain = forest
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 5
+b_marburg = castle
+b_rotenburg_hesse = castle
+b_wetzlar = city
+# b_hesse
+# b_blankenstein
+# b_merenberg
+# b_gladenbach
+# b_kirchhain
+
+# History
+790.1.1 = { culture = franconian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

@@ -1,0 +1,19 @@
+# 1608 - Akhmim
+title = c_akhmim
+terrain = desert
+
+# Initial setup
+culture = coptic
+religion = miaphysite
+
+max_settlements = 4
+b_akhmim = castle
+b_al_minya = city
+b_cynopolis = temple
+# b_antinoe
+# b_hibeh
+# b_besa
+# b_sharuna
+
+# History
+# 1171.1.1 = { religion = sunni }

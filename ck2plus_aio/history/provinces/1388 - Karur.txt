@@ -1,0 +1,21 @@
+# 1388 - Karur
+title = c_karur
+terrain = plains
+
+# Initial setup
+culture = panjabi
+religion = hindu
+
+max_settlements = 4
+b_karur = castle
+b_askhanda = city
+# b_vehari
+# b_chishtian
+# b_marot
+# b_nyahalode			# Fictional
+# b_odalgaon			# Fictional
+
+# History
+800.1.1 = { religion = sunni }
+1000.1.1 = { religion = shiite }
+1180.1.1 = { religion = sunni }

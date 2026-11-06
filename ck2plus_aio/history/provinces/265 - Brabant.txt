@@ -1,0 +1,26 @@
+# 265 - Brabant
+title = c_brabant
+terrain = plains
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 6
+b_leuven = castle
+b_brussel = city
+b_mechelen = temple
+b_aarschot = castle
+# b_antwerpen
+# b_grimbergen
+# b_herstal
+# b_lier
+
+# History
+790.1.1 = { culture = dutch }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1187.1.1 = { b_antwerpen = city }

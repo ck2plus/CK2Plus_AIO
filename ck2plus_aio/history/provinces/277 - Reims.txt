@@ -1,0 +1,24 @@
+# 277 - Reims
+title = c_reims
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_reims = temple
+b_chatillon = castle
+b_rethel = city
+b_chalons = castle
+# b_attigny
+# b_epernay
+# b_roucy
+# b_dampierre
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

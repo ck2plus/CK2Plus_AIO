@@ -1,0 +1,26 @@
+# 352 - Savoy
+title = c_savoie
+terrain = mountain
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_faucigny = castle
+b_tarentaise = temple
+b_chambery = city
+# b_conflens
+# b_thonon
+# b_st_jean
+# b_cluses
+# b_aix_savoie
+
+# History
+790.1.1 = { culture = french }
+1054.7.16 = { religion = catholic } # Great Schism
+1295.1.1 = {
+	b_chambery = castle
+	b_conflens = city
+	capital = b_chambery
+}

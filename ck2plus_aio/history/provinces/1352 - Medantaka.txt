@@ -1,0 +1,18 @@
+# 1352 - Medantaka
+title = c_medantaka
+terrain = plains
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 3
+b_medantaka = castle
+b_purnatallakapura = city
+# b_phalarddhi
+# b_sanjoo
+# b_oudh				# Fictional
+# b_pachaur				# Fictional
+# b_pakal				# Fictional
+
+# History

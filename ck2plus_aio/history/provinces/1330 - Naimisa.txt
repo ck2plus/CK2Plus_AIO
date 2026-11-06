@@ -1,0 +1,18 @@
+# 1330 - Naimisa
+title = c_naimisa
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 4
+b_bahraich = castle
+b_naimisa = temple
+b_gonda = city
+# b_lakhimpur
+# b_sitapur
+# b_misrikh
+# b_durbate			# Fictional
+
+# History

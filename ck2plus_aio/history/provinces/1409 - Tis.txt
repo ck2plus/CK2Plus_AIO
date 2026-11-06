@@ -1,0 +1,18 @@
+# 1409 - Tis
+title = c_tis
+terrain = desert
+
+# Initial setup
+culture = baloch
+religion = zoroastrian
+
+max_settlements = 3
+b_parak = castle
+b_tis = city
+# b_kursar
+# b_chabahar
+# b_pozm_machchan
+# b_regedan
+# b_sergen
+
+# History

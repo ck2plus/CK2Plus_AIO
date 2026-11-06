@@ -1,0 +1,18 @@
+# 1320 - Gurgi
+title = c_gurgi
+terrain = forest
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 3
+b_gurgi = castle
+# b_satna
+# b_bathgahora
+# b_chandrehi
+# b_sathon				# Fictional
+# b_shankargarh			# Fictional
+# b_sharog				# Fictional
+
+# History

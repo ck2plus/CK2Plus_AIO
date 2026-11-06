@@ -1,0 +1,19 @@
+# 1415 - Birjand
+title = c_birjand
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = sunni
+
+max_settlements = 5
+b_nehbandan = castle
+b_furg = castle
+b_birjand = city
+# b_toon
+# b_sarayan
+# b_boshruyeh
+# b_qaen
+# b_paeenshahr
+
+# History

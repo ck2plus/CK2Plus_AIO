@@ -1,0 +1,19 @@
+# 1444 - Tabriz
+title = c_tabriz
+terrain = mountain
+
+# Initial setup
+culture = kurdish
+religion = zoroastrian
+
+max_settlements = 5
+b_babak = castle
+b_tabriz = city
+b_dihnakhirjan = temple
+b_ahar = castle
+# b_zahhak
+# b_sarab
+# b_shabestar
+
+# History
+900.1.1 = { religion = sunni }

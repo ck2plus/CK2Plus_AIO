@@ -1,0 +1,35 @@
+# 251 - Loon
+title = c_loon
+terrain = plains
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 5
+b_hesbaie = castle
+b_maastricht = city
+b_hasselt = temple
+# b_loon
+# b_valkenburg
+# b_heinsberg
+# b_wassenberg
+# b_tongeren
+
+# History
+790.1.1 = {
+	culture = dutch
+}
+
+800.1.1 = {
+	b_loon = castle
+	capital = b_loon
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1083.1.1 = {
+	b_heinsberg = castle
+}

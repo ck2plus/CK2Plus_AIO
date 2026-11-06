@@ -1,0 +1,18 @@
+# 1184 - Kotivarsa
+title = c_kotivarsa
+terrain = plains
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 5
+b_ramavati = castle
+b_devkot = temple
+b_bangarh = city
+b_jagaddala = temple
+# b_korat
+# b_siliguri
+# b_purena				# Fictional
+
+# History

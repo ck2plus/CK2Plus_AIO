@@ -1,0 +1,18 @@
+# 1392 - Lahur
+title = c_lahur
+terrain = plains
+
+# Initial setup
+culture = panjabi
+religion = hindu
+
+max_settlements = 6
+b_lahur = castle
+b_sangla = city
+b_kasur = temple
+b_samnabad = city
+# b_mehdiabad
+# b_chunian
+# b_data_darbar
+
+# History

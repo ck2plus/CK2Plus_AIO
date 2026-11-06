@@ -1,0 +1,18 @@
+# 1391 - Bhera
+title = c_bhera
+terrain = jungle
+
+# Initial setup
+culture = panjabi
+religion = hindu
+
+max_settlements = 5
+b_bhera = castle
+b_rampur = city
+b_katasraj = temple
+b_girjakh = temple
+# b_behak_maken
+# b_phalia
+# b_gorawas			# Fictional
+
+# History

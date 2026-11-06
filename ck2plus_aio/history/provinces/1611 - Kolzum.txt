@@ -1,0 +1,18 @@
+# 1611 - Kolzum
+title = c_kolzum
+terrain = desert
+
+# Initial setup
+culture = egyptian
+religion = miaphysite
+
+max_settlements = 2
+b_kolzum = castle
+b_sokhna = city
+# b_taufiq
+# b_shallufa
+# b_suez
+# b_clysma
+# b_mount_anthony
+
+# History

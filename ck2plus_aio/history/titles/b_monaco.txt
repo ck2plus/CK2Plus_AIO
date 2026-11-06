@@ -1,0 +1,22 @@
+1066.1.1 = {
+	holder = 167282 # House Embriaco
+	liege = k_genoa
+}
+
+1080.1.1 = {
+	holder = 0
+	liege = c_nice
+}
+
+1297.1.8 = {
+	holder = 73725
+	liege = c_nice
+}
+
+1301.4.10 = {
+	holder = 73715
+}
+
+1314.1.1 = {
+	holder = 73716
+}

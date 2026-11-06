@@ -1,0 +1,21 @@
+# 1657 - Yalála
+title = c_yalala
+terrain = mountain
+
+# Initial setup
+culture = berber
+religion = kharijite
+
+max_settlements = 2
+b_hanyan = castle
+# b_naama
+# b_saida
+# b_alkasdir
+# b_alancha
+# b_magoura
+# b_raselma
+# b_bougtob
+
+# History
+1009.1.1 = { religion = sunni }
+1187.1.1 = { b_naama = city }

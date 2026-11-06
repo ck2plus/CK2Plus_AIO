@@ -1,0 +1,20 @@
+# 1474 - Ilam
+title = c_ilam
+terrain = plains
+
+# Initial setup
+culture = kurdish
+religion = nestorian
+
+max_settlements = 6
+b_dehloran = castle
+b_ilam = city
+b_chahartaghi = temple
+b_mehran = city
+b_abdanan = castle
+# b_hezardar
+# b_ghalehghiran
+# b_towhid
+
+# History
+900.1.1 = { religion = sunni }

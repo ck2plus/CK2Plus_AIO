@@ -1,0 +1,30 @@
+# 127 - Sortavala
+title = c_sortavala
+terrain = forest
+
+# Initial setup
+culture = finnish
+religion = finnish_pagan
+
+max_settlements = 3
+b_sortavala = tribal
+b_kitee = temple
+# b_lappeenranta
+# b_lakhdenpokhia
+# b_ruskeala
+# b_yanis
+# b_karmalan
+
+# History
+1187.1.1 = {
+	b_kitee = tp_barracks_1
+	b_sortavala = castle
+	b_sortavala = ca_keep_1
+	b_sortavala = ca_militia_barracks_1
+	b_sortavala = ca_wall_1
+	b_sortavala = ca_wall_q_1
+}
+
+1292.1.1 = {
+	religion = catholic # Northern Crusades
+}

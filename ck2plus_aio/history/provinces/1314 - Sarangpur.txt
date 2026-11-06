@@ -1,0 +1,19 @@
+# 1314 - Sarangpur
+title = c_sarangpur
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = jain
+
+max_settlements = 4
+b_sarangpur = castle
+b_ashta = city
+b_sidhhapur = temple
+# b_gagraun
+# b_rajgarh
+# b_jhalawar
+# b_bhoilymbong			# Fictional
+
+# History
+1066.1.1 = { religion = hindu }

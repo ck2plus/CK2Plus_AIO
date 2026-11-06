@@ -1,0 +1,21 @@
+# 1084 - Dashhowuz
+title = c_dashhowuz
+terrain = plains
+
+# Initial setup
+culture = persian
+religion = nestorian
+
+max_settlements = 3
+b_dashhowuz = castle
+b_kunyaurgench = city
+b_tagta = temple
+# b_akdepe
+# b_gubadag
+# b_boldumsaz
+# b_yylanly
+# b_gorogly
+
+# History
+1187.1.1 = { religion = sunni }
+1230.1.1 = { culture = mongol }

@@ -1,0 +1,18 @@
+# 1344 - Ranthambore
+title = c_ranthambore
+terrain = plains
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 5
+b_ranthambore = castle
+b_gangapur = city
+b_tonkra = temple
+# b_utgir
+# b_mandrael
+# b_sheopur
+# b_sendamarani			# Fictional
+
+# History

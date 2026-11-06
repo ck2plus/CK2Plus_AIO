@@ -1,0 +1,19 @@
+# 1522 - Kerak
+title = c_kerak
+terrain = hills
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 3
+b_krakdemoab = castle
+b_kerak = city
+# b_kirhaseset
+# b_tamar
+# b_zoar
+# b_zaimona
+# b_bozra
+# b_punon
+
+# History

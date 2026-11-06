@@ -1,0 +1,19 @@
+# 1020 - Tannu Ola
+title = c_tannu_ola
+terrain = hills
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_tannu_ola = tribal
+# b_teeli
+# b_bay_tal
+# b_kara_khol
+# b_sut_khol
+# b_sug_aksy
+# b_chadan_tannu_ola
+
+# History
+1227.1.1 = { culture = mongol }

@@ -1,0 +1,18 @@
+# 1209 - Simaramapura
+title = c_simaramapura
+terrain = plains
+
+# Initial setup
+culture = bengali
+religion = buddhist
+
+max_settlements = 5
+b_simaramapura = castle
+b_kesaria = temple
+b_bhaktagrama = city
+b_pattana = temple
+# b_bettiah
+# b_vaid
+# b_skanderabad			# Fictional
+
+# History

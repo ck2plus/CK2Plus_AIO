@@ -1,0 +1,18 @@
+# 1211 - Jaunpur
+title = c_jaunpur
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 6
+b_kerarkot = castle
+b_gadhipuri = city
+b_dohrighat = temple
+# b_jaunpur
+# b_amethi
+# b_haldi
+# b_tanda
+
+# History

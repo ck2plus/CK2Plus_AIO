@@ -1,0 +1,22 @@
+# 228 - Landeck
+title = c_landeck
+terrain = mountain
+
+# Initial setup
+culture = bavarian
+religion = chalcedonian
+
+max_settlements = 4
+b_landeck = castle
+b_bregenz = city
+b_stanton = temple
+# b_imst
+# b_sterzing
+# b_ried
+# b_dornbirn
+# b_nenzing
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

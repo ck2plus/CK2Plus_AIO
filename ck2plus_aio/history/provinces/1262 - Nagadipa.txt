@@ -1,0 +1,18 @@
+# 1262 - Nagadipa
+title = c_nagadipa
+terrain = plains
+
+# Initial setup
+culture = tamil
+religion = buddhist
+
+max_settlements = 4
+b_sukaratittha = castle
+b_yapapatuna = city
+# b_vallipuram
+# b_nallur
+# b_nainativu
+# b_manertha			# Fictional
+# b_agia				# Fictional
+
+# History

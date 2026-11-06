@@ -1,0 +1,18 @@
+# 1261 - Pihiti
+title = c_pihiti
+terrain = plains
+
+# Initial setup
+culture = sinhala
+religion = buddhist
+
+max_settlements = 5
+b_anuradhapura = castle
+b_atamasthana = temple
+b_mahatittha = city
+# b_punkhagama
+# b_mihintale
+# b_mannara
+# b_subhagiri
+
+# History

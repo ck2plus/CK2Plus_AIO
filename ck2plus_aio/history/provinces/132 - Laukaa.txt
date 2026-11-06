@@ -1,0 +1,22 @@
+# 132 - Laukaa
+title = c_laukaa
+terrain = hills
+
+# Initial setup
+culture = finnish
+religion = finnish_pagan
+
+max_settlements = 2
+b_jyvaskyla = tribal
+# b_keuruu
+# b_hankasalmi
+# b_suolahti
+# b_kuusvesi
+# b_saraavesi
+# b_peurunka
+
+# History
+1292.1.1 = {
+	religion = catholic # Northern Crusades
+	b_jyvaskyla = castle
+}

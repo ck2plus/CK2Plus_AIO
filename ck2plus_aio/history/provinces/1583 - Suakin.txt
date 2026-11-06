@@ -1,0 +1,18 @@
+# 1583 - Suakin
+title = c_suakin
+terrain = mountain
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 4
+b_tisiamti = castle
+b_sawakin = city
+b_salum = temple
+# b_taiwi
+# b_derkin
+# b_dubarua
+# b_komelshokafa
+
+# History

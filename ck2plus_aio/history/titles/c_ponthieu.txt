@@ -1,0 +1,128 @@
+687.1.1 = {
+	holder = 131720
+}
+
+714.12.16 = {
+	holder = 144988
+}
+
+762.1.1 = {
+	holder = 144987
+	liege = k_neustria
+}
+
+786.1.1 = { # Invented person to make regnal number correct
+	holder = 1000125004
+}
+
+790.4.11 = { # Charles 'the Younger' becomes 'Dux Cenomannicus' at the Diet of Worms, on Easter
+	liege = k_neustria
+}
+
+796.1.1 = { # Actual history starts here, before this is copypasta from another title
+	holder = 91397 # Angilberk or Angilbert, the Saint, count of Ponthieu, 7th abbey of Saint-Riquier
+}
+
+814.2.18 = {
+	holder = 91399 # Nithard
+}
+
+831.2.2 = { # Divisio Regni at Aachen after revolt in 830
+	liege = k_aquitaine
+}
+
+832.9.1 = { # crowned King of Aquitaine after Pepin's rebellion
+	liege = e_karling
+}
+
+837.10.1 = { # Charles II 'the Bald' finally receives a kingdom
+	liege = k_neustria
+}
+
+843.8.10 = { # Treaty of Verdun
+	liege = k_france
+}
+
+845.5.15 = {
+	holder = 168170 # Hilgaud II
+}
+
+863.1.1 = {
+	holder = 168171 # Herluin I
+}
+
+868.1.1 = {
+	holder = 168172 # Hilgaud III
+}
+
+926.1.1 = {
+	holder = 168173 # Herluin II
+}
+
+945.7.13 = {
+	holder = 168174 # Roger I
+}
+
+957.1.1 = {
+	holder = 168175 # Hugues (not numbered in real history)
+}
+
+981.1.1 = {
+	holder = 168176 # Hugues I
+}
+
+1000.7.4 = {
+	holder = 168177 # Enguerrand II
+}
+
+1048.1.1 = {
+	holder = 432 # Hugues II
+}
+
+1052.11.20 = {
+	holder = 434 # Enguerrand III
+}
+
+1053.10.25 = {
+	holder = 168180 # Guy I
+}
+
+1100.10.13 = {
+	holder = 168181 # Agnés
+}
+
+1105.10.6 = {
+	holder = 168182 # William III (held other titles)
+}
+
+1126.6.11 = {
+	holder = 1000252015 # Guy II
+}
+
+1147.12.25 = {
+	Holder = 1000252014 # Jean I
+}
+
+1191.1.1 = {
+	holder = 1000252013 # William IV de Ponthieu
+}
+
+1221.10.4 = {
+	holder = 1000252012 # Marie I
+}
+
+1251.1.1 = {
+	holder = 1000252011 # Jeanne I
+}
+
+1279.3.16 = {
+	holder = 457642 # Elenor of Castile
+}
+
+1290.11.29 = {
+	holder = 454510 # Edward II of England
+}
+
+1327.2.1 = {
+	holder = 454500 #Edward III of England
+}

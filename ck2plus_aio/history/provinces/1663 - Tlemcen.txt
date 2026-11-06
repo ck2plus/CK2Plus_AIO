@@ -1,0 +1,20 @@
+# 1663 - Tlemcen
+title = c_tlemcen
+terrain = mountain
+
+# Initial setup
+culture = berber
+religion = kharijite
+
+max_settlements = 4
+b_tlemcen = castle
+b_sidibelabbes = city
+b_muaskar = temple
+# b_bedrabine
+# b_tessala
+# b_letelagh
+# b_dhaya
+# b_elhaicaiba
+
+# History
+1029.1.1 = { religion = sunni }

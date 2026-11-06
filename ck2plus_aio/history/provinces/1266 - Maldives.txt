@@ -1,0 +1,18 @@
+# 1266 - Maldives
+title = c_maldives
+terrain = plains
+
+# Initial setup
+culture = tamil
+religion = buddhist
+
+max_settlements = 4
+b_mahal = castle
+b_fuvahmulah = city
+# b_isdhoo
+# b_salliballu
+# b_dhanbidhoo
+# b_mundoo
+# b_gan
+
+# History

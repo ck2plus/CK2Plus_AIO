@@ -1,0 +1,18 @@
+# 1339 - Hisar
+title = c_hisar
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = jain
+
+max_settlements = 5
+b_asigarh = castle
+b_asika = city
+b_surajkund = temple
+# b_rohtak
+# b_hisar
+# b_kalanaur
+# b_agroha
+
+# History

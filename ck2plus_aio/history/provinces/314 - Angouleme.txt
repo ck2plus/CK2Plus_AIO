@@ -1,0 +1,25 @@
+# 314 - Angoulême
+title = c_angouleme
+terrain = plains
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 5
+b_jarnac = castle
+b_angouleme = city
+b_bassac = temple
+# b_larochefoucauld
+# b_cognac
+# b_richemont
+# b_fontdouce
+# b_latranchade
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1200.1.1 = { b_cognac = city }
+1308.1.1 = { culture = french }

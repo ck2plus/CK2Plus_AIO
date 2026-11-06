@@ -1,0 +1,19 @@
+# 1539 - Rafha
+title = c_rafha
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 2
+b_rafha = tribal
+# b_aljumaymah
+# b_timiat
+# b_markuz
+# b_lawqah
+# b_duwayd
+# b_uwayqilah
+# b_ashshir
+
+# History

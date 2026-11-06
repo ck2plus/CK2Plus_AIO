@@ -1,0 +1,19 @@
+# 1519 - Beersheb
+title = c_beersheb
+terrain = hills
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 3
+b_beersheb = castle
+b_massada = temple
+# b_estemon
+# b_debir
+# b_gilat
+# b_rahat
+# b_ofakim
+# b_abuzqayqa
+
+# History

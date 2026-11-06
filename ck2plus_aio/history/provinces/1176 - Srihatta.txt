@@ -1,0 +1,18 @@
+# 1176 - Srihatta
+title = c_srihatta
+terrain = plains
+
+# Initial setup
+culture = assamese
+religion = buddhist
+
+max_settlements = 3
+b_srihatta = castle
+b_habiganj = city
+# b_egarosindur
+# b_nasirabad
+# b_jangalbari
+# b_azampur				# Fictional
+# b_kunnau				# Fictional
+
+# History

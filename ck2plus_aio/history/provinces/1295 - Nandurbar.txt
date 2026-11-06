@@ -1,0 +1,18 @@
+# 1295 - Nandurbar
+title = c_nandurbar
+terrain = hills
+
+# Initial setup
+culture = marathi
+religion = jain
+
+max_settlements = 5
+b_bhambhagiri = castle
+b_nandurbar = city
+b_chandor = castle
+# b_malegaon
+# b_songarh
+# b_sultanpur
+# b_mayuragiri
+
+# History

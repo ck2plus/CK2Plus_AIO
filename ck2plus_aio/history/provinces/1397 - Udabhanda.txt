@@ -1,0 +1,18 @@
+# 1397 - Udabhanda
+title = c_udabhanda
+terrain = plains
+
+# Initial setup
+culture = panjabi
+religion = buddhist
+
+max_settlements = 6
+b_udabhanda = castle
+b_charsada = city
+b_oddiyana = temple # Buddhist Holy Site
+b_attak = castle
+# b_mankiala
+# b_rawal
+# b_ohind
+
+# History

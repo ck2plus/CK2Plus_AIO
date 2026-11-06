@@ -1,0 +1,20 @@
+# 1484 - Irbil
+title = c_irbil
+terrain = desert
+
+# Initial setup
+culture = kurdish
+religion = zoroastrian
+
+max_settlements = 6
+b_oroumieh = castle
+b_khoy = city
+b_takhtesoleyman = temple
+b_salmas = castle
+# b_avajiq
+# b_chaldiran
+# b_charekelisa
+# b_mahabad
+
+# History
+900.1.1 = { religion = sunni }

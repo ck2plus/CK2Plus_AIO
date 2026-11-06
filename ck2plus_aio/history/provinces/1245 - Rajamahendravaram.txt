@@ -1,0 +1,18 @@
+# 1245 - Rajamahendravaram
+title = c_rajamahendravaram
+terrain = jungle
+
+# Initial setup
+culture = telugu
+religion = hindu
+
+max_settlements = 3
+b_rajamahendravaram = castle
+# b_kuwakonda
+# b_kirandul
+# b_pattiseema
+# b_getalsud				# Fictional
+# b_hemagiri				# Fictional
+# b_pathyar					# Fictional
+
+# History

@@ -1,0 +1,18 @@
+# 1325 - Kanyakubja
+title = c_kanyakubja
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 7
+b_kanyakubja = castle
+b_jajmau = city
+b_bithor = temple
+b_etawah = city
+b_swargdwari = castle
+b_kampil = temple
+# b_jai_chandra
+
+# History

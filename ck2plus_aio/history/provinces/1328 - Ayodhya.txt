@@ -1,0 +1,18 @@
+# 1328 - Ayodhya
+title = c_ayodhya
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 5
+b_ramkot = castle
+b_ayodhya = city
+b_ram_janmabhoomi = temple # Hindu Holy Site
+b_nageshwarnath = temple
+b_hanuman_garhi = castle
+# b_faizabad
+# b_sarairasi
+
+# History

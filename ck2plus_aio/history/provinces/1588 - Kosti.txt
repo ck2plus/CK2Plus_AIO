@@ -1,0 +1,18 @@
+# 1588 - Kosti
+title = c_kosti
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 4
+b_tandalti = tribal
+# b_kosti
+# b_abbeit
+# b_umm_ruwaba
+# b_dalang
+# b_kaduqli
+# b_lagawa
+
+# History

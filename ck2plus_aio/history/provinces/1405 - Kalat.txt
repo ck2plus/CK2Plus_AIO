@@ -1,0 +1,23 @@
+# 1405 - Kalat
+title = c_kalat
+terrain = mountain
+
+# Initial setup
+culture = afghan
+religion = buddhist
+
+max_settlements = 2
+b_kalat = castle
+# b_talq
+# b_kot_waras			# Fictional
+# b_palasi				# Fictional
+# b_bhaminpur			# Fictional
+# b_katewala			# Fictional
+# b_chenga				# Fictional
+# b_nautasal			# Fictional
+
+# History
+800.1.1 = {
+	culture = baloch
+	religion = sunni
+}

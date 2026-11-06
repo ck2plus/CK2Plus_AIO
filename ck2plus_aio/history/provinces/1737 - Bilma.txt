@@ -1,0 +1,18 @@
+# 1737 - Bilma
+title = c_bilma
+terrain = desert
+
+# Initial setup
+culture = tuareg # butr
+religion = berber_pagan
+
+max_settlements = 2
+b_bilma = tribal
+# b_gouam				# Fictional
+# b_tigue				# Fictional
+# b_libasso				# Fictional
+# b_danouala			# Fictional
+# b_kiroungou			# Fictional
+# b_mateukous			# Fictional
+
+# History

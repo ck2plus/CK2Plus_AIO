@@ -1,0 +1,19 @@
+# 1564 - Tadjoura
+title = c_tadjoura
+terrain = plains
+
+# Initial setup
+culture = somali
+religion = sunni
+
+max_settlements = 3
+b_tadjoura = castle
+b_berenice = city
+# b_obock
+# b_galafi
+# b_dikhil
+# b_djibouti
+# b_holhol
+# b_randa
+
+# History

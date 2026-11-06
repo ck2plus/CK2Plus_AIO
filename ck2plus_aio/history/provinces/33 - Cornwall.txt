@@ -1,0 +1,22 @@
+# 33 - Cornwall
+title = c_cornwall
+terrain = plains
+
+# Initial setup
+culture = cornish
+religion = chalcedonian
+
+max_settlements = 4
+b_tintagel = castle
+b_bodmin = city
+b_st_germans = temple
+# b_launceston
+# b_truro
+# b_liskeard
+# b_st_michael
+# b_restormel
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

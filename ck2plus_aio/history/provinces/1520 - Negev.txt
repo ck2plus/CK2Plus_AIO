@@ -1,0 +1,19 @@
+# 1520 - Negev
+title = c_negev
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 2
+b_negev = castle
+# b_yeruham
+# b_dimona
+# b_avdat
+# b_albaqar
+# b_kmehin
+# b_ezuz
+# b_haluza
+
+# History

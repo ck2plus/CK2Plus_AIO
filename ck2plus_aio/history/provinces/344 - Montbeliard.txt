@@ -1,0 +1,21 @@
+# 344 - Montbéliard
+title = c_montbeliard
+terrain = hills
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 4
+b_montbeliard = castle
+b_layre = city
+# b_arbouans
+# b_exincourt
+# b_etupes
+# b_valentigney
+# b_grand_charmont
+# b_bavans
+
+# History
+790.1.1 = { culture = french }
+1054.7.16 = { religion = catholic } # Great Schism

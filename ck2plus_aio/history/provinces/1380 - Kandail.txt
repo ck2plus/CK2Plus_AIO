@@ -1,0 +1,19 @@
+# 1380 - Kandail
+title = c_kandail
+terrain = mountain
+
+# Initial setup
+culture = sindhi
+religion = buddhist
+
+max_settlements = 3
+b_kandail = castle
+b_dadu = city
+# b_jhal
+# b_vinjamoor			# Fictional
+# b_wilong				# Fictional
+# b_xelvona				# Fictional
+# b_yamanpalli			# Fictional
+
+# History
+800.1.1 = { religion = sunni }

@@ -1,0 +1,18 @@
+# 1239 - Vemulavada
+title = c_vemulavada
+terrain = plains
+
+# Initial setup
+max_settlements = 3
+culture = telugu
+religion = hindu
+
+b_kaulas = castle
+b_vemulavada = temple
+# b_kaleshwaram
+# b_indur
+# b_potali
+# b_konni				# Fictional
+# b_balijipeta			# Fictional
+
+# History

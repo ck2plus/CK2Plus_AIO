@@ -1,0 +1,27 @@
+# 1 - Tyrconnell
+title = c_tyrconnell
+terrain = hills
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 3
+b_gartan = tribal
+b_raphoe = temple
+# b_moville
+# b_fahan
+# b_donegal
+# b_ballyshannon
+# b_kilmacrenan
+# b_ballymacswiney
+
+# History
+1000.1.1 = {
+	b_gartan = castle
+	b_donegal = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

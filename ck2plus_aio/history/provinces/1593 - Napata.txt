@@ -1,0 +1,18 @@
+# 1593 - Napata
+title = c_napata
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 5
+b_napata = castle
+b_marawi = city
+b_ghazali = temple # Miaphysite Holy Site
+# b_kanisah
+# b_korti
+# b_keheilli
+# b_karima
+
+# History

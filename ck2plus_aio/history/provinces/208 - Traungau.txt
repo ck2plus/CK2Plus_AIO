@@ -1,0 +1,22 @@
+# 208 - Traungau
+title = c_traungau
+terrain = forest
+
+# Initial setup
+culture = bavarian
+religion = chalcedonian
+
+max_settlements = 3
+b_enisiburg = castle
+b_linz = city
+# b_wels
+# b_eferding
+# b_gmunden
+# b_hallstatt
+# b_pons_veckelahe
+# b_ebensee
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

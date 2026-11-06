@@ -1,0 +1,24 @@
+# 312 - Lusignan
+title = c_lusignan
+terrain = plains
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 4
+b_lusignan = castle
+b_charroux = temple
+b_niort = city
+# b_melle
+# b_civray
+# b_maillezais
+# b_confolens
+# b_stmaixent
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1214.1.1 = { culture = french }

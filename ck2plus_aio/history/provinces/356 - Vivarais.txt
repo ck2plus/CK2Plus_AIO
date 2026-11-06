@@ -1,0 +1,21 @@
+# 356 - Vivarais
+title = c_vivarais
+terrain = hills
+
+# Initial setup
+culture = visigothic
+religion = chalcedonian
+
+max_settlements = 4
+b_viviers = temple
+b_aubenas = castle
+b_largentiere = city
+# b_tournon
+# b_albalaromaine
+# b_privas
+# b_lecheylard
+# b_joyeuse
+
+# History
+867.1.1 = { culture = occitan }
+1054.7.16 = { religion = catholic } # Great Schism

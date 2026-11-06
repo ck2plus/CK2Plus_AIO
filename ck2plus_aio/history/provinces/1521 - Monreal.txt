@@ -1,0 +1,19 @@
+# 1521 - Monreal
+title = c_monreal
+terrain = hills
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 4
+b_monreal = castle
+b_sela = temple
+# b_hurmniz
+# b_tafila
+# b_bildad
+# b_paran
+# b_idan
+
+# History
+1187.1.1 = { b_hurmniz = city }

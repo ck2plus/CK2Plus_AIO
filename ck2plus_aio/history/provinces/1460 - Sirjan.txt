@@ -1,0 +1,20 @@
+# 1460 - Sirjan
+title = c_sirjan
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 4
+b_sirjan = castle
+b_faragheh = city
+b_borougheeyeh = temple
+# b_shahrbabak
+# b_abarkuh
+# b_dehbid
+# b_mehrabad
+
+# History
+800.1.1 = { religion = sunni }
+1337.1.1 = { b_shahrbabak = castle }

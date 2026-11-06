@@ -1,0 +1,21 @@
+# 1518 - Darum
+title = c_darum
+terrain = plains
+
+# Initial setup
+culture = levantine
+religion = chalcedonian
+
+max_settlements = 3
+b_darum = castle
+b_rafah = city
+b_gaza = temple
+# b_radwan
+# b_salqah
+# b_gerar
+# b_jarara
+# b_abasan
+
+# History
+867.1.1 = { religion = sunni }
+1259.1.1 = { trade_post = b_morosini }

@@ -1,0 +1,20 @@
+# 1523 - Madaba
+title = c_madaba
+terrain = desert
+
+# Initial setup
+culture = levantine
+religion = sunni
+
+max_settlements = 4
+b_madaba = castle
+b_umm_ar-rasas = temple
+b_sahab = city
+b_qastal = castle
+# b_muwaqqar
+# b_bilal
+# b_wadi_al_sir
+# b_samhal
+
+# History
+1192.1.1 = { remove_settlement = b_qastal }

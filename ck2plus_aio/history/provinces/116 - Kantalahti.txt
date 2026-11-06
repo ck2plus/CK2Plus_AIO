@@ -1,0 +1,24 @@
+# 116 - Kantalahti
+title = c_kantalahti
+terrain = forest
+
+# Initial setup
+culture = sami
+religion = finnish_pagan
+
+max_settlements = 2
+b_kantalahti = tribal
+# b_umba
+# b_varzuga
+# b_lekastrom
+# b_sarapo
+# b_kolsky
+# b_ponoy
+# b_pyaozero
+
+# History
+1300.1.1 = {
+	b_kantalahti = castle
+	b_kantalahti = ca_wall_1
+	b_kantalahti = ca_wall_q_1
+}

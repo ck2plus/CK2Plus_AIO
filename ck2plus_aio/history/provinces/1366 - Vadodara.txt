@@ -1,0 +1,18 @@
+# 1366 - Vadodara
+title = c_vadodara
+terrain = plains
+
+# Initial setup
+culture = gujurati
+religion = jain
+
+max_settlements = 5
+b_vadodara = castle
+b_ankotakka = city
+b_kayavarohan = temple
+# b_vatpatrak
+# b_darbhavati
+# b_nasvadi
+# b_lilam				# Fictional
+
+# History

@@ -1,0 +1,19 @@
+# 1010 - Chikoi
+title = c_chikoi
+terrain = plains
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_chikoi = tribal
+# b_urluk
+# b_bursomon
+# b_shimbilik
+# b_chudotvortsa
+# b_shergol_dzhin
+# b_cheremkhovo
+
+# History
+1227.1.1 = { culture = mongol }

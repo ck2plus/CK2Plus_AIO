@@ -1,0 +1,23 @@
+# 253 - Köln
+title = c_koln
+terrain = plains
+
+# Initial setup
+culture = frankish
+religion = chalcedonian
+
+max_settlements = 5
+b_koln = temple
+b_dietz = city
+b_mark = castle
+b_brauweiler = temple
+# b_bonn
+# b_saffenburg
+# b_hochstaden
+
+# History
+790.1.1 = { culture = franconian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

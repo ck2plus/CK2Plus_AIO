@@ -1,0 +1,19 @@
+# 1664 - Tendrara
+title = c_tendrara
+terrain = mountain
+
+# Initial setup
+culture = berber
+religion = kharijite
+
+max_settlements = 2
+b_figuig = castle
+# b_bouarfa
+# b_ich
+# b_ganastel			# Fictional
+# b_benhammouch			# Fictional
+# b_drablia				# Fictional
+# b_randon				# Fictional
+
+# History
+947.1.1 = { religion = sunni }

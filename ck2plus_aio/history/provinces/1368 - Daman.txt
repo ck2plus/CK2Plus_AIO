@@ -1,0 +1,22 @@
+# 1368 - Daman
+title = c_daman
+terrain = plains
+
+# Initial setup
+culture = gujurati
+religion = jain
+
+max_settlements = 5
+b_daman = castle
+b_sanjan = castle
+b_surparaka = temple
+# b_nagar_haveli
+# b_pardi
+# b_bulsar
+# b_ramnagar
+
+# History
+1066.1.1 = {
+	religion = zoroastrian
+	capital = b_sanjan
+}

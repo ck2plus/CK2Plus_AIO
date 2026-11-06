@@ -1,0 +1,21 @@
+# 1647 - Bejaija
+title = c_bejaija
+terrain = plains
+
+# Initial setup
+culture = berber
+religion = chalcedonian
+
+max_settlements = 4
+b_bejaija = castle
+b_elbekara = city
+b_mila = temple
+# b_jijel
+# b_boudaoud
+# b_gantas
+# b_eldjabia
+# b_akaoudj
+
+# History
+1000.1.1 = { religion = sunni }
+1109.1.1 = { trade_post = b_doria }

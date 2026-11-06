@@ -1,0 +1,26 @@
+# 12 - Hy-Many
+title = c_hy_many
+terrain = plains
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 3
+b_cruachu = tribal
+# b_delbna
+# b_rathmore
+# b_rathnadarve
+# b_relignaree
+# b_oweynagat
+# b_rathbeg
+
+# History
+1000.1.1 = {
+	b_cruachu = castle
+	b_delbna = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

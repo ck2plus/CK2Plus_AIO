@@ -1,0 +1,18 @@
+# 1531 - Tihama
+title = c_tihama
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 4
+b_hali = castle
+b_as_suqaiq = temple
+b_attar = city
+# b_bays
+# b_harad
+# b_hamr
+# b_abs
+
+# History

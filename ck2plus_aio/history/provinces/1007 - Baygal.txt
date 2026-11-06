@@ -1,0 +1,19 @@
+# 1007 - Baygal
+title = c_baygal
+terrain = hills
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 4
+b_merkit = tribal
+# b_baygal
+# b_darkhan
+# b_bargujin
+# b_kyakhta
+# b_galuuta
+# b_ulyun
+
+# History
+1227.1.1 = { culture = mongol }

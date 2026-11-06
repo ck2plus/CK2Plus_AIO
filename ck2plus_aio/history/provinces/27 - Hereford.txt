@@ -1,0 +1,38 @@
+# 27 - Hereford
+title = c_hereford
+terrain = plains
+
+# Initial setup
+culture = welsh
+religion = chalcedonian
+
+max_settlements = 3
+b_archenfield = castle
+b_clifford = castle
+# b_st_ethelberts
+# b_hereford
+# b_leominster
+# b_ewyas_harold
+# b_ledbury
+# b_brobury
+
+# History
+808.1.1 = {
+	culture = anglo_saxon
+	b_hereford = castle
+	remove_settlement = b_archenfield
+	remove_settlement = b_clifford
+}
+
+809.1.1 = {
+	b_st_ethelberts = temple
+	b_leominster = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1100.11.11 = {
+	culture = english
+}

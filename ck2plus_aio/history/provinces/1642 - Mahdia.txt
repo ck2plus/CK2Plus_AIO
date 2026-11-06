@@ -1,0 +1,23 @@
+# 1642 - Mahdia
+title = c_mahdia
+terrain = plains
+
+# Initial setup
+culture = berber
+religion = chalcedonian
+
+max_settlements = 5
+b_mahdia = castle
+b_sfax = temple
+b_monastir = city
+b_msaken = castle
+# b_agareb
+# b_neffatia
+# b_sidimansour
+# b_lalaouza
+# b_lacroix
+
+# History
+800.1.1 = { religion = sunni }
+1112.1.1 = { trade_post = b_caetani }
+1285.1.1 = { trade_post = b_fieschi }

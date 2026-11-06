@@ -1,0 +1,22 @@
+# 25 - Perfeddwlad
+title = c_perfeddwlad
+terrain = hills
+
+# Initial setup
+culture = welsh
+religion = chalcedonian
+
+max_settlements = 3
+b_rhuddlan = castle
+b_denbigh = city
+b_llanelwy = temple
+# b_flint
+# b_ruthin
+# b_basingwerk
+# b_ewloe
+# b_hawarden
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

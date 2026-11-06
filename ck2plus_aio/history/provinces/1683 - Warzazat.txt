@@ -1,0 +1,26 @@
+# 1683 - Warzazat
+title = c_warzazat
+terrain = mountain
+
+# Initial setup
+culture = berber
+religion = berber_pagan
+
+max_settlements = 3
+b_warzazat = tribal
+# b_tasagdah
+# b_shwan
+# b_qalat_sless			# Fictional
+# b_el_jehifa			# Fictional
+# b_chtaouna			# Fictional
+# b_timhata				# Fictional
+
+# History
+947.1.1 = {
+	religion = sunni
+}
+
+1062.1.1 = {
+	b_warzazat = castle
+	b_tasagdah = city
+}

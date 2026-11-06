@@ -1,0 +1,23 @@
+# 286 - Chartres
+title = c_chartres
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 4
+b_bretigny = castle
+b_chartres = temple
+b_dreux = city
+# b_nogent
+# b_gallardon
+# b_epernon
+# b_le_coudray
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

@@ -1,0 +1,18 @@
+# 1258 - Tenkasi
+title = c_tenkasi
+terrain = mountain
+
+# Initial setup
+culture = tamil
+religion = hindu
+
+max_settlements = 3
+b_dindigul = castle
+b_tenkasi = temple
+# b_sankaranayinarkovil
+# b_palayamcottai
+# b_tirumalapuram
+# b_aivarmalai
+# b_bandgaon				# Fictional
+
+# History

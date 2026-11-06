@@ -1,0 +1,20 @@
+# 1410 - Saravan
+title = c_saravan
+terrain = desert
+
+# Initial setup
+culture = baloch
+religion = zoroastrian
+
+max_settlements = 3
+b_saravan = castle
+b_pahrah = city
+b_khash = temple
+# b_jaleq
+# b_pishin
+# b_sarbaz
+# b_rasak
+# b_sangan
+
+# History
+800.1.1 = { religion = sunni }

@@ -1,0 +1,5 @@
+732.1.1 = {
+	holding_dynasty = 1022229
+	holder = 260394
+	liege = d_ragusa
+}

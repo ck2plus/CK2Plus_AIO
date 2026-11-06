@@ -1,0 +1,18 @@
+# 1290 - Honnore
+title = c_honnore
+terrain = hills
+
+# Initial setup
+culture = kannada
+religion = jain
+
+max_settlements = 5
+b_honnore = castle
+b_bhatkal = city
+b_gokarna = temple
+# b_barkur
+# b_mookambika
+# b_karwar
+# b_balisna			# Fictional
+
+# History

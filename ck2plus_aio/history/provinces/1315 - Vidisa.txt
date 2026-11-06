@@ -1,0 +1,19 @@
+# 1315 - Vidisa
+title = c_vidisa
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = jain
+
+max_settlements = 5
+b_vidisa = castle
+b_sanchi = temple # Buddhist Holy Site
+b_sironj = city
+# b_bijamandal
+# b_raisin
+# b_bhojpur
+# b_mangla_devi
+
+# History
+1066.1.1 = { religion = hindu }

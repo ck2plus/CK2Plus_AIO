@@ -1,0 +1,23 @@
+# 1212 - Varanasi
+title = c_varanasi
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = buddhist
+
+max_settlements = 5
+b_varanasi = castle		# Hindu Holy Site
+b_sarnath = temple		# Buddhist Holy Site
+b_bhadohi = city
+# b_ballia
+# b_durga_mandir
+# b_kashi_vishwanath
+# b_aleppi				# Fictional
+
+# History
+867.1.1 = {
+	b_sarnath = tp_monastery_1
+	b_sarnath = tp_barracks_1
+	b_sarnath = tp_wall_1
+}

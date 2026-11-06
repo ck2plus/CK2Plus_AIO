@@ -1,0 +1,19 @@
+# 1379 - Quzdar
+title = c_quzdar
+terrain = mountain
+
+# Initial setup
+culture = sindhi
+religion = buddhist
+
+max_settlements = 2
+b_quzdar = castle
+# b_bodein
+# b_sumandal			# Fictional
+# b_supa				# Fictional
+# b_suratgarh			# Fictional
+# b_talya				# Fictional
+# b_tekkumuri			# Fictional
+
+# History
+800.1.1 = { religion = sunni }

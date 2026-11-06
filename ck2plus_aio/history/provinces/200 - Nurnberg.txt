@@ -1,0 +1,25 @@
+# 200 - Nürnberg
+title = c_nurnberg
+terrain = plains
+
+# Initial setup
+culture = bavarian
+religion = chalcedonian
+
+max_settlements = 5
+b_nurnberg = castle
+b_furth = city
+b_ellwangen = temple
+# b_kulmbach
+# b_hohenburg
+# b_nordlingen
+# b_erlangen
+
+# History
+960.1.1 = { culture = bavarian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1187.1.1 = { b_hohenburg = castle } # Nuremburg was Kaiserburg, unofficial capital

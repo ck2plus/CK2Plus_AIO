@@ -1,0 +1,19 @@
+# 1535 - Hail
+title = c_hail
+terrain = desert
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 2
+b_hail = tribal
+# b_asshinan
+# b_alghazalah
+# b_baqa
+# b_iqdah
+# b_mawqaq
+# b_murayfiq
+# b_saban
+
+# History

@@ -1,0 +1,21 @@
+# 1465 - Arrajan
+title = c_arrajan
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 4
+b_bandaremashoor = castle
+b_susa = temple
+b_argan = city
+# b_ramhormoz
+# b_bandarshahpur
+# b_omidiyeh
+# b_behbahan
+# b_jayzan
+
+# History
+800.1.1 = { religion = sunni }
+1337.1.1 = { b_ramhormoz = castle }

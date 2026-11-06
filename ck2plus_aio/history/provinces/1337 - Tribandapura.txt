@@ -1,0 +1,18 @@
+# 1337 - Tribandapura
+title = c_tribandapura
+terrain = jungle
+
+# Initial setup
+culture = hindustani
+religion = hindu
+
+max_settlements = 5
+b_tribandapura = castle
+b_sunam = city
+# b_jaintpuri
+# b_kartikeya
+# b_amin
+# b_chitwye				# Fictional
+# b_dabthala			# Fictional
+
+# History

@@ -1,0 +1,24 @@
+# 235 - Ulm
+title = c_ulm
+terrain = hills
+
+# Initial setup
+culture = alemannic
+religion = chalcedonian
+
+max_settlements = 4
+b_teck = castle
+b_ulm = city
+b_zwiefalten = temple
+# b_biberach
+# b_memmingen
+# b_isny
+# b_goppingen
+# b_erbach
+
+# History
+1000.1.1 = { culture = swabian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

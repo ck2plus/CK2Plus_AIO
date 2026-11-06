@@ -1,0 +1,19 @@
+# 1019 - Uvs
+title = c_uvs
+terrain = plains
+
+# Initial setup
+culture = uyghur
+religion = tengri_pagan
+
+max_settlements = 2
+b_uvs = tribal
+# b_sagil
+# b_davst
+# b_tes
+# b_tsalgar
+# b_ulaangom
+# b_erzin
+
+# History
+1227.1.1 = { culture = mongol }

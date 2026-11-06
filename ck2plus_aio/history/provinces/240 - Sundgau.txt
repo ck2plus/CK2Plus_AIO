@@ -1,0 +1,24 @@
+# 240 - Sundgau
+title = c_sundgau
+terrain = forest
+
+# Initial setup
+culture = alemannic
+religion = chalcedonian
+
+max_settlements = 4
+b_ferette = castle
+b_murbach = temple
+b_kolmar = city
+# b_ensisheim
+# b_mulhouse
+# b_landser
+# b_thann
+# b_altkirch
+
+# History
+1000.1.1 = { culture = swabian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

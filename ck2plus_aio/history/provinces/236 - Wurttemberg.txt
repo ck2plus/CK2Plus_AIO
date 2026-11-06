@@ -1,0 +1,26 @@
+# 236 - Württemberg
+title = c_wurttemberg
+terrain = hills
+
+# Initial setup
+culture = alemannic
+religion = chalcedonian
+
+max_settlements = 5
+b_stuttgart = castle
+b_reutlingen = city
+b_heilbronn = temple
+b_asperg = castle
+# b_waiblingen
+# b_esslingen
+# b_gmund
+# b_staufen
+
+# History
+1000.1.1 = { culture = swabian }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1187.1.1 = { b_waiblingen = castle }

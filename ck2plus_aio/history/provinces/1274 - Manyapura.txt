@@ -1,0 +1,18 @@
+# 1274 - Manyapura
+title = c_manyapura
+terrain = jungle
+
+# Initial setup
+culture = kannada
+religion = jain
+
+max_settlements = 5
+b_manyapura = castle
+b_aralaguppe = temple
+b_turuvekere = city
+# b_kikkeri
+# b_melukote
+# b_govindanahalli
+# b_basaralu
+
+# History

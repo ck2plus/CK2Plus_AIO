@@ -1,0 +1,19 @@
+# 1248 - Vijayawada
+title = c_vijayawada
+terrain = plains
+
+# Initial setup
+culture = telugu
+religion = jain
+
+max_settlements = 4
+b_kondavidu = castle
+b_vijayawada = city
+# b_chebrolu
+# b_masula
+# b_guntur
+# b_peddapalli
+# b_monvel			# Fictional
+
+# History
+1066.1.1 = { religion = hindu }

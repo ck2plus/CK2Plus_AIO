@@ -1,0 +1,25 @@
+# 311 - Poitiers
+title = c_poitiers
+terrain = plains
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 5
+b_poitiers = castle
+b_chatellerault = city
+b_stsavin = temple
+# b_chauvigny
+# b_moncontour
+# b_mirebeau
+# b_parthenay
+# b_loudun
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+# 1090.1.1 = { b_moncontour = temple }
+1214.1.1 = { culture = french }

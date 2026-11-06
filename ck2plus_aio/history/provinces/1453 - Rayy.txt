@@ -1,0 +1,26 @@
+# 1453 - Rayy
+title = c_rayy
+terrain = desert
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 7
+b_rayy = castle
+b_hashtgerd = castle
+b_tehran = city
+b_roudehen = temple # Nestorian holy site
+# b_shahriar
+# b_eslamshahr
+# b_karaj
+# b_pakdasht
+
+# History
+864.1.1 = { religion = shiite }
+900.1.1 = { religion = sunni }
+
+1066.1.1 = {
+	b_shahriar = city
+	b_eslamshahr = temple
+}

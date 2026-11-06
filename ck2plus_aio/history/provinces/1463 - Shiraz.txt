@@ -1,0 +1,20 @@
+# 1463 - Shiraz
+title = c_shiraz
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 4
+b_shiraz = castle
+b_bishapur = city
+b_persepolis = temple
+# b_estakhr
+# b_azargarta
+# b_abadeh
+# b_bavanat
+# b_arsanjan
+
+# History
+800.1.1 = { religion = sunni }

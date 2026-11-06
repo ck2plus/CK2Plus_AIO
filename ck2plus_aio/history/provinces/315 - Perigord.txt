@@ -1,0 +1,25 @@
+# 315 - Périgord
+title = c_perigord
+terrain = plains
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 4
+b_sarlat = castle
+b_bergerac = city
+b_chancelade = temple
+# b_baneuil
+# b_perigueux
+# b_biron
+# b_auberoche
+# b_bergerac
+# b_bonaguil
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1240.1.1 = { b_perigueux = city }

@@ -1,0 +1,33 @@
+# 320 - Béarn
+title = c_bearn
+terrain = mountain
+
+# Initial setup
+religion = chalcedonian
+culture = basque
+
+max_settlements = 4
+b_morlaas = castle
+b_lescar = temple
+b_pau = city
+# b_tarbes
+# b_mauleonlicharre
+# b_orthez
+# b_oloron
+# b_montaner
+
+# History
+955.1.1 = {
+	culture = occitan
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1250.1.1 = {
+	b_orthez = castle
+	b_tarbes = temple
+	capital = b_orthez
+	remove_settlement = b_morlaas
+}

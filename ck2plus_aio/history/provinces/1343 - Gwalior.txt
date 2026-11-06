@@ -1,0 +1,26 @@
+# 1343 - Gwalior
+title = c_gwalior
+terrain = plains
+
+# Initial setup
+culture = hindustani
+religion = jain
+
+max_settlements = 5
+b_gwalior = castle
+b_sahastrabahu = temple
+b_dabra = city
+# b_bateshwar
+# b_narwar
+# b_sabalgarh
+# b_vijaypur
+
+# History
+1237.1.1 = {
+	b_narwar = castle
+	capital = b_narwar
+}
+
+1298.1.1 = {
+	capital = b_gwalior
+}

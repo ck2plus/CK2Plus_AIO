@@ -1,0 +1,19 @@
+# 1038 - Lop Nor
+title = c_lop_nor
+terrain = desert
+
+# Initial setup
+culture = tocharian
+religion = buddhist
+
+max_settlements = 2
+b_lop_nor = castle
+# b_qitun
+# b_dingjiazhai			# Fictional
+# b_nantung				# Fictional
+# b_nanhedong				# Fictional
+# b_beidijiadun			# Fictional
+# b_bibian				# Fictional
+
+# History
+900.1.1 = { culture = uyghur } # Qocho Kingdom

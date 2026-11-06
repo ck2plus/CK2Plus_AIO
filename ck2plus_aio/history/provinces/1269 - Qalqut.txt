@@ -1,0 +1,18 @@
+# 1269 - Qalqut
+title = c_qalqut
+terrain = plains
+
+# Initial setup
+culture = tamil
+religion = hindu
+
+max_settlements = 4
+b_calicut = castle
+b_nediyiruppu = city
+b_kannur = temple
+# b_urakam
+# b_vatakara
+# b_parappanangadi
+# b_chaliyam
+
+# History

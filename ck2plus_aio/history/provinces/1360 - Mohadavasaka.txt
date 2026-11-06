@@ -1,0 +1,19 @@
+# 1360 - Mohadavasaka
+title = c_mohadavasaka
+terrain = plains
+
+# Initial setup
+culture = rajput
+religion = jain
+
+max_settlements = 3
+b_mohadavasaka = castle
+b_jhalod = city
+b_idar = castle	# Used as holding for the Hunas before Idar existed.
+# b_lunawada
+# b_shamlaji
+# b_unjha
+# b_danta
+
+# History
+1257.1.1 = { capital = b_idar }

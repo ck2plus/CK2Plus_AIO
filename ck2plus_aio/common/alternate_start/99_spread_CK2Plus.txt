@@ -1,0 +1,75 @@
+# TODO: Balance pass, add CK2Plus-unique cultures and groups to the spread multipliers
+
+culture_group_spread = {
+
+	mult_modifier = { # Boost groups with very many individual cultures even more
+		factor = 3
+
+		OR = {
+			culture_group = amazigh
+			culture_group = central_germanic
+			culture_group = italian_group
+			culture_group = south_slavic
+		}
+	}
+
+	mult_modifier = { # Override vanilla boost
+		factor = 0
+
+		NOT = {
+			has_alternate_start_setting = {
+				setting = culture
+				option = full_random
+			}
+		}
+
+		culture_group = latin
+		year >= 1000
+	}
+	mult_modifier = {
+		factor = 3
+
+		NOT = {
+			has_alternate_start_setting = {
+				setting = culture
+				option = full_random
+			}
+		}
+
+		culture_group = gallo_roman
+		year >= 1000
+	}
+	mult_modifier = {
+		factor = 3
+
+		NOT = {
+			has_alternate_start_setting = {
+				setting = culture
+				option = full_random
+			}
+		}
+
+		culture_group = italian_group
+		year >= 1000
+	}
+}
+
+religion_spread = {
+
+	mult_modifier = {
+		factor = 0.1
+
+		# TODO: add the other "extra" Pagans here later
+		OR = {
+			religion = celtic_pagan
+			religion = egyptian_pagan
+		}
+
+		NOT = {
+			has_alternate_start_setting = {
+				setting = religion
+				option = full_random
+			}
+		}
+	}
+}

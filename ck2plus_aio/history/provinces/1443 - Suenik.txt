@@ -1,0 +1,23 @@
+# 1443 - Suenik
+title = c_suenik
+terrain = mountain
+
+# Initial setup
+culture = armenian
+religion = apostolic
+
+max_settlements = 3
+b_ghapan = castle
+b_areni = city
+b_noravank = temple
+# b_vorotnavank
+# b_tatev
+# b_prochabert
+# b_gandzassar
+# b_goris
+
+# History
+1320.1.1 = {
+	culture = kurdish
+	religion = sunni
+}

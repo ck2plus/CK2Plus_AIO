@@ -1,0 +1,21 @@
+# 1491 - Bostra
+title = c_bostra
+terrain = desert
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 4
+b_amrah = castle
+b_otaybah = city
+b_adra = temple
+# b_jarba
+# b_qasmiye
+# b_hayjanah
+# b_buraq
+# b_baly
+
+# History
+1000.1.1 = { religion = sunni }
+1187.1.1 = { b_buraq = castle }

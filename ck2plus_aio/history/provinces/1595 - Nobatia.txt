@@ -1,0 +1,18 @@
+# 1595 - Nobatia
+title = c_nobatia
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 4
+b_abri = castle
+b_semna = city
+b_delgo = temple
+# b_wawa
+# b_soleb
+# b_akasha
+# b_kulubnarti
+
+# History

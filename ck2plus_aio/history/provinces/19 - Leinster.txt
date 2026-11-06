@@ -1,0 +1,27 @@
+# 19 - Leinster
+title = c_leinster
+terrain = farmlands
+
+# Initial setup
+culture = irish
+religion = chalcedonian
+
+max_settlements = 4
+b_leighlin = tribal
+b_ferns = temple
+# b_wexford
+# b_arklow
+# b_carlow
+# b_glendalough
+# b_naas
+# b_enniscorthy
+
+# History
+1000.1.1 = {
+	b_leighlin = castle
+	b_wexford = city
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

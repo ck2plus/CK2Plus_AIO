@@ -1,0 +1,19 @@
+# 1567 - Ankober
+title = c_ankober
+terrain = mountain
+
+# Initial setup
+culture = ethiopian
+religion = miaphysite
+
+max_settlements = 4
+b_ankober = tribal
+# b_doqaqit
+# b_qundi
+# b_saqqa
+# b_aliyuamba
+# b_berehet
+# b_keyagebriel
+# b_tegulet
+
+# History

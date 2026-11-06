@@ -1,0 +1,28 @@
+# 1492 - Al-Sukhnah
+title = c_al_sukhnah
+terrain = desert
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 3
+b_husaiba = castle
+b_bukamal = city
+b_alqaim = temple
+# b_salhiyah
+# b_assusah
+# b_subaykhan
+# b_asharah
+# b_alqunjah
+
+# History
+980.1.1 = {
+	culture = levantine
+	religion = sunni
+}
+
+1187.1.1 = {
+	max_settlements = 4
+	b_salhiyah = castle
+}

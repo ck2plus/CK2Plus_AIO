@@ -1,0 +1,19 @@
+# 1556 - Taizz
+title = c_taizz
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 5
+b_ibb = castle
+b_mocha = city
+b_taizz = temple
+b_jibla = castle
+# b_zafar
+# b_perim
+# b_shuqra
+# b_dhisufal
+
+# History

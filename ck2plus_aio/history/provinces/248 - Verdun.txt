@@ -1,0 +1,25 @@
+# 248 - Verdun
+title = c_verdun
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 5
+b_longuyon = castle	# Longuyon
+b_verdun = temple	# Verdun
+b_etain = city		# Étain
+# b_barlecomte
+# b_grandpre		# Grandpré
+# b_doaumont		# Douaumont
+# b_stenay			# Stenay
+
+# History
+790.1.1 = { culture = french }
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1134.1.1 = { capital = b_verdun }

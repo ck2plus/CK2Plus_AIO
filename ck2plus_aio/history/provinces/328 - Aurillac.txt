@@ -1,0 +1,21 @@
+# 328 - Aurillac
+title = c_aurillac
+terrain = hills
+
+# Initial setup
+religion = chalcedonian
+culture = occitan
+
+max_settlements = 4
+b_aurillac = castle
+b_carlat = temple
+b_murat = city
+# b_saint-flour
+# b_la_tour
+# b_issoire
+# b_mauriac
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

@@ -1,0 +1,18 @@
+# 1178 - Kamarupanagara
+title = c_kamarupanagara
+terrain = plains
+
+# Initial setup
+culture = assamese
+religion = buddhist
+
+max_settlements = 5
+b_kamarupanagara = castle
+b_pragyotisapura = city
+b_madan_kamdev = temple
+b_hajo = temple
+# b_durjaya
+# b_manikuta
+# b_dariyaon
+
+# History

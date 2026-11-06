@@ -1,0 +1,18 @@
+# 1641 - Kairouan
+title = c_kairouan
+terrain = desert
+
+# Initial setup
+culture = berber
+religion = sunni
+
+max_settlements = 4
+b_kairouan = castle
+b_jalula = city
+b_raqqada = temple
+b_sidibouzid = city
+# b_haffouz
+# b_chebika
+# b_meknassy
+
+# History

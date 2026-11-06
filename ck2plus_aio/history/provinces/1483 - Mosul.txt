@@ -1,0 +1,26 @@
+# 1483 - Mosul
+title = c_mosul
+terrain = desert
+
+# Initial setup
+culture = assyrian
+religion = nestorian
+
+max_settlements = 6
+b_mosul = castle
+b_bakhdida = city
+b_karamlish = temple # Yazidi Holy Place
+b_bartella = city
+b_baqofah = castle
+# b_shekhan
+# b_aqrah
+# b_arbil
+
+# History
+867.1.1 = {
+	religion = sunni
+	culture = kurdish
+}
+
+1187.1.1 = { remove_settlement = b_bartella }
+1200.1.1 = { religion = yazidi }

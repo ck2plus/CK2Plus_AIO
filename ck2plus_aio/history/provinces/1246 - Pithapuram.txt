@@ -1,0 +1,18 @@
+# 1246 - Pithapuram
+title = c_pithapuram
+terrain = plains
+
+# Initial setup
+culture = telugu
+religion = hindu
+
+max_settlements = 4
+b_pithapuram = temple
+b_mandapeta = city
+# b_draksharama
+# b_somarama
+# b_samalkota
+# b_kakinada
+# b_wardha				# Fictional
+
+# History

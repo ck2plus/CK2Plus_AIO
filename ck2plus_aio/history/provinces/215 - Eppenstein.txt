@@ -1,0 +1,30 @@
+# 215 - Eppenstein
+title = c_eppenstein
+terrain = mountain
+
+# Initial setup
+culture = carantanian
+religion = slavic_pagan
+
+max_settlements = 3
+b_leoben = tribal
+# b_eppenstein
+# b_neuberg
+# b_judenburg
+# b_gallenstein
+# b_rottenmann
+# b_bruck_leoben
+
+# History
+835.1.1 = {
+	culture = bavarian
+	religion = chalcedonian
+	b_eppenstein = castle
+	b_leoben = city
+	b_neuberg = temple
+	capital = b_eppenstein
+}
+
+1054.7.16 = { # Great Schism
+	religion = catholic
+}

@@ -1,0 +1,19 @@
+# 1421 - Mandesh
+title = c_mandesh
+terrain = mountain
+
+# Initial setup
+culture = persian
+religion = buddhist
+
+max_settlements = 3
+b_chaghcharan = castle
+b_adraskan = city
+# b_baluci
+# b_saghar
+# b_kwajaha
+# b_taywara
+# b_gozareh
+
+# History
+1000.1.1 = { religion = sunni }

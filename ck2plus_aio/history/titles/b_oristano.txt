@@ -1,0 +1,9 @@
+1066.1.1 = {
+	holder = 180202 # House Visconti
+	liege = k_pisa
+}
+
+1078.1.1 = {
+	holder = 0
+	liege = c_arborea
+}

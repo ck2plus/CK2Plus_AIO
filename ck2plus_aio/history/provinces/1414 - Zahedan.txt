@@ -1,0 +1,20 @@
+# 1414 - Zahedan
+title = c_zahedan
+terrain = mountain
+
+# Initial setup
+culture = baloch
+religion = zoroastrian
+
+max_settlements = 4
+b_zahedan = castle
+b_khajeh = temple
+b_kuhtaftan = city
+# b_hamun
+# b_jahangir
+# b_golchah
+# b_buk
+# b_kacharud
+
+# History
+825.1.1 = { religion = sunni }

@@ -1,0 +1,18 @@
+# 1726 - Munio
+title = c_munio
+terrain = desert
+
+# Initial setup
+culture = kanuri
+religion = west_african_pagan
+
+max_settlements = 3
+b_nguru = tribal
+# b_diaka
+# b_mashina
+# b_gumsa
+# b_amalget					# Fictional
+# b_ikot_enebong			# Fictional
+# b_tsaskiya				# Fictional
+
+# History

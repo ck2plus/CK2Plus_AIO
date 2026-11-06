@@ -1,0 +1,21 @@
+# 1459 - Hormuz
+title = c_hormuz
+terrain = desert
+
+# Initial setup
+culture = persian
+religion = zoroastrian
+
+max_settlements = 5
+b_gombroon = castle
+b_abarkawan = city
+b_jiroth = temple
+# b_abu_musa
+# b_minab
+# b_kish
+# b_bam
+# b_fin
+
+# History
+790.1.1 = { religion = sunni }
+1337.1.1 = { b_minab = castle }

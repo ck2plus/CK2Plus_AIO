@@ -1,0 +1,8 @@
+1066.1.1 = {
+	holder = 155185
+	liege = c_leptis_magna
+}
+
+1087.1.1 = {
+	holder = 0
+}

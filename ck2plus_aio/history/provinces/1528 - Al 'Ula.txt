@@ -1,0 +1,19 @@
+# 1528 - Al 'Ula
+title = c_al_ula
+terrain = mountain
+
+# Initial setup
+culture = bedouin
+religion = sunni
+
+max_settlements = 4
+b_al_ola = castle
+b_leuke_kome = city
+b_tayma = temple
+# b_higra
+# b_madain_salih
+# b_mughayra
+# b_samur
+# b_tawala
+
+# History

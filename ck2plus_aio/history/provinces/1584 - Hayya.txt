@@ -1,0 +1,18 @@
+# 1584 - Hayya
+title = c_hayya
+terrain = desert
+
+# Initial setup
+culture = nubian
+religion = miaphysite
+
+max_settlements = 4
+b_hayya = tribal
+# b_musmer
+# b_sinkat
+# b_kataigarsa
+# b_aliab
+# b_gebeit
+# b_taris
+
+# History

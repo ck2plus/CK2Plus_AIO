@@ -1,0 +1,35 @@
+# 318 - Marsan
+title = c_marsan
+terrain = plains
+
+# Initial setup
+religion = chalcedonian
+culture = basque
+
+max_settlements = 4
+b_roquefort = castle
+b_bazas = temple
+b_tartas = city
+# b_labrit
+# b_montdemarsan
+# b_gabarret
+# b_mimizan
+# b_latestedebuch
+
+# History
+1054.7.16 = { # Great Schism
+	religion = catholic
+}
+
+1082.1.1 = {
+	culture = occitan
+}
+
+1135.1.1 = {
+	b_montdemarsan = castle
+	capital = b_montdemarsan
+}
+
+1274.1.1 = {
+	trade_post = b_embriaco
+}

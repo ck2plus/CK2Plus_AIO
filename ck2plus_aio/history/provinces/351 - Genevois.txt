@@ -1,0 +1,20 @@
+# 351 - Genevois
+title = c_genevois
+terrain = plains
+
+# Initial setup
+culture = gallic
+religion = chalcedonian
+
+max_settlements = 4
+b_geneve = castle
+b_aubonne = temple
+b_nyon = city
+# b_yvoire
+# b_annecy
+# b_thonex
+# b_meinier
+
+# History
+790.1.1 = { culture = french }
+1054.7.16 = { religion = catholic } # Great Schism

@@ -1,0 +1,18 @@
+# 1644 - Medjerda
+title = c_medjerda
+terrain = desert
+
+# Initial setup
+culture = berber
+religion = sunni
+
+max_settlements = 5
+b_medjerda = castle
+b_lekef = city
+b_siliana = temple
+# b_qaafur
+# b_sidimubarak
+# b_dougga
+# b_elkrib
+
+# History

@@ -1,0 +1,22 @@
+# 133 - Satakunta
+title = c_satakunta
+terrain = forest
+
+# Initial setup
+culture = finnish
+religion = finnish_pagan
+
+max_settlements = 3
+b_liinmaa = tribal
+# b_ulvila
+# b_kiukainen
+# b_pori
+# b_telja
+# b_hahlo
+# b_kankaanpaa
+# b_hiittenharju
+
+# History
+1158.1.1 = { religion = catholic } # Northern Crusades
+1187.1.1 = { b_ulvila = city }
+1300.1.1 = { b_liinmaa = castle }
